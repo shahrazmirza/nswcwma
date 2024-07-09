@@ -1,0 +1,32 @@
+[
+  {
+    "category": "HOME",
+    "classNameNavMenu": "px-6 text-yellow-400",
+    "classNameToggleMenu": "flex px-5 py-2 font-medium leading-none my-1 hover:text-gray-700",
+    "href": "/"
+  },
+  {
+    "category": "ABOUT",
+    "classNameNavMenu": "px-6 text-white",
+    "classNameToggleMenu": "flex px-5 py-2 font-medium leading-none my-1 hover:text-gray-700",
+    "href": "/About"
+  },
+  {
+    "category": "SERVICES",
+    "classNameNavMenu": "px-6 text-white",
+    "classNameToggleMenu": "flex px-5 py-2 font-medium leading-none my-1 hover:text-gray-700",
+    "href": "/Ramadan"
+  },
+  {
+    "category": "EVENTS",
+    "classNameNavMenu": "px-6 text-white",
+    "classNameToggleMenu": "flex px-5 py-2 font-medium leading-none my-1 hover:text-gray-700",
+    "href": "/Appeals"
+  },
+  {
+    "category": "CONTACTS",
+    "classNameNavMenu": "px-6 text-white",
+    "classNameToggleMenu": "flex px-5 py-2 font-medium leading-none my-1 hover:text-gray-700",
+    "href": "/Contact"
+  }
+]
