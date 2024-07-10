@@ -35,7 +35,7 @@ function Togglemenu() {
             />
           </Link>
           <Link href="/">
-            <h1 className="bold">SADAQA AID</h1>
+            <h1 className="bold">NSW Central West Muslim Association</h1>
           </Link>
         </div>
         <button

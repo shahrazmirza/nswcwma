@@ -1,31 +1,31 @@
 [
   {
     "category": "HOME",
-    "classNameNavMenu": "px-6 text-yellow-400",
+    "classNameNavMenu": "text-white text-sm font-normal outline-gray-300 outline outline-1",
     "classNameToggleMenu": "flex px-5 py-2 font-medium leading-none my-1 hover:text-gray-700",
     "href": "/"
   },
   {
     "category": "ABOUT",
-    "classNameNavMenu": "px-6 text-white",
+    "classNameNavMenu": "",
     "classNameToggleMenu": "flex px-5 py-2 font-medium leading-none my-1 hover:text-gray-700",
     "href": "/About"
   },
   {
     "category": "SERVICES",
-    "classNameNavMenu": "px-6 text-white",
+    "classNameNavMenu": "",
     "classNameToggleMenu": "flex px-5 py-2 font-medium leading-none my-1 hover:text-gray-700",
     "href": "/Services"
   },
   {
     "category": "EVENTS",
-    "classNameNavMenu": "px-6 text-white",
+    "classNameNavMenu": "",
     "classNameToggleMenu": "flex px-5 py-2 font-medium leading-none my-1 hover:text-gray-700",
     "href": "/Events"
   },
   {
     "category": "CONTACTS",
-    "classNameNavMenu": "px-6 text-white",
+    "classNameNavMenu": "",
     "classNameToggleMenu": "flex px-5 py-2 font-medium leading-none my-1 hover:text-gray-700",
     "href": "/Contacts"
   }

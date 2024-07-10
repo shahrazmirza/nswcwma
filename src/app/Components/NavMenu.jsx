@@ -3,9 +3,19 @@ import Link from "next/link";
 import React, { useState, useEffect, useContext } from "react";
 import { Container, Section } from "@radix-ui/themes";
 import Image from "next/image";
-import data from "../Data/NavbarItems.json";
 
 const NavMenu = () => {
+  const [activeLink, setActiveLink] = useState(""); // State to track active link
+
+  useEffect(() => {
+    const pathname = window.location.pathname; // Get current pathname
+    setActiveLink(pathname); // Set active link based on pathname
+  }, []); // Empty dependency array to run only once
+
+  const handleLinkClick = (href) => {
+    setActiveLink(href); // Update active link on click
+  };
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -19,12 +29,6 @@ const NavMenu = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    setItems(data);
   }, []);
 
   return (
@@ -47,15 +51,69 @@ const NavMenu = () => {
           </div>
 
           <ul className="flex text-white text-sm font-normal gap-1">
-            {items.map((item, index) => (
+            <li className="uppercase">
               <Link
-                key={index}
-                href={item.href}
-                className={`${items.classNameNavMenu} outline-gray-800 outline outline-1 py-1 px-4 focus:outline-gray-300 focus:outline focus:outline-1 focus:py-1 focus:px-4`}
+                href="/"
+                className={`outline outline-1 py-1 px-4 ${
+                  activeLink === "/" ? "outline-gray-300" : "outline-gray-800"
+                }`}
+                onClick={() => handleLinkClick("/")} // Update active link on click
               >
-                {item.category}
+                home
               </Link>
-            ))}
+            </li>
+            <li className="uppercase">
+              <Link
+                href="/About"
+                className={`outline outline-1 py-1 px-4 ${
+                  activeLink === "/About"
+                    ? "outline-gray-300"
+                    : "outline-gray-800"
+                }`}
+                onClick={() => handleLinkClick("/About")}
+              >
+                about
+              </Link>
+            </li>
+            <li className="uppercase">
+              <Link
+                href="/Services"
+                className={`outline outline-1 py-1 px-4 ${
+                  activeLink === "/Services"
+                    ? "outline-gray-300"
+                    : "outline-gray-800"
+                }`}
+                onClick={() => handleLinkClick("/Services")}
+              >
+                services
+              </Link>
+            </li>
+            <li className="uppercase">
+              <Link
+                href="/Events"
+                className={`outline outline-1 py-1 px-4 ${
+                  activeLink === "/Events"
+                    ? "outline-gray-300"
+                    : "outline-gray-800"
+                }`}
+                onClick={() => handleLinkClick("/Events")}
+              >
+                events
+              </Link>
+            </li>
+            <li className="uppercase">
+              <Link
+                href="/Contacts"
+                className={`outline outline-1 py-1 px-4 ${
+                  activeLink === "/Contacts"
+                    ? "outline-gray-300"
+                    : "outline-gray-800"
+                }`}
+                onClick={() => handleLinkClick("/Contacts")}
+              >
+                contacts
+              </Link>
+            </li>
           </ul>
         </div>
       </Container>
