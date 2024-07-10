@@ -1,19 +1,19 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect, useContext } from "react";
-import { Container, Section } from "@radix-ui/themes";
+import { Container } from "@radix-ui/themes";
 import Image from "next/image";
 
 const NavMenu = () => {
-  const [activeLink, setActiveLink] = useState(""); // State to track active link
+  const [activeLink, setActiveLink] = useState("");
 
   useEffect(() => {
-    const pathname = window.location.pathname; // Get current pathname
-    setActiveLink(pathname); // Set active link based on pathname
-  }, []); // Empty dependency array to run only once
+    const pathname = window.location.pathname;
+    setActiveLink(pathname);
+  }, []);
 
   const handleLinkClick = (href) => {
-    setActiveLink(href); // Update active link on click
+    setActiveLink(href);
   };
 
   const [isScrolled, setIsScrolled] = useState(false);
