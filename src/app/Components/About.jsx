@@ -20,7 +20,7 @@ function About() {
             </div>
             <div className="flex text-white text-sm font-semibold gap-1">
               <Link
-                href="/"
+                href="/About"
                 className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
               >
                 read more
@@ -59,7 +59,7 @@ function About() {
             </div>
             <div className="flex text-white text-sm font-semibold gap-1">
               <Link
-                href="/"
+                href="/About"
                 className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
               >
                 read more

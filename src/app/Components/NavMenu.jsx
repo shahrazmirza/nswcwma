@@ -200,17 +200,6 @@ const NavMenu = () => {
             </li>
             <li className="uppercase">
               <Link
-                href="/Contacts"
-                className={`outline outline-1 py-1 px-4 hover:outline-gray-300 ${
-                  activeLink === "/Contacts"
-                    ? "outline-gray-300"
-                    : "outline-gray-800"
-                }`}
-                onClick={() => handleLinkClick("/Contacts")}
-              >
-                contacts
-              </Link>
-              <Link
                 href="/Downloads"
                 className={`outline outline-1 py-1 px-4 hover:outline-gray-300 ${
                   activeLink === "/Downloads"
@@ -220,6 +209,19 @@ const NavMenu = () => {
                 onClick={() => handleLinkClick("/Downloads")}
               >
                 downloads
+              </Link>
+            </li>
+            <li className="uppercase">
+              <Link
+                href="/Contacts"
+                className={`outline outline-1 py-1 px-4 hover:outline-gray-300 ${
+                  activeLink === "/Contacts"
+                    ? "outline-gray-300"
+                    : "outline-gray-800"
+                }`}
+                onClick={() => handleLinkClick("/Contacts")}
+              >
+                contacts
               </Link>
             </li>
           </ul>
