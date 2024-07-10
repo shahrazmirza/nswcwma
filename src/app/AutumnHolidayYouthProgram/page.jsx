@@ -41,7 +41,7 @@ function AutumnHolidayYouthProgram() {
                   <FaCalendarAlt className="w-3 h-3" />
                   <h2>{item.date}</h2>
                 </div>
-                <div className="flex gap-3">
+                <div className="flex gap-3 py-3">
                   <Link
                     href={`https://www.facebook.com/sharer/sharer.php?u=${item.href}`}
                     target="_blank"
@@ -74,14 +74,6 @@ function AutumnHolidayYouthProgram() {
                   />
                 </Link>
                 <p className="py-5">{item.paragraph1}</p>
-                <div className="flex text-white text-sm font-semibold gap-1">
-                  <Link
-                    href={item.href}
-                    className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
-                  >
-                    read more
-                  </Link>
-                </div>
                 <div className="border-t-1 border-gray-400 my-10"></div>
               </div>
             ))}
