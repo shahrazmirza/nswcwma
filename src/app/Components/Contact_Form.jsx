@@ -103,7 +103,7 @@ export const ContactForm = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               type="text"
-              placeholder="Message"
+              placeholder="Message*"
               required
               className="p-2 mr-3 border-b border-gray-400 focus:outline-none text-xs font-semibold h-32 resize-none w-full"
             ></textarea>
