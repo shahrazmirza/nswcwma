@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Hero() {
@@ -23,9 +24,11 @@ function Hero() {
             </h2>
           </div>
         </div>
-        <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm font-medium transition delay-100">
-          DONATE NOW
-        </button>
+        <Link href="/Donation">
+          <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm font-medium transition delay-100">
+            DONATE NOW
+          </button>
+        </Link>
       </div>
     </div>
   );
