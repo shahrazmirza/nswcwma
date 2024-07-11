@@ -73,7 +73,16 @@ function AutumnHolidayYouthProgram() {
                     className=""
                   />
                 </Link>
-                <p className="py-5">{item.paragraph1}</p>
+                <div className="pt-5">
+                  <p className="pb-5">{item.paragraph1}</p>
+                  <p className="pb-5">{item.paragraph2}</p>
+                  <p className="pb-5">{item.paragraph3}</p>
+                  <p className="pb-5">{item.paragraph4}</p>
+                  <p className="pb-5">{item.paragraph5}</p>
+                  <p className="pb-5">{item.paragraph6}</p>
+                  <p className="pb-5">{item.paragraph7}</p>
+                  <p className="pb-5">{item.paragraph8}</p>
+                </div>
                 <div className="border-t-1 border-gray-400 my-10"></div>
               </div>
             ))}
