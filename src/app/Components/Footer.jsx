@@ -17,7 +17,7 @@ function Footer() {
               <div className="font-thin tracking-widest text-gray-300">
                 <h2>71A TAMWORTH STREET, DUBBO NSW 2830</h2>
                 <h2>PHONE: +61 478 684 716</h2>
-                <h2>EMAIL: INFO@NSWCWMA.COM.AU</h2>
+                <h2>EMAIL: INFO@NSWCWMA.ORG.AU</h2>
               </div>
             </div>
             <div className="border-l-[1px] border-gray-300 pl-10">
