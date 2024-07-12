@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Scroll_to_top from "../Components/Scroll_to_top";
 import Whatsapp from "../Components/Whatsapp";
 import Footer from "../Components/Footer";
 import NavMenu from "../Components/NavMenu";
@@ -9,6 +8,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@radix-ui/themes";
+import ScrollToTop from "../Components/ScrollToTop";
 
 function Events() {
   const [items, setItems] = useState([]);
@@ -23,7 +23,7 @@ function Events() {
   return (
     <div className="bg-gray-800 text-gray-400">
       <NavMenu />
-      <Scroll_to_top />
+      <ScrollToTop />
       <Whatsapp />
       <Container>
         <div className="py-10">

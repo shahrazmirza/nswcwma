@@ -1,14 +1,14 @@
 import React from "react";
-import Scroll_to_top from "../Components/Scroll_to_top";
 import Whatsapp from "../Components/Whatsapp";
 import Footer from "../Components/Footer";
 import NavMenu from "../Components/NavMenu";
+import ScrollToTop from "../Components/ScrollToTop";
 
 function Services() {
   return (
     <div>
       <NavMenu />
-      <Scroll_to_top />
+      <ScrollToTop />
       <Whatsapp />
       <Footer />
     </div>

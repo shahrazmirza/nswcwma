@@ -1,15 +1,15 @@
 import React from "react";
-import Scroll_to_top from "../Components/Scroll_to_top";
 import Whatsapp from "../Components/Whatsapp";
 import Footer from "../Components/Footer";
 import NavMenu from "../Components/NavMenu";
 import DonationForm from "../Components/DonationForm";
+import ScrollToTop from "../Components/ScrollToTop";
 
 function Donation() {
   return (
     <div>
       <NavMenu />
-      <Scroll_to_top />
+      <ScrollToTop />
       <Whatsapp />
       <DonationForm />
       <Footer />

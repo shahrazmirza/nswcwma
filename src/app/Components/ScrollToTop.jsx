@@ -12,7 +12,7 @@ const jump = {
   },
 };
 
-const Scroll_to_top = () => {
+const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -51,4 +51,4 @@ const Scroll_to_top = () => {
   );
 };
 
-export default Scroll_to_top;
+export default ScrollToTop;
