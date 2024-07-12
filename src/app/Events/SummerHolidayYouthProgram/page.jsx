@@ -46,21 +46,27 @@ function SummerHolidayYouthProgram() {
                   </div>
                   <div className="flex gap-3 py-3">
                     <Link
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${item.href}`}
+                      href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                        window.location.href
+                      )}`}
                       target="_blank"
                       className="bg-blue-600 text-white flex justify-center items-center mb-5 rounded px-3 py-1 gap-1 text-xs font-medium tracking-wide w-20"
                     >
                       <FaFacebook /> Share
                     </Link>
                     <Link
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${item.href}`}
+                      href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                        window.location.href
+                      )}`}
                       target="_blank"
                       className="bg-black text-white flex justify-center items-center mb-5 rounded-full px-3 py-1 gap-1 text-xs font-medium tracking-wide w-20"
                     >
                       <FaXTwitter /> Post
                     </Link>
                     <Link
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${item.href}`}
+                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+                        window.location.href
+                      )}`}
                       target="_blank"
                       className="bg-sky-700 text-white flex justify-center items-center mb-5 rounded px-3 py-1 gap-1 text-xs font-medium tracking-wide w-20"
                     >
