@@ -3,7 +3,7 @@ import Scroll_to_top from "../Components/Scroll_to_top";
 import Whatsapp from "../Components/Whatsapp";
 import Footer from "../Components/Footer";
 import NavMenu from "../Components/NavMenu";
-import DonationForm from "../Components/Donation_Form";
+import DonationForm from "../Components/DonationForm";
 
 function Donation() {
   return (
