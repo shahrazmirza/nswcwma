@@ -64,7 +64,9 @@ function AutumnHolidayYouthProgram() {
                       <FaXTwitter /> Post
                     </Link>
                     <Link
-                      href={`https://www.facebook.com/sharer/sharer.php?u=https://www.nswcwma.org.au/${item.href}`}
+                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+                        window.location.href
+                      )}`}
                       target="_blank"
                       className="bg-sky-700 text-white flex justify-center items-center mb-5 rounded px-3 py-1 gap-1 text-xs font-medium tracking-wide w-20"
                     >
