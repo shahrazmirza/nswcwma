@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Scroll_to_top from "../Components/Scroll_to_top";
-import Whatsapp from "../Components/Whatsapp";
-import Footer from "../Components/Footer";
-import NavMenu from "../Components/NavMenu";
-import data from "../Data/Events.json";
+import Scroll_to_top from "../../Components/Scroll_to_top";
+import Whatsapp from "../../Components/Whatsapp";
+import Footer from "../../Components/Footer";
+import NavMenu from "../../Components/NavMenu";
+import data from "../../Data/Events.json";
 import { FaCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,7 +12,7 @@ import { Container } from "@radix-ui/themes";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-function DubboMultiCulturalGala2024() {
+function SummerHolidayYouthProgram() {
   const [items, setItems] = useState([]);
   useEffect(() => {
     console.log("", data);
@@ -23,7 +23,7 @@ function DubboMultiCulturalGala2024() {
     }
   }, []);
 
-  const filterInclude = "Dubbo Multi Cultural Gala - 2024";
+  const filterInclude = "Summer Holiday Youth Program";
 
   return (
     <div className="bg-gray-800 text-gray-400">
@@ -128,4 +128,4 @@ function DubboMultiCulturalGala2024() {
   );
 }
 
-export default DubboMultiCulturalGala2024;
+export default SummerHolidayYouthProgram;

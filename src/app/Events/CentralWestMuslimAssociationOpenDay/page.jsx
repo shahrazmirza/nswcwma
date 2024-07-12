@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Scroll_to_top from "../Components/Scroll_to_top";
-import Whatsapp from "../Components/Whatsapp";
-import Footer from "../Components/Footer";
-import NavMenu from "../Components/NavMenu";
-import data from "../Data/Events.json";
+import Scroll_to_top from "../../Components/Scroll_to_top";
+import Whatsapp from "../../Components/Whatsapp";
+import Footer from "../../Components/Footer";
+import NavMenu from "../../Components/NavMenu";
+import data from "../../Data/Events.json";
 import { FaCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,7 +12,7 @@ import { Container } from "@radix-ui/themes";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-function SummerHolidayYouthProgram() {
+function CentralWestMuslimAssociationOpenDay() {
   const [items, setItems] = useState([]);
   useEffect(() => {
     console.log("", data);
@@ -23,7 +23,7 @@ function SummerHolidayYouthProgram() {
     }
   }, []);
 
-  const filterInclude = "Summer Holiday Youth Program";
+  const filterInclude = "Central West Muslim Association Open Day";
 
   return (
     <div className="bg-gray-800 text-gray-400">
@@ -128,4 +128,4 @@ function SummerHolidayYouthProgram() {
   );
 }
 
-export default SummerHolidayYouthProgram;
+export default CentralWestMuslimAssociationOpenDay;
