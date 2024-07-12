@@ -11,7 +11,7 @@ function About() {
             <h1 className="uppercase text-3xl font-medium tracking-widest text-white">
               welcome to our site!
             </h1>
-            <div className="font-thin tracking-widest text-gray-300 py-5">
+            <div className="font-thin tracking-wide text-gray-300 py-5">
               <h2>
                 We focus on community wellbeing, poverty alleviation, assisting
                 the sick, and disaster response, aiming to create a safe,
@@ -49,7 +49,7 @@ function About() {
             <h1 className="uppercase text-3xl font-medium tracking-widest text-white">
               shortly about us
             </h1>
-            <div className="font-thin tracking-widest text-gray-300 py-5">
+            <div className="font-thin tracking-wide text-gray-300 py-5">
               <h2>
                 Our Vision is to foster a compassionate, supportive community in
                 Dubbo and Central West NSW, addressing poverty, aiding the sick,
