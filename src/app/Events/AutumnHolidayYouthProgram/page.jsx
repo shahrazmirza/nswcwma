@@ -46,7 +46,7 @@ function AutumnHolidayYouthProgram() {
                   </div>
                   <div className="flex gap-3 py-3">
                     <Link
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${item.href}`}
+                      href={`https://www.facebook.com/sharer/sharer.php?u=https://www.nswcwma.org.au/${item.href}`}
                       target="_blank"
                       className="bg-blue-600 text-white flex justify-center items-center mb-5 rounded px-3 py-1 gap-1 text-xs font-medium tracking-wide w-20"
                     >
