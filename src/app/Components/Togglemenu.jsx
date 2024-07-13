@@ -27,7 +27,7 @@ function Togglemenu() {
         <div className="flex justify-center items-center p-5 gap-2">
           <Link href="/">
             <Image
-              src="/assets/logo.png"
+              src="/assets/images/logo.png"
               alt="Logo"
               width={30}
               height={30}

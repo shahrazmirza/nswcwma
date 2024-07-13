@@ -30,7 +30,7 @@ function About() {
           </div>
         </div>
         <Image
-          src="/assets/about1.jpg"
+          src="/assets/images/about1.jpg"
           alt="Hero Image"
           width={1000}
           height={1000}
@@ -39,7 +39,7 @@ function About() {
       </div>
       <div className="grid grid-cols-2 bg-gray-800 justify-center items-center">
         <Image
-          src="/assets/about2.jpg"
+          src="/assets/images/about2.jpg"
           alt="Hero Image"
           width={1000}
           height={1000}
@@ -86,7 +86,7 @@ function About() {
           </div>
         </div>
         <Image
-          src="/assets/about3.jpg"
+          src="/assets/images/about3.jpg"
           alt="Hero Image"
           width={1000}
           height={1000}

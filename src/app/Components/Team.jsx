@@ -13,7 +13,7 @@ function Team() {
         </div>
         <div>
           <Image
-            src="/assets/president.jpg"
+            src="/assets/images/president.jpg"
             alt="President Image"
             width={1000}
             height={1000}
@@ -30,7 +30,7 @@ function Team() {
         </div>
         <div>
           <Image
-            src="/assets/vice-president.jpg"
+            src="/assets/images/vice-president.jpg"
             alt="Vice President Image"
             width={1000}
             height={1000}
@@ -47,7 +47,7 @@ function Team() {
         </div>
         <div>
           <Image
-            src="/assets/treasurer.jpg"
+            src="/assets/images/treasurer.jpg"
             alt="Treasurer Image"
             width={1000}
             height={1000}
@@ -64,7 +64,7 @@ function Team() {
         </div>
         <div>
           <Image
-            src="/assets/secretary.jpg"
+            src="/assets/images/secretary.jpg"
             alt="Secretary Image"
             width={1000}
             height={1000}

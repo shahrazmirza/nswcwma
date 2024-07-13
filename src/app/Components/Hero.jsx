@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className="flex justify-center items-center flex-col">
       <Image
-        src="/assets/hero.jpg"
+        src="/assets/images/hero.jpg"
         alt="Hero Image"
         layout="fixed"
         width={1000}

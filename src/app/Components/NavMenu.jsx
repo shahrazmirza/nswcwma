@@ -43,7 +43,12 @@ const NavMenu = () => {
         <div className="text-white flex justify-between items-center pt-6">
           <div className="flex items-center gap-3">
             <Link href="/">
-              <Image src="/assets/logo.png" alt="Logo" width="50" height="30" />
+              <Image
+                src="/assets/images/logo.png"
+                alt="Logo"
+                width="50"
+                height="30"
+              />
             </Link>
             <Link href="/">
               <h1 className="text-2xl font-basic tracking-wider">
