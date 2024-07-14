@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import ToggleMenu from "./ToggleMenu";
 import NavMenu from "./NavMenu";
+import ToggleMenu from "./ToggleMenu";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
