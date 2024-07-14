@@ -47,12 +47,12 @@ function ToggleMenu() {
       </div>
       {showDiv && (
         <div className="bg-gray-100 px-5 py-2 h-screen">
-          <div className="">
+          <div>
             <NavigationMenu.Root>
-              <NavigationMenu.List className=" list-none">
+              <NavigationMenu.List className="flex flex-col gap-2 w-full justify-center items-start">
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    className="font-heading1 flex text-xl py-2 font-medium leading-none my-1 hover:text-gray-800"
+                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
                     href="/"
                   >
                     Home
@@ -61,107 +61,46 @@ function ToggleMenu() {
 
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    className="font-heading1 flex text-xl py-2 font-medium leading-none my-1 hover:text-gray-800"
+                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
                     href="/About"
                   >
-                    About Us
+                    About
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
 
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    className="font-heading1 flex text-xl py-2 font-medium leading-none my-1 hover:text-gray-800"
+                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
                     href="/Ramadan"
                   >
-                    Ramadan
+                    Services
                   </NavigationMenu.Link>
-                  <ul className="grid grid-cols-2 gap-0 text-xs leading-8">
-                    <Link href="/Ramadan">
-                      <Chip radius="sm">Ramadan Meals</Chip>
-                    </Link>
-                    <Link href="/Ramadan">
-                      <Chip radius="sm">Iftar</Chip>
-                    </Link>
-                    <Link href="/Ramadan">
-                      <Chip radius="sm">Kaffarah</Chip>
-                    </Link>
-                    <Link href="/Ramadan">
-                      <Chip radius="sm">Fidya</Chip>
-                    </Link>
-                    <Link href="/Ramadan">
-                      <Chip radius="sm">Eid Gifts</Chip>
-                    </Link>
-                    <Link href="/Ramadan">
-                      <Chip radius="sm">Zakat-ul-Fitr</Chip>
-                    </Link>
-                  </ul>
                 </NavigationMenu.Item>
 
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    className="font-heading1 flex text-xl py-2 font-medium leading-none my-1 hover:text-gray-800"
+                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
                     href="/Appeals"
                   >
-                    Appeals
+                    Events
                   </NavigationMenu.Link>
-                  <ul className="grid grid-cols-2 gap-0 text-xs leading-8">
-                    <Link href="/Appeals">
-                      <Chip radius="sm">Palestine Appeal</Chip>
-                    </Link>
-                    <Link href="/Appeals">
-                      <Chip radius="sm">Yemen Appeal</Chip>
-                    </Link>
-                    <Link href="/Appeals">
-                      <Chip radius="sm">Syria Relief</Chip>
-                    </Link>
-                    <Link href="/Appeals">
-                      <Chip radius="sm">Afghanistan Emergency</Chip>
-                    </Link>
-                    <Link href="/Appeals">
-                      <Chip radius="sm">Turkiye Emergency</Chip>
-                    </Link>
-                    <Link href="/Appeals">
-                      <Chip radius="sm">Rohingya Appeal</Chip>
-                    </Link>
-                    <Link href="/Appeals">
-                      <Chip radius="sm">Pakistan Emergency</Chip>
-                    </Link>
-                    <Link href="/Appeals">
-                      <Chip radius="sm">Lebanon Appeal</Chip>
-                    </Link>
-                    <Link href="/Appeals">
-                      <Chip radius="sm">Bangladesh Relief</Chip>
-                    </Link>
-                  </ul>
                 </NavigationMenu.Item>
 
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
-                    className="font-heading1 flex text-xl py-2 font-medium leading-none my-1 hover:text-gray-800"
+                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
                     href="/Projects"
                   >
-                    Projects
+                    Downloads
                   </NavigationMenu.Link>
-                  <ul className="grid grid-cols-2 gap-0 text-xs leading-8">
-                    <Link href="/Projects">
-                      <Chip radius="sm">Pakistan School</Chip>
-                    </Link>
-                    <Link href="/Projects">
-                      <Chip radius="sm">Pakistan Surgeries</Chip>
-                    </Link>
-                    <Link href="/Projects">
-                      <Chip radius="sm">Pakistan Water Stations</Chip>
-                    </Link>
-                  </ul>
                 </NavigationMenu.Item>
-
                 <NavigationMenu.Item>
-                  <Link
-                    href="/Contact"
-                    className="px-5 my-5 w-fit text-sm font-medium leading-none border-gray-800 bg-gray-800 border-solid border rounded-full text-white h-10 flex items-center justify-center"
+                  <NavigationMenu.Link
+                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
+                    href="/Contacts"
                   >
-                    Get In Touch
-                  </Link>
+                    Contacts
+                  </NavigationMenu.Link>
                 </NavigationMenu.Item>
               </NavigationMenu.List>
             </NavigationMenu.Root>
