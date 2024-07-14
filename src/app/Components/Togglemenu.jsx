@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { IoMenu } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 
-function Togglemenu() {
+function ToggleMenu() {
   const [items, setItems] = useState([]);
 
   const [showDiv, setShowDiv] = useState(false);
@@ -109,4 +109,4 @@ function Togglemenu() {
   );
 }
 
-export default Togglemenu;
+export default ToggleMenu;
