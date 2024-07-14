@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Chip } from "@nextui-org/react";
 import { IoMenu } from "react-icons/io5";
+import { RxCross1 } from "react-icons/rx";
 
 function ToggleMenu() {
   const [items, setItems] = useState([]);
@@ -38,9 +39,9 @@ function ToggleMenu() {
           onClick={toggleDiv}
         >
           {showDiv ? (
-            <IoMenu className="text-red-500 h-24 w-24" />
+            <RxCross1 className="text-red-500" />
           ) : (
-            <HamburgerMenuIcon />
+            <IoMenu className="text-red-500" />
           )}
         </button>
       </div>
