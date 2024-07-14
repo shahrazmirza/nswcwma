@@ -1,18 +1,13 @@
 "use client";
 import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
-import classNames from "classnames";
-import {
-  CaretDownIcon,
-  Cross1Icon,
-  HamburgerMenuIcon,
-} from "@radix-ui/react-icons";
+import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { Chip } from "@nextui-org/react";
+import { IoMenu } from "react-icons/io5";
 
-function Togglemenu() {
+function ToggleMenu() {
   const [items, setItems] = useState([]);
 
   const [showDiv, setShowDiv] = useState(false);
@@ -22,18 +17,18 @@ function Togglemenu() {
   };
 
   return (
-    <div>
-      <div className="flex justify-between h-10 items-center py-7">
+    <div className="z-10">
+      <div className="flex justify-between h-10 items-center py-7 bg-gray-800 text-white">
         <div className="flex justify-center items-center p-5 gap-2">
-          <Link href="/">
+          {/* <Link href="/">
             <Image
-              src="/assets/images/logo.png"
+              src="/assets/logo.png"
               alt="Logo"
               width={30}
               height={30}
               className=""
             />
-          </Link>
+          </Link> */}
           <Link href="/">
             <h1 className="bold">NSW Central West Muslim Association</h1>
           </Link>
@@ -42,7 +37,11 @@ function Togglemenu() {
           className="flex text-gray-800 bg-gray-100 justify-center w-12 h-16 pt-6"
           onClick={toggleDiv}
         >
-          {showDiv ? <Cross1Icon /> : <HamburgerMenuIcon />}
+          {showDiv ? (
+            <IoMenu className="text-red-500 h-24 w-24" />
+          ) : (
+            <HamburgerMenuIcon />
+          )}
         </button>
       </div>
       {showDiv && (
@@ -172,4 +171,4 @@ function Togglemenu() {
   );
 }
 
-export default Togglemenu;
+export default ToggleMenu;

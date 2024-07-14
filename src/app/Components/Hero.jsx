@@ -8,24 +8,23 @@ function Hero() {
       <Image
         src="/assets/images/hero.jpg"
         alt="Hero Image"
-        layout="fixed"
-        width={1000}
-        height={1000}
-        className="w-screen relative"
+        width="2000"
+        height="1000"
+        className="relative aspect-ratio md:h-full object-cover min-h-72"
       />
       <div className="absolute flex flex-col items-center justify-center">
-        <div className=" p-10 w-fit text-center text-white">
-          <div className="flex flex-col border p-10 gap-5">
-            <h1 className="text-4xl font-medium tracking-widest">
+        <div className="md:p-10 py-8 w-fit text-center text-white">
+          <div className="flex flex-col border md:p-10 px-12 py-6 gap-5">
+            <h1 className="md:text-4xl text-2xl md:font-medium font-semibold md:tracking-widest">
               BE USEFUL TO OTHERS
             </h1>
-            <h2 className="font-medium tracking-widest">
+            <h2 className="md:font-medium font-semibold text-sm md:tracking-widest">
               WITH NO THOUGHT OF RECOMPENSE
             </h2>
           </div>
         </div>
         <Link href="/Donation">
-          <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm font-medium transition delay-100">
+          <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm md:font-medium font-semibold transition delay-100">
             DONATE NOW
           </button>
         </Link>

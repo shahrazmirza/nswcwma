@@ -9,19 +9,19 @@ function Footer() {
     <>
       <div className="bg-gray-800 text-white py-20">
         <Container>
-          <div className="flex gap-10">
-            <div className="pr-20">
-              <h1 className="text-3xl font-medium tracking-widest pb-10">
+          <div className="flex md:flex-row flex-col gap-10 md:p-0 p-5">
+            <div className="border-l-[1px] border-gray-300 pl-10 pr-20">
+              <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 GET IN TOUCH
               </h1>
-              <div className="font-thin tracking-widest text-gray-300">
+              <div className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400">
                 <h2>71A TAMWORTH STREET, DUBBO NSW 2830</h2>
                 <h2>PHONE: +61 478 684 716</h2>
                 <h2>EMAIL: INFO@NSWCWMA.ORG.AU</h2>
               </div>
             </div>
             <div className="border-l-[1px] border-gray-300 pl-10">
-              <h1 className="text-3xl font-medium tracking-widest pb-10">
+              <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 FOLLOW US
               </h1>
               <div className="pr-1">
