@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import NavMenu from "./NavMenu";
-import ToggleMenu from "./ToggleMenu";
+import Togglemenu from "./ToggleMenu";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,7 +19,7 @@ const Navbar = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  return <div>{isMobile ? <ToggleMenu /> : <NavMenu />}</div>;
+  return <div>{isMobile ? <Togglemenu /> : <NavMenu />}</div>;
 };
 
 export default Navbar;
