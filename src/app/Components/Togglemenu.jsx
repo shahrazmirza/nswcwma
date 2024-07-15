@@ -57,7 +57,7 @@ function Togglemenu() {
             <Link
               className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
                 activeLink === "/"
-                  ? "bg-neutral-800 text-red-500 font-thin"
+                  ? "bg-neutral-800 text-red-500 font-medium"
                   : "bg-gray-100"
               }`}
               onClick={() => handleLinkClick("/")}
@@ -68,7 +68,7 @@ function Togglemenu() {
             <Link
               className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
                 activeLink === "/About"
-                  ? "bg-neutral-800 text-red-500 font-thin"
+                  ? "bg-neutral-800 text-red-500 font-medium"
                   : "bg-gray-100"
               }`}
               onClick={() => handleLinkClick("/")}
@@ -79,7 +79,7 @@ function Togglemenu() {
             <Link
               className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
                 activeLink === "/Services"
-                  ? "bg-neutral-800 text-red-500 font-thin"
+                  ? "bg-neutral-800 text-red-500 font-medium"
                   : "bg-gray-100"
               }`}
               onClick={() => handleLinkClick("/")}
@@ -90,7 +90,7 @@ function Togglemenu() {
             <Link
               className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
                 activeLink === "/Events"
-                  ? "bg-neutral-800 text-red-500 font-thin"
+                  ? "bg-neutral-800 text-red-500 font-medium"
                   : "bg-gray-100"
               }`}
               onClick={() => handleLinkClick("/")}
@@ -101,7 +101,7 @@ function Togglemenu() {
             <Link
               className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
                 activeLink === "/Downloads"
-                  ? "bg-neutral-800 text-red-500 font-thin"
+                  ? "bg-neutral-800 text-red-500 font-medium"
                   : "bg-gray-100"
               }`}
               onClick={() => handleLinkClick("/")}
@@ -112,7 +112,7 @@ function Togglemenu() {
             <Link
               className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
                 activeLink === "/Contacts"
-                  ? "bg-neutral-800 text-red-500 font-thin"
+                  ? "bg-neutral-800 text-red-500 font-medium"
                   : "bg-gray-100"
               }`}
               onClick={() => handleLinkClick("/")}
