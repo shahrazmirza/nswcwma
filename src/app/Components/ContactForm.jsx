@@ -63,11 +63,11 @@ export const ContactForm = () => {
 
   return (
     <Container>
-      <div className="py-10">
-        <h1 className="border-l-[1px] border-gray-400 pl-10 uppercase text-3xl font-medium tracking-widest text-gray-800 py-5 mb-5">
+      <div className="py-10 md:pl-0 pl-5">
+        <h1 className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5">
           contact us
         </h1>
-        <div className="pl-10">
+        <div className="pl-8 pr-5">
           {showAlert && (
             <AlertOverlay message={alertMessage} onClose={closeAlert} />
           )}
