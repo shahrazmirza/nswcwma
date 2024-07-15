@@ -1,18 +1,170 @@
 [
   {
-    "category": "Sadaqa",
+    "type": "Support for the homeless",
+    "value": 5
+  },
+  {
+    "type": "Free Food on Fridays",
+    "value": 5
+  },
+  {
+    "type": "Disability Support",
+    "value": 5
+  },
+  {
+    "type": "Driving Classes",
+    "value": 5
+  },
+  {
+    "type": "Poverty Alleviation",
+    "value": 5
+  },
+  {
+    "type": "Support for the Sick",
+    "value": 5
+  },
+  {
+    "type": "Support for the homeless",
+    "value": 10
+  },
+  {
+    "type": "Free Food on Fridays",
+    "value": 10
+  },
+  {
+    "type": "Disability Support",
+    "value": 10
+  },
+  {
+    "type": "Driving Classes",
+    "value": 10
+  },
+  {
+    "type": "Poverty Alleviation",
+    "value": 10
+  },
+  {
+    "type": "Support for the Sick",
+    "value": 10
+  },
+  {
+    "type": "Support for the homeless",
     "value": 50
   },
   {
-    "category": "Zakat",
+    "type": "Free Food on Fridays",
     "value": 50
   },
   {
-    "category": "Sadaqa",
+    "type": "Disability Support",
+    "value": 50
+  },
+  {
+    "type": "Driving Classes",
+    "value": 50
+  },
+  {
+    "type": "Poverty Alleviation",
+    "value": 50
+  },
+  {
+    "type": "Support for the Sick",
+    "value": 50
+  },
+  {
+    "type": "Support for the homeless",
     "value": 100
   },
   {
-    "category": "Zakat",
+    "type": "Free Food on Fridays",
     "value": 100
+  },
+  {
+    "type": "Disability Support",
+    "value": 100
+  },
+  {
+    "type": "Driving Classes",
+    "value": 100
+  },
+  {
+    "type": "Poverty Alleviation",
+    "value": 100
+  },
+  {
+    "type": "Support for the Sick",
+    "value": 100
+  },
+  {
+    "type": "Support for the homeless",
+    "value": 200
+  },
+  {
+    "type": "Free Food on Fridays",
+    "value": 200
+  },
+  {
+    "type": "Disability Support",
+    "value": 200
+  },
+  {
+    "type": "Driving Classes",
+    "value": 200
+  },
+  {
+    "type": "Poverty Alleviation",
+    "value": 200
+  },
+  {
+    "type": "Support for the Sick",
+    "value": 200
+  },
+  {
+    "type": "Support for the homeless",
+    "value": 500
+  },
+  {
+    "type": "Free Food on Fridays",
+    "value": 500
+  },
+  {
+    "type": "Disability Support",
+    "value": 500
+  },
+  {
+    "type": "Driving Classes",
+    "value": 500
+  },
+  {
+    "type": "Poverty Alleviation",
+    "value": 500
+  },
+  {
+    "type": "Support for the Sick",
+    "value": 500
+  },
+  {
+    "type": "Support for the homeless",
+    "value": 1000
+  },
+  {
+    "type": "Free Food on Fridays",
+    "value": 1000
+  },
+  {
+    "type": "Disability Support",
+    "value": 1000
+  },
+  {
+    "type": "Driving Classes",
+    "value": 1000
+  },
+  {
+    "type": "Poverty Alleviation",
+    "value": 1000
+  },
+  {
+    "type": "Support for the Sick",
+    "value": 1000
   }
 ]
