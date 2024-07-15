@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { IoMenu } from "react-icons/io5";

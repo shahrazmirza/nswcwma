@@ -1,14 +1,14 @@
 import React from "react";
 import Whatsapp from "../Components/Whatsapp";
 import Footer from "../Components/Footer";
-import NavMenu from "../Components/NavMenu";
+import Navbar from "../Components/Navbar";
 import Image from "next/image";
 import ScrollToTop from "../Components/ScrollToTop";
 
 function About() {
   return (
     <div>
-      <NavMenu />
+      <Navbar />
       <ScrollToTop />
       <Whatsapp />
       <div className="grid grid-cols-2 bg-gray-800 justify-center items-center">

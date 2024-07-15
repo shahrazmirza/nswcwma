@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Whatsapp from "../Components/Whatsapp";
 import Footer from "../Components/Footer";
-import NavMenu from "../Components/NavMenu";
+import Navbar from "../Components/Navbar";
 import data from "../Data/Events.json";
 import { FaCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
@@ -22,7 +22,7 @@ function Events() {
   }, []);
   return (
     <div className="bg-gray-800 text-gray-400">
-      <NavMenu />
+      <Navbar />
       <ScrollToTop />
       <Whatsapp />
       <Container>

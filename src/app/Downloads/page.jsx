@@ -1,14 +1,14 @@
 import React from "react";
 import Whatsapp from "../Components/Whatsapp";
 import Footer from "../Components/Footer";
-import NavMenu from "../Components/NavMenu";
+import Navbar from "../Components/Navbar";
 import ScrollToTop from "../Components/ScrollToTop";
 import AnnualReport from "../Components/AnnualReport";
 
 function Downloads() {
   return (
     <div>
-      <NavMenu />
+      <Navbar />
       <ScrollToTop />
       <Whatsapp />
       <AnnualReport />
