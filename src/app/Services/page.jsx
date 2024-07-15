@@ -18,7 +18,7 @@ function Services() {
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Support for the homeless
             </h1>
-            <h2 className="md:font-thin font-medium md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2 className="font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               The NSW Central West Muslim Association (NSWCWMA) primarily
               focuses on providing assistance to homeless people in the NSW
               Central West Region, including migrants and individuals from
@@ -64,7 +64,7 @@ function Services() {
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Free Food on Fridays
             </h1>
-            <h2 className="md:font-thin font-medium md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2 className="font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               Every Friday afternoon, NSWCWMA offers free lunch to the
               community. This initiative aims to support those in need and
               foster a sense of community. By providing nutritious meals,
@@ -93,7 +93,7 @@ function Services() {
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Disability Support
             </h1>
-            <h2 className="md:font-thin font-medium md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2 className="font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               NSWCWMA provides various forms of assistance to individuals with
               disabilities to help them excel in life. This includes the
               provision of supportive equipment tailored to individual needs and
@@ -137,7 +137,7 @@ function Services() {
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Driving Classes
             </h1>
-            <h2 className="md:font-thin font-medium md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2 className="font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               Affordable driving classes are available for members of the CALD
               community and migrants. These classes aim to empower individuals
               with the skills needed for independence and mobility. By offering
@@ -166,7 +166,7 @@ function Services() {
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Poverty Alleviation
             </h1>
-            <h2 className="md:font-thin font-medium md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2 className="font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               NSWCWMA is committed to fighting poverty. They offer support to
               individuals struggling with poverty in their daily lives, helping
               them to overcome financial hardships and improve their quality of
@@ -210,7 +210,7 @@ function Services() {
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Support for the Sick
             </h1>
-            <h2 className="md:font-thin font-medium md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2 className="font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               NSWCWMA supports community members who are suffering from illness
               and fighting poverty. This assistance can be financial or through
               help with daily life activities, ensuring that sick individuals

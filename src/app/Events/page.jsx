@@ -26,10 +26,10 @@ function Events() {
       <ScrollToTop />
       <Whatsapp />
       <Container>
-        <div className="py-10">
+        <div className="py-10 md:p-0 p-5">
           {items.map((item) => (
             <div key={item.id}>
-              <h1 className="text-3xl font-medium tracking-widest text-white">
+              <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
                 {item.title}
               </h1>{" "}
               <div className="flex items-center text-sm font-semibold gap-1 py-5">
@@ -45,7 +45,9 @@ function Events() {
                   className=""
                 />
               </Link>
-              <p className="py-5">{item.paragraph1}</p>
+              <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+                {item.paragraph1}
+              </p>
               <div className="flex text-white text-sm font-semibold gap-1">
                 <Link
                   href={item.href}

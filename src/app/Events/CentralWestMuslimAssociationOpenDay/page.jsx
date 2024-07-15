@@ -31,13 +31,13 @@ function CentralWestMuslimAssociationOpenDay() {
       <ScrollToTop />
       <Whatsapp />
       <Container>
-        <div className="py-10 grid grid-cols-4 gap-10">
+        <div className="py-10 grid md:grid-cols-4 grid-cols-3 gap-10 md:px-0 px-5">
           <div className="col-span-3">
             {items
               .filter((item) => item.title === filterInclude)
               .map((item) => (
                 <div key={item.id}>
-                  <h1 className="text-3xl font-medium tracking-widest text-white">
+                  <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
                     {item.title}
                   </h1>{" "}
                   <div className="flex items-center text-sm font-semibold gap-1 py-5">
@@ -83,21 +83,37 @@ function CentralWestMuslimAssociationOpenDay() {
                     />
                   </Link>
                   <div className="pt-5">
-                    <p className="pb-5">{item.paragraph1}</p>
-                    <p className="pb-5">{item.paragraph2}</p>
-                    <p className="pb-5">{item.paragraph3}</p>
-                    <p className="pb-5">{item.paragraph4}</p>
-                    <p className="pb-5">{item.paragraph5}</p>
-                    <p className="pb-5">{item.paragraph6}</p>
-                    <p className="pb-5">{item.paragraph7}</p>
-                    <p className="pb-5">{item.paragraph8}</p>
+                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                      {item.paragraph1}
+                    </p>
+                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                      {item.paragraph2}
+                    </p>
+                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                      {item.paragraph3}
+                    </p>
+                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                      {item.paragraph4}
+                    </p>
+                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                      {item.paragraph5}
+                    </p>
+                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                      {item.paragraph6}
+                    </p>
+                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                      {item.paragraph7}
+                    </p>
+                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                      {item.paragraph8}
+                    </p>
                   </div>
-                  <div className="border-t-1 border-gray-400 my-10"></div>
+                  <div className="md:border-t-1 md:border-gray-400 md:my-10"></div>
                 </div>
               ))}
           </div>
-          <div className="... flex flex-col gap-10">
-            <h1 className="text-3xl font-medium tracking-widest text-white">
+          <div className="md:... md:flex md:flex-col gap-10 grid grid-cols-1 md:w-fit w-screen md:px-0 pr-10">
+            <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Recent Posts
             </h1>
             {items
