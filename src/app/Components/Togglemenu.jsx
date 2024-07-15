@@ -69,7 +69,7 @@ function Togglemenu() {
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
                     className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
-                    href="/Ramadan"
+                    href="/Services"
                   >
                     Services
                   </NavigationMenu.Link>
@@ -78,7 +78,7 @@ function Togglemenu() {
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
                     className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
-                    href="/Appeals"
+                    href="/Events"
                   >
                     Events
                   </NavigationMenu.Link>
@@ -87,7 +87,7 @@ function Togglemenu() {
                 <NavigationMenu.Item>
                   <NavigationMenu.Link
                     className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
-                    href="/Projects"
+                    href="/Downloads"
                   >
                     Downloads
                   </NavigationMenu.Link>
