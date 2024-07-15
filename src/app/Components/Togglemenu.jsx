@@ -7,7 +7,16 @@ import { IoMenu } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 
 function Togglemenu() {
-  const [items, setItems] = useState([]);
+  const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    const pathname = window.location.pathname;
+    setActiveLink(pathname);
+  }, []);
+
+  const handleLinkClick = (href) => {
+    setActiveLink(href);
+  };
 
   const [showDiv, setShowDiv] = useState(false);
 
@@ -33,7 +42,7 @@ function Togglemenu() {
           </Link>
         </div>
         <button
-          className="flex text-gray-800 bg-gray-100 justify-center w-12 h-16 pt-6"
+          className="flex text-gray-800 bg-gray-100 justify-center w-12 h-14 pt-6"
           onClick={toggleDiv}
         >
           {showDiv ? (
@@ -44,65 +53,75 @@ function Togglemenu() {
         </button>
       </div>
       {showDiv && (
-        <div className="bg-gray-100 px-5 py-2 h-screen">
-          <div>
-            <NavigationMenu.Root>
-              <NavigationMenu.List className="flex flex-col gap-2 w-full justify-center items-start">
-                <NavigationMenu.Item>
-                  <NavigationMenu.Link
-                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
-                    href="/"
-                  >
-                    Home
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-
-                <NavigationMenu.Item>
-                  <NavigationMenu.Link
-                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
-                    href="/About"
-                  >
-                    About
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-
-                <NavigationMenu.Item>
-                  <NavigationMenu.Link
-                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
-                    href="/Services"
-                  >
-                    Services
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-
-                <NavigationMenu.Item>
-                  <NavigationMenu.Link
-                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
-                    href="/Events"
-                  >
-                    Events
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-
-                <NavigationMenu.Item>
-                  <NavigationMenu.Link
-                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
-                    href="/Downloads"
-                  >
-                    Downloads
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-                <NavigationMenu.Item>
-                  <NavigationMenu.Link
-                    className="uppercase md:text-3xl text-xl md:font-medium font-medium md:tracking-wide text-black border-b-1 border-black"
-                    href="/Contacts"
-                  >
-                    Contacts
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-              </NavigationMenu.List>
-            </NavigationMenu.Root>
-          </div>
+        <div className="border border-red-500">
+          <ul className="flex flex-col">
+            <Link
+              className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
+                activeLink === "/"
+                  ? "bg-neutral-800 text-red-500 font-thin"
+                  : "bg-gray-100"
+              }`}
+              onClick={() => handleLinkClick("/")}
+              href="/"
+            >
+              Home
+            </Link>
+            <Link
+              className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
+                activeLink === "/About"
+                  ? "bg-neutral-800 text-red-500 font-thin"
+                  : "bg-gray-100"
+              }`}
+              onClick={() => handleLinkClick("/")}
+              href="/About"
+            >
+              About
+            </Link>
+            <Link
+              className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
+                activeLink === "/Services"
+                  ? "bg-neutral-800 text-red-500 font-thin"
+                  : "bg-gray-100"
+              }`}
+              onClick={() => handleLinkClick("/")}
+              href="/Services"
+            >
+              Services
+            </Link>
+            <Link
+              className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
+                activeLink === "/Events"
+                  ? "bg-neutral-800 text-red-500 font-thin"
+                  : "bg-gray-100"
+              }`}
+              onClick={() => handleLinkClick("/")}
+              href="/Events"
+            >
+              Events
+            </Link>
+            <Link
+              className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
+                activeLink === "/Downloads"
+                  ? "bg-neutral-800 text-red-500 font-thin"
+                  : "bg-gray-100"
+              }`}
+              onClick={() => handleLinkClick("/")}
+              href="/Downloads"
+            >
+              Downloads
+            </Link>
+            <Link
+              className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
+                activeLink === "/Contacts"
+                  ? "bg-neutral-800 text-red-500 font-thin"
+                  : "bg-gray-100"
+              }`}
+              onClick={() => handleLinkClick("/")}
+              href="/Contacts"
+            >
+              Contacts
+            </Link>
+          </ul>
         </div>
       )}
     </div>
