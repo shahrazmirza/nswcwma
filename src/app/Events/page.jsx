@@ -45,7 +45,7 @@ function Events() {
                   className=""
                 />
               </Link>
-              <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+              <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
                 {item.paragraph1}
               </p>
               <div className="flex text-white text-sm font-semibold gap-1">
