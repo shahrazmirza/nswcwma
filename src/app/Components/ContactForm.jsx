@@ -105,7 +105,7 @@ export const ContactForm = () => {
               type="text"
               placeholder="Message*"
               required
-              className="p-2 mr-3 border-b border-gray-400 focus:outline-none text-xs font-semibold h-32 resize-none w-full"
+              className="p-2 mr-3 border-b border-gray-400 focus:outline-none text-xs font-semibold h-32 resize-none"
             ></textarea>
 
             <div className="flex justify-end">
