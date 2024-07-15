@@ -83,28 +83,28 @@ function SummerHolidayYouthProgram() {
                     />
                   </Link>
                   <div className="pt-5">
-                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
                       {item.paragraph1}
                     </p>
-                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
                       {item.paragraph2}
                     </p>
-                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
                       {item.paragraph3}
                     </p>
-                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
                       {item.paragraph4}
                     </p>
-                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
                       {item.paragraph5}
                     </p>
-                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
                       {item.paragraph6}
                     </p>
-                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
                       {item.paragraph7}
                     </p>
-                    <p className="font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
                       {item.paragraph8}
                     </p>
                   </div>
