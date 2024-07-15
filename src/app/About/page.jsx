@@ -104,7 +104,7 @@ function About() {
           </div> */}
         </div>
         <Image
-          src="/assets/images/about1.jpg"
+          src="/assets/images/about3.jpg"
           alt="Hero Image"
           width="2000"
           height="1000"
