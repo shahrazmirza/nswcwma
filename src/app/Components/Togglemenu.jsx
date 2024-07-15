@@ -41,13 +41,13 @@ function Togglemenu() {
           </Link>
         </div>
         <button
-          className="flex text-gray-800 bg-gray-100 justify-center w-12 h-14 pt-6"
+          className="flex text-gray-800 bg-gray-100 justify-center items-center w-12 h-14"
           onClick={toggleDiv}
         >
           {showDiv ? (
-            <RxCross1 className="text-red-500" />
+            <RxCross1 className="text-red-500 w-5 h-5" />
           ) : (
-            <IoMenu className="text-red-500" />
+            <IoMenu className="text-red-500 w-6 h-6" />
           )}
         </button>
       </div>
