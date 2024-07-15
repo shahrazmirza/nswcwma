@@ -21,10 +21,10 @@ function Team() {
           />
 
           <div className="border border-gray-500 text-gray-800 text-center p-5 flex flex-col md:gap-1 gap-2">
-            <h1 className="uppercase text-sm font-semibold tracking-widest">
+            <h1 className="uppercase md:text-sm text-lg font-bold tracking-wide">
               mahmoud amin
             </h1>
-            <h2 className="uppercase text-sm font-normal tracking-widest">
+            <h2 className="uppercase md:text-sm text-base font-normal tracking-wide">
               president
             </h2>
           </div>
@@ -39,10 +39,10 @@ function Team() {
             className="relative aspect-ratio md:py-10 md:p-0 p-10"
           />
           <div className="border border-gray-500 text-gray-800 text-center p-5 flex flex-col md:gap-1 gap-2">
-            <h1 className="uppercase text-sm font-semibold tracking-widest">
+            <h1 className="uppercase md:text-sm text-lg font-bold tracking-wide">
               saad khan
             </h1>
-            <h2 className="uppercase text-sm font-normal tracking-widest">
+            <h2 className="uppercase md:text-sm text-base font-normal tracking-wide">
               vice president
             </h2>
           </div>
@@ -58,10 +58,10 @@ function Team() {
           />
 
           <div className="border border-gray-500 text-gray-800 text-center p-5 flex flex-col md:gap-1 gap-2">
-            <h1 className="uppercase text-sm font-semibold tracking-widest">
+            <h1 className="uppercase md:text-sm text-lg font-bold tracking-wide">
               awais
             </h1>
-            <h2 className="uppercase text-sm font-normal tracking-widest">
+            <h2 className="uppercase md:text-sm text-base font-normal tracking-wide">
               treasurer
             </h2>
           </div>
@@ -76,10 +76,10 @@ function Team() {
             className="relative aspect-ratio md:py-10 md:p-0 p-10"
           />
           <div className="border border-gray-500 text-gray-800 text-center p-5 flex flex-col md:gap-1 gap-2">
-            <h1 className="uppercase text-sm font-semibold tracking-widest">
+            <h1 className="uppercase md:text-sm text-lg font-bold tracking-wide">
               Samsuddin Ahmed
             </h1>
-            <h2 className="uppercase text-sm font-normal tracking-widest">
+            <h2 className="uppercase md:text-sm text-base font-normal tracking-wide">
               secretary
             </h2>
           </div>
