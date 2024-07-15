@@ -10,7 +10,7 @@ function About() {
           <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
             welcome to our site!
           </h1>
-          <h2 className="font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+          <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
             We focus on community wellbeing, poverty alleviation, assisting the
             sick, and disaster response, aiming to create a safe, healthy
             environment for all.
