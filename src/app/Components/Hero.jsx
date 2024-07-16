@@ -1,8 +1,6 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -12,17 +10,9 @@ function Hero() {
         alt="Hero Image"
         width="2000"
         height="1000"
-        className="relative aspect-ratio md:h-full object-cover min-h-72 w-screen"
+        className="relative aspect-ratio md:h-full object-cover min-h-72"
       />
-      <motion.div
-        variants={{
-          initial: { y: 50, opacity: 0 },
-          animate: { y: 0, opacity: 1, transition: { duration: 0.5 } },
-        }}
-        initial="initial"
-        animate="animate"
-        className="absolute flex flex-col items-center justify-center"
-      >
+      <div className="absolute flex flex-col items-center justify-center">
         <div className="md:p-10 py-8 w-fit text-center text-white">
           <div className="flex flex-col border md:p-10 px-10 py-6 gap-5">
             <h1 className="md:text-4xl text-2xl md:font-medium font-semibold md:tracking-widest">
@@ -38,7 +28,7 @@ function Hero() {
             DONATE NOW
           </button>
         </Link>
-      </motion.div>
+      </div>
     </div>
   );
 }

@@ -1,105 +1,30 @@
-"use client";
 import { Container } from "@radix-ui/themes";
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { MdCopyright } from "react-icons/md";
-import { motion, useAnimation, useInView } from "framer-motion";
 
 function Footer() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const fadeControls = useAnimation();
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    if (scrollY > window.innerHeight / 16 || isInView) {
-      fadeControls.start("animate");
-    }
-  }, [scrollY, isInView]);
-
   return (
     <>
       <div className="bg-gray-800 text-white py-20">
         <Container>
           <div className="flex md:flex-row flex-col gap-10 md:p-0 p-5">
             <div className="border-l-[1px] border-gray-300 pl-10 pr-20">
-              <motion.h1
-                ref={ref}
-                variants={{
-                  initial: { y: 50, opacity: 0 },
-                  animate: {
-                    y: 0,
-                    opacity: 1,
-                    transition: { duration: 0.5, delay: 1.0 },
-                  },
-                }}
-                initial="initial"
-                animate={fadeControls}
-                className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8"
-              >
+              <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 GET IN TOUCH
-              </motion.h1>
-              <motion.div
-                ref={ref}
-                variants={{
-                  initial: { y: 50, opacity: 0 },
-                  animate: {
-                    y: 0,
-                    opacity: 1,
-                    transition: { duration: 0.5, delay: 0.5 },
-                  },
-                }}
-                initial="initial"
-                animate={fadeControls}
-                className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400"
-              >
+              </h1>
+              <div className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400">
                 <h2>71A TAMWORTH STREET, DUBBO NSW 2830</h2>
                 <h2>PHONE: +61 478 684 716</h2>
                 <h2>EMAIL: INFO@NSWCWMA.ORG.AU</h2>
-              </motion.div>
+              </div>
             </div>
             <div className="border-l-[1px] border-gray-300 pl-10">
-              <motion.h1
-                ref={ref}
-                variants={{
-                  initial: { y: 50, opacity: 0 },
-                  animate: {
-                    y: 0,
-                    opacity: 1,
-                    transition: { duration: 0.5, delay: 1.0 },
-                  },
-                }}
-                initial="initial"
-                animate={fadeControls}
-                className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8"
-              >
+              <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 FOLLOW US
-              </motion.h1>
-              <motion.div
-                ref={ref}
-                variants={{
-                  initial: { x: 150, opacity: 0 },
-                  animate: {
-                    x: 0,
-                    opacity: 1,
-                    transition: { duration: 0.5, delay: 1.5 },
-                  },
-                }}
-                initial="initial"
-                animate={fadeControls}
-                className="pr-1"
-              >
+              </h1>
+              <div className="pr-1">
                 <Link
                   href="https://www.facebook.com/dubbomuslims"
                   target="_blank"
@@ -107,7 +32,7 @@ function Footer() {
                 >
                   <FaFacebookF />
                 </Link>
-              </motion.div>
+              </div>
             </div>
           </div>
         </Container>
