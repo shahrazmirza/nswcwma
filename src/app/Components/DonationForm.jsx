@@ -3,20 +3,15 @@ import React, { useState, useEffect } from "react";
 import { Container } from "@radix-ui/themes";
 import data from "../Data/DonationType.json";
 import { Input, Radio, RadioGroup } from "@nextui-org/react";
-import Link from "next/link";
+import { toast } from "react-toastify";
+import axios from "axios";
 
 function DonationForm() {
   const [donationTypes, setDonationTypes] = useState([]);
   const [selectedDonationType, setSelectedDonationType] = useState("");
   const [filteredItems, setFilteredItems] = useState([]);
-  const [customAmount, setCustomAmount] = useState("");
-
-  const handleChange = (event) => {
-    const allowedChars = /^[0-9]+$/;
-    if (event.target.value.match(allowedChars)) {
-      setCustomAmount(event.target.value);
-    }
-  };
+  const [selectedAmount, setSelectedAmount] = useState(0);
+  const [customAmountInputValue, setCustomAmountInputValue] = useState("");
 
   useEffect(() => {
     const uniqueTypes = [...new Set(data.map((item) => item.type))];
@@ -27,6 +22,34 @@ function DonationForm() {
     const filtered = data.filter((item) => item.type === selectedDonationType);
     setFilteredItems(filtered);
   }, [selectedDonationType]);
+
+  const handleCheckout = async () => {
+    try {
+      let amount = selectedAmount;
+
+      if (selectedDonationType === "") {
+        return toast.error("Please choose the donation type");
+      }
+
+      if (amount === 0 && customAmountInputValue.trim() !== "") {
+        amount = parseFloat(customAmountInputValue.trim());
+      }
+
+      if (amount === 0) {
+        return toast.error("Please select or enter a donation amount");
+      }
+
+      const response = await axios.post("/api/checkout_sessions", {
+        amount: amount,
+        donationType: selectedDonationType,
+      });
+      console.log(response);
+      window.location = response.data.sessionURL;
+    } catch (error) {
+      console.error("Error creating checkout session:", error);
+      toast.error(error.message);
+    }
+  };
 
   return (
     <Container>
@@ -58,6 +81,7 @@ function DonationForm() {
                     <Radio
                       key={index}
                       value={item.value}
+                      onChange={() => setSelectedAmount(parseFloat(item.value))}
                       size="md"
                       className=""
                     >
@@ -74,16 +98,18 @@ function DonationForm() {
                     onClear={() => console.log("input cleared")}
                     className="max-w-xs w-44"
                     size="xs"
+                    onChange={(e) => setCustomAmountInputValue(e.target.value)}
                   />
                 </div>
               )}
             </ul>
           </RadioGroup>
-          <Link href="/">
-            <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm md:font-medium font-semibold transition delay-100 w-32">
-              DONATE
-            </button>
-          </Link>
+          <button
+            className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm md:font-medium font-semibold transition delay-100 w-32"
+            onClick={handleCheckout}
+          >
+            DONATE
+          </button>
         </div>
       </div>
     </Container>

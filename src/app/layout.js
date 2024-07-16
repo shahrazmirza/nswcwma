@@ -3,6 +3,7 @@ import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import { NextUIProvider } from "@nextui-org/react";
+import { ToastContainer, toast } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Theme>
-          <NextUIProvider>{children}</NextUIProvider>
+          <NextUIProvider>
+            {children}
+            <ToastContainer />
+          </NextUIProvider>
         </Theme>
       </body>
     </html>
