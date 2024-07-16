@@ -74,9 +74,9 @@ function DonationForm() {
           </select>
 
           <RadioGroup>
-            <ul className="pb-5 flex flex-col">
+            <ul className="pb-5 md:py-5 flex flex-col">
               {filteredItems.length > 0 && (
-                <div className="flex md:flex-row flex-col items-start gap-5">
+                <div className="flex md:flex-row flex-col items-start md:gap-5 gap-3">
                   {filteredItems.map((item, index) => (
                     <Radio
                       key={index}
