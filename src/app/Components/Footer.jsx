@@ -1,7 +1,7 @@
 "use client";
 import { Container } from "@radix-ui/themes";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { MdCopyright } from "react-icons/md";
 import { motion, useAnimation, useInView } from "framer-motion";
@@ -10,12 +10,24 @@ function Footer() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const fadeControls = useAnimation();
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    if (isInView) {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (scrollY > window.innerHeight / 16 || isInView) {
       fadeControls.start("animate");
     }
-  }, [isInView]);
+  }, [scrollY, isInView]);
+
   return (
     <>
       <div className="bg-gray-800 text-white py-20">
@@ -29,7 +41,7 @@ function Footer() {
                   animate: {
                     y: 0,
                     opacity: 1,
-                    transition: { duration: 0.5 },
+                    transition: { duration: 0.5, delay: 1.0 },
                   },
                 }}
                 initial="initial"

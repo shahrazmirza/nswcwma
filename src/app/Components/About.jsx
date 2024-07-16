@@ -1,19 +1,30 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 function About() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const fadeControls = useAnimation();
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    if (isInView) {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (scrollY > window.innerHeight / 16 || isInView) {
       fadeControls.start("animate");
     }
-  }, [isInView]);
+  }, [scrollY, isInView]);
 
   return (
     <>
