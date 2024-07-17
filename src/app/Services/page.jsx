@@ -29,7 +29,7 @@ function Services() {
               suburbs based on eligibility criteria and circumstances.
             </h2>
 
-            <div className="flex justify-between text-white md:text-sm text-xs font-medium transition delay-100">
+            <div className="flex justify-between text-white text-sm font-semibold transition delay-100">
               <Link href="/Donation">
                 <button className="bg-red-500 hover:bg-red-600 px-4 py-2">
                   DONATE
@@ -73,9 +73,9 @@ function Services() {
               community members.
             </h2>
 
-            <div className="flex justify-between text-white text-sm font-semibold">
+            <div className="flex justify-between text-white text-sm font-semibold transition delay-100">
               <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2">
                   DONATE
                 </button>
               </Link>
@@ -102,9 +102,9 @@ function Services() {
               independence and enhancing their quality of life.
             </h2>
 
-            <div className="flex justify-between text-white text-sm font-semibold">
+            <div className="flex justify-between text-white text-sm font-semibold transition delay-100">
               <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2">
                   DONATE
                 </button>
               </Link>
@@ -146,9 +146,9 @@ function Services() {
               social engagement.
             </h2>
 
-            <div className="flex justify-between text-white text-sm font-semibold">
+            <div className="flex justify-between text-white text-sm font-semibold transition delay-100">
               <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2">
                   DONATE
                 </button>
               </Link>
@@ -175,9 +175,9 @@ function Services() {
               and self-sufficiency.
             </h2>
 
-            <div className="flex justify-between text-white text-sm font-semibold">
+            <div className="flex justify-between text-white text-sm font-semibold transition delay-100">
               <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2">
                   DONATE
                 </button>
               </Link>
@@ -219,9 +219,9 @@ function Services() {
               individuals to focus on recovery and well-being.
             </h2>
 
-            <div className="flex justify-between text-white text-sm font-semibold">
+            <div className="flex justify-between text-white text-sm font-semibold transition delay-100">
               <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2">
                   DONATE
                 </button>
               </Link>
