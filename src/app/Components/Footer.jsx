@@ -11,7 +11,7 @@ function Footer() {
       <div className="bg-gray-800 text-white py-20">
         <Container>
           <div className="flex md:flex-row flex-col gap-10 md:p-0 p-5">
-            <div className="border-l-[1px] border-gray-300 pl-10 pr-20">
+            <div className="border-l-[1px] border-gray-300 pl-10 md:pr-20 pr-5">
               <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 GET IN TOUCH
               </h1>
@@ -59,11 +59,16 @@ function Footer() {
           </div>
         </Container>
       </div>
-      <div className="bg-white text-center">
+      <div className="bg-white text-center py-10">
         <Container>
-          <h2 className="uppercase py-10 text-xs font-bold tracking-widest flex gap-1 justify-center items-center">
-            NSW Central West Muslim Association <MdCopyright /> 2024
-          </h2>
+          <div className="flex flex-col gap-2">
+            <h2 className="uppercase text-xs font-bold tracking-widest flex gap-1 justify-center items-center">
+              NSW Central West Muslim Association <MdCopyright /> 2024
+            </h2>
+            <h2 className="uppercase text-xs font-bold tracking-widest flex gap-1 justify-center items-center">
+              ABN: 76 977 073 780
+            </h2>
+          </div>
         </Container>
       </div>
     </>
