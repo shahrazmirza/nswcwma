@@ -26,7 +26,7 @@ function Footer() {
               </h1>
               <div className="pr-1">
                 <Link
-                  href="https://www.facebook.com/dubbomuslims"
+                  href="https://www.facebook.com/profile.php?id=100090621588007&sk=about"
                   target="_blank"
                   className="font-bold text-white bg-red-500 hover:bg-red-600 transition delay-100 flex items-center justify-center font-mono h-10 w-10 p-1"
                 >
