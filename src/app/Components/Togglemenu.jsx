@@ -25,7 +25,7 @@ function Togglemenu() {
   };
 
   return (
-    <div className="z-10">
+    <div className="z-10 ">
       <div className="flex justify-between h-[70px] items-center py-7 bg-gray-800 text-white">
         <div className="flex justify-center items-center p-5 gap-4">
           <Link href="/">

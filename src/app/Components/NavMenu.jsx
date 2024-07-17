@@ -32,7 +32,7 @@ const NavMenu = () => {
   }, []);
 
   return (
-    <div className="bg-gray-800 z-10 w-screen h-[96px]">
+    <div className="bg-gray-800 z-10 w-screen h-[96px] shadow-lg">
       <Container
         className={`fixed top-2 left-0 right-0 transition-transform transform ${
           isScrolled ? "-translate-y-full" : "translate-y-0"
