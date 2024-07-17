@@ -43,7 +43,7 @@ function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="flex md:flex-col flex-row justify-between md:justify-center items-center gap-5">
+            <div className="flex md:flex-col flex-row justify-between md:justify-center items-center gap-5 md:px-0 px-10">
               <Link href="/">
                 <Image
                   src="/assets/images/logo.png"
