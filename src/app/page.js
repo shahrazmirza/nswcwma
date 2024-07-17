@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import Whatsapp from "./Components/Whatsapp";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
+import ServicesBanner from "./Components/ServicesBanner";
 import Team from "./Components/Team";
 import ScrollToTop from "./Components/ScrollToTop";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Whatsapp />
       <Hero />
       <About />
+      <ServicesBanner />
       <Team />
       <Footer />
     </div>
