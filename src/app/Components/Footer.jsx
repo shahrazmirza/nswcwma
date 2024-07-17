@@ -15,8 +15,11 @@ function Footer() {
               <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 GET IN TOUCH
               </h1>
-              <div className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400">
-                <h2>71A TAMWORTH STREET, DUBBO NSW 2830</h2>
+              <div className="flex flex-col md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400">
+                <div className="flex flex-col gap-1">
+                  <h2>71A TAMWORTH STREET,</h2>
+                  <h2>DUBBO NSW 2830</h2>
+                </div>
                 <h2>PHONE: +61 478 684 716</h2>
                 <h2>EMAIL: INFO@NSWCWMA.ORG.AU</h2>
               </div>
