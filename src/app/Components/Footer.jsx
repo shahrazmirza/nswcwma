@@ -21,6 +21,14 @@ function Footer() {
                 <h2>EMAIL: INFO@NSWCWMA.ORG.AU</h2>
               </div>
             </div>
+            <div className="border-l-[1px] border-gray-300 pl-10 md:pr-20 pr-5">
+              <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
+                business hours
+              </h1>
+              <div className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400">
+                <h2>Mon-Fri: 9am-5pm</h2>
+              </div>
+            </div>
             <div className="border-l-[1px] border-gray-300 pl-10">
               <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 FOLLOW US
