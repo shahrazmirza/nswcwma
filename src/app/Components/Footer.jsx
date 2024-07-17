@@ -1,4 +1,5 @@
 import { Container } from "@radix-ui/themes";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
@@ -34,6 +35,27 @@ function Footer() {
                 </Link>
               </div>
             </div>
+          </div>
+        </Container>
+      </div>
+      <div className="bg-gray-300 text-center">
+        <Container>
+          <div className="bg-gray-300 flex md:flex-row flex-col justify-start items-center text-start gap-5 py-5 md:px-10 px-5">
+            <Image
+              src="/assets/images/aboriginal-flag.png"
+              alt="Aboriginal Flag Image"
+              width="80"
+              height="80"
+              className=""
+            />
+            <p className="text-xs font-medium tracking-widest">
+              NSW Central West Muslim Association acknowledges the First Peoples
+              of Australia as the traditional custodians of the land on which we
+              work. We acknowledge their cultures are living ones, which relate
+              to their ongoing connection to all things living and non-living on
+              land, sea and sky. We pay our respects to their Elders past and
+              present. May the children of today lead us to a brighter tomorrow.
+            </p>
           </div>
         </Container>
       </div>
