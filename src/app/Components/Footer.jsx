@@ -76,7 +76,7 @@ function Footer() {
               height="80"
               className=""
             />
-            <p className="text-xs font-medium tracking-widest">
+            <p className="text-xs font-medium tracking-widest text-center md:text-start">
               NSW Central West Muslim Association acknowledges the First Peoples
               of Australia as the traditional custodians of the land on which we
               work. We acknowledge their cultures are living ones, which relate
