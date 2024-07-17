@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { IoMenu } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
+import Image from "next/image";
 
 function Togglemenu() {
   const [activeLink, setActiveLink] = useState("");
@@ -25,17 +26,17 @@ function Togglemenu() {
 
   return (
     <div className="z-10">
-      <div className="flex justify-between h-10 items-center py-7 bg-gray-800 text-white">
-        <div className="flex justify-center items-center p-5 gap-2">
-          {/* <Link href="/">
+      <div className="flex justify-between h-[70px] items-center py-7 bg-gray-800 text-white">
+        <div className="flex justify-center items-center p-5 gap-4">
+          <Link href="/">
             <Image
-              src="/assets/logo.png"
+              src="/assets/images/logo.png"
               alt="Logo"
-              width={30}
-              height={30}
+              width={54}
+              height={54}
               className=""
             />
-          </Link> */}
+          </Link>
           <Link href="/">
             <h1 className="text-sm font-semibold">
               NSW Central West Muslim Association
@@ -43,7 +44,7 @@ function Togglemenu() {
           </Link>
         </div>
         <button
-          className="flex text-gray-800 bg-gray-100 justify-center items-center w-12 h-14"
+          className="flex text-gray-800 bg-gray-100 justify-center items-center w-12 h-[70px]"
           onClick={toggleDiv}
         >
           {showDiv ? (
