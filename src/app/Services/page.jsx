@@ -29,9 +29,9 @@ function Services() {
               suburbs based on eligibility criteria and circumstances.
             </h2>
 
-            <div className="flex justify-between text-white text-sm font-semibold">
+            <div className="flex justify-between text-white md:text-sm text-xs font-medium transition delay-100">
               <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2">
                   DONATE
                 </button>
               </Link>
@@ -39,7 +39,7 @@ function Services() {
                 href="/Application"
                 className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
               >
-                apply for assistance
+                apply
               </Link>
             </div>
           </div>
@@ -83,7 +83,7 @@ function Services() {
                 href="/Application"
                 className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
               >
-                apply for assistance
+                apply
               </Link>
             </div>
           </div>
@@ -112,7 +112,7 @@ function Services() {
                 href="/Application"
                 className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
               >
-                apply for assistance
+                apply
               </Link>
             </div>
           </div>
@@ -156,7 +156,7 @@ function Services() {
                 href="/Application"
                 className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
               >
-                apply for assistance
+                apply
               </Link>
             </div>
           </div>
@@ -185,7 +185,7 @@ function Services() {
                 href="/Application"
                 className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
               >
-                apply for assistance
+                apply
               </Link>
             </div>
           </div>
@@ -229,7 +229,7 @@ function Services() {
                 href="/Application"
                 className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
               >
-                apply for assistance
+                apply
               </Link>
             </div>
           </div>
