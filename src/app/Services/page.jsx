@@ -29,19 +29,19 @@ function Services() {
               suburbs based on eligibility criteria and circumstances.
             </h2>
 
-            {/* <div className="flex text-white text-sm font-semibold gap-1">
-            <Link
-              href="/About"
-              className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
-            >
-              read more
-            </Link>
-          </div> */}
-            <Link href="/Donation">
-              <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm md:font-medium font-semibold transition delay-100">
-                DONATE NOW
-              </button>
-            </Link>
+            <div className="flex justify-between text-white text-sm font-semibold">
+              <Link href="/Donation">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                  DONATE
+                </button>
+              </Link>
+              <Link
+                href="/Application"
+                className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
+              >
+                apply for assistance
+              </Link>
+            </div>
           </div>
           <Image
             src="/assets/images/about3.jpg"
@@ -73,19 +73,19 @@ function Services() {
               community members.
             </h2>
 
-            {/* <div className="flex text-white text-sm font-semibold gap-1">
-            <Link
-              href="/About"
-              className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
-            >
-              read more
-            </Link>
-          </div> */}
-            <Link href="/Donation">
-              <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm md:font-medium font-semibold transition delay-100">
-                DONATE NOW
-              </button>
-            </Link>
+            <div className="flex justify-between text-white text-sm font-semibold">
+              <Link href="/Donation">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                  DONATE
+                </button>
+              </Link>
+              <Link
+                href="/Application"
+                className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
+              >
+                apply for assistance
+              </Link>
+            </div>
           </div>
         </div>
         <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
@@ -102,19 +102,19 @@ function Services() {
               independence and enhancing their quality of life.
             </h2>
 
-            {/* <div className="flex text-white text-sm font-semibold gap-1">
-            <Link
-              href="/About"
-              className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
-            >
-              read more
-            </Link>
-          </div> */}
-            <Link href="/Donation">
-              <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm md:font-medium font-semibold transition delay-100">
-                DONATE NOW
-              </button>
-            </Link>
+            <div className="flex justify-between text-white text-sm font-semibold">
+              <Link href="/Donation">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                  DONATE
+                </button>
+              </Link>
+              <Link
+                href="/Application"
+                className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
+              >
+                apply for assistance
+              </Link>
+            </div>
           </div>
           <Image
             src="/assets/images/about3.jpg"
@@ -146,19 +146,19 @@ function Services() {
               social engagement.
             </h2>
 
-            {/* <div className="flex text-white text-sm font-semibold gap-1">
-            <Link
-              href="/About"
-              className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
-            >
-              read more
-            </Link>
-          </div> */}
-            <Link href="/Donation">
-              <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm md:font-medium font-semibold transition delay-100">
-                DONATE NOW
-              </button>
-            </Link>
+            <div className="flex justify-between text-white text-sm font-semibold">
+              <Link href="/Donation">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                  DONATE
+                </button>
+              </Link>
+              <Link
+                href="/Application"
+                className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
+              >
+                apply for assistance
+              </Link>
+            </div>
           </div>
         </div>
         <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
@@ -175,19 +175,19 @@ function Services() {
               and self-sufficiency.
             </h2>
 
-            {/* <div className="flex text-white text-sm font-semibold gap-1">
-            <Link
-              href="/About"
-              className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
-            >
-              read more
-            </Link>
-          </div> */}
-            <Link href="/Donation">
-              <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm md:font-medium font-semibold transition delay-100">
-                DONATE NOW
-              </button>
-            </Link>
+            <div className="flex justify-between text-white text-sm font-semibold">
+              <Link href="/Donation">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                  DONATE
+                </button>
+              </Link>
+              <Link
+                href="/Application"
+                className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
+              >
+                apply for assistance
+              </Link>
+            </div>
           </div>
           <Image
             src="/assets/images/about3.jpg"
@@ -219,19 +219,19 @@ function Services() {
               individuals to focus on recovery and well-being.
             </h2>
 
-            {/* <div className="flex text-white text-sm font-semibold gap-1">
-            <Link
-              href="/About"
-              className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
-            >
-              read more
-            </Link>
-          </div> */}
-            <Link href="/Donation">
-              <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm md:font-medium font-semibold transition delay-100">
-                DONATE NOW
-              </button>
-            </Link>
+            <div className="flex justify-between text-white text-sm font-semibold">
+              <Link href="/Donation">
+                <button className="bg-red-500 hover:bg-red-600 px-4 py-2 text-white text-sm md:font-medium font-semibold transition delay-100">
+                  DONATE
+                </button>
+              </Link>
+              <Link
+                href="/Application"
+                className="uppercase outline-white outline outline-1 px-4 py-2 hover:text-red-500 hover:outline-red-500"
+              >
+                apply for assistance
+              </Link>
+            </div>
           </div>
         </div>
       </>
