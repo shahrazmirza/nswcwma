@@ -98,7 +98,7 @@ export const ApplicationForm = () => {
     <Container>
       <div className="py-10 md:pl-0 pl-5">
         <h1 className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5">
-          Assistance Application Form
+          application for assistance
         </h1>
         <h2 className="pl-10 pr-5 capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
           Eligibility
