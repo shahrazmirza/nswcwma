@@ -32,7 +32,7 @@ const NavMenu = () => {
   }, []);
 
   return (
-    <div className="bg-gray-800 z-10 w-screen h-[96px] shadow-lg">
+    <div className="bg-gray-800 z-10 w-screen h-[86px] shadow-d">
       <Container
         className={`fixed top-2 left-0 right-0 transition-transform transform ${
           isScrolled ? "-translate-y-full" : "translate-y-0"
@@ -44,8 +44,8 @@ const NavMenu = () => {
               <Image
                 src="/assets/images/logo.png"
                 alt="Logo"
-                width="70"
-                height="70"
+                width="60"
+                height="60"
               />
             </Link>
             <Link href="/">
