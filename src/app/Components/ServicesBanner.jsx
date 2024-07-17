@@ -11,7 +11,7 @@ function ServicesBanner() {
   return (
     <div className="bg-gray-700 text-gray-300">
       <Container>
-        <div className="grid grid-cols-3 gap-12 p-10">
+        <div className="flex flex-col md:grid grid-cols-3 gap-12 p-10">
           <div className="flex justify-start items-center">
             <FaPeopleRoof className="text-6xl pr-8" />
 
