@@ -103,11 +103,11 @@ export const ApplicationForm = () => {
         <h2 className="pl-10 pr-5 capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
           Eligibility
         </h2>
-        <div>
+        <div className="pl-10 md:pr-0 pr-5">
           <select
             value={selectedGroup}
             onChange={(e) => setSelectedGroup(e.target.value)}
-            className="w-full ml-10 px-2 text-xs font-semibold text-gray-800 py-2 border rounded-md border-gray-400 bg-white"
+            className="w-full p-2 my-4 text-sm font-medium text-gray-500 border border-gray-500 hover:border-sky-700 rounded-md bg-white"
           >
             <option value="" disabled>
               Please Select Your Group
@@ -126,7 +126,7 @@ export const ApplicationForm = () => {
             </option>
           </select>
           {selectedGroup && (
-            <div className="pl-10 pr-5">
+            <div>
               {showAlert && (
                 <AlertOverlay message={alertMessage} onClose={closeAlert} />
               )}
@@ -242,14 +242,14 @@ export const ApplicationForm = () => {
                   className="p-2 border-b border-gray-400 focus:outline-none text-xs font-semibold h-10 resize-none"
                 ></textarea>
 
-                <label className="flex items-start text-gray-800 py-5 text-xs font-semibold">
+                <label className="flex items-start py-5 text-sm font-medium text-gray-800 bg-white">
                   <input
                     type="checkbox"
                     checked={consent}
                     onChange={(e) => setConsent(e.target.checked)}
                     required
                   />
-                  <p className="px-2">
+                  <p className="pl-2 -mt-1">
                     I hereby declare that the information provided is true and
                     correct to the best of my knowledge. I understand that
                     providing false information may result in the termination of
