@@ -43,7 +43,7 @@ const NavMenu = () => {
             <Link href="/">
               <Image
                 src="/assets/images/logo.png"
-                alt="Logo"
+                alt="NSWCWMA Logo"
                 width="60"
                 height="60"
               />

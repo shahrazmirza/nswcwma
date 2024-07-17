@@ -11,8 +11,8 @@ function Footer() {
       <div className="bg-gray-800 text-white py-20">
         <Container>
           <div className="flex md:flex-row flex-col gap-10 md:p-0 p-5">
-            <div className="border-l-[1px] border-gray-300 pl-10 md:pr-20 pr-5">
-              <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
+            <div className="border-l-[1px] border-gray-300 pl-10 md:pr-10 pr-5">
+              <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 GET IN TOUCH
               </h1>
               <div className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400">
@@ -21,16 +21,16 @@ function Footer() {
                 <h2>EMAIL: INFO@NSWCWMA.ORG.AU</h2>
               </div>
             </div>
-            <div className="border-l-[1px] border-gray-300 pl-10 md:pr-20 pr-5">
-              <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
+            <div className="border-l-[1px] border-gray-300 pl-10 md:pr-10 pr-5">
+              <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 business hours
               </h1>
               <div className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400">
                 <h2>Mon-Fri: 9am-5pm</h2>
               </div>
             </div>
-            <div className="border-l-[1px] border-gray-300 pl-10">
-              <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
+            <div className="border-l-[1px] border-gray-300 pl-10 md:pr-10 pr-5">
+              <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 FOLLOW US
               </h1>
               <div className="pr-1">
@@ -42,6 +42,26 @@ function Footer() {
                   <FaFacebookF />
                 </Link>
               </div>
+            </div>
+            <div className="flex md:flex-col flex-row justify-between md:justify-center items-center gap-5">
+              <Link href="/">
+                <Image
+                  src="/assets/images/logo.png"
+                  alt="NSWCWMA Logo"
+                  width="80"
+                  height="80"
+                  className=""
+                />
+              </Link>
+              <Link href="https://www.acnc.gov.au/charity/charities/2578be3f-e281-ee11-8179-00224893b0ed/profile">
+                <Image
+                  src="/assets/images/acnc-logo.png"
+                  alt="ACNC Logo"
+                  width="90"
+                  height="90"
+                  className=""
+                />
+              </Link>
             </div>
           </div>
         </Container>
