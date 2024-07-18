@@ -190,8 +190,8 @@ function Services() {
             </div>
           </div>
           <Image
-            src="/assets/images/about3.jpg"
-            alt="Hero Image"
+            src="/assets/images/povertyalleviation.jpg"
+            alt="Poverty Alleviation Image"
             width="2000"
             height="1000"
             className="relative aspect-ratio md:h-full object-cover min-h-60"
