@@ -113,16 +113,22 @@ export const ApplicationForm = () => {
               Please Select Your Group
             </option>
             <option className="text-black" value="Migrant">
+              Sick
+            </option>
+            <option className="text-black" value="Migrant">
               Migrant
+            </option>
+            <option className="text-black" value="Migrant">
+              Homeless
+            </option>
+            <option className="text-black" value="Individual with Disabilities">
+              Individual with Disabilities
             </option>
             <option
               className="text-black"
               value="Culturally and Linguistically Diverse (CALD) Background"
             >
               Culturally and Linguistically Diverse (CALD) Background
-            </option>
-            <option className="text-black" value="Individual with Disabilities">
-              Individual with Disabilities
             </option>
           </select>
           {selectedGroup && (
