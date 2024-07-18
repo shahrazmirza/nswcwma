@@ -36,8 +36,8 @@ function About() {
           </div> */}
         </div>
         <Image
-          src="/assets/images/about1.jpg"
-          alt="Hero Image"
+          src="/assets/images/mission.jpg"
+          alt="NSWCWMA Mission Image"
           width="2000"
           height="1000"
           className="relative aspect-ratio md:h-full object-cover min-h-60"
@@ -46,8 +46,8 @@ function About() {
 
       <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
         <Image
-          src="/assets/images/about2.jpg"
-          alt="Hero Image"
+          src="/assets/images/vision.jpg"
+          alt="NSWCWMA Vision Image"
           width="2000"
           height="1000"
           className="relative aspect-ratio md:h-full object-cover min-h-60"
@@ -104,8 +104,8 @@ function About() {
           </div> */}
         </div>
         <Image
-          src="/assets/images/vision.jpg"
-          alt="NSWCWMA Vision Image"
+          src="/assets/images/shortstory.jpg"
+          alt="NSWCWMA Short Story Image"
           width="2000"
           height="1000"
           className="relative aspect-ratio md:h-full object-cover min-h-60"
