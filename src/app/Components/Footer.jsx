@@ -56,7 +56,9 @@ function Footer() {
                   className=""
                 />
               </Link>
-              <Link href="https://www.acnc.gov.au/charity/charities/2578be3f-e281-ee11-8179-00224893b0ed/profile">
+              <Link href="https://www.acnc.gov.au/charity/charities/2578be3f-e281-ee11-8179-00224893b0ed/profile"
+                      target="_blank"
+>
                 <Image
                   src="/assets/images/acnc-logo.png"
                   alt="ACNC Logo"
