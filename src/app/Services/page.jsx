@@ -44,8 +44,8 @@ function Services() {
             </div>
           </div>
           <Image
-            src="/assets/images/about3.jpg"
-            alt="Hero Image"
+            src="/assets/images/homeless.jpg"
+            alt="Homeless Image"
             width="2000"
             height="1000"
             className="relative aspect-ratio md:h-full object-cover min-h-60"
@@ -54,8 +54,8 @@ function Services() {
 
         <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
           <Image
-            src="/assets/images/about3.jpg"
-            alt="Hero Image"
+            src="/assets/images/freefood.jpg"
+            alt="Free Food Image"
             width="2000"
             height="1000"
             className="relative aspect-ratio md:h-full object-cover min-h-60"
@@ -127,8 +127,8 @@ function Services() {
 
         <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
           <Image
-            src="/assets/images/about3.jpg"
-            alt="Hero Image"
+            src="/assets/images/freeclasses.jpg"
+            alt="Free Driving Classes Image"
             width="2000"
             height="1000"
             className="relative aspect-ratio md:h-full object-cover min-h-60"

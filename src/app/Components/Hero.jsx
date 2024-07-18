@@ -10,7 +10,7 @@ function Hero() {
         alt="Hero Image"
         width="2000"
         height="1000"
-        className="relative aspect-ratio md:h-full w-screen min-h-72"
+        className="relative aspect-ratio md:h-full object-cover min-h-72"
       />
       <div className="absolute flex flex-col items-center justify-center">
         <div className="md:p-10 py-8 w-fit text-center text-white">
