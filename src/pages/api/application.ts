@@ -5,6 +5,7 @@ export default async function handler(req, res) {
   console.log("Data", req.body);
 
   const {
+    selectedGroup,
     name,
     email,
     phone,
@@ -28,6 +29,7 @@ export default async function handler(req, res) {
     to: "info@nswcwma.org.au",
     subject: "Assistance Application Form",
     text: `
+    Group: ${selectedGroup}
     Name: ${name}
     Email: ${email}
     Phone: ${phone}

@@ -27,6 +27,7 @@ export const ApplicationForm = () => {
     setAlertMessage(null);
 
     if (
+      !selectedGroup ||
       !name ||
       !email ||
       !phone ||
@@ -47,6 +48,7 @@ export const ApplicationForm = () => {
       const res = await fetch("/api/application", {
         method: "POST",
         body: JSON.stringify({
+          selectedGroup,
           name,
           email,
           phone,
@@ -66,6 +68,7 @@ export const ApplicationForm = () => {
       if (res.ok) {
         setAlertMessage("Thank you! Your submission has been received!");
         setShowAlert(true);
+        setSelectedGroup("");
         setName("");
         setEmail("");
         setPhone("");
