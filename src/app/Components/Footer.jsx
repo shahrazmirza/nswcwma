@@ -28,8 +28,25 @@ function Footer() {
               <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
                 business hours
               </h1>
-              <div className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400">
-                <h2>Mon-Fri: 9am-5pm</h2>
+              <div className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400 flex gap-2">
+                <div>
+                  <h2>Mon:</h2>
+                  <h2>Tue:</h2>
+                  <h2>Wed:</h2>
+                  <h2>Thu:</h2>
+                  <h2>Fri:</h2>
+                  <h2>Sat:</h2>
+                  <h2>Sun:</h2>
+                </div>
+                <div>
+                  <h2>9am-5pm</h2>
+                  <h2>9am-5pm</h2>
+                  <h2>9am-5pm</h2>
+                  <h2>9am-5pm</h2>
+                  <h2>9am-5pm</h2>
+                  <h2>Closed</h2>
+                  <h2>Closed</h2>
+                </div>
               </div>
             </div>
             <div className="border-l-[1px] border-gray-300 pl-10 md:pr-10 pr-5">
@@ -56,9 +73,10 @@ function Footer() {
                   className=""
                 />
               </Link>
-              <Link href="https://www.acnc.gov.au/charity/charities/2578be3f-e281-ee11-8179-00224893b0ed/profile"
-                      target="_blank"
->
+              <Link
+                href="https://www.acnc.gov.au/charity/charities/2578be3f-e281-ee11-8179-00224893b0ed/profile"
+                target="_blank"
+              >
                 <Image
                   src="/assets/images/acnc-logo.png"
                   alt="ACNC Logo"
