@@ -104,8 +104,8 @@ function About() {
           </div> */}
         </div>
         <Image
-          src="/assets/images/about3.jpg"
-          alt="Hero Image"
+          src="/assets/images/vision.jpg"
+          alt="NSWCWMA Vision Image"
           width="2000"
           height="1000"
           className="relative aspect-ratio md:h-full object-cover min-h-60"

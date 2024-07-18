@@ -13,7 +13,7 @@ function Services() {
       <ScrollToTop />
       <Whatsapp />
       <>
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
+        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Support for the homeless
@@ -52,7 +52,7 @@ function Services() {
           />
         </div>
 
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
+        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
           <Image
             src="/assets/images/freefood.jpg"
             alt="Free Food Image"
@@ -88,7 +88,7 @@ function Services() {
             </div>
           </div>
         </div>
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
+        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Disability Support
@@ -125,7 +125,7 @@ function Services() {
           />
         </div>
 
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
+        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
           <Image
             src="/assets/images/freeclasses.jpg"
             alt="Free Driving Classes Image"
@@ -161,7 +161,7 @@ function Services() {
             </div>
           </div>
         </div>
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
+        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Poverty Alleviation
@@ -198,7 +198,7 @@ function Services() {
           />
         </div>
 
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
+        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
           <Image
             src="/assets/images/supportforsick.jpg"
             alt="Support for the Sick Image"
