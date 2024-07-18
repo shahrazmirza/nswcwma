@@ -30,13 +30,13 @@ function Footer() {
               </h1>
               <div className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400 flex gap-2">
                 <div>
-                  <h2>Mon:</h2>
-                  <h2>Tue:</h2>
-                  <h2>Wed:</h2>
-                  <h2>Thu:</h2>
-                  <h2>Fri:</h2>
-                  <h2>Sat:</h2>
-                  <h2>Sun:</h2>
+                  <h2>Monday:</h2>
+                  <h2>Tuesday:</h2>
+                  <h2>Wednesday:</h2>
+                  <h2>Thursday:</h2>
+                  <h2>Friday:</h2>
+                  <h2>Saturday:</h2>
+                  <h2>Sunday:</h2>
                 </div>
                 <div>
                   <h2>9am-5pm</h2>
