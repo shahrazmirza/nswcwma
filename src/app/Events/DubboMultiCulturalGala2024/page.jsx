@@ -133,12 +133,13 @@ function DubboMultiCulturalGala2024() {
                     {item.title}
                   </h1>{" "}
                   <div className="flex text-white text-sm font-semibold gap-1">
-                    <Link
+                    <a
+                      role="button"
+                      className="btn uppercase outline-white text-white outline outline-1 px-4 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800"
                       href={item.href}
-                      className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
                     >
                       read more
-                    </Link>
+                    </a>
                   </div>
                 </div>
               ))}

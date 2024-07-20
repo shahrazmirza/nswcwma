@@ -109,12 +109,11 @@ export const ContactForm = () => {
             ></textarea>
 
             <div className="flex justify-end">
-              <button
+              <input
                 type="submit"
-                className="uppercase outline-g outline outline-1 py-2 px-10 hover:text-red-500 hover:outline-red-500 flex text-gray-400 text-sm font-semibold gap-1"
-              >
-                send
-              </button>
+                value="Send"
+                className="btn uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold rounded-none bg-white border-none"
+              />
             </div>
           </form>
         </div>

@@ -16,5 +16,5 @@ module.exports = {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [nextui(), require("daisyui")],
 };

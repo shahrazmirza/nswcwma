@@ -30,17 +30,20 @@ function Services() {
             </h2>
 
             <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
-              <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-5 py-2">
-                  DONATE
-                </button>
-              </Link>
-              <Link
+              <a
+                role="button"
+                className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                href="/Donation"
+              >
+                DONATE
+              </a>
+              <a
+                role="button"
+                className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
-                className="uppercase outline-white outline outline-1 px-5 py-2 hover:text-red-500 hover:outline-red-500"
               >
                 apply
-              </Link>
+              </a>
             </div>
           </div>
           <Image
@@ -74,17 +77,20 @@ function Services() {
             </h2>
 
             <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
-              <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-5 py-2">
-                  DONATE
-                </button>
-              </Link>
-              <Link
+              <a
+                role="button"
+                className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                href="/Donation"
+              >
+                DONATE
+              </a>
+              <a
+                role="button"
+                className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
-                className="uppercase outline-white outline outline-1 px-5 py-2 hover:text-red-500 hover:outline-red-500"
               >
                 apply
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -103,17 +109,20 @@ function Services() {
             </h2>
 
             <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
-              <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-5 py-2">
-                  DONATE
-                </button>
-              </Link>
-              <Link
+              <a
+                role="button"
+                className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                href="/Donation"
+              >
+                DONATE
+              </a>
+              <a
+                role="button"
+                className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
-                className="uppercase outline-white outline outline-1 px-5 py-2 hover:text-red-500 hover:outline-red-500"
               >
                 apply
-              </Link>
+              </a>
             </div>
           </div>
           <Image
@@ -147,17 +156,20 @@ function Services() {
             </h2>
 
             <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
-              <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-5 py-2">
-                  DONATE
-                </button>
-              </Link>
-              <Link
+              <a
+                role="button"
+                className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                href="/Donation"
+              >
+                DONATE
+              </a>
+              <a
+                role="button"
+                className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
-                className="uppercase outline-white outline outline-1 px-5 py-2 hover:text-red-500 hover:outline-red-500"
               >
                 apply
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -176,17 +188,20 @@ function Services() {
             </h2>
 
             <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
-              <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-5 py-2">
-                  DONATE
-                </button>
-              </Link>
-              <Link
+              <a
+                role="button"
+                className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                href="/Donation"
+              >
+                DONATE
+              </a>
+              <a
+                role="button"
+                className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
-                className="uppercase outline-white outline outline-1 px-5 py-2 hover:text-red-500 hover:outline-red-500"
               >
                 apply
-              </Link>
+              </a>
             </div>
           </div>
           <Image
@@ -220,17 +235,20 @@ function Services() {
             </h2>
 
             <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
-              <Link href="/Donation">
-                <button className="bg-red-500 hover:bg-red-600 px-5 py-2">
-                  DONATE
-                </button>
-              </Link>
-              <Link
+              <a
+                role="button"
+                className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                href="/Donation"
+              >
+                DONATE
+              </a>
+              <a
+                role="button"
+                className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
-                className="uppercase outline-white outline outline-1 px-5 py-2 hover:text-red-500 hover:outline-red-500"
               >
                 apply
-              </Link>
+              </a>
             </div>
           </div>
         </div>

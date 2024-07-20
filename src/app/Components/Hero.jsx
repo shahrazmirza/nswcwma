@@ -23,11 +23,14 @@ function Hero() {
             </h2>
           </div>
         </div>
-        <Link href="/Donation">
-          <button className="bg-red-500 hover:bg-red-600 px-6 py-3 text-white text-sm md:font-medium font-semibold transition delay-100">
-            DONATE NOW
-          </button>
-        </Link>
+
+        <a
+          role="button"
+          className="btn bg-red-500 hover:bg-red-600 text-white rounded-none"
+          href="/Donation"
+        >
+          DONATE NOW
+        </a>
       </div>
     </div>
   );
