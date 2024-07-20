@@ -16,7 +16,7 @@ const AnnualReport = () => {
             </h1>
             <a
               role="button"
-              className="btn uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+              className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
               href="/assets/reports/Financial-Report-FY-2023.pdf"
               target="_blank"
             >
@@ -29,7 +29,7 @@ const AnnualReport = () => {
             </h1>
             <a
               role="button"
-              className="btn uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+              className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
               href="/assets/reports/Financial-Report-FY-2022.pdf"
               target="_blank"
             >

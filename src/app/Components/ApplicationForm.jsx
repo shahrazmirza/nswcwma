@@ -270,7 +270,7 @@ export const ApplicationForm = () => {
                   <input
                     type="submit"
                     value="Send"
-                    className="btn uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold rounded-none bg-white border-none"
+                    className="btn md:btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold rounded-none bg-white border-none"
                   />
                 </div>
               </form>

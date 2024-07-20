@@ -141,7 +141,7 @@ function DubboMultiCulturalGala2024() {
                   <div className="flex text-white text-sm font-semibold gap-1">
                     <a
                       role="button"
-                      className="btn uppercase outline-white text-white outline outline-1 px-4 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800"
+                      className="btn-sm flex justify-center items-center uppercase outline-white text-white outline outline-1 px-4 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800"
                       href={item.href}
                     >
                       read more
