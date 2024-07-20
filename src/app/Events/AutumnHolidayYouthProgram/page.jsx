@@ -45,33 +45,39 @@ function AutumnHolidayYouthProgram() {
                     <h2>{item.date}</h2>
                   </div>
                   <div className="flex gap-3 py-3">
-                    <Link
+                    <a
+                      role="button"
+                      className="bt-sm bg-blue-600 text-white hover:bg-blue-700 mb-5 border-none rounded px-3 text-xs font-medium tracking-wide w-20 flex justify-center items-center gap-1"
                       href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
                         window.location.href
                       )}`}
                       target="_blank"
-                      className="bg-blue-600 text-white flex justify-center items-center mb-5 rounded px-3 py-1 gap-1 text-xs font-medium tracking-wide w-20"
                     >
-                      <FaFacebook /> Share
-                    </Link>
-                    <Link
+                      <FaFacebook />
+                      Share
+                    </a>
+
+                    <a
+                      role="button"
                       href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
                         window.location.href
                       )}`}
                       target="_blank"
-                      className="bg-black text-white flex justify-center items-center mb-5 rounded-full px-3 py-1 gap-1 text-xs font-medium tracking-wide w-20"
+                      className="bt-sm bg-black hover:bg-gray-900 text-white flex justify-center items-center mb-5 rounded-full px-3 gap-1 text-xs font-medium tracking-wide w-20"
                     >
                       <FaXTwitter /> Post
-                    </Link>
-                    <Link
+                    </a>
+
+                    <a
+                      role="button"
                       href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
                         window.location.href
                       )}`}
                       target="_blank"
-                      className="bg-sky-700 text-white flex justify-center items-center mb-5 rounded px-3 py-1 gap-1 text-xs font-medium tracking-wide w-20"
+                      className="bt-sm bg-sky-700 hover:bg-sky-800 text-white flex justify-center items-center mb-5 rounded px-3 py-1 gap-1 text-xs font-medium tracking-wide w-20"
                     >
                       <FaLinkedin /> Share
-                    </Link>
+                    </a>
                   </div>
                   <Link href={item.href}>
                     <Image
