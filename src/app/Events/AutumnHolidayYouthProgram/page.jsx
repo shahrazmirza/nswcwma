@@ -31,8 +31,8 @@ function AutumnHolidayYouthProgram() {
       <ScrollToTop />
       <Whatsapp />
       <Container>
-        <div className="py-10 grid md:grid-cols-4 grid-cols-3 gap-10 md:px-0 px-5">
-          <div className="col-span-3">
+        <div className="py-10 grid md:grid-cols-4 grid-cols-3 gap-10 md:px-0">
+          <div className="col-span-3 md:px-0 px-5">
             {items
               .filter((item) => item.title === filterInclude)
               .map((item) => (
@@ -112,7 +112,7 @@ function AutumnHolidayYouthProgram() {
                 </div>
               ))}
           </div>
-          <div className="md:... md:flex md:flex-col gap-10 grid grid-cols-1 md:w-fit w-screen md:px-0 pr-10">
+          <div className="md:... md:flex md:flex-col gap-10 grid grid-cols-1 md:w-fit w-screen md:px-0 px-5">
             <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Recent Posts
             </h1>
