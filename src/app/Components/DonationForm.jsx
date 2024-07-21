@@ -80,8 +80,8 @@ function DonationForm() {
                     key={index}
                     className="btn-sm bg-white hover:bg-white border-none outline outline-1 outline-gray-300 hover:outline-red-500 font-medium text-gray-500"
                     type="radio"
-                    name="options"
-                    aria-label={`$${item.value.toLocaleString()}`}
+                 
+                   aria-label={`$${item.value.toLocaleString()}`}
                     value={item.value}
                     onChange={() => setSelectedAmount(parseFloat(item.value))}
                   />
