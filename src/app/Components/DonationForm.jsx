@@ -78,7 +78,7 @@ function DonationForm() {
                 {filteredItems.map((item, index) => (
                   <input
                     key={index}
-                    className="btn-sm bg-white hover:bg-white border-none outline outline-1 outline-gray-300 hover:outline-red-500 font-medium text-gray-500"
+                    className="btn bg-white hover:bg-white border-none outline outline-1 outline-gray-300 hover:outline-red-500 font-medium text-gray-500"
                     type="radio"
                  
                    aria-label={`$${item.value.toLocaleString()}`}
