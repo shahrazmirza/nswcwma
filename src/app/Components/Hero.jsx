@@ -26,7 +26,7 @@ function Hero() {
 
         <a
           role="button"
-          className="btn bg-red-500 hover:bg-red-600 text-white rounded-none"
+          className="btn bg-red-500 hover:bg-red-600 text-white border-none rounded-none"
           href="/Donation"
         >
           DONATE NOW
