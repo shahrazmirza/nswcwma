@@ -59,11 +59,10 @@ function DonationForm() {
         </h1>
         <div className="pl-10 md:pr-0 pr-5">
           <select
-            className="w-full p-2 my-4 text-sm font-medium text-gray-500 border border-gray-300 hover:border-red-500 rounded-md bg-white"
-            value={selectedDonationType}
             onChange={(e) => setSelectedDonationType(e.target.value)}
+            className="select rounded-md w-full max-w-xs p-2 my-4 text-sm font-medium bg-white text-gray-500 border-none outline outline-1 outline-gray-300 hover:outline-red-500 "
           >
-            <option value="" disabled>
+            <option disabled selected>
               Choose Donation Type
             </option>
             {donationTypes.map((type) => (
@@ -79,7 +78,7 @@ function DonationForm() {
                 {filteredItems.map((item, index) => (
                   <input
                     key={index}
-                    className="item btn bg-white hover:bg-white border-none outline outline-1 outline-gray-300 hover:outline-red-500 text-sm font-medium text-gray-500"
+                    className="item btn bg-white hover:bg-white border-none outline outline-1 outline-gray-300 hover:outline-red-500 font-medium text-gray-500"
                     type="radio"
                     name="options"
                     aria-label={`$${item.value}`}
