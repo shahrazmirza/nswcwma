@@ -59,7 +59,7 @@ function DonationForm() {
         </h1>
         <div className="pl-10 md:pr-0 pr-5">
           <select
-            className="w-full p-2 my-4 text-sm font-medium text-gray-500 border border-gray-500 hover:border-sky-700 rounded-md bg-white"
+            className="w-full p-2 my-4 text-sm font-medium text-gray-500 border border-gray-300 hover:border-red-500 rounded-md bg-white"
             value={selectedDonationType}
             onChange={(e) => setSelectedDonationType(e.target.value)}
           >
@@ -73,7 +73,35 @@ function DonationForm() {
             ))}
           </select>
 
-          <RadioGroup>
+          <div className="pb-5 flex flex-col">
+            {filteredItems.length > 0 && (
+              <div className="flex md:flex-row flex-col items-start md:gap-5 gap-3">
+                {filteredItems.map((item, index) => (
+                  <input
+                    key={index}
+                    className="item btn bg-white hover:bg-white border-none outline outline-1 outline-gray-300 hover:outline-red-500 text-sm font-medium text-gray-500"
+                    type="radio"
+                    name="options"
+                    aria-label={`$${item.value}`}
+                    value={item.value}
+                    onChange={() => setSelectedAmount(parseFloat(item.value))}
+                  />
+                ))}
+                <label className="input flex items-center bg-white text-gray-800 border-none outline outline-1 outline-gray-300 hover:outline-red-500 text-sm font-medium text-gray-500">
+                  <input
+                    type="text"
+                    label=""
+                    placeholder="$ Custom Amount"
+                    defaultValue=""
+                    className="w-44"
+                    onChange={(e) => setCustomAmountInputValue(e.target.value)}
+                  />
+                </label>
+              </div>
+            )}
+          </div>
+
+          {/* <RadioGroup>
             <ul className="pb-5 md:py-5 flex flex-col">
               {filteredItems.length > 0 && (
                 <div className="flex md:flex-row flex-col items-start md:gap-5 gap-3">
@@ -103,7 +131,7 @@ function DonationForm() {
                 </div>
               )}
             </ul>
-          </RadioGroup>
+          </RadioGroup> */}
           <a
             role="button"
             className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5 py-2"
