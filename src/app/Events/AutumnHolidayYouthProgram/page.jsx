@@ -114,7 +114,7 @@ function AutumnHolidayYouthProgram() {
                       {item.paragraph8}
                     </p>
                   </div>
-                  <div className="md:border-t-1 md:border-gray-400 md:my-10"></div>
+                  <div className="divider my-10"></div>
                 </div>
               ))}
           </div>

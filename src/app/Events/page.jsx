@@ -57,7 +57,7 @@ function Events() {
                   read more
                 </a>
               </div>
-              <div className="border-t-1 border-gray-400 my-10"></div>
+              <div className="divider my-10"></div>
             </div>
           ))}
         </div>
