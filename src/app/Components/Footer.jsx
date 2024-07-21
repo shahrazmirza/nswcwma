@@ -110,16 +110,18 @@ function Footer() {
           </div>
         </Container>
       </div>
-      <div className="bg-white text-center py-10">
+      <div className="bg-white text-center py-10 md:px-0 px-5">
         <Container>
-          <div className="flex flex-col gap-2">
-            <h2 className="uppercase text-xs font-bold tracking-widest flex gap-1 justify-center items-center">
-              NSW Central West Muslim Association <MdCopyright /> 2024
-            </h2>
-            <h2 className="uppercase text-xs font-bold tracking-widest flex gap-1 justify-center items-center">
-              ABN: 76 977 073 780
-            </h2>
-          </div>
+          <footer className="footer footer-center text-xs font-bold tracking-widest">
+            <aside>
+              <p>
+                Copyright © {new Date().getFullYear()} - All right reserved by
+                NSW Central West Muslim Association Incorporated ( ABN: 76 977
+                073 780 )
+              </p>
+              <p></p>
+            </aside>
+          </footer>
         </Container>
       </div>
     </>
