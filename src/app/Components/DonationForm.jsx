@@ -60,7 +60,7 @@ function DonationForm() {
         <div className="pl-10 md:pr-0 pr-5">
           <select
             onChange={(e) => setSelectedDonationType(e.target.value)}
-            className="select w-full max-w-xs p-2 my-4 text-sm font-medium bg-white text-gray-500 border-none outline outline-1 outline-gray-300 hover:outline-red-500 "
+            className="select select-sm w-full max-w-xs p-2 my-4 text-sm font-medium bg-white text-gray-500 border-none outline outline-1 outline-gray-300 hover:outline-red-500 "
           >
             <option disabled selected>
               Choose Donation Type
@@ -86,7 +86,7 @@ function DonationForm() {
                     onChange={() => setSelectedAmount(parseFloat(item.value))}
                   />
                 ))}
-                <label className="input flex items-center bg-white text-gray-800 border-none outline outline-1 outline-gray-300 hover:outline-red-500 text-sm font-medium text-gray-500">
+                <label className="input input-sm flex items-center bg-white text-gray-800 border-none outline outline-1 outline-gray-300 hover:outline-red-500 text-sm font-medium text-gray-500">
                   <input
                     type="text"
                     label=""
