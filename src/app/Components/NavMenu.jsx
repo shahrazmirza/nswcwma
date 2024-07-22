@@ -48,6 +48,7 @@ const NavMenu = () => {
                 height="60"
               />
             </Link>
+
             <Link href="/">
               <h1 className="text-xl font-basic tracking-wide">
                 NSW Central West Muslim Association

@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
-import { MdCopyright } from "react-icons/md";
 
 function Footer() {
   return (
@@ -54,13 +53,14 @@ function Footer() {
                 FOLLOW US
               </h1>
               <div className="pr-1">
-                <Link
+                <a
                   href="https://www.facebook.com/profile.php?id=100090621588007&sk=about"
                   target="_blank"
-                  className="font-bold text-white bg-red-500 hover:bg-red-600 transition delay-100 flex items-center justify-center font-mono h-10 w-10 p-1"
                 >
-                  <FaFacebookF />
-                </Link>
+                  <button className="btn btn-square text-white bg-red-500 hover:bg-red-600 border-none rounded-none">
+                    <FaFacebookF />
+                  </button>
+                </a>
               </div>
             </div>
             <div className="flex md:flex-col flex-row justify-between md:justify-center items-center gap-5 md:px-0 px-10">
