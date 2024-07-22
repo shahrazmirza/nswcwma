@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "@radix-ui/themes";
 import data from "../Data/DonationType.json";
-import { Input, Radio, RadioGroup } from "@nextui-org/react";
 import { toast } from "react-toastify";
 import axios from "axios";
 
@@ -33,6 +32,10 @@ function DonationForm() {
 
       if (amount === 0 && customAmountInputValue.trim() !== "") {
         amount = parseFloat(customAmountInputValue.trim());
+      }
+
+      if (amount !== 0 && customAmountInputValue.trim() !== "") {
+        return toast.error("Please unselect or delete a donation amount");
       }
 
       if (amount === 0) {
@@ -78,10 +81,10 @@ function DonationForm() {
                 {filteredItems.map((item, index) => (
                   <input
                     key={index}
-                    className="btn btn-sm bg-white hover:bg-white border-none outline outline-1 outline-gray-300 hover:outline-red-500 font-medium text-gray-500"
+                    className="btn btn-sm bg-white hover:bg-white border-gray-300 hover:border-red-500 font-medium text-gray-500 hover:text-red-500"
                     type="radio"
-                 name="options"
-                   aria-label={`$${item.value.toLocaleString()}`}
+                    name="options"
+                    aria-label={`$${item.value.toLocaleString()}`}
                     value={item.value}
                     onChange={() => setSelectedAmount(parseFloat(item.value))}
                   />
