@@ -26,14 +26,6 @@ function About() {
             the sick within our community, responding to natural calamities, and
             offering help when required.
           </h2>
-          {/* <div className="flex text-white text-sm font-semibold gap-1">
-            <Link
-              href="/About"
-              className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
-            >
-              read more
-            </Link>
-          </div> */}
         </div>
         <Image
           src="/assets/images/mission.jpg"
@@ -64,14 +56,6 @@ function About() {
             educational facilities and supporting needy families, emphasizing
             universal benevolence and community wellbeing.
           </h2>
-          {/* <div className="flex text-white text-sm font-semibold gap-1">
-            <Link
-              href="/About"
-              className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
-            >
-              read more
-            </Link>
-          </div> */}
         </div>
       </div>
 
@@ -94,14 +78,6 @@ function About() {
             every community member can thrive in a safe and nurturing
             environment.
           </h2>
-          {/* <div className="flex text-white text-sm font-semibold gap-1">
-            <Link
-              href="/About"
-              className="uppercase outline-white outline outline-1 py-2 px-4 hover:text-red-500 hover:outline-red-500"
-            >
-              read more
-            </Link>
-          </div> */}
         </div>
         <Image
           src="/assets/images/shortstory.jpg"
