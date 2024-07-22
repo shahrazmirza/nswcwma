@@ -35,7 +35,7 @@ function DonationForm() {
       }
 
       if (amount !== 0 && customAmountInputValue.trim() !== "") {
-        return toast.error("Please unselect or delete a donation amount");
+        return toast.error("Please either select or enter a donation amount");
       }
 
       if (amount === 0) {
