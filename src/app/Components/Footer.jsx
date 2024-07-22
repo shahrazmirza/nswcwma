@@ -63,28 +63,33 @@ function Footer() {
                 </a>
               </div>
             </div>
-            <div className="flex md:flex-col flex-row justify-between md:justify-center items-center gap-5 md:px-0 px-10">
-              <Link href="/">
-                <Image
-                  src="/assets/images/logo.png"
-                  alt="NSWCWMA Logo"
-                  width="80"
-                  height="80"
-                  className=""
-                />
-              </Link>
-              <Link
-                href="https://www.acnc.gov.au/charity/charities/2578be3f-e281-ee11-8179-00224893b0ed/profile"
-                target="_blank"
-              >
-                <Image
-                  src="/assets/images/acnc-logo.png"
-                  alt="ACNC Logo"
-                  width="90"
-                  height="90"
-                  className=""
-                />
-              </Link>
+            <div className="flex md:flex-col flex-row justify-between md:justify-center items-center md:gap-16 md:px-0 px-10">
+              <button className="btn btn-active btn-link">
+                <a href="/">
+                  <Image
+                    src="/assets/images/logo.png"
+                    alt="NSWCWMA Logo"
+                    width="80"
+                    height="80"
+                    className=""
+                  />
+                </a>
+              </button>
+
+              <button className="btn btn-active btn-link">
+                <a
+                  href="https://www.acnc.gov.au/charity/charities/2578be3f-e281-ee11-8179-00224893b0ed/profile"
+                  target="_blank"
+                >
+                  <Image
+                    src="/assets/images/acnc-logo.png"
+                    alt="ACNC Logo"
+                    width="90"
+                    height="90"
+                    className=""
+                  />
+                </a>
+              </button>
             </div>
           </div>
         </Container>
