@@ -23,7 +23,7 @@ const Whatsapp = () => {
   }, []);
 
   return (
-    <div>
+    <div className="z-10">
       <Link
         href="https://wa.me/+61478684716"
         target="_blank"
