@@ -1,9 +1,19 @@
 "use client";
+import React, { useEffect, useRef, useState } from "react";
 import { Container } from "@radix-ui/themes";
-import React, { useState } from "react";
 import AlertOverlay from "./Alert";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 export const ApplicationForm = () => {
+  const ref1 = useRef(null);
+  const slide1 = useAnimation();
+  const isInView1 = useInView(ref1, { once: true });
+  useEffect(() => {
+    if (isInView1) {
+      slide1.start("visible");
+    }
+  }, [isInView1]);
+
   const [selectedGroup, setSelectedGroup] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -100,14 +110,42 @@ export const ApplicationForm = () => {
   return (
     <Container>
       <div className="py-10 md:pl-0 pl-5">
-        <h1 className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5">
+        <motion.h1
+          ref={ref1}
+          variants={{
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5"
+        >
           application for assistance
-        </h1>
-        <h2 className="pl-10 pr-5 capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
+        </motion.h1>
+        <motion.h2
+          ref={ref1}
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 0.5 }}
+          className="pl-10 pr-5 capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5"
+        >
           Eligibility
-        </h2>
+        </motion.h2>
         <div className="pl-10 md:pr-0 pr-5">
-          <select
+          <motion.select
+            ref={ref1}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide1}
+            transition={{ duration: 0.9, delay: 1.0 }}
             value={selectedGroup}
             onChange={(e) => setSelectedGroup(e.target.value)}
             className="w-full p-2 my-4 text-sm font-medium text-gray-500 border border-gray-500 hover:border-sky-700 rounded-md bg-white"
@@ -133,7 +171,7 @@ export const ApplicationForm = () => {
             >
               Culturally and Linguistically Diverse (CALD) Background
             </option>
-          </select>
+          </motion.select>
           {selectedGroup && (
             <div>
               {showAlert && (
