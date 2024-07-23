@@ -188,7 +188,7 @@ function Footer() {
           <motion.div
             ref={ref4}
             variants={{
-              hidden: { opacity: 0, x: -75 },
+              hidden: { opacity: 0, x: 0 },
               visible: { opacity: 1, x: 0 },
             }}
             initial="hidden"
@@ -219,7 +219,7 @@ function Footer() {
           <motion.footer
             ref={ref5}
             variants={{
-              hidden: { opacity: 0, x: -75 },
+              hidden: { opacity: 0, x: 0 },
               visible: { opacity: 1, x: 0 },
             }}
             initial="hidden"

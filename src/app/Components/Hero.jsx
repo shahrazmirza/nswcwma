@@ -47,7 +47,7 @@ function Hero() {
         <motion.a
           ref={ref1}
           variants={{
-            hidden: { opacity: 0, y: 75 },
+            hidden: { opacity: 0, y: 0 },
             visible: { opacity: 1, y: 0 },
           }}
           initial="hidden"
