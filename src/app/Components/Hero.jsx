@@ -5,13 +5,25 @@ import { motion, useAnimation, useInView } from "framer-motion";
 
 function Hero() {
   const ref1 = useRef(null);
+  const ref2 = useRef(null);
+
   const slide1 = useAnimation();
+  const slide2 = useAnimation();
+
   const isInView1 = useInView(ref1, { once: true });
+  const isInView2 = useInView(ref2, { once: true });
+
   useEffect(() => {
     if (isInView1) {
       slide1.start("visible");
     }
   }, [isInView1]);
+
+  useEffect(() => {
+    if (isInView2) {
+      slide2.start("visible");
+    }
+  }, [isInView2]);
 
   return (
     <div className="flex justify-center items-center flex-col">
@@ -45,13 +57,13 @@ function Hero() {
         </motion.div>
 
         <motion.a
-          ref={ref1}
+          ref={ref2}
           variants={{
             hidden: { opacity: 0, y: 0 },
             visible: { opacity: 1, y: 0 },
           }}
           initial="hidden"
-          animate={slide1}
+          animate={slide2}
           transition={{ duration: 0.9, delay: 0.5 }}
           role="button"
           className="btn bg-red-500 hover:bg-red-600 text-white border-none rounded-none"
