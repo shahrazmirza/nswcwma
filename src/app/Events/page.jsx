@@ -45,7 +45,7 @@ function Events() {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 0.5 }}
+          transition={{ duration: 0.9, delay: 0 }}
           className="py-10 md:p-0 p-5"
         >
           {items.map((item) => (
