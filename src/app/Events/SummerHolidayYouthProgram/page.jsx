@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Whatsapp from "../../Components/Whatsapp";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
@@ -11,6 +11,7 @@ import { Container } from "@radix-ui/themes";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import ScrollToTop from "../../Components/ScrollToTop";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 function SummerHolidayYouthProgram() {
   const [items, setItems] = useState([]);
@@ -25,6 +26,27 @@ function SummerHolidayYouthProgram() {
 
   const filterInclude = "Summer Holiday Youth Program";
 
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+
+  const slide1 = useAnimation();
+  const slide2 = useAnimation();
+
+  const isInView1 = useInView(ref1, { once: true });
+  const isInView2 = useInView(ref2, { once: true });
+
+  useEffect(() => {
+    if (isInView1) {
+      slide1.start("visible");
+    }
+  }, [isInView1]);
+
+  useEffect(() => {
+    if (isInView2) {
+      slide2.start("visible");
+    }
+  }, [isInView2]);
+
   return (
     <div className="bg-gray-800 text-gray-400">
       <Navbar />
@@ -32,7 +54,17 @@ function SummerHolidayYouthProgram() {
       <Whatsapp />
       <Container>
         <div className="py-10 grid md:grid-cols-4 grid-cols-3 gap-10 md:px-0">
-          <div className="col-span-3 md:px-0 px-5">
+          <motion.div
+            ref={ref1}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide1}
+            transition={{ duration: 0.9, delay: 0 }}
+            className="col-span-3 md:px-0 px-5"
+          >
             {items
               .filter((item) => item.title === filterInclude)
               .map((item) => (
@@ -117,8 +149,18 @@ function SummerHolidayYouthProgram() {
                   <div className="divider my-10"></div>
                 </div>
               ))}
-          </div>
-          <div className="md:... md:flex md:flex-col gap-10 grid grid-cols-1 md:w-fit w-screen md:px-0 px-5">
+          </motion.div>
+          <motion.div
+            ref={ref2}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide2}
+            transition={{ duration: 0.9, delay: 0.5 }}
+            className="md:... md:flex md:flex-col gap-10 grid grid-cols-1 md:w-fit w-screen md:px-0 px-5"
+          >
             <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Recent Posts
             </h1>
@@ -149,7 +191,7 @@ function SummerHolidayYouthProgram() {
                   </div>
                 </div>
               ))}
-          </div>
+          </motion.div>
         </div>
       </Container>
       <Footer />
