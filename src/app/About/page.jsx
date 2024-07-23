@@ -86,7 +86,7 @@ function About() {
         }}
         initial="hidden"
         animate={slide2}
-        transition={{ duration: 0.9, delay: 1.0 }}
+        transition={{ duration: 0.9, delay: 0 }}
         className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse"
       >
         <Image
