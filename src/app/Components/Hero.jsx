@@ -1,7 +1,18 @@
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import React from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 function Hero() {
+  const ref1 = useRef(null);
+  const slide1 = useAnimation();
+  const isInView1 = useInView(ref1, { once: true });
+  useEffect(() => {
+    if (isInView1) {
+      slide1.start("visible");
+    }
+  }, [isInView1]);
+
   return (
     <div className="flex justify-center items-center flex-col">
       <Image
@@ -12,7 +23,17 @@ function Hero() {
         className="relative aspect-ratio md:h-full object-cover min-h-72"
       />
       <div className="absolute flex flex-col items-center justify-center">
-        <div className="md:p-10 py-8 w-fit text-center text-white">
+        <motion.div
+          ref={ref1}
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:p-10 py-8 w-fit text-center text-white"
+        >
           <div className="flex flex-col border md:p-10 px-10 py-6 gap-5">
             <h1 className="md:text-4xl text-2xl md:font-medium font-semibold md:tracking-widest">
               BE USEFUL TO OTHERS
@@ -21,15 +42,23 @@ function Hero() {
               WITH NO THOUGHT OF RECOMPENSE
             </h2>
           </div>
-        </div>
+        </motion.div>
 
-        <a
+        <motion.a
+          ref={ref1}
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 0.5 }}
           role="button"
           className="btn bg-red-500 hover:bg-red-600 text-white border-none rounded-none"
           href="/Donation"
         >
           DONATE NOW
-        </a>
+        </motion.a>
       </div>
     </div>
   );
