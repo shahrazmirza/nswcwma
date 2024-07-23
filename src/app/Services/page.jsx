@@ -14,12 +14,6 @@ function Services() {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
   const ref6 = useRef(null);
-  const ref7 = useRef(null);
-  const ref8 = useRef(null);
-  const ref9 = useRef(null);
-  const ref10 = useRef(null);
-  const ref11 = useRef(null);
-  const ref12 = useRef(null);
 
   const slide1 = useAnimation();
   const slide2 = useAnimation();
@@ -27,12 +21,6 @@ function Services() {
   const slide4 = useAnimation();
   const slide5 = useAnimation();
   const slide6 = useAnimation();
-  const slide7 = useAnimation();
-  const slide8 = useAnimation();
-  const slide9 = useAnimation();
-  const slide10 = useAnimation();
-  const slide11 = useAnimation();
-  const slide12 = useAnimation();
 
   const isInView1 = useInView(ref1, { once: true });
   const isInView2 = useInView(ref2, { once: true });
@@ -40,12 +28,6 @@ function Services() {
   const isInView4 = useInView(ref4, { once: true });
   const isInView5 = useInView(ref5, { once: true });
   const isInView6 = useInView(ref6, { once: true });
-  const isInView7 = useInView(ref7, { once: true });
-  const isInView8 = useInView(ref8, { once: true });
-  const isInView9 = useInView(ref9, { once: true });
-  const isInView10 = useInView(ref10, { once: true });
-  const isInView11 = useInView(ref11, { once: true });
-  const isInView12 = useInView(ref12, { once: true });
 
   useEffect(() => {
     if (isInView1) {
@@ -83,60 +65,24 @@ function Services() {
     }
   }, [isInView6]);
 
-  useEffect(() => {
-    if (isInView7) {
-      slide7.start("visible");
-    }
-  }, [isInView7]);
-
-  useEffect(() => {
-    if (isInView8) {
-      slide8.start("visible");
-    }
-  }, [isInView8]);
-
-  useEffect(() => {
-    if (isInView9) {
-      slide9.start("visible");
-    }
-  }, [isInView9]);
-
-  useEffect(() => {
-    if (isInView10) {
-      slide10.start("visible");
-    }
-  }, [isInView10]);
-
-  useEffect(() => {
-    if (isInView11) {
-      slide11.start("visible");
-    }
-  }, [isInView11]);
-
-  useEffect(() => {
-    if (isInView12) {
-      slide12.start("visible");
-    }
-  }, [isInView12]);
-
   return (
     <div className="bg-gray-800">
       <Navbar />
       <ScrollToTop />
       <Whatsapp />
       <>
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
-          <motion.div
-            ref={ref1}
-            variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            animate={slide1}
-            transition={{ duration: 0.9, delay: 0 }}
-            className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center"
-          >
+        <motion.div
+          ref={ref1}
+          variants={{
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
+        >
+          <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Support for the homeless
             </h1>
@@ -167,57 +113,35 @@ function Services() {
                 apply
               </a>
             </div>
-          </motion.div>
-          <motion.div
-            ref={ref2}
-            variants={{
-              hidden: { opacity: 0, x: 75 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            initial="hidden"
-            animate={slide2}
-            transition={{ duration: 0.9, delay: 0 }}
-          >
-            <Image
-              src="/assets/images/homeless.jpg"
-              alt="Homeless Image"
-              width="2000"
-              height="1000"
-              className="relative aspect-ratio md:h-full object-cover min-h-60"
-            />
-          </motion.div>
-        </div>
+          </div>
+          <Image
+            src="/assets/images/homeless.jpg"
+            alt="Homeless Image"
+            width="2000"
+            height="1000"
+            className="relative aspect-ratio md:h-full object-cover min-h-60"
+          />
+        </motion.div>
 
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
-          <motion.div
-            ref={ref4}
-            variants={{
-              hidden: { opacity: 0, x: -75 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            initial="hidden"
-            animate={slide4}
-            transition={{ duration: 0.9, delay: 0 }}
-          >
-            <Image
-              src="/assets/images/freefood.jpg"
-              alt="Free Food Image"
-              width="2000"
-              height="1000"
-              className="relative aspect-ratio md:h-full object-cover min-h-60"
-            />
-          </motion.div>
-          <motion.div
-            ref={ref3}
-            variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            animate={slide3}
-            transition={{ duration: 0.9, delay: 0 }}
-            className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center"
-          >
+        <motion.div
+          ref={ref2}
+          variants={{
+            hidden: { opacity: 0, x: 75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={slide2}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse"
+        >
+          <Image
+            src="/assets/images/freefood.jpg"
+            alt="Free Food Image"
+            width="2000"
+            height="1000"
+            className="relative aspect-ratio md:h-full object-cover min-h-60"
+          />
+          <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Free Food on Fridays
             </h1>
@@ -246,20 +170,20 @@ function Services() {
                 apply
               </a>
             </div>
-          </motion.div>
-        </div>
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
-          <motion.div
-            ref={ref5}
-            variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            animate={slide5}
-            transition={{ duration: 0.9, delay: 0 }}
-            className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center"
-          >
+          </div>
+        </motion.div>
+        <motion.div
+          ref={ref3}
+          variants={{
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={slide3}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
+        >
+          <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Disability Support
             </h1>
@@ -288,57 +212,35 @@ function Services() {
                 apply
               </a>
             </div>
-          </motion.div>
-          <motion.div
-            ref={ref6}
-            variants={{
-              hidden: { opacity: 0, x: 75 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            initial="hidden"
-            animate={slide6}
-            transition={{ duration: 0.9, delay: 0 }}
-          >
-            <Image
-              src="/assets/images/disabilitysupport.jpg"
-              alt="Disability Support Image"
-              width="2000"
-              height="1000"
-              className="relative aspect-ratio md:h-full object-cover min-h-60"
-            />
-          </motion.div>
-        </div>
+          </div>
+          <Image
+            src="/assets/images/disabilitysupport.jpg"
+            alt="Disability Support Image"
+            width="2000"
+            height="1000"
+            className="relative aspect-ratio md:h-full object-cover min-h-60"
+          />
+        </motion.div>
 
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
-          <motion.div
-            ref={ref8}
-            variants={{
-              hidden: { opacity: 0, x: -75 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            initial="hidden"
-            animate={slide8}
-            transition={{ duration: 0.9, delay: 0 }}
-          >
-            <Image
-              src="/assets/images/freeclasses.jpg"
-              alt="Free Driving Classes Image"
-              width="2000"
-              height="1000"
-              className="relative aspect-ratio md:h-full object-cover min-h-60"
-            />
-          </motion.div>
-          <motion.div
-            ref={ref7}
-            variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            animate={slide7}
-            transition={{ duration: 0.9, delay: 0 }}
-            className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center"
-          >
+        <motion.div
+          ref={ref4}
+          variants={{
+            hidden: { opacity: 0, x: 75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={slide4}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse"
+        >
+          <Image
+            src="/assets/images/freeclasses.jpg"
+            alt="Free Driving Classes Image"
+            width="2000"
+            height="1000"
+            className="relative aspect-ratio md:h-full object-cover min-h-60"
+          />
+          <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Driving Classes
             </h1>
@@ -367,20 +269,20 @@ function Services() {
                 apply
               </a>
             </div>
-          </motion.div>
-        </div>
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
-          <motion.div
-            ref={ref9}
-            variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            animate={slide9}
-            transition={{ duration: 0.9, delay: 0 }}
-            className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center"
-          >
+          </div>
+        </motion.div>
+        <motion.div
+          ref={ref5}
+          variants={{
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={slide5}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
+        >
+          <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Poverty Alleviation
             </h1>
@@ -409,57 +311,35 @@ function Services() {
                 apply
               </a>
             </div>
-          </motion.div>
-          <motion.div
-            ref={ref10}
-            variants={{
-              hidden: { opacity: 0, x: 75 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            initial="hidden"
-            animate={slide10}
-            transition={{ duration: 0.9, delay: 0 }}
-          >
-            <Image
-              src="/assets/images/povertyalleviation.jpg"
-              alt="Poverty Alleviation Image"
-              width="2000"
-              height="1000"
-              className="relative aspect-ratio md:h-full object-cover min-h-60"
-            />
-          </motion.div>
-        </div>
+          </div>
+          <Image
+            src="/assets/images/povertyalleviation.jpg"
+            alt="Poverty Alleviation Image"
+            width="2000"
+            height="1000"
+            className="relative aspect-ratio md:h-full object-cover min-h-60"
+          />
+        </motion.div>
 
-        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
-          <motion.div
-            ref={ref12}
-            variants={{
-              hidden: { opacity: 0, x: -75 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            initial="hidden"
-            animate={slide12}
-            transition={{ duration: 0.9, delay: 0 }}
-          >
-            <Image
-              src="/assets/images/supportforsick.jpg"
-              alt="Support for the Sick Image"
-              width="2000"
-              height="1000"
-              className="relative aspect-ratio md:h-full object-cover min-h-60"
-            />
-          </motion.div>
-          <motion.div
-            ref={ref11}
-            variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            animate={slide11}
-            transition={{ duration: 0.9, delay: 0 }}
-            className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center"
-          >
+        <motion.div
+          ref={ref6}
+          variants={{
+            hidden: { opacity: 0, x: 75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={slide6}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse"
+        >
+          <Image
+            src="/assets/images/supportforsick.jpg"
+            alt="Support for the Sick Image"
+            width="2000"
+            height="1000"
+            className="relative aspect-ratio md:h-full object-cover min-h-60"
+          />
+          <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               Support for the Sick
             </h1>
@@ -488,8 +368,8 @@ function Services() {
                 apply
               </a>
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </>
       <Footer />
     </div>

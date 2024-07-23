@@ -1,16 +1,45 @@
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import { Container } from "@radix-ui/themes";
-import Link from "next/link";
-import React from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const AnnualReport = () => {
+  const ref1 = useRef(null);
+  const slide1 = useAnimation();
+  const isInView1 = useInView(ref1, { once: true });
+  useEffect(() => {
+    if (isInView1) {
+      slide1.start("visible");
+    }
+  }, [isInView1]);
   return (
     <Container>
       <div className="py-10 md:pl-0 pl-5">
-        <h1 className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5">
+        <motion.h1
+          ref={ref1}
+          variants={{
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5"
+        >
           annual reports
-        </h1>
+        </motion.h1>
         <div className="">
-          <div className="pl-8 pr-5 py-2 flex justify-between items-center">
+          <motion.div
+            ref={ref1}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide1}
+            transition={{ duration: 0.9, delay: 0.5 }}
+            className="pl-8 pr-5 py-2 flex justify-between items-center"
+          >
             <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
               2023 Annual Report
             </h1>
@@ -22,8 +51,18 @@ const AnnualReport = () => {
             >
               download
             </a>
-          </div>
-          <div className="pl-8 pr-5 py-2 flex justify-between items-center">
+          </motion.div>
+          <motion.div
+            ref={ref1}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide1}
+            transition={{ duration: 0.9, delay: 1.0 }}
+            className="pl-8 pr-5 py-2 flex justify-between items-center"
+          >
             <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
               2022 Annual Report
             </h1>
@@ -35,7 +74,7 @@ const AnnualReport = () => {
             >
               download
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Container>

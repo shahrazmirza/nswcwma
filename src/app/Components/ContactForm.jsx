@@ -1,9 +1,19 @@
 "use client";
+import React, { useEffect, useRef, useState } from "react";
 import { Container } from "@radix-ui/themes";
-import React, { useState } from "react";
 import AlertOverlay from "./Alert";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 export const ContactForm = () => {
+  const ref1 = useRef(null);
+  const slide1 = useAnimation();
+  const isInView1 = useInView(ref1, { once: true });
+  useEffect(() => {
+    if (isInView1) {
+      slide1.start("visible");
+    }
+  }, [isInView1]);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -64,10 +74,30 @@ export const ContactForm = () => {
   return (
     <Container>
       <div className="py-10 md:pl-0 pl-5">
-        <h1 className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5">
+        <motion.h1
+          ref={ref1}
+          variants={{
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5"
+        >
           contact us
-        </h1>
-        <div className="pl-8 pr-5">
+        </motion.h1>
+        <motion.div
+          ref={ref1}
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 0.5 }}
+          className="pl-8 pr-5"
+        >
           {showAlert && (
             <AlertOverlay message={alertMessage} onClose={closeAlert} />
           )}
@@ -116,7 +146,7 @@ export const ContactForm = () => {
               />
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </Container>
   );
