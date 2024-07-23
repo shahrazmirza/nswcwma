@@ -143,13 +143,13 @@ function Footer() {
               </div>
             </motion.div>
             <motion.div
-              ref={ref1}
+              ref={ref3}
               variants={{
                 hidden: { opacity: 0, x: 75 },
                 visible: { opacity: 1, x: 0 },
               }}
               initial="hidden"
-              animate={slide1}
+              animate={slide3}
               transition={{ duration: 0.9, delay: 0 }}
               className="flex md:flex-col flex-row justify-between md:justify-center items-center md:gap-16 md:px-0 px-10"
             >
