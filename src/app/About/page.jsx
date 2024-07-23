@@ -52,7 +52,7 @@ function About() {
         }}
         initial="hidden"
         animate={slide1}
-        transition={{ duration: 0.9, delay: 0.5 }}
+        transition={{ duration: 0.9, delay: 0 }}
         className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
       >
         <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
@@ -119,7 +119,7 @@ function About() {
         }}
         initial="hidden"
         animate={slide3}
-        transition={{ duration: 0.9, delay: 0.5 }}
+        transition={{ duration: 0.9, delay: 0 }}
         className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
       >
         <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
