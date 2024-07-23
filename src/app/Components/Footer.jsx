@@ -56,7 +56,7 @@ function Footer() {
 
   return (
     <>
-      <div className="bg-gray-800 text-white py-20">
+      <div className="bg-gray-800 text-white py-20 w-screen">
         <Container>
           <div className="flex md:flex-row flex-col gap-10 md:p-0 p-5">
             <motion.div
@@ -85,8 +85,8 @@ function Footer() {
             <motion.div
               ref={ref2}
               variants={{
-                hidden: { opacity: 0, y: 75 },
-                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, x: -75 },
+                visible: { opacity: 1, x: 0 },
               }}
               initial="hidden"
               animate={slide2}
@@ -120,7 +120,7 @@ function Footer() {
             <motion.div
               ref={ref3}
               variants={{
-                hidden: { opacity: 0, x: 75 },
+                hidden: { opacity: 0, x: -75 },
                 visible: { opacity: 1, x: 0 },
               }}
               initial="hidden"
@@ -145,7 +145,7 @@ function Footer() {
             <motion.div
               ref={ref3}
               variants={{
-                hidden: { opacity: 0, x: 75 },
+                hidden: { opacity: 0, x: -75 },
                 visible: { opacity: 1, x: 0 },
               }}
               initial="hidden"
@@ -188,8 +188,8 @@ function Footer() {
           <motion.div
             ref={ref4}
             variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, x: -75 },
+              visible: { opacity: 1, x: 0 },
             }}
             initial="hidden"
             animate={slide4}
@@ -219,8 +219,8 @@ function Footer() {
           <motion.footer
             ref={ref5}
             variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, x: -75 },
+              visible: { opacity: 1, x: 0 },
             }}
             initial="hidden"
             animate={slide5}

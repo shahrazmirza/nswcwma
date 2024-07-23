@@ -39,7 +39,7 @@ function About() {
   }, [isInView3]);
 
   return (
-    <div className="bg-gray-800">
+    <div className="bg-gray-800 w-screen">
       <Navbar />
       <ScrollToTop />
       <Whatsapp />

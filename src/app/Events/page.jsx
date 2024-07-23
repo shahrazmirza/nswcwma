@@ -32,7 +32,7 @@ function Events() {
   }, [isInView1]);
 
   return (
-    <div className="bg-gray-800 text-gray-400">
+    <div className="bg-gray-800 text-gray-400 w-screen">
       <Navbar />
       <ScrollToTop />
       <Whatsapp />
