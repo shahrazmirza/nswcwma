@@ -72,6 +72,7 @@ function Services() {
       <Whatsapp />
       <>
         <motion.div
+          ref={ref1}
           variants={{
             hidden: { opacity: 0, x: -75 },
             visible: { opacity: 1, x: 0 },
