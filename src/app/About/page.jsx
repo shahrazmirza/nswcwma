@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Image from "next/image";
 import ScrollToTop from "../Components/ScrollToTop";
-import { motion, useAnimate, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 function About() {
   const ref1 = useRef(null);
@@ -99,12 +99,12 @@ function About() {
         <motion.div
           ref={ref2}
           variants={{
-            hidden: { opacity: 0, x: -75 },
+            hidden: { opacity: 0, x: 75 },
             visible: { opacity: 1, x: 0 },
           }}
           initial="hidden"
           animate={slide2}
-          transition={{ duration: 0.9, delay: 1.0 }}
+          transition={{ duration: 0.9, delay: 0.5 }}
         >
           <Image
             src="/assets/images/mission.jpg"
@@ -125,7 +125,7 @@ function About() {
           }}
           initial="hidden"
           animate={slide4}
-          transition={{ duration: 0.9, delay: 1.0 }}
+          transition={{ duration: 0.9, delay: 0.5 }}
         >
           <Image
             src="/assets/images/vision.jpg"
@@ -193,12 +193,12 @@ function About() {
         <motion.div
           ref={ref6}
           variants={{
-            hidden: { opacity: 0, x: -75 },
+            hidden: { opacity: 0, x: 75 },
             visible: { opacity: 1, x: 0 },
           }}
           initial="hidden"
           animate={slide6}
-          transition={{ duration: 0.9, delay: 1.0 }}
+          transition={{ duration: 0.9, delay: 0.5 }}
         >
           <Image
             src="/assets/images/shortstory.jpg"
