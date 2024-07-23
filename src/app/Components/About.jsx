@@ -27,18 +27,18 @@ function About() {
 
   return (
     <div className="bg-gray-800 w-screen">
-      <div className="bg-gray-800 w-screen">
-        <motion.div
-          ref={ref1}
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          initial="hidden"
-          animate={slide1}
-          transition={{ duration: 0.9, delay: 0 }}
-          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
-        >
+      <motion.div
+        ref={ref1}
+        variants={{
+          hidden: { opacity: 0, x: -75 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        initial="hidden"
+        animate={slide1}
+        transition={{ duration: 0.9, delay: 0 }}
+        className="bg-gray-800 w-screen"
+      >
+        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col">
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
               welcome to our site!
@@ -65,18 +65,8 @@ function About() {
             height="1000"
             className="relative aspect-ratio md:h-full object-cover min-h-60"
           />
-        </motion.div>
-        <motion.div
-          ref={ref2}
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          initial="hidden"
-          animate={slide2}
-          transition={{ duration: 0.9, delay: 0 }}
-          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse"
-        >
+        </div>
+        <div className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse">
           <Image
             src="/assets/images/about2.jpg"
             alt="Hero Image"
@@ -104,8 +94,8 @@ function About() {
               </a>
             </div>
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </div>
   );
 }
