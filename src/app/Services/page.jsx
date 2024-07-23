@@ -72,12 +72,13 @@ function Services() {
       <Whatsapp />
       <>
         <motion.div
+          ref={ref1}
           variants={{
-            hidden: { opacity: 0, x: -75 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
           }}
           initial="hidden"
-          animate="visible"
+          animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
           className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
         >
@@ -125,8 +126,8 @@ function Services() {
         <motion.div
           ref={ref2}
           variants={{
-            hidden: { opacity: 0, x: 75 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
           }}
           initial="hidden"
           animate={slide2}
