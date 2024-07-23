@@ -74,7 +74,7 @@ function ServicesBanner() {
           <motion.div
             ref={ref1}
             variants={{
-              hidden: { opacity: 0, x: -75 },
+              hidden: { opacity: 0, x: 75 },
               visible: { opacity: 1, x: 0 },
             }}
             initial="hidden"
@@ -122,7 +122,7 @@ function ServicesBanner() {
           <motion.div
             ref={ref3}
             variants={{
-              hidden: { opacity: 0, x: -75 },
+              hidden: { opacity: 0, x: 75 },
               visible: { opacity: 1, x: 0 },
             }}
             initial="hidden"
@@ -170,7 +170,7 @@ function ServicesBanner() {
           <motion.div
             ref={ref5}
             variants={{
-              hidden: { opacity: 0, x: -75 },
+              hidden: { opacity: 0, x: 75 },
               visible: { opacity: 1, x: 0 },
             }}
             initial="hidden"
