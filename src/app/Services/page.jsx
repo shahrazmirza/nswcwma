@@ -147,7 +147,7 @@ function Services() {
             </h1>
             <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               Every Friday afternoon, NSWCWMA offers free lunch to the
-              community. This initiative aims to support those in need and
+              deserving. This initiative aims to support those in need and
               foster a sense of community. By providing nutritious meals,
               NSWCWMA helps alleviate food insecurity and brings people
               together, encouraging social interaction and mutual support among
@@ -241,9 +241,14 @@ function Services() {
             className="relative aspect-ratio md:h-full object-cover min-h-60"
           />
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
-              Driving Classes
-            </h1>
+            <div className="md:flex items-center gap-2">
+              <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+                Driving Classes
+              </h1>
+              <h2 className="uppercase md:text-md text-xs md:font-medium font-semibold md:tracking-wide text-red-500">
+                &#40;Coming Soon&#41;
+              </h2>
+            </div>
             <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               Affordable driving classes are available for members of the CALD
               community and migrants. These classes aim to empower individuals
