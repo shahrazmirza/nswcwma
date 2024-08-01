@@ -69,7 +69,7 @@ const PrayerTime = () => {
               <h1 className="flex items-center uppercase text-3xl font-semibold tracking-widest text-gray-800 border-l border-gray-500 pl-5 h-16">
                 Prayer Times
               </h1>
-              <div className="pl-8 text-center">
+              <div className="md:text-end text-center">
                 <p className="md:text-base text-sm font-normal">
                   {prayerData.data.date.gregorian.day}{" "}
                   {prayerData.data.date.gregorian.month.en},{" "}
