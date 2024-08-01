@@ -7,6 +7,7 @@ import About from "./Components/About";
 import ServicesBanner from "./Components/ServicesBanner";
 import Team from "./Components/Team";
 import ScrollToTop from "./Components/ScrollToTop";
+import PrayerTime from "./Components/PrayerTime";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <About />
       <ServicesBanner />
+      <PrayerTime />
       <Team />
       <Footer />
     </div>
