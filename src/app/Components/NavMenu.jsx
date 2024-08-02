@@ -60,7 +60,7 @@ const NavMenu = () => {
             <li className="uppercase">
               <Link
                 href="/"
-                className={`outline outline-1 px-4 hover:outline-gray-300 ${
+                className={`outline outline-1 px-3 hover:outline-gray-300 ${
                   activeLink === "/" ? "outline-gray-300" : "outline-gray-800"
                 }`}
                 onClick={() => handleLinkClick("/")}
@@ -71,7 +71,7 @@ const NavMenu = () => {
             <li className="uppercase">
               <Link
                 href="/About"
-                className={`outline outline-1 px-4 hover:outline-gray-300 ${
+                className={`outline outline-1 px-3 hover:outline-gray-300 ${
                   activeLink === "/About"
                     ? "outline-gray-300"
                     : "outline-gray-800"
@@ -84,7 +84,7 @@ const NavMenu = () => {
             <li className="uppercase">
               <Link
                 href="/Services"
-                className={`outline outline-1 px-4 hover:outline-gray-300 ${
+                className={`outline outline-1 px-3 hover:outline-gray-300 ${
                   activeLink === "/Services"
                     ? "outline-gray-300"
                     : "outline-gray-800"
@@ -97,7 +97,7 @@ const NavMenu = () => {
             <li className="uppercase">
               <Link
                 href="/Events"
-                className={`outline outline-1 px-4 hover:outline-gray-300 ${
+                className={`outline outline-1 px-3 hover:outline-gray-300 ${
                   activeLink === "/Events"
                     ? "outline-gray-300"
                     : "outline-gray-800"
@@ -109,8 +109,21 @@ const NavMenu = () => {
             </li>
             <li className="uppercase">
               <Link
+                href="/Mosque"
+                className={`outline outline-1 px-3 hover:outline-gray-300 ${
+                  activeLink === "/Mosque"
+                    ? "outline-gray-300"
+                    : "outline-gray-800"
+                }`}
+                onClick={() => handleLinkClick("/Mosque")}
+              >
+                mosque
+              </Link>
+            </li>
+            <li className="uppercase">
+              <Link
                 href="/Downloads"
-                className={`outline outline-1 px-4 hover:outline-gray-300 ${
+                className={`outline outline-1 px-3 hover:outline-gray-300 ${
                   activeLink === "/Downloads"
                     ? "outline-gray-300"
                     : "outline-gray-800"
@@ -123,7 +136,7 @@ const NavMenu = () => {
             <li className="uppercase">
               <Link
                 href="/Contacts"
-                className={`outline outline-1 px-4 hover:outline-gray-300 ${
+                className={`outline outline-1 px-3 hover:outline-gray-300 ${
                   activeLink === "/Contacts"
                     ? "outline-gray-300"
                     : "outline-gray-800"
