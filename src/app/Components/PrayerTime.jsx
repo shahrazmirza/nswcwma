@@ -64,9 +64,9 @@ const PrayerTime = () => {
     >
       <Container>
         {prayerData ? (
-          <div className="border rounded-3xl px-10 py-7 my-10 bg-gray-100">
+          <div className="border rounded-3xl px-10 py-7 mb-10 bg-gray-100 md:mx-0 mx-5">
             <div className="flex md:flex-row flex-col justify-center md:justify-between pb-10 gap-3">
-              <h1 className="flex items-center uppercase text-3xl font-semibold tracking-widest text-gray-800 border-l border-gray-500 pl-5 h-16">
+              <h1 className="flex items-center uppercase md:text-3xl text-2xl font-semibold tracking-widest text-gray-800 border-l border-gray-500 pl-5 h-16">
                 Prayer Times
               </h1>
               <div className="md:text-end text-center">
@@ -83,32 +83,36 @@ const PrayerTime = () => {
               </div>
             </div>
 
-            <div className="flex md:flex-row flex-col md:gap-10 gap-5 justify-center">
-              <div className="rounded-2xl bg-gray-300 px-10 md:py-7 py-5 flex flex-col justify-center items-center">
-                <h1 className="md:text-lg text-base font-medium">Fajr</h1>
-                <h2 className="md:text-lg text-base font-normal">
-                  {prayerData.data.timings.Fajr}
-                </h2>
+            <div className="flex md:flex-row flex-col md:gap-10 gap-5 justify-center items-center">
+              <div className="flex gap-5 md:gap-10">
+                <div className="rounded-2xl bg-gray-300 md:w-40 w-32 px-10 md:py-7 py-5 flex flex-col justify-center items-center">
+                  <h1 className="md:text-lg text-base font-medium">Fajr</h1>
+                  <h2 className="md:text-lg text-base font-normal">
+                    {prayerData.data.timings.Fajr}
+                  </h2>
+                </div>
+                <div className="rounded-2xl bg-gray-300 md:w-40 w-32 px-10 md:py-7 py-5 flex flex-col justify-center items-center">
+                  <h1 className="md:text-lg text-base font-medium">Dhuhr</h1>
+                  <h2 className="md:text-lg text-base font-normal">
+                    {prayerData.data.timings.Dhuhr}
+                  </h2>
+                </div>
               </div>
-              <div className="rounded-2xl bg-gray-300 px-10 md:py-7 py-5 flex flex-col justify-center items-center">
-                <h1 className="md:text-lg text-base font-medium">Dhuhr</h1>
-                <h2 className="md:text-lg text-base font-normal">
-                  {prayerData.data.timings.Dhuhr}
-                </h2>
+              <div className="flex gap-5 md:gap-10">
+                <div className="rounded-2xl bg-gray-300 md:w-40 w-32 px-10 md:py-7 py-5 flex flex-col justify-center items-center">
+                  <h1 className="md:text-lg text-base font-medium">Asr</h1>
+                  <h2 className="md:text-lg text-base font-normal">
+                    {prayerData.data.timings.Asr}
+                  </h2>
+                </div>
+                <div className="rounded-2xl bg-gray-300 md:w-40 w-32 px-10 md:py-7 py-5 flex flex-col justify-center items-center">
+                  <h1 className="md:text-lg text-base font-medium">Maghrib</h1>
+                  <h2 className="md:text-lg text-base font-normal">
+                    {prayerData.data.timings.Maghrib}
+                  </h2>
+                </div>
               </div>
-              <div className="rounded-2xl bg-gray-300 px-10 md:py-7 py-5 flex flex-col justify-center items-center">
-                <h1 className="md:text-lg text-base font-medium">Asr</h1>
-                <h2 className="md:text-lg text-base font-normal">
-                  {prayerData.data.timings.Asr}
-                </h2>
-              </div>
-              <div className="rounded-2xl bg-gray-300 px-10 md:py-7 py-5 flex flex-col justify-center items-center">
-                <h1 className="md:text-lg text-base font-medium">Maghrib</h1>
-                <h2 className="md:text-lg text-base font-normal">
-                  {prayerData.data.timings.Maghrib}
-                </h2>
-              </div>
-              <div className="rounded-2xl bg-gray-300 px-10 md:py-7 py-5 flex flex-col justify-center items-center">
+              <div className="rounded-2xl bg-gray-300 md:w-40 w-32 px-10 md:py-7 py-5 flex flex-col justify-center items-center">
                 <h1 className="md:text-lg text-base font-medium">Isha</h1>
                 <h2 className="md:text-lg text-base font-normal">
                   {prayerData.data.timings.Isha}
