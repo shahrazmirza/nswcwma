@@ -83,7 +83,7 @@ const AnnualReport = () => {
             }}
             initial="hidden"
             animate={slide1}
-            transition={{ duration: 0.9, delay: 1.0 }}
+            transition={{ duration: 0.9, delay: 1.5 }}
             className="pl-8 pr-5 py-2 flex justify-between items-center"
           >
             <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
