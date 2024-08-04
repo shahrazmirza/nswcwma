@@ -88,14 +88,20 @@ function Mosque() {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
 
   const slide1 = useAnimation();
   const slide2 = useAnimation();
   const slide3 = useAnimation();
+  const slide4 = useAnimation();
+  const slide5 = useAnimation();
 
   const isInView1 = useInView(ref1, { once: true });
   const isInView2 = useInView(ref2, { once: true });
   const isInView3 = useInView(ref3, { once: true });
+  const isInView4 = useInView(ref4, { once: true });
+  const isInView5 = useInView(ref5, { once: true });
 
   useEffect(() => {
     if (isInView1) {
@@ -114,6 +120,18 @@ function Mosque() {
       slide3.start("visible");
     }
   }, [isInView3]);
+
+  useEffect(() => {
+    if (isInView4) {
+      slide4.start("visible");
+    }
+  }, [isInView4]);
+
+  useEffect(() => {
+    if (isInView5) {
+      slide5.start("visible");
+    }
+  }, [isInView5]);
 
   const formatVerseKey = (verseKey) => {
     const [chapter, verse] = verseKey.split(":");
@@ -199,7 +217,17 @@ function Mosque() {
           </div>
 
           <div className="col-span-1 flex flex-col gap-5">
-            <div className="card bg-gray-300 shadow-xl text-gray-800 h-fit md:w-fit w-80 p-5 md:mx-0 mx-5">
+            <motion.div
+              ref={ref4}
+              variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              animate={slide4}
+              transition={{ duration: 0.9, delay: 0 }}
+              className="card bg-gray-300 shadow-xl text-gray-800 h-fit md:w-fit w-80 p-5 md:mx-0 mx-5"
+            >
               {verseData ? (
                 <div className="flex flex-col gap-2">
                   <h1 className="text-base md:font-medium font-semibold md:tracking-wide border-l-[1px] border-gray-800 pl-5">
@@ -213,9 +241,19 @@ function Mosque() {
               ) : (
                 <p className="text-red-500">{error}</p>
               )}
-            </div>
+            </motion.div>
 
-            <div className="card bg-gray-300 shadow-xl text-gray-800 col-span-1 h-fit md:w-fit w-80 p-5 md:mx-0 mx-5">
+            <motion.div
+              ref={ref5}
+              variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              animate={slide5}
+              transition={{ duration: 0.9, delay: 0 }}
+              className="card bg-gray-300 shadow-xl text-gray-800 col-span-1 h-fit md:w-fit w-80 p-5 md:mx-0 mx-5"
+            >
               {hadithData ? (
                 <div className="flex flex-col gap-2">
                   <h1 className="text-base md:font-medium font-semibold md:tracking-wide border-l-[1px] border-gray-800 pl-5">
@@ -231,7 +269,7 @@ function Mosque() {
               ) : (
                 <p className="text-red-500">{error}</p>
               )}
-            </div>
+            </motion.div>
           </div>
         </div>
       </Container>
