@@ -147,7 +147,9 @@ function DubboMultiCulturalGala2024() {
                       {item.paragraph8}
                     </p>
                   </div>
-                  <DubboMultiCulturalGala2024Photos />
+                  <div className="md:-mb-32 -mb-80">
+                    <DubboMultiCulturalGala2024Photos />
+                  </div>
                   <div className="divider"></div>
                 </div>
               ))}
