@@ -12,6 +12,7 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import ScrollToTop from "../../Components/ScrollToTop";
 import { motion, useAnimation, useInView } from "framer-motion";
+import DubboMultiCulturalGala2024Photos from "../../Components/DubboMultiCulturalGala2024Photos";
 
 function DubboMultiCulturalGala2024() {
   const [items, setItems] = useState([]);
@@ -146,7 +147,8 @@ function DubboMultiCulturalGala2024() {
                       {item.paragraph8}
                     </p>
                   </div>
-                  <div className="divider my-10"></div>
+                  <DubboMultiCulturalGala2024Photos />
+                  <div className="divider"></div>
                 </div>
               ))}
           </motion.div>
