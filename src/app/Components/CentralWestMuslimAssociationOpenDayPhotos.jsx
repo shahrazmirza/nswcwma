@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-function DubboMultiCulturalGala2024Photos() {
+function CentralWestMuslimAssociationOpenDayPhotos() {
   const [currentSlide, setCurrentSlide] = useState(1);
 
-  const totalSlides = 42;
+  const totalSlides = 10;
 
   const goToSlide = (slideNumber) => {
     setCurrentSlide(slideNumber);
@@ -38,11 +38,13 @@ function DubboMultiCulturalGala2024Photos() {
             }}
           >
             <Image
-              src={`/assets/images/DubboMultiCulturalGala2024/${i + 1}.jpeg`}
+              src={`/assets/images/CentralWestMuslimAssociationOpenDay/${
+                i + 1
+              }.jpeg`}
               width={600}
               height={600}
               className=""
-              alt={`Multicultural Gala Image ${i + 1}`}
+              alt={`Central West Muslim Association OpenDay Image ${i + 1}`}
             />
             <div className="absolute left-5 right-5 md:top-52 top-28 flex -translate-y-1/2 transform justify-between">
               <button onClick={prevSlide} className="btn btn-circle opacity-75">
@@ -59,4 +61,4 @@ function DubboMultiCulturalGala2024Photos() {
   );
 }
 
-export default DubboMultiCulturalGala2024Photos;
+export default CentralWestMuslimAssociationOpenDayPhotos;
