@@ -12,6 +12,7 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import ScrollToTop from "../../Components/ScrollToTop";
 import { motion, useAnimation, useInView } from "framer-motion";
+import SummerHolidayYouthProgramPhotos from "../../Components/SummerHolidayYouthProgramPhotos";
 
 function SummerHolidayYouthProgram() {
   const [items, setItems] = useState([]);
@@ -146,7 +147,10 @@ function SummerHolidayYouthProgram() {
                       {item.paragraph8}
                     </p>
                   </div>
-                  <div className="divider my-10"></div>
+                  <div className="md:-mb-32 -mb-80">
+                    <SummerHolidayYouthProgramPhotos />
+                  </div>
+                  <div className="divider"></div>
                 </div>
               ))}
           </motion.div>
