@@ -4,6 +4,7 @@ import { Container } from "@radix-ui/themes";
 import Image from "next/image";
 import { FaFacebookF } from "react-icons/fa";
 import { motion, useAnimation, useInView } from "framer-motion";
+import Link from "next/link";
 
 function Footer() {
   const ref1 = useRef(null);
@@ -228,11 +229,18 @@ function Footer() {
             className="footer footer-center text-xs font-bold tracking-widest"
           >
             <aside>
-              <p>
-                Copyright © {new Date().getFullYear()} - All right reserved by
-                NSW Central West Muslim Association Incorporated ( ABN: 76 977
-                073 780 )
-              </p>
+              <div className="md:flex gap-1">
+                <p>
+                  Copyright © {new Date().getFullYear()} - All right reserved by
+                  NSW Central West Muslim Association Incorporated
+                </p>
+                <Link
+                  href="https://abr.business.gov.au/ABN/View?id=76977073780"
+                  target="_blank"
+                >
+                  <p className="text-center">( ABN 76 977 073 780 )</p>
+                </Link>
+              </div>
               <p></p>
             </aside>
           </motion.footer>
