@@ -204,7 +204,7 @@ function Footer() {
               height="80"
               className=""
             />
-            <p className="text-xs font-medium tracking-widest text-center md:text-start">
+            <p className="text-xs font-medium tracking-widest text-center md:text-start text-gray-800">
               NSW Central West Muslim Association acknowledges the First Peoples
               of Australia as the traditional custodians of the land on which we
               work. We acknowledge their cultures are living ones, which relate
@@ -215,7 +215,7 @@ function Footer() {
           </motion.div>
         </Container>
       </div>
-      <div className="bg-white text-center py-10 md:px-0 px-5">
+      <div className="bg-white text-center py-10 md:px-0 px-5 text-gray-800">
         <Container>
           <motion.footer
             ref={ref5}
