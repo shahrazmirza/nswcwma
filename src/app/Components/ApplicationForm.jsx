@@ -295,33 +295,43 @@ export const ApplicationForm = () => {
                   className="p-2 border-b border-gray-400 focus:outline-none text-xs font-semibold h-10 resize-none"
                 ></textarea>
 
-                <label className="flex items-start pt-5 text-sm font-medium text-gray-800 bg-white">
-                  <input
-                    type="checkbox"
-                    checked={firstConsent}
-                    onChange={(e) => setFirstConsent(e.target.checked)}
-                    required
-                  />
-                  <p className="pl-2 -mt-1">
-                    I hereby declare that the information provided is true and
-                    correct to the best of my knowledge. I understand that
-                    providing false information may result in the termination of
-                    any assistance provided.
-                  </p>
-
-                  <div className="flex gap-1 pl-2 -mt-1">
-                    <p>I have read and agree to the</p>
-                    <Link
-                      href="/TermsAndConditions"
-                      target="_blank"
-                      className="underline underline-offset-2 font-semibold"
-                    >
-                      Terms and Conditions
-                    </Link>{" "}
-                    <p>
-                      of the NSW Central West Muslim Association{" ("}NSWCWMA
-                      {")"}.
+                <label className="flex flex-col items-start pt-5 text-sm font-medium text-gray-800 bg-white gap-5">
+                  <div className="flex">
+                    {" "}
+                    <input
+                      type="checkbox"
+                      checked={firstConsent}
+                      onChange={(e) => setFirstConsent(e.target.checked)}
+                      required
+                    />
+                    <p className="pl-2 mt-5">
+                      I hereby declare that the information provided is true and
+                      correct to the best of my knowledge. I understand that
+                      providing false information may result in the termination
+                      of any assistance provided.
                     </p>
+                  </div>
+                  <div className="flex">
+                    <input
+                      type="checkbox"
+                      checked={secondConsent}
+                      onChange={(e) => setSecondConsent(e.target.checked)}
+                      required
+                    />
+                    <div className="flex gap-1 pl-2">
+                      <p>I have read and agree to the</p>
+                      <Link
+                        href="/TermsAndConditions"
+                        target="_blank"
+                        className="underline underline-offset-2 font-semibold"
+                      >
+                        Terms and Conditions
+                      </Link>{" "}
+                      <p>
+                        of the NSW Central West Muslim Association&nbsp;{"("}
+                        NSWCWMA{")"}.
+                      </p>
+                    </div>
                   </div>
                 </label>
 
