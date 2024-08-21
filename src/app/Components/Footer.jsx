@@ -152,15 +152,15 @@ function Footer() {
               initial="hidden"
               animate={slide3}
               transition={{ duration: 0.9, delay: 0 }}
-              className="flex md:flex-col flex-row justify-between md:justify-center items-center md:gap-16 md:px-0 px-10"
+              className="flex flex-col justify-between items-center gap-16"
             >
               <button className="btn btn-active btn-link">
                 <a href="/">
                   <Image
                     src="/assets/images/logo.png"
                     alt="NSWCWMA Logo"
-                    width="80"
-                    height="80"
+                    width="90"
+                    height="90"
                     className=""
                   />
                 </a>
@@ -174,8 +174,22 @@ function Footer() {
                   <Image
                     src="/assets/images/acnc-logo.png"
                     alt="ACNC Logo"
-                    width="90"
-                    height="90"
+                    width="105"
+                    height="105"
+                    className=""
+                  />
+                </a>
+              </button>
+              <button className="btn btn-active btn-link pr-6">
+                <a
+                  href="https://abr.business.gov.au/ABN/View?abn=76977073780"
+                  target="_blank"
+                >
+                  <Image
+                    src="/assets/images/dgr.png"
+                    alt="DGR Logo"
+                    width="170"
+                    height="170"
                     className=""
                   />
                 </a>
