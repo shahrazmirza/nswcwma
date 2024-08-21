@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Container } from "@radix-ui/themes";
 import AlertOverlay from "./Alert";
 import { motion, useAnimation, useInView } from "framer-motion";
+import Link from "next/link";
 
 export const ApplicationForm = () => {
   const ref1 = useRef(null);
@@ -27,6 +28,7 @@ export const ApplicationForm = () => {
   const [emergencyContactRelationship, setEmergencyContactRelationship] =
     useState("");
   const [consent, setConsent] = useState("");
+  const [consent2, setConsent2] = useState("");
   const [alertMessage, setAlertMessage] = useState(null);
 
   const [showAlert, setShowAlert] = useState(false);
@@ -90,6 +92,7 @@ export const ApplicationForm = () => {
         setEmergencyContactPhone("");
         setEmergencyContactRelationship("");
         setConsent("");
+        setConsent2("");
       } else {
         setAlertMessage(
           "Oops! Something went wrong while submitting the form."
@@ -289,7 +292,7 @@ export const ApplicationForm = () => {
                   className="p-2 border-b border-gray-400 focus:outline-none text-xs font-semibold h-10 resize-none"
                 ></textarea>
 
-                <label className="flex items-start py-5 text-sm font-medium text-gray-800 bg-white">
+                <label className="flex items-start pt-5 text-sm font-medium text-gray-800 bg-white">
                   <input
                     type="checkbox"
                     checked={consent}
@@ -302,6 +305,26 @@ export const ApplicationForm = () => {
                     providing false information may result in the termination of
                     any assistance provided.
                   </p>
+                </label>
+
+                <label className="flex items-start pb-5 text-sm font-medium text-gray-800 bg-white">
+                  <input
+                    type="checkbox"
+                    checked={consent2}
+                    onChange={(e) => setConsent2(e.target.checked)}
+                    required
+                  />
+                  <div className="flex gap-1 pl-2 -mt-1">
+                    <p>I have read and agree to the</p>
+                    <Link
+                      href="/TermsAndConditions"
+                      target="_blank"
+                      className="underline underline-offset-2 font-semibold"
+                    >
+                      Terms and Conditions
+                    </Link>{" "}
+                    <p>of the NSW Central West Muslim Association (NSWCWMA).</p>
+                  </div>
                 </label>
 
                 <div className="flex justify-end">
