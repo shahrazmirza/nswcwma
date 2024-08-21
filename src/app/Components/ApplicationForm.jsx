@@ -296,7 +296,7 @@ export const ApplicationForm = () => {
                 ></textarea>
 
                 <label className="flex flex-col items-start pt-5 text-sm font-medium text-gray-800 bg-white gap-5">
-                  <div className="flex">
+                  <div className="flex items-start">
                     {" "}
                     <input
                       type="checkbox"
@@ -304,21 +304,21 @@ export const ApplicationForm = () => {
                       onChange={(e) => setFirstConsent(e.target.checked)}
                       required
                     />
-                    <p className="pl-2 mt-5">
+                    <p className="pl-2 -mt-1">
                       I hereby declare that the information provided is true and
                       correct to the best of my knowledge. I understand that
                       providing false information may result in the termination
                       of any assistance provided.
                     </p>
                   </div>
-                  <div className="flex">
+                  <div className="flex items-start">
                     <input
                       type="checkbox"
                       checked={secondConsent}
                       onChange={(e) => setSecondConsent(e.target.checked)}
                       required
                     />
-                    <div className="flex gap-1 pl-2">
+                    <div className="md:flex md:gap-1 pl-2 -mt-1">
                       <p>I have read and agree to the</p>
                       <Link
                         href="/TermsAndConditions"
