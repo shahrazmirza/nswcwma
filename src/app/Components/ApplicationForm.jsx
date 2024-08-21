@@ -9,6 +9,7 @@ export const ApplicationForm = () => {
   const ref1 = useRef(null);
   const slide1 = useAnimation();
   const isInView1 = useInView(ref1, { once: true });
+
   useEffect(() => {
     if (isInView1) {
       slide1.start("visible");
@@ -27,8 +28,8 @@ export const ApplicationForm = () => {
   const [emergencyContactPhone, setEmergencyContactPhone] = useState("");
   const [emergencyContactRelationship, setEmergencyContactRelationship] =
     useState("");
-  const [firstConsent, setFirstConsent] = useState("");
-  const [secondConsent, setSecondConsent] = useState("");
+  const [firstConsent, setFirstConsent] = useState(false);
+  const [secondConsent, setSecondConsent] = useState(false);
   const [alertMessage, setAlertMessage] = useState(null);
 
   const [showAlert, setShowAlert] = useState(false);
@@ -49,7 +50,9 @@ export const ApplicationForm = () => {
       !specialNeeds ||
       !emergencyContactName ||
       !emergencyContactPhone ||
-      !emergencyContactRelationship
+      !emergencyContactRelationship ||
+      !firstConsent ||
+      !secondConsent
     ) {
       setAlertMessage("Please fill in all required fields.");
       setShowAlert(true);
@@ -91,8 +94,8 @@ export const ApplicationForm = () => {
         setEmergencyContactName("");
         setEmergencyContactPhone("");
         setEmergencyContactRelationship("");
-        setFirstConsent("");
-        setSecondConsent("");
+        setFirstConsent(false);
+        setSecondConsent(false);
       } else {
         setAlertMessage(
           "Oops! Something went wrong while submitting the form."
@@ -156,13 +159,13 @@ export const ApplicationForm = () => {
             <option value="" disabled>
               Please Select Your Group
             </option>
-            <option className="text-black" value="Migrant">
+            <option className="text-black" value="Sick">
               Sick
             </option>
             <option className="text-black" value="Migrant">
               Migrant
             </option>
-            <option className="text-black" value="Migrant">
+            <option className="text-black" value="Homeless">
               Homeless
             </option>
             <option className="text-black" value="Individual with Disabilities">
@@ -324,7 +327,7 @@ export const ApplicationForm = () => {
                       Terms and Conditions
                     </Link>{" "}
                     <p>
-                      of the NSW Central West Muslim Association {"("}NSWCWMA
+                      of the NSW Central West Muslim Association{" ("}NSWCWMA
                       {")"}.
                     </p>
                   </div>
