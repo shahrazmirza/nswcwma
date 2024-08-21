@@ -27,8 +27,8 @@ export const ApplicationForm = () => {
   const [emergencyContactPhone, setEmergencyContactPhone] = useState("");
   const [emergencyContactRelationship, setEmergencyContactRelationship] =
     useState("");
-  const [consent, setConsent] = useState("");
-  const [consent2, setConsent2] = useState("");
+  const [firstConsent, setFirstConsent] = useState("");
+  const [secondConsent, setSecondConsent] = useState("");
   const [alertMessage, setAlertMessage] = useState(null);
 
   const [showAlert, setShowAlert] = useState(false);
@@ -91,8 +91,8 @@ export const ApplicationForm = () => {
         setEmergencyContactName("");
         setEmergencyContactPhone("");
         setEmergencyContactRelationship("");
-        setConsent("");
-        setConsent2("");
+        setFirstConsent("");
+        setSecondConsent("");
       } else {
         setAlertMessage(
           "Oops! Something went wrong while submitting the form."
@@ -295,8 +295,8 @@ export const ApplicationForm = () => {
                 <label className="flex items-start pt-5 text-sm font-medium text-gray-800 bg-white">
                   <input
                     type="checkbox"
-                    checked={consent}
-                    onChange={(e) => setConsent(e.target.checked)}
+                    checked={firstConsent}
+                    onChange={(e) => setFirstConsent(e.target.checked)}
                     required
                   />
                   <p className="pl-2 -mt-1">
@@ -310,8 +310,8 @@ export const ApplicationForm = () => {
                 <label className="flex items-start pb-5 text-sm font-medium text-gray-800 bg-white">
                   <input
                     type="checkbox"
-                    checked={consent2}
-                    onChange={(e) => setConsent2(e.target.checked)}
+                    checked={secondConsent}
+                    onChange={(e) => setSecondConsent(e.target.checked)}
                     required
                   />
                   <div className="flex gap-1 pl-2 -mt-1">
