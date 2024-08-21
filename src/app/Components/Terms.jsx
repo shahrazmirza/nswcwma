@@ -12,6 +12,7 @@ const Terms = () => {
       slide1.start("visible");
     }
   }, [isInView1]);
+
   return (
     <Container>
       <div className="py-10 md:pl-0 pl-5">
@@ -43,10 +44,10 @@ const Terms = () => {
             <h1 className=" border-gray-400 font-semibold">1. General Terms</h1>
             <div className="flex flex-col gap-3 pl-5">
               <p>
-                The NSW Central West Muslim Association offers various services
-                to support the community, including assistance for the homeless,
-                free food on Fridays, disability support, driving classes,
-                poverty alleviation, and support for the sick.
+                The NSW Central West Muslim Association&nbsp;(NSWCWMA) offers
+                various services to support the community, including assistance
+                for the homeless, free food on Fridays, disability support,
+                driving classes, poverty alleviation, and support for the sick.
               </p>
 
               <p>
@@ -119,8 +120,8 @@ const Terms = () => {
                 offered by the organization.
               </p>
               <p>
-                NSWCWMA's decision to reject an application is final and not
-                subject to appeal.
+                NSWCWMA&apos;s decision to reject an application is final and
+                not subject to appeal.
               </p>
             </div>
           </div>
@@ -134,7 +135,7 @@ const Terms = () => {
                 NSWCWMA reserves the right to terminate or withdraw any service
                 at any time, without prior notice. This may occur due to changes
                 in funding, organizational capacity, or other circumstances
-                beyond NSWCWMA’s control.
+                beyond NSWCWMA&apos;s control.
               </p>
             </div>
           </div>
@@ -197,8 +198,8 @@ const Terms = () => {
           <h1 className=" border-gray-400">
             These terms and conditions are intended to ensure the fair and
             effective provision of services by NSWCWMA, while maintaining the
-            organisation's ability to serve the community within its capacity
-            and resources.
+            organisation&apos;s ability to serve the community within its
+            capacity and resources.
           </h1>
         </motion.div>
       </div>
