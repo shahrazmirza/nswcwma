@@ -117,7 +117,7 @@ const Terms = () => {
                 NSWCWMA reserves the absolute right to reject any application
                 for services at its sole discretion, without providing any
                 reason or explanation. This right applies to all services
-                offered by the organization.
+                offered by the organisation.
               </p>
               <p>
                 NSWCWMA&apos;s decision to reject an application is final and
@@ -134,7 +134,7 @@ const Terms = () => {
               <p>
                 NSWCWMA reserves the right to terminate or withdraw any service
                 at any time, without prior notice. This may occur due to changes
-                in funding, organizational capacity, or other circumstances
+                in funding, organisational capacity, or other circumstances
                 beyond NSWCWMA&apos;s control.
               </p>
             </div>
@@ -161,7 +161,7 @@ const Terms = () => {
             <div className="flex flex-col gap-3 pl-5">
               <p>
                 NSWCWMA will make every effort to provide services as described;
-                however, the organization shall not be liable for any loss,
+                however, the organisation shall not be liable for any loss,
                 damage, or inconvenience caused by the rejection of an
                 application, termination of services, or other factors beyond
                 its control.
