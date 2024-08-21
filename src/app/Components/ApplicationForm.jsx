@@ -308,15 +308,7 @@ export const ApplicationForm = () => {
                     providing false information may result in the termination of
                     any assistance provided.
                   </p>
-                </label>
 
-                <label className="flex items-start pb-5 text-sm font-medium text-gray-800 bg-white">
-                  <input
-                    type="checkbox"
-                    checked={secondConsent}
-                    onChange={(e) => setSecondConsent(e.target.checked)}
-                    required
-                  />
                   <div className="flex gap-1 pl-2 -mt-1">
                     <p>I have read and agree to the</p>
                     <Link
