@@ -2,9 +2,9 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { amount, donationType } = req.body;
+    const { amount, donationType, donationFrequency } = req.body;
 
-    if (!amount || amount <= 0 || !donationType) {
+    if (!amount || amount <= 0 || !donationType || !donationFrequency) {
       return res.status(400).json({ error: "Invalid donation details" });
     }
 
@@ -16,6 +16,10 @@ export default async function handler(req, res) {
             name: `${donationType}`,
           },
           unit_amount: amount * 100,
+          recurring:
+            donationFrequency === "Recurring"
+              ? { interval: "month" }
+              : undefined,
         },
         quantity: 1,
       },
@@ -24,7 +28,7 @@ export default async function handler(req, res) {
     try {
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ["card"],
-        mode: "payment",
+        mode: donationFrequency === "Recurring" ? "subscription" : "payment",
         success_url: `${req.headers.origin}/Success`,
         cancel_url: `${req.headers.origin}/Cancel`,
         line_items: transformedItems,

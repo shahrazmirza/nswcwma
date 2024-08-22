@@ -10,6 +10,7 @@ function DonationForm() {
   const ref1 = useRef(null);
   const slide1 = useAnimation();
   const isInView1 = useInView(ref1, { once: true });
+
   useEffect(() => {
     if (isInView1) {
       slide1.start("visible");
@@ -21,6 +22,8 @@ function DonationForm() {
   const [filteredItems, setFilteredItems] = useState([]);
   const [selectedAmount, setSelectedAmount] = useState(0);
   const [customAmountInputValue, setCustomAmountInputValue] = useState("");
+  const [donationFrequency, setDonationFrequency] = useState("");
+  const [isDonationTypeSelected, setIsDonationTypeSelected] = useState(false);
 
   useEffect(() => {
     const uniqueTypes = [...new Set(data.map((item) => item.type))];
@@ -40,12 +43,16 @@ function DonationForm() {
         return toast.error("Please choose the donation type");
       }
 
+      if (donationFrequency === "") {
+        return toast.error("Please select One-Time or Monthly");
+      }
+
       if (amount === 0 && customAmountInputValue.trim() !== "") {
         amount = parseFloat(customAmountInputValue.trim());
       }
 
       if (amount !== 0 && customAmountInputValue.trim() !== "") {
-        return toast.error("Please either select or enter a donation amount");
+        amount = parseFloat(customAmountInputValue.trim());
       }
 
       if (amount === 0) {
@@ -55,6 +62,7 @@ function DonationForm() {
       const response = await axios.post("/api/checkout_sessions", {
         amount: amount,
         donationType: selectedDonationType,
+        donationFrequency: donationFrequency, // Include donationFrequency
       });
       console.log(response);
       window.location = response.data.sessionURL;
@@ -80,7 +88,7 @@ function DonationForm() {
         >
           donation
         </motion.h1>
-        <div className="pl-10 md:pr-0 pr-5">
+        <div className="flex flex-col pl-10 md:pr-0 pr-5 md:gap-8 gap-5">
           <motion.select
             ref={ref1}
             variants={{
@@ -90,8 +98,11 @@ function DonationForm() {
             initial="hidden"
             animate={slide1}
             transition={{ duration: 0.9, delay: 0.5 }}
-            onChange={(e) => setSelectedDonationType(e.target.value)}
-            className="select select-sm w-full max-w-xs p-2 my-4 text-sm font-medium bg-white text-gray-500 border-none outline outline-1 outline-gray-300 hover:outline-red-500 "
+            onChange={(e) => {
+              setSelectedDonationType(e.target.value);
+              setIsDonationTypeSelected(true);
+            }}
+            className="select select-sm w-full max-w-xs p-2 text-sm font-medium bg-white text-gray-500 border-none outline outline-1 outline-gray-300 hover:outline-red-500 "
           >
             <option disabled selected>
               Choose Donation Type
@@ -103,33 +114,56 @@ function DonationForm() {
             ))}
           </motion.select>
 
-          <div className="pb-5 flex flex-col">
-            {filteredItems.length > 0 && (
-              <div className="flex md:flex-row flex-col items-start md:gap-5 gap-3">
-                {filteredItems.map((item, index) => (
-                  <input
-                    key={index}
-                    className="btn btn-sm bg-white hover:bg-white border-gray-300 hover:border-red-500 font-medium text-gray-500 hover:text-red-500"
-                    type="radio"
-                    name="options"
-                    aria-label={`$${item.value.toLocaleString()}`}
-                    value={item.value}
-                    onChange={() => setSelectedAmount(parseFloat(item.value))}
-                  />
-                ))}
-                <label className="input input-sm flex items-center bg-white text-gray-800 border-none outline outline-1 outline-gray-300 hover:outline-red-500 text-sm font-medium text-gray-500">
-                  <input
-                    type="text"
-                    label=""
-                    placeholder="$ Custom Amount"
-                    defaultValue=""
-                    className="w-44"
-                    onChange={(e) => setCustomAmountInputValue(e.target.value)}
-                  />
-                </label>
-              </div>
-            )}
-          </div>
+          {isDonationTypeSelected && (
+            <div className="flex md:gap-5 gap-3">
+              <input
+                className="btn btn-sm bg-white hover:bg-white border-gray-300 hover:border-red-500 font-medium text-gray-500 hover:text-red-500"
+                type="radio"
+                name="options"
+                aria-label="One-Time"
+                value="One-Time"
+                onChange={(e) => setDonationFrequency(e.target.value)}
+              />
+              <input
+                className="btn btn-sm bg-white hover:bg-white border-gray-300 hover:border-red-500 font-medium text-gray-500 hover:text-red-500"
+                type="radio"
+                name="options"
+                aria-label="Monthly"
+                value="Recurring"
+                onChange={(e) => setDonationFrequency(e.target.value)}
+              />
+            </div>
+          )}
+
+          {donationFrequency && (
+            <div className="flex flex-col">
+              {filteredItems.length > 0 && (
+                <div className="flex md:flex-row flex-col items-start md:gap-5 gap-3">
+                  {filteredItems.map((item, index) => (
+                    <input
+                      key={index}
+                      className="btn btn-sm bg-white hover:bg-white border-gray-300 hover:border-red-500 font-medium text-gray-500 hover:text-red-500"
+                      type="radio"
+                      name="amountOptions"
+                      aria-label={`$${item.value.toLocaleString()}`}
+                      value={item.value}
+                      onChange={() => setSelectedAmount(parseFloat(item.value))}
+                    />
+                  ))}
+                  <label className="input input-sm flex items-center bg-white text-gray-800 border-none outline outline-1 outline-gray-300 hover:outline-red-500 text-sm font-medium text-gray-500">
+                    <input
+                      type="text"
+                      placeholder="$ Custom Amount"
+                      className="w-44"
+                      onChange={(e) =>
+                        setCustomAmountInputValue(e.target.value)
+                      }
+                    />
+                  </label>
+                </div>
+              )}
+            </div>
+          )}
 
           <motion.a
             ref={ref1}
@@ -141,7 +175,7 @@ function DonationForm() {
             animate={slide1}
             transition={{ duration: 0.9, delay: 1.0 }}
             role="button"
-            className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5 py-2"
+            className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5 py-2 w-fit"
             onClick={handleCheckout}
           >
             DONATE
