@@ -60,7 +60,7 @@ function About() {
             our mission
           </h1>
           <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5">
-            The NSW Central West Muslim Association (NSWCWMA) is dedicated to
+            The NSW Central West Muslims Association (NSWCWMA) is dedicated to
             community wellbeing and benevolent services. While religion/faith is
             ancillary in value, our primary purpose is to work collaboratively
             with the community to develop a safe, healthy environment for
@@ -101,8 +101,8 @@ function About() {
             our vision
           </h1>
           <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5">
-            At NSW Central West Muslim Association (NSWCWMA), we aim to foster a
-            compassionate, supportive community in Dubbo and Central West NSW.
+            At NSW Central West Muslims Association (NSWCWMA), we aim to foster
+            a compassionate, supportive community in Dubbo and Central West NSW.
             We focus on alleviating poverty, assisting the sick, and responding
             to calamities. Our commitment includes providing social and
             educational facilities and supporting needy families, emphasizing
@@ -127,18 +127,18 @@ function About() {
             our short story
           </h1>
           <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5">
-            The NSW Central West Muslim Association (NSWCWMA), established on 12
-            January 2017, is dedicated to the wellbeing of the Dubbo and Central
-            West NSW community. Known for our commitment to benevolent services,
-            we support needy families, promote healthcare initiatives, mental
-            health awareness, and preventive measures, and enhance community
-            knowledge through comprehensive programs. We empower marginalised
-            communities by fostering respect and collaboration and provide aid
-            during natural calamities. By promoting dialogue, understanding, and
-            empathy, we create an inclusive environment and fight against
-            discrimination. NSWCWMA is a lifeline, offering hope and ensuring
-            every community member can thrive in a safe and nurturing
-            environment.
+            The NSW Central West Muslims Association (NSWCWMA), established on
+            12 January 2017, is dedicated to the wellbeing of the Dubbo and
+            Central West NSW community. Known for our commitment to benevolent
+            services, we support needy families, promote healthcare initiatives,
+            mental health awareness, and preventive measures, and enhance
+            community knowledge through comprehensive programs. We empower
+            marginalised communities by fostering respect and collaboration and
+            provide aid during natural calamities. By promoting dialogue,
+            understanding, and empathy, we create an inclusive environment and
+            fight against discrimination. NSWCWMA is a lifeline, offering hope
+            and ensuring every community member can thrive in a safe and
+            nurturing environment.
           </h2>
         </div>
         <Image

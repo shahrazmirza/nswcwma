@@ -219,12 +219,13 @@ function Footer() {
               className=""
             />
             <p className="text-xs font-medium tracking-widest text-center md:text-start text-gray-800">
-              NSW Central West Muslim Association acknowledges the First Peoples
-              of Australia as the traditional custodians of the land on which we
-              work. We acknowledge their cultures are living ones, which relate
-              to their ongoing connection to all things living and non-living on
-              land, sea and sky. We pay our respects to their Elders past and
-              present. May the children of today lead us to a brighter tomorrow.
+              NSW Central West Muslims Association acknowledges the First
+              Peoples of Australia as the traditional custodians of the land on
+              which we work. We acknowledge their cultures are living ones,
+              which relate to their ongoing connection to all things living and
+              non-living on land, sea and sky. We pay our respects to their
+              Elders past and present. May the children of today lead us to a
+              brighter tomorrow.
             </p>
           </motion.div>
         </Container>
@@ -246,7 +247,7 @@ function Footer() {
               <div className="md:flex gap-1">
                 <p>
                   Copyright © {new Date().getFullYear()} - All right reserved by
-                  NSW Central West Muslim Association Incorporated
+                  NSW Central West Muslims Association Incorporated
                 </p>
                 <Link
                   href="https://abr.business.gov.au/ABN/View?id=76977073780"

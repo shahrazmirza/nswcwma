@@ -39,7 +39,7 @@ function Togglemenu() {
           </Link>
           <Link href="/">
             <h1 className="text-[10px] font-semibold">
-              NSW Central West Muslim Association
+              NSW Central West Muslims Association
             </h1>
           </Link>
         </div>

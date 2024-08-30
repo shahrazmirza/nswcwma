@@ -51,7 +51,7 @@ const NavMenu = () => {
 
             <Link href="/">
               <h1 className="text-xl font-basic tracking-wide">
-                NSW Central West Muslim Association
+                NSW Central West Muslims Association
               </h1>
             </Link>
           </div>

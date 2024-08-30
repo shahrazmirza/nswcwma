@@ -171,7 +171,7 @@ function Mosque() {
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pl-10 md:mx-0 ml-5 mr-10 mb-10"
             >
               Dubbo Mosque serves as an important spiritual hub within the
-              broader framework of the NSW Central West Muslim Association
+              broader framework of The NSW Central West Muslims Association
               (NSWCWMA). While the mosque plays a vital role in the religious
               and spiritual lives of our community members, it operates as an
               ancillary function to NSWCWMA’s primary mission of community

@@ -87,7 +87,7 @@ function Services() {
               Support for the homeless
             </h1>
             <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
-              The NSW Central West Muslim Association (NSWCWMA) primarily
+              The NSW Central West Muslims Association (NSWCWMA) primarily
               focuses on providing assistance to homeless people in the NSW
               Central West Region, including migrants and individuals from
               Culturally and Linguistically Diverse (CALD) backgrounds. Their

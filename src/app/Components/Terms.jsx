@@ -44,7 +44,7 @@ const Terms = () => {
             <h1 className=" border-gray-400 font-semibold">1. General Terms</h1>
             <div className="flex flex-col gap-3 pl-5">
               <p>
-                The NSW Central West Muslim Association&nbsp;(NSWCWMA) offers
+                The NSW Central West Muslims Association&nbsp;(NSWCWMA) offers
                 various services to support the community, including assistance
                 for the homeless, free food on Fridays, disability support,
                 driving classes, poverty alleviation, and support for the sick.

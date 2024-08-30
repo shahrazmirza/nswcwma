@@ -327,7 +327,7 @@ export const ApplicationForm = () => {
                       >
                         Terms and Conditions
                       </Link>{" "}
-                      <p>of the NSW Central West Muslim Association.</p>
+                      <p>of The NSW Central West Muslims Association.</p>
                     </div>
                   </div>
                 </label>
