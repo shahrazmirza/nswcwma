@@ -124,18 +124,21 @@ function Mosque() {
   const ref3 = useRef(null);
   const ref4 = useRef(null);
   const ref5 = useRef(null);
+  const ref6 = useRef(null);
 
   const slide1 = useAnimation();
   const slide2 = useAnimation();
   const slide3 = useAnimation();
   const slide4 = useAnimation();
   const slide5 = useAnimation();
+  const slide6 = useAnimation();
 
   const isInView1 = useInView(ref1, { once: true });
   const isInView2 = useInView(ref2, { once: true });
   const isInView3 = useInView(ref3, { once: true });
   const isInView4 = useInView(ref4, { once: true });
   const isInView5 = useInView(ref5, { once: true });
+  const isInView6 = useInView(ref6, { once: true });
 
   useEffect(() => {
     if (isInView1) {
@@ -166,6 +169,11 @@ function Mosque() {
       slide5.start("visible");
     }
   }, [isInView5]);
+  useEffect(() => {
+    if (isInView6) {
+      slide6.start("visible");
+    }
+  }, [isInView6]);
 
   const formatVerseKey = (verseKey) => {
     const [chapter, verse] = verseKey.split(":");
@@ -252,13 +260,13 @@ function Mosque() {
 
           <div className="col-span-1 flex flex-col gap-5">
             <motion.div
-              ref={ref1}
+              ref={ref4}
               variants={{
                 hidden: { opacity: 0, y: 75 },
                 visible: { opacity: 1, y: 0 },
               }}
               initial="hidden"
-              animate={slide1}
+              animate={slide4}
               transition={{ duration: 0.9, delay: 0 }}
               className="bg-gray-800"
             >
@@ -332,13 +340,13 @@ function Mosque() {
               )}
             </motion.div>
             <motion.div
-              ref={ref4}
+              ref={ref5}
               variants={{
                 hidden: { opacity: 0, y: 75 },
                 visible: { opacity: 1, y: 0 },
               }}
               initial="hidden"
-              animate={slide4}
+              animate={slide6}
               transition={{ duration: 0.9, delay: 0 }}
               className="card bg-gray-300 shadow-xl text-gray-800 h-fit w-[335px] p-5 mx-5"
             >
@@ -358,13 +366,13 @@ function Mosque() {
             </motion.div>
 
             <motion.div
-              ref={ref5}
+              ref={ref6}
               variants={{
                 hidden: { opacity: 0, y: 75 },
                 visible: { opacity: 1, y: 0 },
               }}
               initial="hidden"
-              animate={slide5}
+              animate={slide6}
               transition={{ duration: 0.9, delay: 0 }}
               className="card bg-gray-300 shadow-xl text-gray-800 h-fit w-[335px] p-5 mx-5"
             >
