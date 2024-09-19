@@ -291,41 +291,45 @@ function Mosque() {
                   </div>
 
                   <div className="flex flex-col gap-5 justify-center items-center">
-                    <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
-                      <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
-                        Fajr
-                      </h1>
-                      <h2 className="text-ss font-normal">
-                        {prayerData.data.timings.Fajr}
-                      </h2>
-                    </div>
-                    <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
-                      <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
-                        Dhuhr
-                      </h1>
-                      <h2 className="text-ss font-normal">
-                        {prayerData.data.timings.Dhuhr}
-                      </h2>
-                    </div>
-
-                    <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
-                      <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
-                        Asr
-                      </h1>
-                      <h2 className="text-ss font-normal">
-                        {prayerData.data.timings.Asr}
-                      </h2>
-                    </div>
-                    <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
-                      <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
-                        Maghrib
-                      </h1>
-                      <h2 className="text-ss font-normal">
-                        {prayerData.data.timings.Maghrib}
-                      </h2>
+                    <div className="flex gap-5 w-full">
+                      <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                        <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                          Fajr
+                        </h1>
+                        <h2 className="text-ss font-normal">
+                          {prayerData.data.timings.Fajr}
+                        </h2>
+                      </div>
+                      <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                        <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                          Dhuhr
+                        </h1>
+                        <h2 className="text-ss font-normal">
+                          {prayerData.data.timings.Dhuhr}
+                        </h2>
+                      </div>
                     </div>
 
-                    <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                    <div className="flex gap-5 w-full">
+                      <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                        <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                          Asr
+                        </h1>
+                        <h2 className="text-ss font-normal">
+                          {prayerData.data.timings.Asr}
+                        </h2>
+                      </div>
+                      <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                        <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                          Maghrib
+                        </h1>
+                        <h2 className="text-ss font-normal">
+                          {prayerData.data.timings.Maghrib}
+                        </h2>
+                      </div>
+                    </div>
+
+                    <div className="rounded-2xl bg-gray-400 w-fit p-3 flex flex-col justify-center items-center px-12">
                       <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
                         Isha
                       </h1>
