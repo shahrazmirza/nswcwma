@@ -8,20 +8,14 @@ function Partners() {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
-  const ref4 = useRef(null);
-  const ref5 = useRef(null);
 
   const slide1 = useAnimation();
   const slide2 = useAnimation();
   const slide3 = useAnimation();
-  const slide4 = useAnimation();
-  const slide5 = useAnimation();
 
   const isInView1 = useInView(ref1, { once: true });
   const isInView2 = useInView(ref2, { once: true });
   const isInView3 = useInView(ref3, { once: true });
-  const isInView4 = useInView(ref4, { once: true });
-  const isInView5 = useInView(ref5, { once: true });
 
   useEffect(() => {
     if (isInView1) {
@@ -41,21 +35,9 @@ function Partners() {
     }
   }, [isInView3]);
 
-  useEffect(() => {
-    if (isInView4) {
-      slide4.start("visible");
-    }
-  }, [isInView4]);
-
-  useEffect(() => {
-    if (isInView5) {
-      slide5.start("visible");
-    }
-  }, [isInView5]);
-
   return (
     <Container>
-      <div className="md:grid md:grid-cols-5 gap-6 md:py-20 md:p-0 p-5">
+      <div className="card flex md:flex-row flex-col justify-between p-5 md:my-10 m-5 bg-gray-800">
         <motion.div
           ref={ref1}
           variants={{
@@ -65,119 +47,49 @@ function Partners() {
           initial="hidden"
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
-          className="flex items-center uppercase text-3xl font-semibold tracking-widest text-gray-800 border-l border-gray-500 pl-5 h-16"
+          className="flex items-center uppercase text-3xl font-semibold tracking-widest text-gray-300 border-l border-gray-300 pl-5 h-16"
         >
-          our team
+          our partners
         </motion.div>
-        <motion.div
-          ref={ref2}
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={slide2}
-          transition={{ duration: 0.9, delay: 0 }}
-        >
-          <Image
-            src="/assets/images/president.jpg"
-            alt="President Image"
-            width="2000"
-            height="1000"
-            className="relative aspect-ratio md:pb-10 md:p-0 p-10"
-          />
+        <div className="flex md:flex-row flex-col gap-10 justify-center items-center p-10">
+          <motion.div
+            ref={ref2}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide2}
+            transition={{ duration: 0.9, delay: 0 }}
+          >
+            <Image
+              src="/assets/images/logoreliant.png"
+              alt="Reliant Logo"
+              width="150"
+              height="150"
+              className="card relative aspect-ratio p-10 bg-white"
+            />
+          </motion.div>
 
-          <div className="border border-gray-500 text-gray-800 text-center p-5 flex flex-col md:gap-1 gap-2">
-            <h1 className="uppercase md:text-sm text-lg font-bold tracking-wide">
-              mahmoud amin
-            </h1>
-            <h2 className="uppercase md:text-sm text-base font-normal tracking-wide">
-              president
-            </h2>
-          </div>
-        </motion.div>
-
-        <motion.div
-          ref={ref3}
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={slide3}
-          transition={{ duration: 0.9, delay: 0 }}
-        >
-          <Image
-            src="/assets/images/vice-president.jpg"
-            alt="Vice President Image"
-            width="2000"
-            height="1000"
-            className="relative aspect-ratio md:py-10 md:p-0 p-10"
-          />
-          <div className="border border-gray-500 text-gray-800 text-center p-5 flex flex-col md:gap-1 gap-2">
-            <h1 className="uppercase md:text-sm text-lg font-bold tracking-wide">
-              saad khan
-            </h1>
-            <h2 className="uppercase md:text-sm text-base font-normal tracking-wide">
-              vice president
-            </h2>
-          </div>
-        </motion.div>
-
-        <motion.div
-          ref={ref4}
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={slide4}
-          transition={{ duration: 0.9, delay: 0 }}
-        >
-          <Image
-            src="/assets/images/treasurer.jpg"
-            alt="President Image"
-            width="2000"
-            height="1000"
-            className="relative aspect-ratio md:pb-10 md:p-0 p-10"
-          />
-
-          <div className="border border-gray-500 text-gray-800 text-center p-5 flex flex-col md:gap-1 gap-2">
-            <h1 className="uppercase md:text-sm text-lg font-bold tracking-wide">
-              awais
-            </h1>
-            <h2 className="uppercase md:text-sm text-base font-normal tracking-wide">
-              treasurer
-            </h2>
-          </div>
-        </motion.div>
-
-        <motion.div
-          ref={ref5}
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={slide5}
-          transition={{ duration: 0.9, delay: 0 }}
-        >
-          <Image
-            src="/assets/images/secretary.jpg"
-            alt="Vice President Image"
-            width="2000"
-            height="1000"
-            className="relative aspect-ratio md:py-10 md:p-0 p-10"
-          />
-          <div className="border border-gray-500 text-gray-800 text-center p-5 flex flex-col md:gap-1 gap-2">
-            <h1 className="uppercase md:text-sm text-lg font-bold tracking-wide">
-              Samsuddin Ahmed
-            </h1>
-            <h2 className="uppercase md:text-sm text-base font-normal tracking-wide">
-              secretary
-            </h2>
-          </div>
-        </motion.div>
+          <motion.div
+            ref={ref3}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide3}
+            transition={{ duration: 0.9, delay: 0 }}
+          >
+            <Image
+              src="/assets/images/logosadaqaid.png"
+              alt="Reliant Logo"
+              width="150"
+              height="150"
+              className="card relative aspect-ratio p-8 bg-white"
+            />
+          </motion.div>
+        </div>
       </div>
     </Container>
   );

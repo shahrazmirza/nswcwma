@@ -7,7 +7,7 @@ import About from "./Components/About";
 import ServicesBanner from "./Components/ServicesBanner";
 import Team from "./Components/Team";
 import ScrollToTop from "./Components/ScrollToTop";
-import PrayerTime from "./Components/PrayerTime";
+import Partners from "./Components/Partners";
 
 export default function Home() {
   return (
@@ -19,6 +19,7 @@ export default function Home() {
       <About />
       <ServicesBanner />
       <Team />
+      <Partners />
       <Footer />
     </div>
   );
