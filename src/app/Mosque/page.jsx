@@ -40,6 +40,40 @@ function Mosque() {
     }
   }, [randomVerseData]);
 
+  const [prayerData, setPrayerData] = useState(null);
+
+  const getPrayerData = async () => {
+    try {
+      const today = new Date();
+      const day = String(today.getDate()).padStart(2, "0");
+      const month = String(today.getMonth() + 1).padStart(2, "0"); // Months are zero-indexed
+      const year = today.getFullYear();
+      const formattedDate = `${day}-${month}-${year}`;
+
+      const response = await axios.get(
+        `https://api.aladhan.com/v1/timingsByCity/${formattedDate}`,
+        {
+          params: {
+            city: "Dubbo",
+            country: "Australia",
+            method: "3",
+          },
+        }
+      );
+
+      setPrayerData(response.data);
+      setError(null);
+    } catch (error) {
+      setError("An error occurred while fetching the data.");
+      setPrayerData(null);
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    getPrayerData();
+  }, []);
+
   const getVerseData = async (verseKey) => {
     try {
       const response = await axios.get(
@@ -218,6 +252,86 @@ function Mosque() {
 
           <div className="col-span-1 flex flex-col gap-5">
             <motion.div
+              ref={ref1}
+              variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              animate={slide1}
+              transition={{ duration: 0.9, delay: 0 }}
+              className="bg-gray-800"
+            >
+              {prayerData ? (
+                <div className="card bg-gray-300 shadow-xl text-gray-800 h-fit w-[335px] p-5 mx-5">
+                  <div className="flex flex-col justify-center pb-5 gap-3">
+                    <h1 className="text-base md:font-medium font-semibold md:tracking-wide border-l-[1px] border-gray-800 pl-5">
+                      Prayer Times
+                    </h1>
+                    <div className="flex flex-col items-end">
+                      <p className="text-xs font-normal">
+                        {prayerData.data.date.gregorian.day}{" "}
+                        {prayerData.data.date.gregorian.month.en},{" "}
+                        {prayerData.data.date.gregorian.year}
+                      </p>
+                      <h2 className="text-xs font-semibold">
+                        {prayerData.data.date.hijri.day}{" "}
+                        {prayerData.data.date.hijri.month.en},{" "}
+                        {prayerData.data.date.hijri.year}
+                      </h2>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col gap-5 justify-center items-center">
+                    <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                      <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                        Fajr
+                      </h1>
+                      <h2 className="text-ss font-normal">
+                        {prayerData.data.timings.Fajr}
+                      </h2>
+                    </div>
+                    <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                      <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                        Dhuhr
+                      </h1>
+                      <h2 className="text-ss font-normal">
+                        {prayerData.data.timings.Dhuhr}
+                      </h2>
+                    </div>
+
+                    <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                      <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                        Asr
+                      </h1>
+                      <h2 className="text-ss font-normal">
+                        {prayerData.data.timings.Asr}
+                      </h2>
+                    </div>
+                    <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                      <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                        Maghrib
+                      </h1>
+                      <h2 className="text-ss font-normal">
+                        {prayerData.data.timings.Maghrib}
+                      </h2>
+                    </div>
+
+                    <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                      <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                        Isha
+                      </h1>
+                      <h2 className="text-ss font-normal">
+                        {prayerData.data.timings.Isha}
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <p className="text-red-500">{error}</p>
+              )}
+            </motion.div>
+            <motion.div
               ref={ref4}
               variants={{
                 hidden: { opacity: 0, y: 75 },
@@ -226,7 +340,7 @@ function Mosque() {
               initial="hidden"
               animate={slide4}
               transition={{ duration: 0.9, delay: 0 }}
-              className="card bg-gray-300 shadow-xl text-gray-800 h-fit md:w-fit w-80 p-5 md:mx-0 mx-5"
+              className="card bg-gray-300 shadow-xl text-gray-800 h-fit w-[335px] p-5 mx-5"
             >
               {verseData ? (
                 <div className="flex flex-col gap-2">
@@ -252,7 +366,7 @@ function Mosque() {
               initial="hidden"
               animate={slide5}
               transition={{ duration: 0.9, delay: 0 }}
-              className="card bg-gray-300 shadow-xl text-gray-800 col-span-1 h-fit md:w-fit w-80 p-5 md:mx-0 mx-5"
+              className="card bg-gray-300 shadow-xl text-gray-800 h-fit w-[335px] p-5 mx-5"
             >
               {hadithData ? (
                 <div className="flex flex-col gap-2">

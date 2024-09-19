@@ -18,7 +18,6 @@ export default function Home() {
       <Hero />
       <About />
       <ServicesBanner />
-      <PrayerTime />
       <Team />
       <Footer />
     </div>
