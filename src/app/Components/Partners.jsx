@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { Container } from "@radix-ui/themes";
 import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
+import Link from "next/link";
 
 function Partners() {
   const ref1 = useRef(null);
@@ -47,7 +48,7 @@ function Partners() {
           initial="hidden"
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
-          className="flex items-center uppercase text-3xl font-semibold tracking-widest text-gray-300 border-l border-gray-300 pl-5 h-16"
+          className="flex items-center uppercase text-3xl font-semibold tracking-widest text-white border-l border-white pl-5 h-16"
         >
           our partners
         </motion.div>
@@ -62,13 +63,18 @@ function Partners() {
             animate={slide2}
             transition={{ duration: 0.9, delay: 0 }}
           >
-            <Image
-              src="/assets/images/logoreliant.png"
-              alt="Reliant Logo"
-              width="150"
-              height="150"
-              className="card relative aspect-ratio p-10 bg-white"
-            />
+            <Link
+              href="https://www.reliantbusinesssolutions.com.au/"
+              target="_blank"
+            >
+              <Image
+                src="/assets/images/logoreliant.png"
+                alt="Reliant Logo"
+                width="150"
+                height="150"
+                className="card relative aspect-ratio p-10 bg-white"
+              />
+            </Link>
           </motion.div>
 
           <motion.div
@@ -81,13 +87,15 @@ function Partners() {
             animate={slide3}
             transition={{ duration: 0.9, delay: 0 }}
           >
-            <Image
-              src="/assets/images/logosadaqaid.png"
-              alt="Reliant Logo"
-              width="150"
-              height="150"
-              className="card relative aspect-ratio p-8 bg-white"
-            />
+            <Link href="https://www.sadaqaaid.org.au/" target="_blank">
+              <Image
+                src="/assets/images/logosadaqaid.png"
+                alt="Reliant Logo"
+                width="150"
+                height="150"
+                className="card relative aspect-ratio p-8 bg-white"
+              />
+            </Link>
           </motion.div>
         </div>
       </div>
