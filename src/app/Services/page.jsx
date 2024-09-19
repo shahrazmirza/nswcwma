@@ -14,6 +14,9 @@ function Services() {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
   const ref6 = useRef(null);
+  const ref7 = useRef(null);
+  const ref8 = useRef(null);
+  const ref9 = useRef(null);
 
   const slide1 = useAnimation();
   const slide2 = useAnimation();
@@ -21,6 +24,9 @@ function Services() {
   const slide4 = useAnimation();
   const slide5 = useAnimation();
   const slide6 = useAnimation();
+  const slide7 = useAnimation();
+  const slide8 = useAnimation();
+  const slide9 = useAnimation();
 
   const isInView1 = useInView(ref1, { once: true });
   const isInView2 = useInView(ref2, { once: true });
@@ -28,6 +34,9 @@ function Services() {
   const isInView4 = useInView(ref4, { once: true });
   const isInView5 = useInView(ref5, { once: true });
   const isInView6 = useInView(ref6, { once: true });
+  const isInView7 = useInView(ref7, { once: true });
+  const isInView8 = useInView(ref8, { once: true });
+  const isInView9 = useInView(ref9, { once: true });
 
   useEffect(() => {
     if (isInView1) {
@@ -65,6 +74,24 @@ function Services() {
     }
   }, [isInView6]);
 
+  useEffect(() => {
+    if (isInView7) {
+      slide7.start("visible");
+    }
+  }, [isInView7]);
+
+  useEffect(() => {
+    if (isInView8) {
+      slide8.start("visible");
+    }
+  }, [isInView8]);
+
+  useEffect(() => {
+    if (isInView9) {
+      slide9.start("visible");
+    }
+  }, [isInView9]);
+
   return (
     <div className="bg-gray-800 w-screen">
       <Navbar />
@@ -97,7 +124,7 @@ function Services() {
               suburbs based on eligibility criteria and circumstances.
             </h2>
 
-            <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
+            <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
@@ -154,7 +181,7 @@ function Services() {
               community members.
             </h2>
 
-            <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
+            <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
@@ -196,7 +223,7 @@ function Services() {
               independence and enhancing their quality of life.
             </h2>
 
-            <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
+            <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
@@ -258,7 +285,7 @@ function Services() {
               social engagement.
             </h2>
 
-            <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
+            <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
@@ -300,7 +327,7 @@ function Services() {
               and self-sufficiency.
             </h2>
 
-            <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
+            <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
@@ -357,7 +384,7 @@ function Services() {
               individuals to focus on recovery and well-being.
             </h2>
 
-            <div className="flex gap-10 text-white text-sm font-semibold transition delay-100">
+            <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
@@ -374,6 +401,163 @@ function Services() {
               </a>
             </div>
           </div>
+        </motion.div>
+
+        <motion.div
+          ref={ref7}
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide7}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
+        >
+          <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
+            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+              Mental Health Support
+            </h1>
+            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+              NSWCWMA is dedicated to promoting mental well-being. They provide
+              essential support to individuals facing mental health challenges,
+              offering access to resources and services aimed at improving
+              emotional resilience and overall health. Through tailored programs
+              and compassionate care, NSWCWMA fosters a supportive environment
+              for healing and personal growth.
+            </h2>
+
+            <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
+              <a
+                role="button"
+                className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                href="/Donation"
+              >
+                DONATE
+              </a>
+              <a
+                role="button"
+                className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
+                href="/Application"
+              >
+                apply
+              </a>
+            </div>
+          </div>
+          <Image
+            src="/assets/images/mentalhealthsupport.jpg"
+            alt="Mental Health Support Image"
+            width="2000"
+            height="1000"
+            className="relative aspect-ratio md:h-full object-cover min-h-60"
+          />
+        </motion.div>
+
+        <motion.div
+          ref={ref8}
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide8}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col-reverse"
+        >
+          <Image
+            src="/assets/images/educationawarenesssupport.jpg"
+            alt="Education & Awareness Support Image"
+            width="2000"
+            height="1000"
+            className="relative aspect-ratio md:h-full object-cover min-h-60"
+          />
+          <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
+            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+              Education & Awareness Support
+            </h1>
+            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+              NSWCWMA is dedicated to empowering the community through education
+              and awareness. They offer programs in children and community
+              education, language resources, domestic violence awareness, and
+              cyber security for CALD communities. By fostering social and
+              ethical education for youth, NSWCWMA aims to build a safer, more
+              informed, and resilient society.
+            </h2>
+
+            <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
+              <a
+                role="button"
+                className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                href="/Donation"
+              >
+                DONATE
+              </a>
+              <a
+                role="button"
+                className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
+                href="/Application"
+              >
+                apply
+              </a>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          ref={ref9}
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide9}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
+        >
+          <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
+            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+              Support for the Refugees
+            </h1>
+            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+              NSWCWMA is committed to supporting refugees by fostering
+              integration, reducing isolation, and promoting tolerance and
+              respect for diverse cultures and religions. Through tailored
+              programs, they work to reduce discrimination and racism, enhance
+              community safety, and build resilience, ensuring refugees feel
+              safe, included, and connected to the broader Australian community.
+            </h2>
+
+            <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
+              <a
+                role="button"
+                className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                href="/Donation"
+              >
+                DONATE
+              </a>
+              <a
+                role="button"
+                className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
+                href="/Application"
+              >
+                apply
+              </a>
+              <a
+                role="button"
+                className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
+                href="/RefugeesSupport"
+              >
+                more
+              </a>
+            </div>
+          </div>
+          <Image
+            src="/assets/images/supportfortherefugees.jpg"
+            alt="Support for the Refugees Image"
+            width="2000"
+            height="1000"
+            className="relative aspect-ratio md:h-full object-cover min-h-60"
+          />
         </motion.div>
       </>
       <Footer />

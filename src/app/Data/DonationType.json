@@ -24,6 +24,18 @@
     "value": 5
   },
   {
+    "type": "Mental Health Support",
+    "value": 5
+  },
+  {
+    "type": "Education & Awareness Support",
+    "value": 5
+  },
+  {
+    "type": "Support for the Refugees",
+    "value": 5
+  },
+  {
     "type": "Support for the Homeless",
     "value": 10
   },
@@ -48,6 +60,18 @@
     "value": 10
   },
   {
+    "type": "Mental Health Support",
+    "value": 10
+  },
+  {
+    "type": "Education & Awareness Support",
+    "value": 10
+  },
+  {
+    "type": "Support for the Refugees",
+    "value": 10
+  },
+  {
     "type": "Support for the Homeless",
     "value": 50
   },
@@ -72,6 +96,18 @@
     "value": 50
   },
   {
+    "type": "Mental Health Support",
+    "value": 50
+  },
+  {
+    "type": "Education & Awareness Support",
+    "value": 50
+  },
+  {
+    "type": "Support for the Refugees",
+    "value": 50
+  },
+  {
     "type": "Support for the Homeless",
     "value": 100
   },
@@ -96,6 +132,18 @@
     "value": 100
   },
   {
+    "type": "Mental Health Support",
+    "value": 100
+  },
+  {
+    "type": "Education & Awareness Support",
+    "value": 100
+  },
+  {
+    "type": "Support for the Refugees",
+    "value": 100
+  },
+  {
     "type": "Support for the Homeless",
     "value": 200
   },
@@ -120,6 +168,18 @@
     "value": 200
   },
   {
+    "type": "Mental Health Support",
+    "value": 200
+  },
+  {
+    "type": "Education & Awareness Support",
+    "value": 200
+  },
+  {
+    "type": "Support for the Refugees",
+    "value": 200
+  },
+  {
     "type": "Support for the Homeless",
     "value": 500
   },
@@ -141,6 +201,18 @@
   },
   {
     "type": "Support for the Sick",
+    "value": 500
+  },
+  {
+    "type": "Mental Health Support",
+    "value": 500
+  },
+  {
+    "type": "Education & Awareness Support",
+    "value": 500
+  },
+  {
+    "type": "Support for the Refugees",
     "value": 500
   },
   {
@@ -165,6 +237,18 @@
   },
   {
     "type": "Support for the Sick",
+    "value": 1000
+  },
+  {
+    "type": "Mental Health Support",
+    "value": 1000
+  },
+  {
+    "type": "Education & Awareness Support",
+    "value": 1000
+  },
+  {
+    "type": "Support for the Refugees",
     "value": 1000
   }
 ]
