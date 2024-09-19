@@ -89,7 +89,9 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">Fostering Integration:</span>{" "}
+                      <span className="md:font-medium font-semibold">
+                        Fostering Integration:
+                      </span>{" "}
                       We offer programs that help refugees integrate into
                       Australian society while preserving their cultural
                       heritage.
@@ -102,10 +104,12 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">Reducing Isolation:</span> By
-                      organising social events, cultural workshops, and support
-                      services, we aim to combat feelings of isolation and help
-                      refugees build meaningful connections.
+                      <span className="md:font-medium font-semibold">
+                        Reducing Isolation:
+                      </span>{" "}
+                      By organising social events, cultural workshops, and
+                      support services, we aim to combat feelings of isolation
+                      and help refugees build meaningful connections.
                     </p>
                   </div>
                 </div>
@@ -115,7 +119,7 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">
+                      <span className="md:font-medium font-semibold">
                         Promoting Understanding:
                       </span>{" "}
                       Through educational programs, we encourage tolerance and
@@ -130,7 +134,9 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">Supporting Wellbeing:</span>{" "}
+                      <span className="md:font-medium font-semibold">
+                        Supporting Wellbeing:
+                      </span>{" "}
                       Our focus is on enhancing the overall wellbeing of refugee
                       communities by providing access to mental health,
                       education, and social services.
@@ -143,8 +149,10 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">Ensuring Safety:</span> We
-                      work to improve the safety of refugees by supporting
+                      <span className="md:font-medium font-semibold">
+                        Ensuring Safety:
+                      </span>{" "}
+                      We work to improve the safety of refugees by supporting
                       community infrastructure and ensuring they can participate
                       in community life free from threats or harassment.
                     </p>
@@ -161,7 +169,7 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">
+                      <span className="md:font-medium font-semibold">
                         Language and Cultural Orientation:
                       </span>{" "}
                       We provide language resources and cultural orientation
@@ -176,7 +184,9 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">Community Engagement:</span>{" "}
+                      <span className="md:font-medium font-semibold">
+                        Community Engagement:
+                      </span>{" "}
                       Our regular events and workshops bring people together,
                       encouraging community bonds and providing spaces for
                       learning and social interaction.
@@ -189,7 +199,9 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">Support and Advocacy:</span>{" "}
+                      <span className="md:font-medium font-semibold">
+                        Support and Advocacy:
+                      </span>{" "}
                       We offer a range of support services, including assistance
                       with legal matters, housing, and employment, to help
                       refugees build stable lives in Australia.
@@ -202,10 +214,12 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">Safety and Security:</span> We
-                      take proactive measures to ensure the safety of refugees,
-                      particularly those affected by conflict, through community
-                      safety initiatives and collaborations with local
+                      <span className="md:font-medium font-semibold">
+                        Safety and Security:
+                      </span>{" "}
+                      We take proactive measures to ensure the safety of
+                      refugees, particularly those affected by conflict, through
+                      community safety initiatives and collaborations with local
                       authorities.
                     </p>
                   </div>
@@ -221,7 +235,9 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">Enhanced Integration:</span>{" "}
+                      <span className="md:font-medium font-semibold">
+                        Enhanced Integration:
+                      </span>{" "}
                       Refugees will feel more connected to Australian society,
                       able to balance their cultural identities while embracing
                       new opportunities.
@@ -234,7 +250,7 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">
+                      <span className="md:font-medium font-semibold">
                         Increased Social Connections:
                       </span>{" "}
                       Our programs foster relationships and reduce isolation,
@@ -249,7 +265,7 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">
+                      <span className="md:font-medium font-semibold">
                         Greater Tolerance and Respect:
                       </span>{" "}
                       By promoting cultural understanding, we aim to reduce
@@ -263,7 +279,7 @@ function RefugeesSupport() {
                   </div>
                   <div className="md:flex md:gap-1">
                     <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
-                      <span className="font-bold">
+                      <span className="md:font-medium font-semibold">
                         Improved Safety and Wellbeing:
                       </span>{" "}
                       Refugees will benefit from a safer environment, where they
