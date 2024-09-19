@@ -50,7 +50,7 @@ function RefugeesSupport() {
           >
             <div className="flex flex-col gap-5 pt-5">
               <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
-                Support for the Refugees
+                Refugee Support
               </h1>{" "}
               <Image
                 src="/assets/images/supportfortherefugeesheader.jpg"

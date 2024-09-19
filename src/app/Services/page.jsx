@@ -112,7 +112,7 @@ function Services() {
         >
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
-              Support for the homeless
+              homeless Support
             </h1>
             <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               The NSW Central West Muslims Association (NSWCWMA) primarily
@@ -374,7 +374,7 @@ function Services() {
           />
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
-              Support for the Sick
+              Sick Support
             </h1>
             <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               NSWCWMA supports community members who are suffering from illness
@@ -474,7 +474,7 @@ function Services() {
           />
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
-              Education & Awareness Support
+              Education Support
             </h1>
             <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               NSWCWMA is dedicated to empowering the community through education
@@ -517,7 +517,7 @@ function Services() {
         >
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
-              Support for the Refugees
+              Refugees Support
             </h1>
             <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               NSWCWMA is committed to supporting refugees by fostering

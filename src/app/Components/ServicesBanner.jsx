@@ -7,6 +7,8 @@ import { TbDisabled } from "react-icons/tb";
 import { FaCar } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
 import { MdSick } from "react-icons/md";
+import { RiMentalHealthFill } from "react-icons/ri";
+import { GiAwareness, GiLifeSupport } from "react-icons/gi";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 function ServicesBanner() {
@@ -86,7 +88,7 @@ function ServicesBanner() {
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
               <h1 className="uppercase text-medium md:font-medium font-semibold">
-                Support for the Homeless
+                Homeless Support
               </h1>
               <p className="md:font-thin md:text-xs text-sm">
                 Providing accommodation and financial assistance to homeless
@@ -206,11 +208,83 @@ function ServicesBanner() {
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
               <h1 className="uppercase text-medium md:font-medium font-semibold">
-                Support for the Sick
+                Sick Support
               </h1>
               <p className="md:font-thin md:text-xs text-sm">
-                Financial and daily life assistance for ill community members
-                fighting poverty.
+                Financial and daily life assistance for ill and disadvantaged
+                community members fighting poverty.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            ref={ref6}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide6}
+            transition={{ duration: 0.9, delay: 0 }}
+            className="flex justify-start items-center"
+          >
+            <RiMentalHealthFill className="text-6xl pr-8" />
+
+            <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
+              <h1 className="uppercase text-medium md:font-medium font-semibold">
+                Mental Health Support
+              </h1>
+              <p className="md:font-thin md:text-xs text-sm">
+                Promoting mental well-being, offering essential support,
+                resources, and programs for personal growth.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            ref={ref6}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide6}
+            transition={{ duration: 0.9, delay: 0 }}
+            className="flex justify-start items-center"
+          >
+            <GiAwareness className="text-6xl pr-8" />
+
+            <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
+              <h1 className="uppercase text-medium md:font-medium font-semibold">
+                Education Support
+              </h1>
+              <p className="md:font-thin md:text-xs text-sm">
+                Empowering communities with education through youth, language,
+                domestic violence, and cyber security programs.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            ref={ref6}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide6}
+            transition={{ duration: 0.9, delay: 0 }}
+            className="flex justify-start items-center"
+          >
+            <GiLifeSupport className="text-6xl pr-8" />
+
+            <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
+              <h1 className="uppercase text-medium md:font-medium font-semibold">
+                Refugee Support
+              </h1>
+              <p className="md:font-thin md:text-xs text-sm">
+                Supporting refugees by fostering integration, reducing
+                isolation, and promoting tolerance, safety, and inclusion.
               </p>
             </div>
           </motion.div>

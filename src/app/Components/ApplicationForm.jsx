@@ -162,6 +162,9 @@ export const ApplicationForm = () => {
             <option className="text-black" value="Sick">
               Sick
             </option>
+            <option className="text-black" value="Support for the Refugees">
+              Refugee
+            </option>
             <option className="text-black" value="Migrant">
               Migrant
             </option>
@@ -171,17 +174,15 @@ export const ApplicationForm = () => {
             <option className="text-black" value="Mental Health Support">
               Mental Health Support
             </option>
-            <option className="text-black" value="Support for the Refugees">
-              Support for the Refugees
-            </option>
+
             <option className="text-black" value="Individual with Disabilities">
-              Individual with Disabilities
+              Individual with Disability
             </option>
             <option
               className="text-black"
               value="Education & Awareness Support"
             >
-              Education & Awareness Support
+              Education & Awareness
             </option>
             <option
               className="text-black"
