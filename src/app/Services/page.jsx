@@ -6,6 +6,7 @@ import Navbar from "../Components/Navbar";
 import ScrollToTop from "../Components/ScrollToTop";
 import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
+import Link from "next/link";
 
 function Services() {
   const ref1 = useRef(null);
@@ -551,13 +552,15 @@ function Services() {
               </a>
             </div>
           </div>
-          <Image
-            src="/assets/images/supportfortherefugees.jpg"
-            alt="Support for the Refugees Image"
-            width="2000"
-            height="1000"
-            className="relative aspect-ratio md:h-full object-cover min-h-60"
-          />
+          <Link href="../RefugeesSupport">
+            <Image
+              src="/assets/images/supportfortherefugees.jpg"
+              alt="Support for the Refugees Image"
+              width="2000"
+              height="1000"
+              className="relative aspect-ratio md:h-full object-cover min-h-60"
+            />
+          </Link>
         </motion.div>
       </>
       <Footer />
