@@ -38,7 +38,7 @@ function Partners() {
 
   return (
     <Container>
-      <div className="card flex md:flex-row flex-col justify-between p-5 md:mb-10 m-5 bg-gray-800">
+      <div className="card flex md:flex-row flex-col justify-between p-5 md:mb-10 md:m-0 m-5 bg-gray-800">
         <motion.div
           ref={ref1}
           variants={{
