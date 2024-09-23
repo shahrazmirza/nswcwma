@@ -79,7 +79,7 @@ function Footer() {
                   <h2>71A TAMWORTH STREET,</h2>
                   <h2>DUBBO NSW 2830</h2>
                 </div>
-                <h2>PHONE: +61 478 684 716</h2>
+                <h2>PHONE: 02 8413 1353</h2>
                 <h2>EMAIL: INFO@NSWCWMA.ORG.AU</h2>
               </div>
             </motion.div>
