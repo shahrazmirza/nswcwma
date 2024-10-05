@@ -3,8 +3,7 @@ import Whatsapp from "../Components/Whatsapp";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import ScrollToTop from "../Components/ScrollToTop";
-import AnnualReport from "../Components/AnnualReport";
-import Policies from "../Components/Policies";
+import ReportsAndPolicies from "../Components/ReportsAndPolicies";
 
 function Downloads() {
   return (
@@ -12,8 +11,7 @@ function Downloads() {
       <Navbar />
       <ScrollToTop />
       <Whatsapp />
-      <AnnualReport />
-      <Policies />
+      <ReportsAndPolicies />
       <Footer />
     </div>
   );
