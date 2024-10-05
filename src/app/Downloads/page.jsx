@@ -3,7 +3,7 @@ import Whatsapp from "../Components/Whatsapp";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import ScrollToTop from "../Components/ScrollToTop";
-import ReportsAndPolicies from "../Components/";
+import ReportsAndPolicies from "../Components/ReportsAndPolicies";
 
 function Downloads() {
   return (
