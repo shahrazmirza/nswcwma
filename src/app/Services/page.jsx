@@ -273,9 +273,6 @@ function Services() {
               <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
                 Driving Classes
               </h1>
-              <h2 className="uppercase md:text-md text-xs md:font-medium font-semibold md:tracking-wide text-red-500">
-                &#40;Coming Soon&#41;
-              </h2>
             </div>
             <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
               Affordable driving classes are available for members of the CALD

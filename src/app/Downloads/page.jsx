@@ -4,6 +4,7 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import ScrollToTop from "../Components/ScrollToTop";
 import AnnualReport from "../Components/AnnualReport";
+import Policies from "../Components/Policies";
 
 function Downloads() {
   return (
@@ -12,6 +13,7 @@ function Downloads() {
       <ScrollToTop />
       <Whatsapp />
       <AnnualReport />
+      <Policies />
       <Footer />
     </div>
   );
