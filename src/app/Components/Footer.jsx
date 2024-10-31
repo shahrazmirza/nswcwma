@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Container } from "@radix-ui/themes";
 import Image from "next/image";
 import { FaFacebookF } from "react-icons/fa";
+import { FaUserFriends } from "react-icons/fa";
 import { motion, useAnimation, useInView } from "framer-motion";
 import Link from "next/link";
 
@@ -127,20 +128,34 @@ function Footer() {
               initial="hidden"
               animate={slide3}
               transition={{ duration: 0.9, delay: 0 }}
-              className="border-l-[1px] border-gray-300 pl-10 md:pr-10 pr-5"
+              className="border-l-[1px] border-gray-300 pl-10 md:pr-10 pr-5 flex flex-col gap-5"
             >
-              <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
-                FOLLOW US
-              </h1>
-              <div className="pr-1">
-                <a
-                  href="https://www.facebook.com/profile.php?id=100090621588007&sk=about"
-                  target="_blank"
-                >
-                  <button className="btn btn-square text-white bg-red-500 hover:bg-red-600 border-none rounded-none">
-                    <FaFacebookF />
-                  </button>
-                </a>
+              <div>
+                <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-5 pb-5">
+                  BECOME A MEMBER
+                </h1>
+                <div className="pr-1">
+                  <a href="/Membership">
+                    <button className="btn btn-square text-white bg-red-500 hover:bg-red-600 border-none rounded-none text-[18px]">
+                      <FaUserFriends />
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-5 pb-5">
+                  FOLLOW US
+                </h1>
+                <div className="pr-1">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100090621588007&sk=about"
+                    target="_blank"
+                  >
+                    <button className="btn btn-square text-white bg-red-500 hover:bg-red-600 border-none rounded-none text-[18px]">
+                      <FaFacebookF />
+                    </button>
+                  </a>
+                </div>
               </div>
             </motion.div>
             <motion.div

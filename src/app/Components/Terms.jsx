@@ -171,7 +171,22 @@ const Terms = () => {
 
           <div className="flex flex-col gap-5">
             <h1 className=" border-gray-400 font-semibold">
-              8. Changes to Terms and Conditions
+              8. Official Membership
+            </h1>
+            <div className="flex flex-col gap-3 pl-5">
+              <p>
+                Official Membership of NSWCWMA is valid for one year from the
+                date of approval. An annual subscription fee must be paid each
+                year to renew membership. The NSWCWMA committee reserves the
+                right to refuse membership without the requirement to provide a
+                reason, in accordance with the constitution.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-5">
+            <h1 className=" border-gray-400 font-semibold">
+              9. Changes to Terms and Conditions
             </h1>
             <div className="flex flex-col gap-3 pl-5">
               <p>
@@ -184,7 +199,7 @@ const Terms = () => {
 
           <div className="flex flex-col gap-5">
             <h1 className=" border-gray-400 font-semibold">
-              9. Acceptance of Terms
+              10. Acceptance of Terms
             </h1>
             <div className="flex flex-col gap-3 pl-5">
               <p>
