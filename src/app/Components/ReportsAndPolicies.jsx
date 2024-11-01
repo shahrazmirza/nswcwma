@@ -164,6 +164,28 @@ const ReportsAndPolicies = () => {
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
+            Election of Committee Member Policy
+          </h1>
+          <a
+            role="button"
+            className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+            href="/assets/reports/Election-of-Committee-Member-Policy.pdf"
+            target="_blank"
+          >
+            download
+          </a>
+        </motion.div>
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 3.5 }}
+          className="pl-8 pr-5 py-2 flex justify-between items-center"
+        >
+          <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
             Equal Opportunity and Anti-Discrimination Policy
           </h1>
           <a
@@ -214,6 +236,28 @@ const ReportsAndPolicies = () => {
             role="button"
             className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
             href="/assets/reports/Fundraising-Policy.pdf"
+            target="_blank"
+          >
+            download
+          </a>
+        </motion.div>
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 5.0 }}
+          className="pl-8 pr-5 py-2 flex justify-between items-center"
+        >
+          <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
+            Official Membership Policy
+          </h1>
+          <a
+            role="button"
+            className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+            href="/assets/reports/Official-Membership-Policy.pdf"
             target="_blank"
           >
             download
