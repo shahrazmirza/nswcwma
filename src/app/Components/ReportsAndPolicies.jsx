@@ -40,6 +40,28 @@ const ReportsAndPolicies = () => {
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
+            2024 Annual Report
+          </h1>
+          <a
+            role="button"
+            className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+            href="/assets/reports/Financial-Report-FY-2024.pdf"
+            target="_blank"
+          >
+            download
+          </a>
+        </motion.div>
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide1}
+          transition={{ duration: 0.9, delay: 1.0 }}
+          className="pl-8 pr-5 py-2 flex justify-between items-center"
+        >
+          <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
             2023 Annual Report
           </h1>
           <a
@@ -58,7 +80,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 1.0 }}
+          transition={{ duration: 0.9, delay: 1.5 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -81,7 +103,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 1.5 }}
+          transition={{ duration: 0.9, delay: 2.0 }}
           className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5"
         >
           policies & documents
@@ -94,7 +116,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 2.0 }}
+          transition={{ duration: 0.9, delay: 2.5 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -116,7 +138,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 2.5 }}
+          transition={{ duration: 0.9, delay: 3.0 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -138,7 +160,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 3.0 }}
+          transition={{ duration: 0.9, delay: 3.5 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -160,7 +182,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 3.5 }}
+          transition={{ duration: 0.9, delay: 4.0 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -182,7 +204,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 4.0 }}
+          transition={{ duration: 0.9, delay: 4.5 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -204,7 +226,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 4.5 }}
+          transition={{ duration: 0.9, delay: 5.0 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -226,7 +248,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 5.0 }}
+          transition={{ duration: 0.9, delay: 5.5 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -248,7 +270,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 5.5 }}
+          transition={{ duration: 0.9, delay: 6.0 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -270,7 +292,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 6.0 }}
+          transition={{ duration: 0.9, delay: 6.5 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -292,7 +314,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 6.5 }}
+          transition={{ duration: 0.9, delay: 7.0 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -314,7 +336,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 7.0 }}
+          transition={{ duration: 0.9, delay: 7.5 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
@@ -336,7 +358,7 @@ const ReportsAndPolicies = () => {
           }}
           initial="hidden"
           animate={slide1}
-          transition={{ duration: 0.9, delay: 7.5 }}
+          transition={{ duration: 0.9, delay: 8.0 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
