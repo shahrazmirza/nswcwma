@@ -362,12 +362,12 @@ const ReportsAndPolicies = () => {
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
           <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
-            Strategic Business and Risk Plans
+            Strategic Business and Risk Management Policy
           </h1>
           <a
             role="button"
             className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
-            href="/assets/reports/Strategic-Business-and-Risk-Plans.pdf"
+            href="/assets/reports/Strategic-Business-and-Risk-Management-Policy.pdf"
             target="_blank"
           >
             download
