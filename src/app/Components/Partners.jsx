@@ -9,32 +9,40 @@ function Partners() {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
 
   const slide1 = useAnimation();
   const slide2 = useAnimation();
   const slide3 = useAnimation();
+  const slide4 = useAnimation();
+  const slide5 = useAnimation();
 
   const isInView1 = useInView(ref1, { once: true });
   const isInView2 = useInView(ref2, { once: true });
   const isInView3 = useInView(ref3, { once: true });
+  const isInView4 = useInView(ref4, { once: true });
+  const isInView5 = useInView(ref5, { once: true });
 
   useEffect(() => {
-    if (isInView1) {
-      slide1.start("visible");
-    }
+    if (isInView1) slide1.start("visible");
   }, [isInView1]);
 
   useEffect(() => {
-    if (isInView2) {
-      slide2.start("visible");
-    }
+    if (isInView2) slide2.start("visible");
   }, [isInView2]);
 
   useEffect(() => {
-    if (isInView3) {
-      slide3.start("visible");
-    }
+    if (isInView3) slide3.start("visible");
   }, [isInView3]);
+
+  useEffect(() => {
+    if (isInView4) slide4.start("visible");
+  }, [isInView4]);
+
+  useEffect(() => {
+    if (isInView5) slide5.start("visible");
+  }, [isInView5]);
 
   return (
     <Container>
@@ -62,6 +70,7 @@ function Partners() {
             initial="hidden"
             animate={slide2}
             transition={{ duration: 0.9, delay: 0 }}
+            className="h-36 w-36 flex items-center justify-center bg-white p-1 rounded-xl"
           >
             <Link
               href="https://www.reliantbusinesssolutions.com.au/"
@@ -70,9 +79,9 @@ function Partners() {
               <Image
                 src="/assets/images/logoreliant.png"
                 alt="Reliant Logo"
-                width="150"
-                height="150"
-                className="card relative aspect-ratio p-10 bg-white"
+                width={90}
+                height={90}
+                className="object-contain"
               />
             </Link>
           </motion.div>
@@ -86,14 +95,62 @@ function Partners() {
             initial="hidden"
             animate={slide3}
             transition={{ duration: 0.9, delay: 0 }}
+            className="h-36 w-36 flex items-center justify-center bg-white p-5 rounded-xl"
           >
             <Link href="https://www.sadaqaaid.org.au/" target="_blank">
               <Image
                 src="/assets/images/logosadaqaid.png"
-                alt="Reliant Logo"
-                width="150"
-                height="150"
-                className="card relative aspect-ratio p-8 bg-white"
+                alt="Sadaqa Aid Logo"
+                width={100}
+                height={100}
+                className="object-contain"
+              />
+            </Link>
+          </motion.div>
+
+          <motion.div
+            ref={ref4}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide4}
+            transition={{ duration: 0.9, delay: 0 }}
+            className="h-36 w-36 flex items-center justify-center bg-white p-5 rounded-xl"
+          >
+            <Link href="https://icanrelief.org.au/" target="_blank">
+              <Image
+                src="/assets/images/logoicanrelief.png"
+                alt="I Can Relief Logo"
+                width={100}
+                height={100}
+                className="object-contain"
+              />
+            </Link>
+          </motion.div>
+
+          <motion.div
+            ref={ref5}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide5}
+            transition={{ duration: 0.9, delay: 0 }}
+            className="h-36 w-36 flex items-center justify-center bg-white p-1 rounded-xl"
+          >
+            <Link
+              href="https://www.facebook.com/abcsupport2020/?checkpoint_src=any"
+              target="_blank"
+            >
+              <Image
+                src="/assets/images/logoauburnbrothers.png"
+                alt="Auburn Brothers Logo"
+                width={120}
+                height={120}
+                className="object-contain"
               />
             </Link>
           </motion.div>
