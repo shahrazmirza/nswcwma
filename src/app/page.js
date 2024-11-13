@@ -8,6 +8,7 @@ import ServicesBanner from "./Components/ServicesBanner";
 import Team from "./Components/Team";
 import ScrollToTop from "./Components/ScrollToTop";
 import Partners from "./Components/Partners";
+import SponsorsBar from "./Components/SponsorsBar";
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
       <Hero />
       <About />
       <ServicesBanner />
-      <Team />
       <Partners />
+      <Team />
+      <SponsorsBar />
       <Footer />
     </div>
   );
