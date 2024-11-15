@@ -64,7 +64,7 @@ const SponsorsBar = () => {
                     className="flex items-center justify-center bg-white p-3 rounded-md opacity-90 hover:opacity-100 mx-2"
                   >
                     <Link href={logo.href} target="_blank">
-                      <div className="relative h-14 w-32">
+                      <div className="relative h-14 w-[122px]">
                         <Image
                           src={logo.src}
                           alt={logo.alt}
@@ -84,7 +84,7 @@ const SponsorsBar = () => {
                     className="flex items-center justify-center bg-white p-3 rounded-md opacity-90 hover:opacity-100 mx-2"
                   >
                     <Link href={logo.href} target="_blank">
-                      <div className="relative h-14 w-32">
+                      <div className="relative h-14 w-[122px]">
                         <Image
                           src={logo.src}
                           alt={logo.alt}
