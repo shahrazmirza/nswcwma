@@ -162,8 +162,8 @@ function YoungOfficeManager() {
                   <div className="flex gap-5 pl-10">
                     <p>•</p>
                     <p>
-                      Learn and assist with the organisation's accounting system
-                      and receipt management.
+                      Learn and assist with the organisation&apos;s accounting
+                      system and receipt management.
                     </p>
                   </div>
                 </div>
