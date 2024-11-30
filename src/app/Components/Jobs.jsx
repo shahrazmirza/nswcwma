@@ -44,7 +44,7 @@ const Jobs = () => {
           </h1>
           <a
             role="button"
-            className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+            className="btn md:btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold rounded-none bg-white border-none"
             href="/Careers/JuniorCyberSecurityAwarenessAssistant"
           >
             view role
@@ -65,7 +65,7 @@ const Jobs = () => {
           </h1>
           <a
             role="button"
-            className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+            className="btn md:btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold rounded-none bg-white border-none"
             href="/Careers/YoungOfficeManager"
           >
             view role
