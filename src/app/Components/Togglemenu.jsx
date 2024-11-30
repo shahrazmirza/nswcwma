@@ -125,6 +125,17 @@ function Togglemenu() {
             </Link>
             <Link
               className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
+                activeLink === "/Careers"
+                  ? "bg-neutral-800 text-red-500 font-medium"
+                  : "bg-gray-100"
+              }`}
+              onClick={() => handleLinkClick("/")}
+              href="/Careers"
+            >
+              Careers
+            </Link>
+            <Link
+              className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
                 activeLink === "/Contacts"
                   ? "bg-neutral-800 text-red-500 font-medium"
                   : "bg-gray-100"

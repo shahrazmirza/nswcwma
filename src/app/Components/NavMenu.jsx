@@ -50,7 +50,7 @@ const NavMenu = () => {
             </Link>
 
             <Link href="/">
-              <h1 className="text-xl font-basic tracking-wide">
+              <h1 className="text-lg font-basic ">
                 NSW Central West Muslims Association
               </h1>
             </Link>
@@ -131,6 +131,19 @@ const NavMenu = () => {
                 onClick={() => handleLinkClick("/Downloads")}
               >
                 downloads
+              </Link>
+            </li>
+            <li className="uppercase">
+              <Link
+                href="/Careers"
+                className={`outline outline-1 px-3 hover:outline-gray-300 ${
+                  activeLink === "/Careers"
+                    ? "outline-gray-300"
+                    : "outline-gray-800"
+                }`}
+                onClick={() => handleLinkClick("/Careers")}
+              >
+                careers
               </Link>
             </li>
             <li className="uppercase">
