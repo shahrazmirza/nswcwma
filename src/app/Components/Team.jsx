@@ -147,7 +147,7 @@ function Team() {
               Siti Aisyah Kamilia Ayob
             </h1>
             <h2 className="uppercase md:text-sm text-base font-normal tracking-wide">
-              acting treasurer
+              treasurer (acting)
             </h2>
           </div>
         </motion.div>
