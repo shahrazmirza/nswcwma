@@ -108,7 +108,7 @@ function Team() {
           transition={{ duration: 0.9, delay: 0 }}
         >
           <Image
-            src="/assets/images/vice-president.jpg"
+            src="/assets/images/vicepresident.jpg"
             alt="Vice President Image"
             width="2000"
             height="1000"
@@ -136,7 +136,7 @@ function Team() {
         >
           <Image
             src="/assets/images/treasurer.jpg"
-            alt="President Image"
+            alt="Treasurer Image"
             width="2000"
             height="1000"
             className="relative aspect-ratio md:pb-10 md:p-0 p-10"
@@ -164,7 +164,7 @@ function Team() {
         >
           <Image
             src="/assets/images/secretary.jpg"
-            alt="Vice President Image"
+            alt="Secretary Image"
             width="2000"
             height="1000"
             className="relative aspect-ratio md:py-10 md:p-0 p-10"
