@@ -110,6 +110,15 @@ function Events() {
     ),
   ];
 
+  const ref1 = useRef(null);
+  const slide1 = useAnimation();
+  const isInView1 = useInView(ref1, { once: true });
+  useEffect(() => {
+    if (isInView1) {
+      slide1.start("visible");
+    }
+  }, [isInView1]);
+
   return (
     <div className="bg-gray-800 text-gray-400 w-screen">
       <Navbar />
@@ -117,11 +126,31 @@ function Events() {
       <Whatsapp />
       <Container>
         <div className="md:py-10 md:p-0">
-          <h1 className="my-10 uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 mb-10 pl-10 md:mx-0 ml-5">
+          <motion.h1
+            ref={ref1}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide1}
+            transition={{ duration: 0.9, delay: 0 }}
+            className="my-10 uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 mb-10 pl-10 md:mx-0 ml-5"
+          >
             Our Events
-          </h1>
+          </motion.h1>
 
-          <div className="grid grid-cols-1 gap-5 md:flex justify-between md:mt-5 md:m-10 md:mr-0 m-5 text-gray-400 ">
+          <motion.div
+            ref={ref1}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide1}
+            transition={{ duration: 0.9, delay: 0.5 }}
+            className="grid grid-cols-1 gap-5 md:flex justify-between md:mt-5 md:m-10 md:mr-0 m-5 text-gray-400 "
+          >
             <ul className="menu lg:menu-horizontal bg-gray-900 rounded-box">
               <ul>
                 <li>
@@ -166,9 +195,19 @@ function Events() {
                 />
               </svg>
             </label>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-y-5 md:gap-y-10 md:px-0 px-5">
+          <motion.div
+            ref={ref1}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide1}
+            transition={{ duration: 0.9, delay: 1.0 }}
+            className="grid md:grid-cols-3 grid-cols-1 gap-y-5 md:gap-y-10 md:px-0 px-5"
+          >
             {items
               .filter((item) => {
                 const matchesCategory =
@@ -215,7 +254,7 @@ function Events() {
                   </div>
                 </a>
               ))}
-          </div>
+          </motion.div>
         </div>
       </Container>
       <Footer />
