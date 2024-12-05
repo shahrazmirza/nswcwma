@@ -93,6 +93,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 function Events() {
   const [items, setItems] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchKeyword, setSearchKeyword] = useState("");
 
   useEffect(() => {
     if (data && data.length > 0) {
@@ -120,37 +121,71 @@ function Events() {
             Our Events
           </h1>
 
-          <ul className="menu lg:menu-horizontal bg-gray-900 text-white rounded-box md:mt-5 md:m-10 m-5">
-            <ul>
-              <li>
-                <details close>
-                  <summary>Filter by Category</summary>
-                  <ul>
-                    {categories.map((category, index) => (
-                      <li key={index}>
-                        <a
-                          onClick={() => setSelectedCategory(category)}
-                          className={`${
-                            selectedCategory === category ? "font-bold" : ""
-                          }`}
-                        >
-                          {category}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              </li>
+          <div className="grid grid-cols-1 gap-5 md:flex justify-between md:mt-5 md:m-10 md:mr-0 m-5 text-gray-400 ">
+            <ul className="menu lg:menu-horizontal bg-gray-900 rounded-box">
+              <ul>
+                <li>
+                  <details close>
+                    <summary>Filter by Category</summary>
+                    <ul>
+                      {categories.map((category, index) => (
+                        <li key={index}>
+                          <a
+                            onClick={() => setSelectedCategory(category)}
+                            className={`${
+                              selectedCategory === category ? "font-bold" : ""
+                            }`}
+                          >
+                            {category}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              </ul>
             </ul>
-          </ul>
+            <label className="input flex text-sm items-center rounded-box gap-2 bg-gray-900 py-6 pl-6">
+              <input
+                type="text"
+                className="grow"
+                placeholder="Search by keyword"
+                value={searchKeyword}
+                onChange={(e) => setSearchKeyword(e.target.value)}
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                className="h-4 w-4 opacity-70"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </label>
+          </div>
 
           <div className="grid md:grid-cols-3 grid-cols-1 gap-y-5 md:gap-y-10 md:px-0 px-5">
             {items
-              .filter(
-                (item) =>
+              .filter((item) => {
+                const matchesCategory =
                   selectedCategory === "All" ||
-                  item.category === selectedCategory
-              )
+                  item.category === selectedCategory;
+
+                const matchesKeyword =
+                  searchKeyword === "" ||
+                  item.title
+                    .toLowerCase()
+                    .includes(searchKeyword.toLowerCase()) ||
+                  item.paragraph1
+                    .toLowerCase()
+                    .includes(searchKeyword.toLowerCase());
+
+                return matchesCategory && matchesKeyword;
+              })
               .map((item) => (
                 <a
                   href={item.href}
