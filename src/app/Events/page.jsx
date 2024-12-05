@@ -92,6 +92,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 
 function Events() {
   const [items, setItems] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
     if (data && data.length > 0) {
@@ -100,6 +101,13 @@ function Events() {
       console.error("No events data available.");
     }
   }, []);
+
+  const categories = [
+    "All",
+    ...[...new Set(items.map((item) => item.category))].sort((a, b) =>
+      a.localeCompare(b)
+    ),
+  ];
 
   return (
     <div className="bg-gray-800 text-gray-400 w-screen">
@@ -112,36 +120,66 @@ function Events() {
             Our Events
           </h1>
 
+          <ul className="menu lg:menu-horizontal bg-gray-900 text-white rounded-box md:mt-5 md:m-10 m-5">
+            <ul>
+              <li>
+                <details close>
+                  <summary>Filter by Category</summary>
+                  <ul>
+                    {categories.map((category, index) => (
+                      <li key={index}>
+                        <a
+                          onClick={() => setSelectedCategory(category)}
+                          className={`${
+                            selectedCategory === category ? "font-bold" : ""
+                          }`}
+                        >
+                          {category}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </ul>
+
           <div className="grid md:grid-cols-3 grid-cols-1 gap-y-5 md:gap-y-10 md:px-0 px-5">
-            {items.map((item) => (
-              <a
-                href={item.href}
-                key={item.id} // Correct placement of the key prop
-                className="card w-auto bg-gray-900 shadow-xl md:font-thin md:text-base text-xs text-gray-400 md:ml-10"
-              >
-                <figure>
-                  <img
-                    src={item.imgSrc || "/placeholder.jpg"} // Fallback image if imgSrc is undefined
-                    alt={item.imgAlt || "Event image"} // Fallback alt text if imgAlt is undefined
-                    className="w-full h-auto"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title md:text-xl text-base md:font-medium font-semibold text-white border-l-[1px] border-gray-300 pl-5">
-                    {item.title}
-                  </h2>
-                  <p className="md:font-thin md:text-base text-xs text-gray-400 pl-5">
-                    {item.summary}
-                  </p>
-                  <div className="card-actions justify-between mt-2 pl-5">
-                    <h3 className="font-medium text-sm">{item.date}</h3>
-                    <div className="badge badge-primary p-3">
-                      {item.category}
+            {items
+              .filter(
+                (item) =>
+                  selectedCategory === "All" ||
+                  item.category === selectedCategory
+              )
+              .map((item) => (
+                <a
+                  href={item.href}
+                  key={item.id} // Correct placement of the key prop
+                  className="card w-auto bg-gray-900 shadow-xl md:font-thin md:text-base text-xs text-gray-400 md:ml-10"
+                >
+                  <figure>
+                    <img
+                      src={item.imgSrc || "/placeholder.jpg"} // Fallback image if imgSrc is undefined
+                      alt={item.imgAlt || "Event image"} // Fallback alt text if imgAlt is undefined
+                      className="w-full h-auto"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title md:text-xl text-base md:font-medium font-semibold text-white border-l-[1px] border-gray-300 pl-5">
+                      {item.title}
+                    </h2>
+                    <p className="md:font-thin md:text-base text-xs text-gray-400 pl-5">
+                      {item.summary}
+                    </p>
+                    <div className="card-actions justify-between mt-2 pl-5">
+                      <h3 className="font-medium text-sm">{item.date}</h3>
+                      <div className="badge badge-primary p-3">
+                        {item.category}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
-            ))}
+                </a>
+              ))}
           </div>
         </div>
       </Container>
