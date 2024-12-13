@@ -144,10 +144,10 @@ function Team() {
 
           <div className="border border-gray-500 text-gray-800 text-center p-5 flex flex-col md:gap-1 gap-2">
             <h1 className="uppercase md:text-sm text-lg font-bold tracking-wide">
-              Aisyah Kamilia
+              Akhmad Musawwa
             </h1>
             <h2 className="uppercase md:text-sm text-base font-normal tracking-wide">
-              treasurer (acting)
+              treasurer
             </h2>
           </div>
         </motion.div>
