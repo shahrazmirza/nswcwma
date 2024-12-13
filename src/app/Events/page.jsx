@@ -247,7 +247,7 @@ function Events() {
                     </p>
                     <div className="card-actions flex items-center justify-between mt-2 pl-5">
                       <h3 className="font-medium text-sm">{item.date}</h3>
-                      <div className="badge badge-primary p-3 md:text-sm text-xs">
+                      <div className="badge badge-primary p-3 md:text-sm text-xs text-white bg-gray-900 border-white">
                         {item.category}
                       </div>
                     </div>
