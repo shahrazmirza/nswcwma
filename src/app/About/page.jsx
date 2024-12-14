@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Whatsapp from "../Components/Whatsapp";
+import Values from "../Components/Values";
 import Team from "../Components/Team";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
@@ -153,6 +154,7 @@ function About() {
         </motion.div>
       </div>
       <div className="bg-white w-screen">
+        <Values />
         <Team />
         <Footer />
       </div>
