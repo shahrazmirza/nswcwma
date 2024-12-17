@@ -36,7 +36,7 @@ function YoungOfficeManager() {
             <div className="flex justify-end items-start">
               <a
                 role="button"
-                className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+                className="btn-sm btn-disabled flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
                 href="/Careers/JobApplication"
               >
                 apply
@@ -47,7 +47,7 @@ function YoungOfficeManager() {
             <div className="flex justify-end items-start">
               <a
                 role="button"
-                className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+                className="btn-sm btn-disabled flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
                 href="/Careers/JobApplication"
               >
                 apply
@@ -352,12 +352,12 @@ function YoungOfficeManager() {
               <h1 className="font-semibold">Application Deadline</h1>
             </div>
             <div className="col-span-2">
-              <p className="col-span-2">15/12/2024, 5:00 PM</p>
+              <p className="col-span-2">Closed</p>
             </div>
             <div className="flex justify-end items-start">
               <a
                 role="button"
-                className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+                className="btn-sm btn-disabled flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
                 href="/Careers/JobApplication"
               >
                 apply
@@ -375,7 +375,7 @@ function YoungOfficeManager() {
             <div className="flex justify-end items-start">
               <a
                 role="button"
-                className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
+                className="btn-sm btn-disabled flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
                 href="/Careers/JobApplication"
               >
                 apply
