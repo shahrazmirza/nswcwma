@@ -45,6 +45,16 @@ const SponsorsBar = () => {
       src: "/assets/images/logoservicensw.png",
       alt: "Service NSW Logo",
     },
+    {
+      href: "https://www.homeaffairs.gov.au/",
+      src: "/assets/images/logodepartmentofhomeaffairs.png",
+      alt: "Department of Home Affairs Logo",
+    },
+    {
+      href: "https://dcj.nsw.gov.au/",
+      src: "/assets/images/logodepartmentofcommunitiesandjustice.png",
+      alt: "Department of Communities and Justice Logo",
+    },
   ];
 
   return (
