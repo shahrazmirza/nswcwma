@@ -25,8 +25,7 @@ function PinkRibbonBreakfast() {
     }
   }, []);
 
-  const filterInclude =
-    "Pink Ribbon Breakfast at Buninyong Pre School – School as Community Centre";
+  const filterInclude = "Pink Ribbon Breakfast at Buninyong Pre-School";
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);

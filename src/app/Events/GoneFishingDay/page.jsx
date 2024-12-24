@@ -25,7 +25,7 @@ function GoneFishingDay() {
     }
   }, []);
 
-  const filterInclude = "Gone Fishing Day at Burrendong Dam";
+  const filterInclude = "Fishing Day at Burrendong Dam";
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);
