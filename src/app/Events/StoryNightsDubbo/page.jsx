@@ -25,7 +25,7 @@ function StoryNightsDubbo() {
     }
   }, []);
 
-  const filterInclude = "Story Nights in Dubbo";
+  const filterInclude = "Story Night in Dubbo";
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);

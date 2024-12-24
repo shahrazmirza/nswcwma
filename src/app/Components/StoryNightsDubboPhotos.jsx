@@ -45,7 +45,7 @@ function StoryNightsDubboPhotos() {
               width={600}
               height={600}
               className=""
-              alt={`Story Nights Dubbo Image ${i + 1}`}
+              alt={`Story Night Dubbo Image ${i + 1}`}
             />
             <div className="absolute left-5 right-5 md:top-52 top-28 flex -translate-y-1/2 transform justify-between">
               <button onClick={prevSlide} className="btn btn-circle opacity-75">

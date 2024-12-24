@@ -24,8 +24,7 @@ function RaiseMeRight() {
     }
   }, []);
 
-  const filterInclude =
-    "NSW Central West Muslims Association Hosts 'Raise Me Right' Parenting Webinar";
+  const filterInclude = "Parenting Webinar";
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);
