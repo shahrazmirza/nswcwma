@@ -65,28 +65,23 @@ function Togglemenu() {
 
   return (
     <div className="z-10">
-      <div className="flex justify-between h-[70px] items-center py-7 bg-gray-800 text-white">
-        {/* Logo and Title */}
-        <div className="flex justify-center items-center p-5 gap-2">
-          <Link href="/">
-            <Image
-              src="/assets/images/logo.png"
-              alt="Logo"
-              width={54}
-              height={54}
-              className=""
-            />
-          </Link>
-          <Link href="/">
-            <div className="flex flex-col justify-center text-[12px] font-semibold">
-              <h1>NSW Central West</h1> <h1>Muslims Association</h1>
-            </div>
-          </Link>
-        </div>
-
+      <div className="flex justify-between items-center bg-gray-800 text-white h-[70px] pl-3 gap-2">
+        <Link href="/">
+          <Image
+            src="/assets/images/logo.png"
+            alt="Logo"
+            width={54}
+            height={54}
+            className=""
+          />
+        </Link>
+        <Link href="/">
+          <div className="flex flex-col justify-center text-[12px] font-semibold">
+            <h1>NSW Central West</h1> <h1>Muslims Association</h1>
+          </div>
+        </Link>
         {/* Language Selector */}
         <Languages />
-
         {/* Toggle Button */}
         <button
           className="flex text-gray-800 bg-gray-100 justify-center items-center w-12 h-[70px]"
