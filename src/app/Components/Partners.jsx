@@ -57,6 +57,7 @@ function Partners() {
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
           className="flex items-center uppercase text-3xl font-semibold tracking-widest text-white border-l border-white pl-5 h-16"
+          data-translate
         >
           our partners
         </motion.div>

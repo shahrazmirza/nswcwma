@@ -151,6 +151,7 @@ export const JobApplicationForm = () => {
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
           className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5"
+          data-translate
         >
           application for job
         </motion.h1>
@@ -170,7 +171,10 @@ export const JobApplicationForm = () => {
               <AlertOverlay message={alertMessage} onClose={closeAlert} />
             )}
             <form onSubmit={onSubmit} className="flex flex-col gap-5">
-              <h2 className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
+              <h2
+                data-translate
+                className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5"
+              >
                 Personal Information
               </h2>
               <input
@@ -214,20 +218,31 @@ export const JobApplicationForm = () => {
                 required
                 className="p-2 border-b border-gray-400 focus:outline-none text-xs font-semibold"
               />
-              <h2 className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
+              <h2
+                data-translate
+                className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5"
+              >
                 Attachments
               </h2>
-              <p className="text-sm font-medium text-gray-600 bg-white flex flex-col gap-5">
+              <p
+                data-translate
+                className="text-sm font-medium text-gray-600 bg-white flex flex-col gap-5"
+              >
                 Please upload your resume:
               </p>
               <div className="flex gap-5 items-center">
                 <label
                   htmlFor="resume-upload"
                   className="bg-gray-600 text-white px-4 py-2 cursor-pointer text-xs rounded"
+                  data-translate
                 >
                   Browse
                 </label>
-                <span id="resume-file-name" className="text-xs text-gray-700">
+                <span
+                  data-translate
+                  id="resume-file-name"
+                  className="text-xs text-gray-700"
+                >
                   No file chosen
                 </span>
                 <input
@@ -269,19 +284,24 @@ export const JobApplicationForm = () => {
                   }}
                 />
               </div>
-              <p className="text-sm font-medium text-gray-600 bg-white flex flex-col gap-5">
+              <p
+                data-translate
+                className="text-sm font-medium text-gray-600 bg-white flex flex-col gap-5"
+              >
                 Please upload your cover letter:
               </p>
               <div className="flex gap-5 items-center">
                 <label
                   htmlFor="cover-letter-upload"
                   className="bg-gray-600 text-white px-4 py-2 cursor-pointer text-xs rounded"
+                  data-translate
                 >
                   Browse
                 </label>
                 <span
                   id="cover-letter-file-name"
                   className="text-xs text-gray-700"
+                  data-translate
                 >
                   No file chosen
                 </span>

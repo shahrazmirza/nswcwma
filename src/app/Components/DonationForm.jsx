@@ -85,6 +85,7 @@ function DonationForm() {
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
           className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5"
+          data-translate
         >
           donation
         </motion.h1>
@@ -104,11 +105,11 @@ function DonationForm() {
             }}
             className="select select-sm w-full max-w-xs p-2 text-sm font-medium bg-white text-gray-500 border-none outline outline-1 outline-gray-300 hover:outline-red-500 "
           >
-            <option disabled selected>
+            <option data-translate disabled selected>
               Choose Donation Type
             </option>
             {donationTypes.map((type) => (
-              <option key={type} value={type}>
+              <option data-translate key={type} value={type}>
                 {type}
               </option>
             ))}
@@ -177,6 +178,7 @@ function DonationForm() {
             role="button"
             className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5 py-2 w-fit"
             onClick={handleCheckout}
+            data-translate
           >
             DONATE
           </motion.a>

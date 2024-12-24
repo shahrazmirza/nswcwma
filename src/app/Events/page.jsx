@@ -4,91 +4,10 @@ import Whatsapp from "../Components/Whatsapp";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import data from "../Data/Events.json";
-import { FaCalendarAlt } from "react-icons/fa";
-import Image from "next/image";
-import Link from "next/link";
+
 import { Container } from "@radix-ui/themes";
 import ScrollToTop from "../Components/ScrollToTop";
 import { motion, useAnimation, useInView } from "framer-motion";
-
-// function Events() {
-//   const [items, setItems] = useState([]);
-//   useEffect(() => {
-//     console.log("", data);
-//     if (data && data.length > 0) {
-//       setItems(data);
-//     } else {
-//       console.error("");
-//     }
-//   }, []);
-
-//   const ref1 = useRef(null);
-//   const slide1 = useAnimation();
-//   const isInView1 = useInView(ref1, { once: true });
-//   useEffect(() => {
-//     if (isInView1) {
-//       slide1.start("visible");
-//     }
-//   }, [isInView1]);
-
-//   return (
-//     <div className="bg-gray-800 text-gray-400 w-screen">
-//       <Navbar />
-//       <ScrollToTop />
-//       <Whatsapp />
-//       <Container>
-//         <motion.div
-//           ref={ref1}
-//           variants={{
-//             hidden: { opacity: 0, y: 75 },
-//             visible: { opacity: 1, y: 0 },
-//           }}
-//           initial="hidden"
-//           animate={slide1}
-//           transition={{ duration: 0.9, delay: 0 }}
-//           className="py-10 md:p-0 p-5"
-//         >
-//           {items.map((item) => (
-//             <div key={item.id}>
-//               <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
-//                 {item.title}
-//               </h1>{" "}
-//               <div className="flex items-center text-sm font-semibold gap-1 py-5">
-//                 <FaCalendarAlt className="w-3 h-3" />
-//                 <h2>{item.date}</h2>
-//               </div>
-//               <Link href={item.href}>
-//                 <Image
-//                   src={item.imgSrc}
-//                   alt={item.imgAlt}
-//                   width={2000}
-//                   height={2000}
-//                   className=""
-//                 />
-//               </Link>
-//               <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
-//                 {item.paragraph1}
-//               </p>
-//               <div className="flex text-white text-sm font-semibold gap-1">
-//                 <a
-//                   role="button"
-//                   className="btn-sm flex justify-center items-center uppercase outline-white text-white outline outline-1 px-4 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800"
-//                   href={item.href}
-//                 >
-//                   read more
-//                 </a>
-//               </div>
-//               <div className="divider my-10"></div>
-//             </div>
-//           ))}
-//         </motion.div>
-//       </Container>
-//       <Footer />
-//     </div>
-//   );
-// }
-
-// export default Events;
 
 function Events() {
   const [items, setItems] = useState([]);
@@ -136,6 +55,7 @@ function Events() {
             animate={slide1}
             transition={{ duration: 0.9, delay: 0 }}
             className="my-10 uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 mb-10 pl-10 md:mx-0 ml-5"
+            data-translate
           >
             Our Events
           </motion.h1>
@@ -155,7 +75,7 @@ function Events() {
               <ul>
                 <li>
                   <details close>
-                    <summary>Filter by Category</summary>
+                    <summary data-translate>Filter by Category</summary>
                     <ul>
                       {categories.map((category, index) => (
                         <li key={index}>
@@ -239,15 +159,26 @@ function Events() {
                     />
                   </figure>
                   <div className="card-body">
-                    <h2 className="card-title md:text-xl text-base md:font-medium font-semibold text-white border-l-[1px] border-gray-300 pl-5">
+                    <h2
+                      data-translate
+                      className="card-title md:text-xl text-base md:font-medium font-semibold text-white border-l-[1px] border-gray-300 pl-5"
+                    >
                       {item.title}
                     </h2>
-                    <p className="md:font-thin md:text-base text-xs text-gray-400 pl-5">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs text-gray-400 pl-5"
+                    >
                       {item.summary}
                     </p>
                     <div className="card-actions flex items-center justify-between mt-2 pl-5">
-                      <h3 className="font-medium text-sm">{item.date}</h3>
-                      <div className="badge badge-primary p-3 md:text-sm text-xs text-white bg-gray-900 border-white">
+                      <h3 data-translate className="font-medium text-sm">
+                        {item.date}
+                      </h3>
+                      <div
+                        data-translate
+                        className="badge badge-primary p-3 md:text-sm text-xs text-white bg-gray-900 border-white"
+                      >
                         {item.category}
                       </div>
                     </div>

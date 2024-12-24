@@ -84,6 +84,7 @@ export const ContactForm = () => {
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
           className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5"
+          data-translate
         >
           contact us
         </motion.h1>

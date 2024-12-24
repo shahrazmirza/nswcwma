@@ -111,10 +111,16 @@ function Services() {
           className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
         >
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               homeless Support
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
+            >
               The NSW Central West Muslims Association (NSWCWMA) primarily
               focuses on providing assistance to homeless people in the NSW
               Central West Region, including migrants and individuals from
@@ -129,6 +135,7 @@ function Services() {
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                data-translate
                 href="/Donation"
               >
                 DONATE
@@ -137,6 +144,7 @@ function Services() {
                 role="button"
                 className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
+                data-translate
               >
                 apply
               </a>
@@ -170,10 +178,16 @@ function Services() {
             className="relative aspect-ratio md:h-full object-cover min-h-60"
           />
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               Free Food on Fridays
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
+            >
               Every Friday afternoon, NSWCWMA offers free lunch to the
               deserving. This initiative aims to support those in need and
               foster a sense of community. By providing nutritious meals,
@@ -186,6 +200,7 @@ function Services() {
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                data-translate
                 href="/Donation"
               >
                 DONATE
@@ -194,6 +209,7 @@ function Services() {
                 role="button"
                 className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
+                data-translate
               >
                 apply
               </a>
@@ -212,10 +228,16 @@ function Services() {
           className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
         >
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               Disability Support
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
+            >
               NSWCWMA provides various forms of assistance to individuals with
               disabilities to help them excel in life. This includes the
               provision of supportive equipment tailored to individual needs and
@@ -228,6 +250,7 @@ function Services() {
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                data-translate
                 href="/Donation"
               >
                 DONATE
@@ -236,6 +259,7 @@ function Services() {
                 role="button"
                 className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
+                data-translate
               >
                 apply
               </a>
@@ -270,11 +294,17 @@ function Services() {
           />
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
             <div className="md:flex items-center gap-2">
-              <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+              <h1
+                data-translate
+                className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+              >
                 Driving Classes
               </h1>
             </div>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
+            >
               Affordable driving classes are available for members of the CALD
               community and migrants. These classes aim to empower individuals
               with the skills needed for independence and mobility. By offering
@@ -287,6 +317,7 @@ function Services() {
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                data-translate
                 href="/Donation"
               >
                 DONATE
@@ -295,6 +326,7 @@ function Services() {
                 role="button"
                 className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
+                data-translate
               >
                 apply
               </a>
@@ -313,10 +345,16 @@ function Services() {
           className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
         >
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               Poverty Alleviation
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
+            >
               NSWCWMA is committed to fighting poverty. They offer support to
               individuals struggling with poverty in their daily lives, helping
               them to overcome financial hardships and improve their quality of
@@ -329,6 +367,7 @@ function Services() {
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                data-translate
                 href="/Donation"
               >
                 DONATE
@@ -337,6 +376,7 @@ function Services() {
                 role="button"
                 className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
+                data-translate
               >
                 apply
               </a>
@@ -370,10 +410,16 @@ function Services() {
             className="relative aspect-ratio md:h-full object-cover min-h-60"
           />
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               Sick Support
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
+            >
               NSWCWMA supports community members who are suffering from illness
               and fighting poverty. This assistance can be financial or through
               help with daily life activities, ensuring that sick individuals
@@ -386,6 +432,7 @@ function Services() {
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                data-translate
                 href="/Donation"
               >
                 DONATE
@@ -394,6 +441,7 @@ function Services() {
                 role="button"
                 className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
+                data-translate
               >
                 apply
               </a>
@@ -413,10 +461,16 @@ function Services() {
           className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
         >
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               Mental Health Support
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
+            >
               NSWCWMA is dedicated to promoting mental well-being. They provide
               essential support to individuals facing mental health challenges,
               offering access to resources and services aimed at improving
@@ -429,6 +483,7 @@ function Services() {
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                data-translate
                 href="/Donation"
               >
                 DONATE
@@ -437,6 +492,7 @@ function Services() {
                 role="button"
                 className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
+                data-translate
               >
                 apply
               </a>
@@ -470,10 +526,16 @@ function Services() {
             className="relative aspect-ratio md:h-full object-cover min-h-60"
           />
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               Education Support
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
+            >
               NSWCWMA is dedicated to empowering the community through education
               and awareness. They offer programs in children and community
               education, language resources, domestic violence awareness, and
@@ -486,6 +548,7 @@ function Services() {
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                data-translate
                 href="/Donation"
               >
                 DONATE
@@ -494,6 +557,7 @@ function Services() {
                 role="button"
                 className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
+                data-translate
               >
                 apply
               </a>
@@ -513,10 +577,16 @@ function Services() {
           className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
         >
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               Refugees Support
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
+            >
               NSWCWMA is committed to supporting refugees by fostering
               integration, reducing isolation, and promoting tolerance and
               respect for diverse cultures and religions. Through tailored
@@ -529,6 +599,7 @@ function Services() {
               <a
                 role="button"
                 className="btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-5"
+                data-translate
                 href="/Donation"
               >
                 DONATE
@@ -537,6 +608,7 @@ function Services() {
                 role="button"
                 className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/Application"
+                data-translate
               >
                 apply
               </a>
@@ -544,6 +616,7 @@ function Services() {
                 role="button"
                 className="btn uppercase outline-white text-white outline outline-1 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800 px-5"
                 href="/RefugeesSupport"
+                data-translate
               >
                 more
               </a>

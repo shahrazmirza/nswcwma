@@ -198,6 +198,7 @@ function Mosque() {
               animate={slide1}
               transition={{ duration: 0.9, delay: 0 }}
               className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 mb-10 pl-10 md:mx-0 ml-5"
+              data-translate
             >
               Dubbo Mosque
             </motion.h1>
@@ -211,6 +212,7 @@ function Mosque() {
               animate={slide2}
               transition={{ duration: 0.9, delay: 0 }}
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pl-10 md:mx-0 ml-5 mr-10 mb-10"
+              data-translate
             >
               Dubbo Mosque serves as an important spiritual hub within the
               broader framework of The NSW Central West Muslims Association
@@ -246,10 +248,16 @@ function Mosque() {
                   className="card bg-gray-900 shadow-xl md:font-thin md:text-base text-xs tracking-wide text-gray-400 md:ml-10"
                 >
                   <div className="card-body">
-                    <h2 className="md:text-xl text-base md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 pl-5">
+                    <h2
+                      data-translate
+                      className="md:text-xl text-base md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 pl-5"
+                    >
                       {item.title}
                     </h2>
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-5">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-5"
+                    >
                       {item.description}
                     </p>
                   </div>
@@ -273,7 +281,10 @@ function Mosque() {
               {prayerData ? (
                 <div className="card bg-gray-300 shadow-xl text-gray-800 h-fit w-[335px] p-5 mx-5">
                   <div className="flex flex-col justify-center pb-5 gap-3">
-                    <h1 className="text-base md:font-medium font-semibold md:tracking-wide border-l-[1px] border-gray-800 pl-5">
+                    <h1
+                      data-translate
+                      className="text-base md:font-medium font-semibold md:tracking-wide border-l-[1px] border-gray-800 pl-5"
+                    >
                       Prayer Times
                     </h1>
                     <div className="flex flex-col items-end">
@@ -293,18 +304,24 @@ function Mosque() {
                   <div className="flex flex-col gap-5 justify-center items-center">
                     <div className="flex gap-5 w-full">
                       <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
-                        <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                        <h1
+                          data-translate
+                          className="text-base md:font-medium font-semibold md:tracking-wide"
+                        >
                           Fajr
                         </h1>
-                        <h2 className="text-ss font-normal">
+                        <h2 data-translate className="text-ss font-normal">
                           {prayerData.data.timings.Fajr}
                         </h2>
                       </div>
                       <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
-                        <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                        <h1
+                          data-translate
+                          className="text-base md:font-medium font-semibold md:tracking-wide"
+                        >
                           Dhuhr
                         </h1>
-                        <h2 className="text-ss font-normal">
+                        <h2 data-translate className="text-ss font-normal">
                           {prayerData.data.timings.Dhuhr}
                         </h2>
                       </div>
@@ -312,28 +329,37 @@ function Mosque() {
 
                     <div className="flex gap-5 w-full">
                       <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
-                        <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                        <h1
+                          data-translate
+                          className="text-base md:font-medium font-semibold md:tracking-wide"
+                        >
                           Asr
                         </h1>
-                        <h2 className="text-ss font-normal">
+                        <h2 data-translate className="text-ss font-normal">
                           {prayerData.data.timings.Asr}
                         </h2>
                       </div>
                       <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
-                        <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                        <h1
+                          data-translate
+                          className="text-base md:font-medium font-semibold md:tracking-wide"
+                        >
                           Maghrib
                         </h1>
-                        <h2 className="text-ss font-normal">
+                        <h2 data-translate className="text-ss font-normal">
                           {prayerData.data.timings.Maghrib}
                         </h2>
                       </div>
                     </div>
 
                     <div className="rounded-2xl bg-gray-400 w-fit p-3 flex flex-col justify-center items-center px-12">
-                      <h1 className="text-base md:font-medium font-semibold md:tracking-wide">
+                      <h1
+                        data-translate
+                        className="text-base md:font-medium font-semibold md:tracking-wide"
+                      >
                         Isha
                       </h1>
-                      <h2 className="text-ss font-normal">
+                      <h2 data-translate className="text-ss font-normal">
                         {prayerData.data.timings.Isha}
                       </h2>
                     </div>
@@ -356,11 +382,16 @@ function Mosque() {
             >
               {verseData ? (
                 <div className="flex flex-col gap-2">
-                  <h1 className="text-base md:font-medium font-semibold md:tracking-wide border-l-[1px] border-gray-800 pl-5">
+                  <h1
+                    data-translate
+                    className="text-base md:font-medium font-semibold md:tracking-wide border-l-[1px] border-gray-800 pl-5"
+                  >
                     Verse of the day
                   </h1>
-                  <p className="text-xs font-normal pl-5">{verseData.text}</p>
-                  <p className="text-xs font-normal text-end">
+                  <p data-translate className="text-xs font-normal pl-5">
+                    {verseData.text}
+                  </p>
+                  <p data-translate className="text-xs font-normal text-end">
                     ({formatVerseKey(randomVerseData.verse_key)})
                   </p>
                 </div>
@@ -382,13 +413,16 @@ function Mosque() {
             >
               {hadithData ? (
                 <div className="flex flex-col gap-2">
-                  <h1 className="text-base md:font-medium font-semibold md:tracking-wide border-l-[1px] border-gray-800 pl-5">
+                  <h1
+                    data-translate
+                    className="text-base md:font-medium font-semibold md:tracking-wide border-l-[1px] border-gray-800 pl-5"
+                  >
                     Hadith of the day
                   </h1>
-                  <p className="text-xs font-normal pl-5">
+                  <p data-translate className="text-xs font-normal pl-5">
                     {hadithData.data.hadith_english}
                   </p>
-                  <p className="text-xs font-normal text-end">
+                  <p data-translate className="text-xs font-normal text-end">
                     ({hadithData.data.book}, {hadithData.data.id})
                   </p>
                 </div>

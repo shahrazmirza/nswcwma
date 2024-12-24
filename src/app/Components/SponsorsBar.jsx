@@ -61,7 +61,10 @@ const SponsorsBar = () => {
     <div className="hidden md:block">
       <div className="my-5 w-screen bg-gray-900 flex flex-col justify-center overflow-hidden">
         <Container>
-          <div className="flex items-center uppercase text-xl font-semibold tracking-widest text-white border-l border-white pl-5 py-3 my-5 md:mx-0 mx-5">
+          <div
+            data-translate
+            className="flex items-center uppercase text-xl font-semibold tracking-widest text-white border-l border-white pl-5 py-3 my-5 md:mx-0 mx-5"
+          >
             our funders
           </div>
           <div className="relative w-full overflow-hidden mb-5">

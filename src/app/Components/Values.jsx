@@ -75,6 +75,7 @@ function Values() {
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
           className="flex items-center uppercase text-3xl font-semibold tracking-widest text-gray-800 border-l border-gray-500 pl-5 h-16 mt-5 mb-10"
+          data-translate
         >
           our values
         </motion.div>
@@ -93,8 +94,10 @@ function Values() {
             I
           </h1>
           <div className="card-body">
-            <h2 className="card-title text-lg">Inclusion and Respect</h2>
-            <p>
+            <h2 data-translate className="card-title text-lg">
+              Inclusion and Respect
+            </h2>
+            <p data-translate>
               Embracing diversity and fostering an inclusive environment where
               everyone feels valued and respected.
             </p>
@@ -115,8 +118,10 @@ function Values() {
             S
           </h1>
           <div className="card-body">
-            <h2 className="card-title text-lg">Service and Empowerment</h2>
-            <p>
+            <h2 data-translate className="card-title text-lg">
+              Service and Empowerment
+            </h2>
+            <p data-translate>
               Enhancing community well-being through accessible services and
               empowering individuals to take an active role in their community.
             </p>
@@ -137,8 +142,10 @@ function Values() {
             L
           </h1>
           <div className="card-body">
-            <h2 className="card-title text-lg">Leadership and Excellence</h2>
-            <p>
+            <h2 data-translate className="card-title text-lg">
+              Leadership and Excellence
+            </h2>
+            <p data-translate>
               Inspiring leadership within the community by nurturing talent and
               encouraging civic participation.
             </p>
@@ -159,8 +166,10 @@ function Values() {
             A
           </h1>
           <div className="card-body">
-            <h2 className="card-title text-lg">Accountability & Trust</h2>
-            <p>
+            <h2 data-translate className="card-title text-lg">
+              Accountability & Trust
+            </h2>
+            <p data-translate>
               Upholding transparency, sustainability, and ethical governance in
               all their actions.
             </p>
@@ -181,8 +190,10 @@ function Values() {
             M
           </h1>
           <div className="card-body">
-            <h2 className="card-title text-lg">Mindfulness & Innovation</h2>
-            <p>
+            <h2 data-translate className="card-title text-lg">
+              Mindfulness & Innovation
+            </h2>
+            <p data-translate>
               Honoring cultural heritage while fostering mutual respect and
               understanding across diverse backgrounds.
             </p>

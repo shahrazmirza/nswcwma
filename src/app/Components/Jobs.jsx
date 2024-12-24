@@ -25,6 +25,7 @@ const Jobs = () => {
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
           className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5"
+          data-translate
         >
           current roles
         </motion.h1>
@@ -39,13 +40,17 @@ const Jobs = () => {
           transition={{ duration: 0.9, delay: 0.5 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
-          <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
+          <h1
+            data-translate
+            className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold"
+          >
             Junior Cyber Security Awareness Assistant (Casual) – Age (11-17)
           </h1>
           <a
             role="button"
             className="btn md:btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold rounded-none bg-white border-none"
             href="/Careers/JuniorCyberSecurityAwarenessAssistant"
+            data-translate
           >
             view role
           </a>
@@ -60,13 +65,17 @@ const Jobs = () => {
           transition={{ duration: 0.9, delay: 1.0 }}
           className="pl-8 pr-5 py-2 flex justify-between items-center"
         >
-          <h1 className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold">
+          <h1
+            data-translate
+            className="p-2 mr-3 border-gray-400 md:text-medium text-sm font-semibold"
+          >
             Young Office Manager (Casual) – Age (11-17)
           </h1>
           <a
             role="button"
             className="btn md:btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold rounded-none bg-white border-none"
             href="/Careers/YoungOfficeManager"
+            data-translate
           >
             view role
           </a>

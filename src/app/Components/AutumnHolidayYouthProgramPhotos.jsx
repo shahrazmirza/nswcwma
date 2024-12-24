@@ -21,7 +21,10 @@ function AutumnHolidayYouthProgramPhotos() {
 
   return (
     <div className="">
-      <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white pb-10">
+      <h1
+        data-translate
+        className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white pb-10"
+      >
         Gallery
       </h1>
       <div className="carousel md:w-[600px] w-80 h-[600px] relative overflow-hidden">

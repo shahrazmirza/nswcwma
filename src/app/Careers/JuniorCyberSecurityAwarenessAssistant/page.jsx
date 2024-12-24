@@ -15,21 +15,33 @@ function JuniorCyberSecurityAwarenessAssistant() {
         <div className="pl-5 md:pl-0 pr-5 md:pr-0">
           <div className="pt-10 hidden md:grid grid-cols-4">
             <div className="col-span-1">
-              <h1 className="font-semibold">Job Vacancy</h1>
-              <h1 className="font-semibold">Position</h1>
-              <h1 className="font-semibold">Employment Type</h1>
-              <h1 className="font-semibold">Location</h1>
+              <h1 data-translate className="font-semibold">
+                Job Vacancy
+              </h1>
+              <h1 data-translate className="font-semibold">
+                Position
+              </h1>
+              <h1 data-translate className="font-semibold">
+                Employment Type
+              </h1>
+              <h1 data-translate className="font-semibold">
+                Location
+              </h1>
             </div>
             <div className="col-span-2">
-              <p className="col-span-2">
+              <p data-translate className="col-span-2">
                 Junior Cyber Security Awareness Assistant (Casual) – Age (11-17)
               </p>
 
-              <p className="col-span-2">Junior Cyber Security Assistant</p>
+              <p data-translate className="col-span-2">
+                Junior Cyber Security Assistant
+              </p>
 
-              <p className="col-span-2">Casual</p>
+              <p data-translate className="col-span-2">
+                Casual
+              </p>
 
-              <p className="col-span-2">
+              <p data-translate className="col-span-2">
                 NSW Central West Muslim Association (NSWCWMA), Dubbo, NSW 2830
               </p>
             </div>
@@ -38,6 +50,7 @@ function JuniorCyberSecurityAwarenessAssistant() {
                 role="button"
                 className="btn-sm btn-disabled flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
                 href="/Careers/JobApplication"
+                data-translate
               >
                 apply
               </a>
@@ -49,35 +62,50 @@ function JuniorCyberSecurityAwarenessAssistant() {
                 role="button"
                 className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
                 href="/Careers/JobApplication"
+                data-translate
               >
                 apply
               </a>
             </div>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">Job Vacancy</h1>
-              <p className="col-span-2">
+              <h1 data-translate className="font-semibold">
+                Job Vacancy
+              </h1>
+              <p data-translate className="col-span-2">
                 Junior Cyber Security Awareness Assistant (Casual) – Age (11-17)
               </p>
             </div>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">Position</h1>
-              <p className="col-span-2">Junior Cyber Security Assistant</p>
+              <h1 data-translate className="font-semibold">
+                Position
+              </h1>
+              <p data-translate className="col-span-2">
+                Junior Cyber Security Assistant
+              </p>
             </div>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">Employment Type</h1>
-              <p className="col-span-2">Casual</p>
+              <h1 data-translate className="font-semibold">
+                Employment Type
+              </h1>
+              <p data-translate className="col-span-2">
+                Casual
+              </p>
             </div>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">Location</h1>
-              <p className="col-span-2">
+              <h1 data-translate className="font-semibold">
+                Location
+              </h1>
+              <p data-translate className="col-span-2">
                 NSW Central West Muslim Association (NSWCWMA), Dubbo, NSW 2830
               </p>
             </div>
           </div>
           <div className="flex flex-col py-10 gap-5">
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">About the Role</h1>
-              <p className="col-span-2">
+              <h1 data-translate className="font-semibold">
+                About the Role
+              </h1>
+              <p data-translate className="col-span-2">
                 We are seeking a proactive and detail-oriented Junior Cyber
                 Security Assistant to support our Cyber Awareness project team.
                 The role involves assisting the Team Lead in the delivery of
@@ -88,20 +116,24 @@ function JuniorCyberSecurityAwarenessAssistant() {
               </p>
             </div>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">Key Responsibilities</h1>
+              <h1 data-translate className="font-semibold">
+                Key Responsibilities
+              </h1>
               <div className="col-span-2 flex flex-col gap-5">
                 <div className="flex flex-col gap-1">
-                  <h1 className="font-medium pl-5">Support and Coordination</h1>
+                  <h1 data-translate className="font-medium pl-5">
+                    Support and Coordination
+                  </h1>
                   <div className="flex gap-5 pl-10">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Assist the Team Lead with event planning and execution for
                       Cyber Awareness programs.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-10">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Help prepare workshops and community events aimed at
                       educating young children about cyber security.
                     </p>
@@ -109,17 +141,19 @@ function JuniorCyberSecurityAwarenessAssistant() {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <h1 className="font-medium pl-5">Marketing and Outreach</h1>
+                  <h1 data-translate className="font-medium pl-5">
+                    Marketing and Outreach
+                  </h1>
                   <div className="flex gap-5 pl-10">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Coordinate outreach activities to engage children and
                       community groups.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-10">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Act as a community leader, fostering engagement and
                       promoting the initiative to a younger audience.
                     </p>
@@ -127,25 +161,25 @@ function JuniorCyberSecurityAwarenessAssistant() {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <h1 className="font-medium pl-5">
+                  <h1 data-translate className="font-medium pl-5">
                     Documentation and Office Administration
                   </h1>
                   <div className="flex gap-5 pl-10">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Manage and maintain documentation related to project
                       activities.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-10">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Print, organise, and distribute educational materials.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-10">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Handle general office administration and ad-hoc tasks as
                       required.
                     </p>
@@ -153,17 +187,19 @@ function JuniorCyberSecurityAwarenessAssistant() {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <h1 className="font-medium pl-5">Event Support</h1>
+                  <h1 data-translate className="font-medium pl-5">
+                    Event Support
+                  </h1>
                   <div className="flex gap-5 pl-10">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Assist during Cyber Awareness events, ensuring smooth
                       operations.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-10">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Set up and manage event logistics, including technical
                       equipment and registration.
                     </p>
@@ -171,12 +207,12 @@ function JuniorCyberSecurityAwarenessAssistant() {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <h1 className="font-medium pl-5">
+                  <h1 data-translate className="font-medium pl-5">
                     Helping with Acquittals & Reporting
                   </h1>
                   <div className="flex gap-5 pl-10">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Helping with reporting and assistance to our Accountant
                       with reporting to government bodies.
                     </p>
@@ -186,36 +222,40 @@ function JuniorCyberSecurityAwarenessAssistant() {
             </div>
 
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">Qualifications and Skills</h1>
+              <h1 data-translate className="font-semibold">
+                Qualifications and Skills
+              </h1>
               <div className="col-span-2 flex flex-col gap-5">
                 <div className="flex flex-col gap-1">
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>Basic computer and literacy skills are required.</p>
+                    <p data-translate>•</p>
+                    <p data-translate>
+                      Basic computer and literacy skills are required.
+                    </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Strong communication and interpersonal skills to engage
                       with diverse community groups.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Excellent organisational and administrative abilities.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Proficiency in Microsoft Office Suite and basic document
                       management.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Enthusiasm for learning and promoting cyber security
                       awareness.
                     </p>
@@ -224,25 +264,27 @@ function JuniorCyberSecurityAwarenessAssistant() {
               </div>
             </div>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">Working Hours and Compensation</h1>
+              <h1 data-translate className="font-semibold">
+                Working Hours and Compensation
+              </h1>
               <div className="col-span-2 flex flex-col gap-5">
                 <div className="flex flex-col gap-1">
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Hours will range from 8 to 15 hours per week, depending on
                       project requirements and event schedules.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Casual pay rate of $11.25 per hour, inclusive of lodging.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Minor wages will be paid and discussed during the
                       interview.
                     </p>
@@ -251,20 +293,22 @@ function JuniorCyberSecurityAwarenessAssistant() {
               </div>
             </div>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">Additional Requirements</h1>
+              <h1 data-translate className="font-semibold">
+                Additional Requirements
+              </h1>
               <div className="col-span-2 flex flex-col gap-5">
                 <div className="flex flex-col gap-1">
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       A Tax File Number (TFN) and Superannuation account are
                       mandatory. Successful applicants who do not already have
                       these will be advised to arrange them.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Written consent from both parents is required for
                       applicants under 18 years of age.
                     </p>
@@ -273,43 +317,43 @@ function JuniorCyberSecurityAwarenessAssistant() {
               </div>
             </div>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">
+              <h1 data-translate className="font-semibold">
                 Benefits of Working with NSWCWMA
               </h1>
               <div className="col-span-2 flex flex-col gap-5">
                 <div className="flex flex-col gap-1">
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Be part of a Registered Charity and Public Benevolent
                       Institute, contributing to meaningful community work.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Access resources such as Virtual Reality, Projectors, and
                       Laptops for educational and supervised amusement purposes.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Opportunity to become a future leader and attend committee
                       meetings to understand how management works.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Gain exposure to government grants, high-end
                       professionalism, and collaboration with government and
                       non-government bodies.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Opportunity to lead the NSWCWMA Young Wing, promoting
                       youth engagement and leadership.
                     </p>
@@ -318,19 +362,21 @@ function JuniorCyberSecurityAwarenessAssistant() {
               </div>
             </div>
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">Interview Process</h1>
+              <h1 data-translate className="font-semibold">
+                Interview Process
+              </h1>
               <div className="col-span-2 flex flex-col gap-5">
                 <div className="flex flex-col gap-1">
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Interviews will be conducted online or in person,
                       depending on the Project Lead’s availability.
                     </p>
                   </div>
                   <div className="flex gap-5 pl-5">
-                    <p>•</p>
-                    <p>
+                    <p data-translate>•</p>
+                    <p data-translate>
                       Interview Attire: Applicants are expected to wear a tie
                       for their interview.
                     </p>
@@ -341,16 +387,21 @@ function JuniorCyberSecurityAwarenessAssistant() {
           </div>
           <div className="pb-10 hidden md:grid grid-cols-4">
             <div className="col-span-1">
-              <h1 className="font-semibold">Application Deadline</h1>
+              <h1 data-translate className="font-semibold">
+                Application Deadline
+              </h1>
             </div>
             <div className="col-span-2">
-              <p className="col-span-2">Closed</p>
+              <p data-translate className="col-span-2">
+                Closed
+              </p>
             </div>
             <div className="flex justify-end items-start">
               <a
                 role="button"
                 className="btn-sm btn-disabled flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
                 href="/Careers/JobApplication"
+                data-translate
               >
                 apply
               </a>
@@ -359,8 +410,10 @@ function JuniorCyberSecurityAwarenessAssistant() {
 
           <div className="md:hidden flex flex-col pb-5 gap-5">
             <div className="flex flex-col gap-5">
-              <h1 className="font-semibold">Job Vacancy</h1>
-              <p className="col-span-2">
+              <h1 data-translate className="font-semibold">
+                Job Vacancy
+              </h1>
+              <p data-translate className="col-span-2">
                 Young Office Manager (Casual) – Age (11-17)
               </p>
             </div>
@@ -369,6 +422,7 @@ function JuniorCyberSecurityAwarenessAssistant() {
                 role="button"
                 className="btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold bg-white rounded-none border-none"
                 href="/Careers/JobApplication"
+                data-translate
               >
                 apply
               </a>

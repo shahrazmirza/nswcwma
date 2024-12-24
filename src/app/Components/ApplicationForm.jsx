@@ -126,6 +126,7 @@ export const ApplicationForm = () => {
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
           className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5"
+          data-translate
         >
           application for assistance
         </motion.h1>
@@ -139,6 +140,7 @@ export const ApplicationForm = () => {
           animate={slide1}
           transition={{ duration: 0.9, delay: 0.5 }}
           className="pl-10 pr-5 capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5"
+          data-translate
         >
           Eligibility
         </motion.h2>
@@ -156,35 +158,49 @@ export const ApplicationForm = () => {
             onChange={(e) => setSelectedGroup(e.target.value)}
             className="w-full p-2 my-4 text-sm font-medium text-gray-500 border border-gray-500 hover:border-sky-700 rounded-md bg-white"
           >
-            <option value="" disabled>
+            <option value="" data-translate disabled>
               Please Select Your Group
             </option>
-            <option className="text-black" value="Sick">
+            <option data-translate className="text-black" value="Sick">
               Sick
             </option>
-            <option className="text-black" value="Support for the Refugees">
+            <option
+              data-translate
+              className="text-black"
+              value="Support for the Refugees"
+            >
               Refugee
             </option>
-            <option className="text-black" value="Migrant">
+            <option data-translate className="text-black" value="Migrant">
               Migrant
             </option>
-            <option className="text-black" value="Homeless">
+            <option data-translate className="text-black" value="Homeless">
               Homeless
             </option>
-            <option className="text-black" value="Mental Health Support">
+            <option
+              data-translate
+              className="text-black"
+              value="Mental Health Support"
+            >
               Mental Health Support
             </option>
 
-            <option className="text-black" value="Individual with Disabilities">
+            <option
+              data-translate
+              className="text-black"
+              value="Individual with Disabilities"
+            >
               Individual with Disability
             </option>
             <option
+              data-translate
               className="text-black"
               value="Education & Awareness Support"
             >
               Education & Awareness
             </option>
             <option
+              data-translate
               className="text-black"
               value="Culturally and Linguistically Diverse (CALD) Background"
             >
@@ -198,7 +214,10 @@ export const ApplicationForm = () => {
               )}
 
               <form onSubmit={onSubmit} className="flex flex-col gap-5">
-                <h2 className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
+                <h2
+                  data-translate
+                  className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5"
+                >
                   Personal Information
                 </h2>
 
@@ -238,7 +257,10 @@ export const ApplicationForm = () => {
                   className="p-2 border-b border-gray-400 focus:outline-none text-xs font-semibold"
                 />
 
-                <h2 className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
+                <h2
+                  data-translate
+                  className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5"
+                >
                   Circumstances
                 </h2>
 
@@ -251,7 +273,10 @@ export const ApplicationForm = () => {
                   className="p-2 border-b border-gray-400 focus:outline-none text-xs font-semibold h-32 resize-none"
                 ></textarea>
 
-                <h2 className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
+                <h2
+                  data-translate
+                  className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5"
+                >
                   Additional Information
                 </h2>
 
@@ -273,7 +298,10 @@ export const ApplicationForm = () => {
                   className="p-2 border-b border-gray-400 focus:outline-none text-xs font-semibold h-10 resize-none"
                 ></textarea>
 
-                <h2 className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
+                <h2
+                  data-translate
+                  className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5"
+                >
                   Emergency Contact
                 </h2>
 
@@ -317,7 +345,7 @@ export const ApplicationForm = () => {
                       onChange={(e) => setFirstConsent(e.target.checked)}
                       required
                     />
-                    <p className="pl-2 -mt-1">
+                    <p data-translate className="pl-2 -mt-1">
                       I hereby declare that the information provided is true and
                       correct to the best of my knowledge. I understand that
                       providing false information may result in the termination
@@ -331,16 +359,19 @@ export const ApplicationForm = () => {
                       onChange={(e) => setSecondConsent(e.target.checked)}
                       required
                     />
-                    <div className="md:flex md:gap-1 pl-2 -mt-1">
+                    <div data-translate className="md:flex md:gap-1 pl-2 -mt-1">
                       <p>I have read and agree to the</p>
                       <Link
                         href="/TermsAndConditions"
                         target="_blank"
                         className="underline underline-offset-2 font-semibold"
+                        data-translate
                       >
                         Terms and Conditions
                       </Link>{" "}
-                      <p>of The NSW Central West Muslims Association.</p>
+                      <p data-translate>
+                        of The NSW Central West Muslims Association.
+                      </p>
                     </div>
                   </div>
                 </label>
@@ -350,6 +381,7 @@ export const ApplicationForm = () => {
                     type="submit"
                     value="Send"
                     className="btn md:btn-sm flex justify-center items-center uppercase outline outline-1 md:px-10 hover:text-red-500 hover:outline-red-500 hover:bg-white text-gray-400 text-sm font-semibold rounded-none bg-white border-none"
+                    data-translate
                   />
                 </div>
               </form>

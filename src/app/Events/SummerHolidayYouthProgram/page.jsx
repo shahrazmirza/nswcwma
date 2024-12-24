@@ -70,12 +70,15 @@ function SummerHolidayYouthProgram() {
               .filter((item) => item.title === filterInclude)
               .map((item) => (
                 <div key={item.id}>
-                  <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+                  <h1
+                    data-translate
+                    className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+                  >
                     {item.title}
                   </h1>{" "}
                   <div className="flex items-center text-sm font-semibold gap-1 py-5">
                     <FaCalendarAlt className="w-3 h-3" />
-                    <h2>{item.date}</h2>
+                    <h2 data-translate>{item.date}</h2>
                   </div>
                   <div className="flex gap-3 py-3">
                     <a
@@ -122,29 +125,35 @@ function SummerHolidayYouthProgram() {
                     />
                   </Link>
                   <div className="pt-5">
-                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
+                    >
                       {item.paragraph1}
                     </p>
-                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
+                    >
                       {item.paragraph2}
                     </p>
-                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
+                    >
                       {item.paragraph3}
                     </p>
-                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
+                    >
                       {item.paragraph4}
                     </p>
-                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
+                    >
                       {item.paragraph5}
-                    </p>
-                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
-                      {item.paragraph6}
-                    </p>
-                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
-                      {item.paragraph7}
-                    </p>
-                    <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
-                      {item.paragraph8}
                     </p>
                   </div>
                   <div className="md:-mb-32 -mb-80">
@@ -165,7 +174,10 @@ function SummerHolidayYouthProgram() {
             transition={{ duration: 0.9, delay: 0.5 }}
             className="md:... md:flex md:flex-col gap-10 grid grid-cols-1 md:w-fit w-screen md:px-0 px-5"
           >
-            <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               Recent Posts
             </h1>
             {items
@@ -181,7 +193,10 @@ function SummerHolidayYouthProgram() {
                       className=""
                     />
                   </Link>
-                  <h1 className="text-sm tracking-widest text-gray-400">
+                  <h1
+                    data-translate
+                    className="text-sm tracking-widest text-gray-400"
+                  >
                     {item.title}
                   </h1>{" "}
                   <div className="flex text-white text-sm font-semibold gap-1">
@@ -189,6 +204,7 @@ function SummerHolidayYouthProgram() {
                       role="button"
                       className="btn-sm flex justify-center items-center uppercase outline-white text-white outline outline-1 px-4 hover:text-red-500 hover:outline-red-500 hover:bg-gray-800 rounded-none bg-gray-800"
                       href={item.href}
+                      data-translate
                     >
                       read more
                     </a>

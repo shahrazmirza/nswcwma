@@ -87,10 +87,13 @@ function ServicesBanner() {
             <FaPeopleRoof className="text-6xl pr-8" />
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
-              <h1 className="uppercase text-medium md:font-medium font-semibold">
+              <h1
+                data-translate
+                className="uppercase text-medium md:font-medium font-semibold"
+              >
                 Homeless Support
               </h1>
-              <p className="md:font-thin md:text-xs text-sm">
+              <p data-translate className="md:font-thin md:text-xs text-sm">
                 Providing accommodation and financial assistance to homeless
                 individuals and at-risk travelers.
               </p>
@@ -111,10 +114,13 @@ function ServicesBanner() {
             <FaBowlFood className="text-6xl pr-8" />
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
-              <h1 className="uppercase text-medium md:font-medium font-semibold">
+              <h1
+                data-translate
+                className="uppercase text-medium md:font-medium font-semibold"
+              >
                 Free Food on Fridays
               </h1>
-              <p className="md:font-thin md:text-xs text-sm">
+              <p data-translate className="md:font-thin md:text-xs text-sm">
                 Offering free lunch every Friday to support community members
                 and foster social interaction.
               </p>
@@ -135,10 +141,13 @@ function ServicesBanner() {
             <TbDisabled className="text-6xl pr-8" />
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
-              <h1 className="uppercase text-medium md:font-medium font-semibold">
+              <h1
+                data-translate
+                className="uppercase text-medium md:font-medium font-semibold"
+              >
                 Disability Support
               </h1>
-              <p className="md:font-thin md:text-xs text-sm">
+              <p data-translate className="md:font-thin md:text-xs text-sm">
                 Assisting disabled individuals with supportive equipment and
                 paid work opportunities.
               </p>
@@ -159,10 +168,13 @@ function ServicesBanner() {
             <FaCar className="text-6xl pr-8" />
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
-              <h1 className="uppercase text-medium md:font-medium font-semibold">
+              <h1
+                data-translate
+                className="uppercase text-medium md:font-medium font-semibold"
+              >
                 Driving Classes
               </h1>
-              <p className="md:font-thin md:text-xs text-sm">
+              <p data-translate className="md:font-thin md:text-xs text-sm">
                 Affordable driving lessons for CALD community members and
                 migrants to enhance independence.
               </p>
@@ -183,10 +195,13 @@ function ServicesBanner() {
             <IoIosPeople className="text-6xl pr-8" />
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
-              <h1 className="uppercase text-medium md:font-medium font-semibold">
+              <h1
+                data-translate
+                className="uppercase text-medium md:font-medium font-semibold"
+              >
                 Poverty Alleviation
               </h1>
-              <p className="md:font-thin md:text-xs text-sm">
+              <p data-translate className="md:font-thin md:text-xs text-sm">
                 Supporting individuals to overcome financial hardships and
                 improve their quality of life.
               </p>
@@ -207,10 +222,13 @@ function ServicesBanner() {
             <MdSick className="text-6xl pr-8" />
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
-              <h1 className="uppercase text-medium md:font-medium font-semibold">
+              <h1
+                data-translate
+                className="uppercase text-medium md:font-medium font-semibold"
+              >
                 Sick Support
               </h1>
-              <p className="md:font-thin md:text-xs text-sm">
+              <p data-translate className="md:font-thin md:text-xs text-sm">
                 Financial and daily life assistance for ill and disadvantaged
                 community members fighting poverty.
               </p>
@@ -231,10 +249,13 @@ function ServicesBanner() {
             <RiMentalHealthFill className="text-6xl pr-8" />
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
-              <h1 className="uppercase text-medium md:font-medium font-semibold">
+              <h1
+                data-translate
+                className="uppercase text-medium md:font-medium font-semibold"
+              >
                 Mental Health Support
               </h1>
-              <p className="md:font-thin md:text-xs text-sm">
+              <p data-translate className="md:font-thin md:text-xs text-sm">
                 Promoting mental well-being, offering essential support,
                 resources, and programs for personal growth.
               </p>
@@ -255,10 +276,13 @@ function ServicesBanner() {
             <GiAwareness className="text-6xl pr-8" />
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
-              <h1 className="uppercase text-medium md:font-medium font-semibold">
+              <h1
+                data-translate
+                className="uppercase text-medium md:font-medium font-semibold"
+              >
                 Education Support
               </h1>
-              <p className="md:font-thin md:text-xs text-sm">
+              <p data-translate className="md:font-thin md:text-xs text-sm">
                 Empowering communities with education through youth, language,
                 domestic violence, and cyber security programs.
               </p>
@@ -279,10 +303,13 @@ function ServicesBanner() {
             <GiLifeSupport className="text-6xl pr-8" />
 
             <div className="border-l-[1px] border-gray-300 pl-8 flex flex-col gap-5 flex-1">
-              <h1 className="uppercase text-medium md:font-medium font-semibold">
+              <h1
+                data-translate
+                className="uppercase text-medium md:font-medium font-semibold"
+              >
                 Refugee Support
               </h1>
-              <p className="md:font-thin md:text-xs text-sm">
+              <p data-translate className="md:font-thin md:text-xs text-sm">
                 Supporting refugees by fostering integration, reducing
                 isolation, and promoting tolerance, safety, and inclusion.
               </p>

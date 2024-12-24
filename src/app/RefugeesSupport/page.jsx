@@ -49,7 +49,10 @@ function RefugeesSupport() {
             className="col-span-3 md:px-0 px-5"
           >
             <div className="flex flex-col gap-5 pt-5">
-              <h1 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+              <h1
+                data-translate
+                className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+              >
                 Refugee Support
               </h1>{" "}
               <Image
@@ -59,7 +62,10 @@ function RefugeesSupport() {
                 height={2000}
                 className="py-3"
               />
-              <p className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5">
+              <p
+                data-translate
+                className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
+              >
                 At NSWCWMA, we are committed to helping refugees from diverse
                 backgrounds, particularly those from Palestinian, Muslim, and
                 Arab communities, integrate smoothly into Australian society. We
@@ -68,10 +74,16 @@ function RefugeesSupport() {
                 everyone can thrive.
               </p>
               <div className="flex flex-col gap-5">
-                <h2 className="md:text-xl text-base md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 pl-5">
+                <h2
+                  data-translate
+                  className="md:text-xl text-base md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 pl-5"
+                >
                   Our Mission
                 </h2>
-                <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-5">
+                <p
+                  data-translate
+                  className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-5"
+                >
                   The Support for Refugees initiative provides essential
                   resources to assist refugees in navigating life in Australia
                   while fostering respect for their cultural and religious
@@ -80,7 +92,10 @@ function RefugeesSupport() {
                 </p>
               </div>
               <div className="flex flex-col gap-3">
-                <h2 className="md:text-xl text-base md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 pl-5">
+                <h2
+                  data-translate
+                  className="md:text-xl text-base md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 pl-5"
+                >
                   Our Objectives
                 </h2>
                 <div className="flex pl-5 justify-start items-start">
@@ -88,7 +103,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Fostering Integration:
                       </span>{" "}
@@ -103,7 +121,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Reducing Isolation:
                       </span>{" "}
@@ -118,7 +139,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Promoting Understanding:
                       </span>{" "}
@@ -133,7 +157,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Supporting Wellbeing:
                       </span>{" "}
@@ -148,7 +175,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Ensuring Safety:
                       </span>{" "}
@@ -160,7 +190,10 @@ function RefugeesSupport() {
                 </div>
               </div>
               <div className="flex flex-col gap-3">
-                <h2 className="md:text-xl text-base md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 pl-5">
+                <h2
+                  data-translate
+                  className="md:text-xl text-base md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 pl-5"
+                >
                   Our Services
                 </h2>
                 <div className="flex pl-5 justify-start items-start">
@@ -168,7 +201,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Language and Cultural Orientation:
                       </span>{" "}
@@ -183,7 +219,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Community Engagement:
                       </span>{" "}
@@ -198,7 +237,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Support and Advocacy:
                       </span>{" "}
@@ -213,7 +255,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Safety and Security:
                       </span>{" "}
@@ -226,7 +271,10 @@ function RefugeesSupport() {
                 </div>
               </div>
               <div className="flex flex-col gap-3">
-                <h2 className="md:text-xl text-base md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 pl-5">
+                <h2
+                  data-translate
+                  className="md:text-xl text-base md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 pl-5"
+                >
                   Expected Impact
                 </h2>
                 <div className="flex pl-5 justify-start items-start">
@@ -234,7 +282,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Enhanced Integration:
                       </span>{" "}
@@ -249,7 +300,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Increased Social Connections:
                       </span>{" "}
@@ -264,7 +318,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Greater Tolerance and Respect:
                       </span>{" "}
@@ -278,7 +335,10 @@ function RefugeesSupport() {
                     ●
                   </div>
                   <div className="md:flex md:gap-1">
-                    <p className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4">
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-base text-xs tracking-wide text-gray-400 pl-4"
+                    >
                       <span className="md:font-medium font-semibold">
                         Improved Safety and Wellbeing:
                       </span>{" "}

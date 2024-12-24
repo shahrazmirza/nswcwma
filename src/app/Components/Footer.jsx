@@ -72,7 +72,10 @@ function Footer() {
               transition={{ duration: 0.9, delay: 0 }}
               className="border-l-[1px] border-gray-300 pl-10 md:pr-10 pr-5"
             >
-              <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
+              <h1
+                data-translate
+                className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8"
+              >
                 GET IN TOUCH
               </h1>
               <div className="flex flex-col md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400">
@@ -95,27 +98,30 @@ function Footer() {
               transition={{ duration: 0.9, delay: 0 }}
               className="border-l-[1px] border-gray-300 pl-10 md:pr-10 pr-5"
             >
-              <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8">
+              <h1
+                data-translate
+                className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-10 pb-8"
+              >
                 business hours
               </h1>
               <div className="md:font-thin font-medium md:text-medium text-sm tracking-wide text-gray-400 flex gap-2">
                 <div>
-                  <h2>Monday:</h2>
-                  <h2>Tuesday:</h2>
-                  <h2>Wednesday:</h2>
-                  <h2>Thursday:</h2>
-                  <h2>Friday:</h2>
-                  <h2>Saturday:</h2>
-                  <h2>Sunday:</h2>
+                  <h2 data-translate>Monday:</h2>
+                  <h2 data-translate>Tuesday:</h2>
+                  <h2 data-translate>Wednesday:</h2>
+                  <h2 data-translate>Thursday:</h2>
+                  <h2 data-translate>Friday:</h2>
+                  <h2 data-translate>Saturday:</h2>
+                  <h2 data-translate>Sunday:</h2>
                 </div>
                 <div>
-                  <h2>9am-5pm</h2>
-                  <h2>9am-5pm</h2>
-                  <h2>9am-5pm</h2>
-                  <h2>9am-5pm</h2>
-                  <h2>9am-5pm</h2>
-                  <h2>Closed</h2>
-                  <h2>Closed</h2>
+                  <h2 data-translate>9am-5pm</h2>
+                  <h2 data-translate>9am-5pm</h2>
+                  <h2 data-translate>9am-5pm</h2>
+                  <h2 data-translate>9am-5pm</h2>
+                  <h2 data-translate>9am-5pm</h2>
+                  <h2 data-translate>Closed</h2>
+                  <h2 data-translate>Closed</h2>
                 </div>
               </div>
             </motion.div>
@@ -131,7 +137,10 @@ function Footer() {
               className="border-l-[1px] border-gray-300 pl-10 md:pr-10 pr-5 flex flex-col gap-5"
             >
               <div>
-                <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-5 pb-5">
+                <h1
+                  data-translate
+                  className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-5 pb-5"
+                >
                   BECOME A MEMBER
                 </h1>
                 <div className="pr-1">
@@ -143,7 +152,10 @@ function Footer() {
                 </div>
               </div>
               <div>
-                <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-5 pb-5">
+                <h1
+                  data-translate
+                  className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide text-white md:pb-5 pb-5"
+                >
                   FOLLOW US
                 </h1>
                 <div className="pr-1">
@@ -233,7 +245,10 @@ function Footer() {
               height="80"
               className=""
             />
-            <p className="text-xs font-medium tracking-widest text-center md:text-start text-gray-800">
+            <p
+              data-translate
+              className="text-xs font-medium tracking-widest text-center md:text-start text-gray-800"
+            >
               NSW Central West Muslims Association acknowledges the First
               Peoples of Australia as the traditional custodians of the land on
               which we work. We acknowledge their cultures are living ones,

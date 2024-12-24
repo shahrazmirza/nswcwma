@@ -66,7 +66,10 @@ const PrayerTime = () => {
         {prayerData ? (
           <div className="border rounded-3xl px-10 py-7 mb-10 bg-gray-100 md:mx-0 mx-5">
             <div className="flex md:flex-row flex-col justify-center md:justify-between pb-10 gap-3">
-              <h1 className="flex items-center uppercase md:text-3xl text-2xl font-semibold tracking-widest text-gray-800 border-l border-gray-500 pl-5 h-16">
+              <h1
+                data-translate
+                className="flex items-center uppercase md:text-3xl text-2xl font-semibold tracking-widest text-gray-800 border-l border-gray-500 pl-5 h-16"
+              >
                 Prayer Times
               </h1>
               <div className="md:text-end text-center">

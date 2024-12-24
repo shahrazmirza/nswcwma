@@ -26,6 +26,7 @@ const Terms = () => {
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
           className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5 pr-5"
+          data-translate
         >
           Terms and Conditions for NSWCWMA Services
         </motion.h1>
@@ -41,16 +42,18 @@ const Terms = () => {
           className="flex flex-col p-2 mr-3 md:text-medium text-sm gap-5 pl-8 pr-5 py-2"
         >
           <div className="flex flex-col gap-5">
-            <h1 className=" border-gray-400 font-semibold">1. General Terms</h1>
+            <h1 data-translate className=" border-gray-400 font-semibold">
+              1. General Terms
+            </h1>
             <div className="flex flex-col gap-3 pl-5">
-              <p>
+              <p data-translate>
                 The NSW Central West Muslims Association&nbsp;(NSWCWMA) offers
                 various services to support the community, including assistance
                 for the homeless, free food on Fridays, disability support,
                 driving classes, poverty alleviation, and support for the sick.
               </p>
 
-              <p>
+              <p data-translate>
                 By applying for any service offered by NSWCWMA, applicants agree
                 to abide by these terms and conditions.
               </p>
@@ -58,16 +61,16 @@ const Terms = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h1 className=" border-gray-400 font-semibold">
+            <h1 data-translate className=" border-gray-400 font-semibold">
               2. Eligibility and Application Process
             </h1>
             <div className="flex flex-col gap-3 pl-5">
-              <p>
+              <p data-translate>
                 All services are subject to eligibility criteria. NSWCWMA
                 reserves the right to request documentation or additional
                 information to determine eligibility.
               </p>
-              <p>
+              <p data-translate>
                 The application process may require applicants to provide
                 personal information, which will be used solely for the purpose
                 of assessing eligibility and providing the requested services.
@@ -76,31 +79,31 @@ const Terms = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h1 className=" border-gray-400 font-semibold">
+            <h1 data-translate className=" border-gray-400 font-semibold">
               3. Service Provision
             </h1>
             <div className="flex flex-col gap-3 pl-5">
-              <p>
+              <p data-translate>
                 Support for the homeless may include residence at NSWCWMA
                 accommodation, financial assistance, and temporary accommodation
                 for travelers from surrounding suburbs. The availability of
                 these services depends on eligibility criteria and the specific
                 circumstances of the applicant.
               </p>
-              <p>
+              <p data-translate>
                 Free food is offered on Fridays to deserving individuals, as
                 determined by NSWCWMA.
               </p>
-              <p>
+              <p data-translate>
                 Disability support includes the provision of supportive
                 equipment and facilitation of paid work opportunities tailored
                 to individual needs.
               </p>
-              <p>
+              <p data-translate>
                 Driving classes, when available, will be offered at affordable
                 rates for members of the CALD community and migrants.
               </p>
-              <p>
+              <p data-translate>
                 Poverty alleviation and support for the sick may include
                 financial assistance and help with daily life activities,
                 depending on the specific needs of the individual.
@@ -109,17 +112,17 @@ const Terms = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h1 className=" border-gray-400 font-semibold">
+            <h1 data-translate className=" border-gray-400 font-semibold">
               4. Right to Refuse Service
             </h1>
             <div className="flex flex-col gap-3 pl-5">
-              <p>
+              <p data-translate>
                 NSWCWMA reserves the absolute right to reject any application
                 for services at its sole discretion, without providing any
                 reason or explanation. This right applies to all services
                 offered by the organisation.
               </p>
-              <p>
+              <p data-translate>
                 NSWCWMA&apos;s decision to reject an application is final and
                 not subject to appeal.
               </p>
@@ -127,11 +130,11 @@ const Terms = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h1 className=" border-gray-400 font-semibold">
+            <h1 data-translate className=" border-gray-400 font-semibold">
               5. Termination of Services
             </h1>
             <div className="flex flex-col gap-3 pl-5">
-              <p>
+              <p data-translate>
                 NSWCWMA reserves the right to terminate or withdraw any service
                 at any time, without prior notice. This may occur due to changes
                 in funding, organisational capacity, or other circumstances
@@ -141,11 +144,11 @@ const Terms = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h1 className=" border-gray-400 font-semibold">
+            <h1 data-translate className=" border-gray-400 font-semibold">
               6. Confidentiality and Privacy
             </h1>
             <div className="flex flex-col gap-3 pl-5">
-              <p>
+              <p data-translate>
                 NSWCWMA is committed to protecting the privacy of applicants.
                 Personal information collected during the application process
                 will be handled in accordance with relevant privacy laws and
@@ -155,11 +158,11 @@ const Terms = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h1 className=" border-gray-400 font-semibold">
+            <h1 data-translate className=" border-gray-400 font-semibold">
               7. Limitation of Liability
             </h1>
             <div className="flex flex-col gap-3 pl-5">
-              <p>
+              <p data-translate>
                 NSWCWMA will make every effort to provide services as described;
                 however, the organisation shall not be liable for any loss,
                 damage, or inconvenience caused by the rejection of an
@@ -170,11 +173,11 @@ const Terms = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h1 className=" border-gray-400 font-semibold">
+            <h1 data-translate className=" border-gray-400 font-semibold">
               8. Official Membership
             </h1>
             <div className="flex flex-col gap-3 pl-5">
-              <p>
+              <p data-translate>
                 Official Membership of NSWCWMA is valid for one year from the
                 date of approval. An annual subscription fee must be paid each
                 year to renew membership. The NSWCWMA committee reserves the
@@ -185,11 +188,11 @@ const Terms = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h1 className=" border-gray-400 font-semibold">
+            <h1 data-translate className=" border-gray-400 font-semibold">
               9. Changes to Terms and Conditions
             </h1>
             <div className="flex flex-col gap-3 pl-5">
-              <p>
+              <p data-translate>
                 NSWCWMA reserves the right to amend these terms and conditions
                 at any time. Applicants are encouraged to review these terms
                 regularly to stay informed of any changes.
@@ -198,11 +201,11 @@ const Terms = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <h1 className=" border-gray-400 font-semibold">
+            <h1 data-translate className=" border-gray-400 font-semibold">
               10. Acceptance of Terms
             </h1>
             <div className="flex flex-col gap-3 pl-5">
-              <p>
+              <p data-translate>
                 By applying for and/or accepting any service from NSWCWMA,
                 applicants acknowledge that they have read, understood, and
                 agreed to these terms and conditions.
@@ -210,7 +213,7 @@ const Terms = () => {
             </div>
           </div>
 
-          <h1 className=" border-gray-400">
+          <h1 data-translate className=" border-gray-400">
             These terms and conditions are intended to ensure the fair and
             effective provision of services by NSWCWMA, while maintaining the
             organisation&apos;s ability to serve the community within its

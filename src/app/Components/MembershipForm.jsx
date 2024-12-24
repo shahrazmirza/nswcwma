@@ -107,6 +107,7 @@ export const MembershipForm = () => {
           animate={slide1}
           transition={{ duration: 0.9, delay: 0 }}
           className="border-l-[1px] border-gray-400 pl-10 uppercase md:text-3xl text-2xl md:font-medium font-semibold tracking-widest text-gray-800 py-5 mb-5"
+          data-translate
         >
           application for membership
         </motion.h1>
@@ -126,7 +127,10 @@ export const MembershipForm = () => {
               <AlertOverlay message={alertMessage} onClose={closeAlert} />
             )}
             <form onSubmit={onSubmit} className="flex flex-col gap-5">
-              <h2 className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
+              <h2
+                data-translate
+                className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5"
+              >
                 Personal Information
               </h2>
 
@@ -175,15 +179,22 @@ export const MembershipForm = () => {
                 className="p-2 border-b border-gray-400 focus:outline-none text-xs font-semibold"
               />
 
-              <h2 className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5">
+              <h2
+                data-translate
+                className="capitalize md:text-lg text-base font-medium tracking-widest text-gray-800 py-5"
+              >
                 Membership Fee
               </h2>
 
               <h3 className="text-sm font-medium text-gray-600 bg-white flex flex-col gap-5">
-                <p>Upon approval, the following membership fees will apply:</p>{" "}
+                <p data-translate>
+                  Upon approval, the following membership fees will apply:
+                </p>{" "}
                 <div className="pl-5">
-                  <p>• Entrance Fee: $20.00 (One-time payment) </p>
-                  <p>
+                  <p data-translate>
+                    • Entrance Fee: $20.00 (One-time payment){" "}
+                  </p>
+                  <p data-translate>
                     • Annual Subscription Fee: $20.00 (Payable annually)
                   </p>{" "}
                 </div>
@@ -200,7 +211,7 @@ export const MembershipForm = () => {
                     onChange={(e) => setFirstConsent(e.target.checked)}
                     required
                   />
-                  <p className="pl-2 -mt-1">
+                  <p data-translate className="pl-2 -mt-1">
                     I hereby declare that the information provided is true and
                     correct to the best of my knowledge. I understand that
                     providing false information may result in the termination of
@@ -215,7 +226,7 @@ export const MembershipForm = () => {
                     onChange={(e) => setSecondConsent(e.target.checked)}
                     required
                   />
-                  <p className="pl-2 -mt-1">
+                  <p data-translate className="pl-2 -mt-1">
                     I hereby declare that I have read and understood the
                     constitution of the NSW Central West Muslims Association
                     (NSWCWMA), and agree to abide by the rules, regulations, and
@@ -233,7 +244,7 @@ export const MembershipForm = () => {
                     onChange={(e) => setThirdConsent(e.target.checked)}
                     required
                   />
-                  <p className="pl-2 -mt-1">
+                  <p data-translate className="pl-2 -mt-1">
                     I understand that all membership fees are non-refundable,
                     and I agree to pay the required fees as outlined in the next
                     section.
@@ -247,7 +258,7 @@ export const MembershipForm = () => {
                     required
                   />
                   <div className="md:flex md:gap-1 pl-2 -mt-1">
-                    <p>I have read and agree to the</p>
+                    <p data-translate>I have read and agree to the</p>
                     <Link
                       href="/TermsAndConditions"
                       target="_blank"
@@ -255,7 +266,9 @@ export const MembershipForm = () => {
                     >
                       Terms and Conditions
                     </Link>{" "}
-                    <p>of The NSW Central West Muslims Association.</p>
+                    <p data-translate>
+                      of The NSW Central West Muslims Association.
+                    </p>
                   </div>
                 </div>
               </label>

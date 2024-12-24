@@ -59,10 +59,16 @@ function About() {
           className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
         >
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               our mission
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5"
+            >
               The NSW Central West Muslims Association (NSWCWMA) is dedicated to
               community wellbeing and benevolent services. While religion/faith
               is ancillary in value, our primary purpose is to work
@@ -100,10 +106,16 @@ function About() {
             className="relative aspect-ratio md:h-full object-cover min-h-60"
           />
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               our vision
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5"
+            >
               At NSW Central West Muslims Association (NSWCWMA), we aim to
               foster a compassionate, supportive community in Dubbo and Central
               West NSW. We focus on alleviating poverty, assisting the sick, and
@@ -126,10 +138,16 @@ function About() {
           className="md:grid md:grid-cols-2 bg-gray-800 justify-center items-center flex flex-col"
         >
           <div className="md:pr-20 md:w-[580px] mx-5 my-10 border-l-[1px] border-gray-300 md:px-10 pr-5 pl-10 justify-self-center">
-            <h1 className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white">
+            <h1
+              data-translate
+              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+            >
               our short story
             </h1>
-            <h2 className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5">
+            <h2
+              data-translate
+              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5"
+            >
               The NSW Central West Muslims Association (NSWCWMA), established on
               12 January 2017, is dedicated to the wellbeing of the Dubbo and
               Central West NSW community. Known for our commitment to benevolent
