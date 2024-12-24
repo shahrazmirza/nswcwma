@@ -1,11 +1,11 @@
 [
+  { "name": "English", "code": "en" },
   { "name": "Dari", "code": "fa" },
   { "name": "Pashto", "code": "ps" },
   { "name": "Arabic", "code": "ar" },
   { "name": "Bhutanese", "code": "dz" },
   { "name": "Burmese", "code": "my" },
   { "name": "Cantonese", "code": "zh-TW" },
-  { "name": "English", "code": "en" },
   { "name": "Greek", "code": "el" },
   { "name": "Hindi", "code": "hi" },
   { "name": "Indonesian", "code": "id" },
