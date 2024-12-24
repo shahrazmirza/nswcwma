@@ -18,6 +18,9 @@ function ServicesBanner() {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
   const ref6 = useRef(null);
+  const ref7 = useRef(null);
+  const ref8 = useRef(null);
+  const ref9 = useRef(null);
 
   const slide1 = useAnimation();
   const slide2 = useAnimation();
@@ -25,6 +28,9 @@ function ServicesBanner() {
   const slide4 = useAnimation();
   const slide5 = useAnimation();
   const slide6 = useAnimation();
+  const slide7 = useAnimation();
+  const slide8 = useAnimation();
+  const slide9 = useAnimation();
 
   const isInView1 = useInView(ref1, { once: true });
   const isInView2 = useInView(ref2, { once: true });
@@ -32,6 +38,9 @@ function ServicesBanner() {
   const isInView4 = useInView(ref4, { once: true });
   const isInView5 = useInView(ref5, { once: true });
   const isInView6 = useInView(ref6, { once: true });
+  const isInView7 = useInView(ref7, { once: true });
+  const isInView8 = useInView(ref8, { once: true });
+  const isInView9 = useInView(ref9, { once: true });
 
   useEffect(() => {
     if (isInView1) {
@@ -68,6 +77,24 @@ function ServicesBanner() {
       slide6.start("visible");
     }
   }, [isInView6]);
+
+  useEffect(() => {
+    if (isInView7) {
+      slide7.start("visible");
+    }
+  }, [isInView7]);
+
+  useEffect(() => {
+    if (isInView8) {
+      slide8.start("visible");
+    }
+  }, [isInView8]);
+
+  useEffect(() => {
+    if (isInView9) {
+      slide9.start("visible");
+    }
+  }, [isInView9]);
 
   return (
     <div className="bg-gray-700 text-gray-300">
@@ -209,13 +236,13 @@ function ServicesBanner() {
           </motion.div>
 
           <motion.div
-            ref={ref6}
+            ref={ref7}
             variants={{
               hidden: { opacity: 0, y: 75 },
               visible: { opacity: 1, y: 0 },
             }}
             initial="hidden"
-            animate={slide6}
+            animate={slide7}
             transition={{ duration: 0.9, delay: 0 }}
             className="flex justify-start items-center"
           >
@@ -236,13 +263,13 @@ function ServicesBanner() {
           </motion.div>
 
           <motion.div
-            ref={ref6}
+            ref={ref8}
             variants={{
               hidden: { opacity: 0, y: 75 },
               visible: { opacity: 1, y: 0 },
             }}
             initial="hidden"
-            animate={slide6}
+            animate={slide8}
             transition={{ duration: 0.9, delay: 0 }}
             className="flex justify-start items-center"
           >
@@ -263,13 +290,13 @@ function ServicesBanner() {
           </motion.div>
 
           <motion.div
-            ref={ref6}
+            ref={ref9}
             variants={{
               hidden: { opacity: 0, y: 75 },
               visible: { opacity: 1, y: 0 },
             }}
             initial="hidden"
-            animate={slide6}
+            animate={slide9}
             transition={{ duration: 0.9, delay: 0 }}
             className="flex justify-start items-center"
           >

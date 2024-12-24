@@ -121,11 +121,12 @@ function Services() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
             >
-              The NSW Central West Muslims Association (NSWCWMA) primarily
-              focuses on providing assistance to homeless people in the NSW
-              Central West Region, including migrants and individuals from
-              Culturally and Linguistically Diverse (CALD) backgrounds. Their
-              assistance includes providing residence at NSWCWMA accommodation,
+              The New South Wales Central West Muslims Association primarily
+              focuses on providing assistance to homeless people in the New
+              South Wales Central West Region, including migrants and
+              individuals from Culturally and Linguistically Diverse
+              backgrounds. Their assistance includes providing residence at the
+              New South Wales Central West Muslims Association accommodation,
               offering financial support to homeless individuals, and offering
               temporary accommodation for people traveling from surrounding
               suburbs based on eligibility criteria and circumstances.
@@ -188,12 +189,13 @@ function Services() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
             >
-              Every Friday afternoon, NSWCWMA offers free lunch to the
-              deserving. This initiative aims to support those in need and
-              foster a sense of community. By providing nutritious meals,
-              NSWCWMA helps alleviate food insecurity and brings people
-              together, encouraging social interaction and mutual support among
-              community members.
+              Every Friday afternoon, the New South Wales Central West Muslims
+              Association offers free lunch to the deserving. This initiative
+              aims to support those in need and foster a sense of community. By
+              providing nutritious meals, the New South Wales Central West
+              Muslims Association helps alleviate food insecurity and brings
+              people together, encouraging social interaction and mutual support
+              among community members.
             </h2>
 
             <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
@@ -238,12 +240,13 @@ function Services() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
             >
-              NSWCWMA provides various forms of assistance to individuals with
-              disabilities to help them excel in life. This includes the
-              provision of supportive equipment tailored to individual needs and
-              the facilitation of involvement in paid work opportunities. These
-              services aim to empower disabled individuals, promoting
-              independence and enhancing their quality of life.
+              The New South Wales Central West Muslims Association provides
+              various forms of assistance to individuals with disabilities to
+              help them excel in life. This includes the provision of supportive
+              equipment tailored to individual needs and the facilitation of
+              involvement in paid work opportunities. These services aim to
+              empower disabled individuals, promoting independence and enhancing
+              their quality of life.
             </h2>
 
             <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
@@ -305,12 +308,13 @@ function Services() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
             >
-              Affordable driving classes are available for members of the CALD
-              community and migrants. These classes aim to empower individuals
-              with the skills needed for independence and mobility. By offering
-              practical driving instruction, NSWCWMA helps participants gain
-              confidence and access to greater opportunities for employment and
-              social engagement.
+              Affordable driving classes are available for members of the
+              Culturally And Linguistically Diverse community and migrants.
+              These classes aim to empower individuals with the skills needed
+              for independence and mobility. By offering practical driving
+              instruction, the New South Wales Central West Muslims Association
+              helps participants gain confidence and access to greater
+              opportunities for employment and social engagement.
             </h2>
 
             <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
@@ -355,12 +359,13 @@ function Services() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
             >
-              NSWCWMA is committed to fighting poverty. They offer support to
-              individuals struggling with poverty in their daily lives, helping
-              them to overcome financial hardships and improve their quality of
-              life. Through various programs and direct assistance, NSWCWMA aims
-              to provide a safety net for those in need, fostering resilience
-              and self-sufficiency.
+              The New South Wales Central West Muslims Association is committed
+              to fighting poverty. They offer support to individuals struggling
+              with poverty in their daily lives, helping them to overcome
+              financial hardships and improve their quality of life. Through
+              various programs and direct assistance, the New South Wales
+              Central West Muslims Association aims to provide a safety net for
+              those in need, fostering resilience and self-sufficiency.
             </h2>
 
             <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
@@ -420,12 +425,14 @@ function Services() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
             >
-              NSWCWMA supports community members who are suffering from illness
-              and fighting poverty. This assistance can be financial or through
-              help with daily life activities, ensuring that sick individuals
-              receive the necessary care and support. By providing compassionate
-              aid, NSWCWMA helps alleviate the burdens of illness, allowing
-              individuals to focus on recovery and well-being.
+              The New South Wales Central West Muslims Association supports
+              community members who are suffering from illness and fighting
+              poverty. This assistance can be financial or through help with
+              daily life activities, ensuring that sick individuals receive the
+              necessary care and support. By providing compassionate aid, the
+              New South Wales Central West Muslims Association helps alleviate
+              the burdens of illness, allowing individuals to focus on recovery
+              and well-being.
             </h2>
 
             <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
@@ -471,12 +478,13 @@ function Services() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
             >
-              NSWCWMA is dedicated to promoting mental well-being. They provide
-              essential support to individuals facing mental health challenges,
-              offering access to resources and services aimed at improving
-              emotional resilience and overall health. Through tailored programs
-              and compassionate care, NSWCWMA fosters a supportive environment
-              for healing and personal growth.
+              The New South Wales Central West Muslims Association is dedicated
+              to promoting mental well-being. They provide essential support to
+              individuals facing mental health challenges, offering access to
+              resources and services aimed at improving emotional resilience and
+              overall health. Through tailored programs and compassionate care,
+              the New South Wales Central West Muslims Association fosters a
+              supportive environment for healing and personal growth.
             </h2>
 
             <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">
@@ -536,11 +544,13 @@ function Services() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
             >
-              NSWCWMA is dedicated to empowering the community through education
-              and awareness. They offer programs in children and community
-              education, language resources, domestic violence awareness, and
-              cyber security for CALD communities. By fostering social and
-              ethical education for youth, NSWCWMA aims to build a safer, more
+              The New South Wales Central West Muslims Association is dedicated
+              to empowering the community through education and awareness. They
+              offer programs in children and community education, language
+              resources, domestic violence awareness, and cyber security for
+              Culturally And Linguistically Diverse communities. By fostering
+              social and ethical education for youth, the New South Wales
+              Central West Muslims Association aims to build a safer, more
               informed, and resilient society.
             </h2>
 
@@ -587,12 +597,13 @@ function Services() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
             >
-              NSWCWMA is committed to supporting refugees by fostering
-              integration, reducing isolation, and promoting tolerance and
-              respect for diverse cultures and religions. Through tailored
-              programs, they work to reduce discrimination and racism, enhance
-              community safety, and build resilience, ensuring refugees feel
-              safe, included, and connected to the broader Australian community.
+              The New South Wales Central West Muslims Association is committed
+              to supporting refugees by fostering integration, reducing
+              isolation, and promoting tolerance and respect for diverse
+              cultures and religions. Through tailored programs, they work to
+              reduce discrimination and racism, enhance community safety, and
+              build resilience, ensuring refugees feel safe, included, and
+              connected to the broader Australian community.
             </h2>
 
             <div className="flex md:gap-10 gap-5 text-white text-sm font-semibold transition delay-100">

@@ -22,7 +22,7 @@ function ServicesStats() {
             <h2 data-translate> 4,000+</h2>
             <p data-translate className="text-base font-normal">
               Members actively engaged in fostering community well-being across
-              NSW Central West in regional Australia
+              New South Wales Central West in regional Australia
             </p>
           </div>
         </div>
@@ -33,7 +33,8 @@ function ServicesStats() {
           <div className="flex flex-col gap-2">
             <h2 data-translate> 85%</h2>
             <p data-translate className="text-base font-normal">
-              CALD people supported through tailored programs and initiatives
+              Culturally And Linguistically Diverse people supported through
+              tailored programs and initiatives
             </p>
           </div>
         </div>

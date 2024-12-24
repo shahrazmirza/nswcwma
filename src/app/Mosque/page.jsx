@@ -186,8 +186,8 @@ function Mosque() {
       <ScrollToTop />
       <Whatsapp />
       <Container>
-        <div className="py-10 grid md:grid-cols-4 grid-cols-3 gap-10">
-          <div className="col-span-3">
+        <div className="py-10 grid md:grid-cols-6 grid-cols-3 gap-10">
+          <div className="col-span-4">
             <motion.h1
               ref={ref1}
               variants={{
@@ -215,21 +215,23 @@ function Mosque() {
               data-translate
             >
               Dubbo Mosque serves as an important spiritual hub within the
-              broader framework of The NSW Central West Muslims Association
-              (NSWCWMA). While the mosque plays a vital role in the religious
+              broader framework of The New South Wales Central West Muslims
+              Association. While the mosque plays a vital role in the religious
               and spiritual lives of our community members, it operates as an
-              ancillary function to NSWCWMA’s primary mission of community
-              wellbeing, social support, and charitable services. At Dubbo
-              Mosque, we are dedicated to providing a welcoming space for
-              worship, reflection, and spiritual growth. Our services include
-              daily prayers, religious guidance, and community gatherings, all
-              designed to nurture the faith and connection of our members.
-              Aligned with the overarching goals of NSWCWMA, Dubbo Mosque also
-              supports initiatives that contribute to the social and educational
-              development of our community. Whether through collaborative
-              events, educational programs, or outreach activities, Dubbo Mosque
-              remains a cornerstone of faith and service within the Central West
-              NSW region.
+              ancillary function to the New South Wales Central West Muslims
+              Association’s primary mission of community wellbeing, social
+              support, and charitable services. At Dubbo Mosque, we are
+              dedicated to providing a welcoming space for worship, reflection,
+              and spiritual growth. Our services include daily prayers,
+              religious guidance, and community gatherings, all designed to
+              nurture the faith and connection of our members. Aligned with the
+              overarching goals of the New South Wales Central West Muslims
+              Association, Dubbo Mosque also supports initiatives that
+              contribute to the social and educational development of our
+              community. Whether through collaborative events, educational
+              programs, or outreach activities, Dubbo Mosque remains a
+              cornerstone of faith and service within the Central West New South
+              Wales region.
             </motion.p>
             <motion.div
               ref={ref3}
@@ -266,7 +268,7 @@ function Mosque() {
             </motion.div>
           </div>
 
-          <div className="col-span-1 flex flex-col gap-5">
+          <div className="col-span-2 flex flex-col gap-5">
             <motion.div
               ref={ref4}
               variants={{

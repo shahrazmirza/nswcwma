@@ -69,10 +69,10 @@ function About() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5"
             >
-              The NSW Central West Muslims Association (NSWCWMA) is dedicated to
-              community wellbeing and benevolent services. While religion/faith
-              is ancillary in value, our primary purpose is to work
-              collaboratively with the community to develop a safe, healthy
+              The New South Wales Central West Muslims Association is dedicated
+              to community wellbeing and benevolent services. While
+              religion/faith is ancillary in value, our primary purpose is to
+              work collaboratively with the community to develop a safe, healthy
               environment for everyone. We are also committed to alleviating
               poverty, assisting the sick within our community, responding to
               natural calamities, and offering help when required.
@@ -116,12 +116,13 @@ function About() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5"
             >
-              At NSW Central West Muslims Association (NSWCWMA), we aim to
+              At the New South Wales Central West Muslims Association, we aim to
               foster a compassionate, supportive community in Dubbo and Central
-              West NSW. We focus on alleviating poverty, assisting the sick, and
-              responding to calamities. Our commitment includes providing social
-              and educational facilities and supporting needy families,
-              emphasizing universal benevolence and community wellbeing.
+              West New South Wales. We focus on alleviating poverty, assisting
+              the sick, and responding to calamities. Our commitment includes
+              providing social and educational facilities and supporting needy
+              families, emphasizing universal benevolence and community
+              wellbeing.
             </h2>
           </div>
         </motion.div>
@@ -148,18 +149,19 @@ function About() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5"
             >
-              The NSW Central West Muslims Association (NSWCWMA), established on
-              12 January 2017, is dedicated to the wellbeing of the Dubbo and
-              Central West NSW community. Known for our commitment to benevolent
-              services, we support needy families, promote healthcare
-              initiatives, mental health awareness, and preventive measures, and
-              enhance community knowledge through comprehensive programs. We
-              empower marginalised communities by fostering respect and
-              collaboration and provide aid during natural calamities. By
+              The New South Wales Central West Muslims Association, established
+              on 12 January 2017, is dedicated to the wellbeing of the Dubbo and
+              Central West New South Wales community. Known for our commitment
+              to benevolent services, we support needy families, promote
+              healthcare initiatives, mental health awareness, and preventive
+              measures, and enhance community knowledge through comprehensive
+              programs. We empower marginalised communities by fostering respect
+              and collaboration and provide aid during natural calamities. By
               promoting dialogue, understanding, and empathy, we create an
-              inclusive environment and fight against discrimination. NSWCWMA is
-              a lifeline, offering hope and ensuring every community member can
-              thrive in a safe and nurturing environment.
+              inclusive environment and fight against discrimination. The New
+              South Wales Central West Muslims Association is a lifeline,
+              offering hope and ensuring every community member can thrive in a
+              safe and nurturing environment.
             </h2>
           </div>
           <Image

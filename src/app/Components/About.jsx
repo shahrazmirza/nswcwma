@@ -44,7 +44,7 @@ function About() {
               data-translate
               className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
             >
-              welcome to our site!
+              welcome to our site
             </h1>
             <h2
               data-translate
@@ -103,9 +103,9 @@ function About() {
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 py-5"
             >
               Our Vision is to foster a compassionate, supportive community in
-              Dubbo and Central West NSW, addressing poverty, aiding the sick,
-              responding to calamities, and promoting wellbeing through social
-              and educational activities.
+              Dubbo and Central West New South Wales, addressing poverty, aiding
+              the sick, responding to calamities, and promoting wellbeing
+              through social and educational activities.
             </h2>
             <div className="flex text-white text-sm font-semibold gap-1">
               <a
