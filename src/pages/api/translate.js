@@ -8,6 +8,14 @@ export default async function handler(req, res) {
 
     try {
       const apiKey = process.env.CLOUD_TRANSLATION_API_KEY;
+
+      // Log the API key (Remove this in production!)
+      console.log("API Key:", apiKey);
+
+      if (!apiKey) {
+        throw new Error("API Key is missing. Check environment variables.");
+      }
+
       const apiUrl = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
 
       const response = await fetch(apiUrl, {
@@ -29,7 +37,8 @@ export default async function handler(req, res) {
         const translatedText = data.data.translations[0].translatedText;
         res.status(200).json({ translatedText });
       } else {
-        throw new Error("No translation data returned");
+        console.error("Translation API returned unexpected data:", data);
+        throw new Error("No translation data returned.");
       }
     } catch (error) {
       console.error("Translation API error:", error);
