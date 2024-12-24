@@ -78,7 +78,7 @@ function Togglemenu() {
             />
           </Link>
           <Link href="/">
-            <div className="flex flex-col justify-center text-[13px] font-semibold">
+            <div className="flex flex-col justify-center text-[12px] font-semibold">
               <h1>NSW Central West</h1> <h1>Muslims Association</h1>
             </div>
           </Link>

@@ -68,7 +68,7 @@ function Languages() {
       <select
         value={selectedLanguage}
         onChange={handleLanguageChange}
-        className="block md:hidden justify-center items-center uppercase bg-red-500 hover:bg-red-600 outline-red-600 outline outline-1 text-white w-[65px] px-1 mx-2 text-[11px]"
+        className="block md:hidden justify-center items-center uppercase bg-red-500 hover:bg-red-600 outline-red-600 outline outline-1 text-white w-[70px] px-1 mx-2 text-[11px]"
       >
         {items.map((item, index) => (
           <option key={index} value={item.code}>
