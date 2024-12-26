@@ -249,13 +249,13 @@ function Footer() {
               data-translate
               className="text-xs font-medium tracking-widest text-center md:text-start text-gray-800"
             >
-              NSW Central West Muslims Association acknowledges the First
-              Peoples of Australia as the traditional custodians of the land on
-              which we work. We acknowledge their cultures are living ones,
-              which relate to their ongoing connection to all things living and
-              non-living on land, sea and sky. We pay our respects to their
-              Elders past and present. May the children of today lead us to a
-              brighter tomorrow.
+              The New South Wales Central West Muslims Association acknowledges
+              the First Peoples of Australia as the traditional custodians of
+              the land on which we work. We acknowledge their cultures are
+              living ones, which relate to their ongoing connection to all
+              things living and non-living on land, sea and sky. We pay our
+              respects to their Elders past and present. May the children of
+              today lead us to a brighter tomorrow.
             </p>
           </motion.div>
         </Container>

@@ -124,21 +124,18 @@ function Mosque() {
   const ref3 = useRef(null);
   const ref4 = useRef(null);
   const ref5 = useRef(null);
-  const ref6 = useRef(null);
 
   const slide1 = useAnimation();
   const slide2 = useAnimation();
   const slide3 = useAnimation();
   const slide4 = useAnimation();
   const slide5 = useAnimation();
-  const slide6 = useAnimation();
 
   const isInView1 = useInView(ref1, { once: true });
   const isInView2 = useInView(ref2, { once: true });
   const isInView3 = useInView(ref3, { once: true });
   const isInView4 = useInView(ref4, { once: true });
   const isInView5 = useInView(ref5, { once: true });
-  const isInView6 = useInView(ref6, { once: true });
 
   useEffect(() => {
     if (isInView1) {
@@ -169,11 +166,6 @@ function Mosque() {
       slide5.start("visible");
     }
   }, [isInView5]);
-  useEffect(() => {
-    if (isInView6) {
-      slide6.start("visible");
-    }
-  }, [isInView6]);
 
   const formatVerseKey = (verseKey) => {
     const [chapter, verse] = verseKey.split(":");
@@ -186,9 +178,9 @@ function Mosque() {
       <ScrollToTop />
       <Whatsapp />
       <Container>
-        <div className="py-10 grid md:grid-cols-6 grid-cols-3 gap-10">
-          <div className="col-span-4">
-            <motion.h1
+        <div className="py-10 md:grid md:grid-cols-6 gap-5">
+          <div className="md:col-span-4">
+            <motion.div
               ref={ref1}
               variants={{
                 hidden: { opacity: 0, y: 75 },
@@ -197,12 +189,47 @@ function Mosque() {
               initial="hidden"
               animate={slide1}
               transition={{ duration: 0.9, delay: 0 }}
-              className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 mb-10 pl-10 md:mx-0 ml-5"
-              data-translate
+              className="flex flex-col gap-5 border-l-[1px] border-gray-300 ml-5 mb-10 pr-5 pl-10"
             >
-              Dubbo Mosque
-            </motion.h1>
-            <motion.p
+              <h1
+                className="uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white "
+                data-translate
+              >
+                Dubbo Mosque
+              </h1>
+              <p
+                ref={ref2}
+                variants={{
+                  hidden: { opacity: 0, y: 75 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                initial="hidden"
+                animate={slide2}
+                transition={{ duration: 0.9, delay: 0 }}
+                className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 "
+                data-translate
+              >
+                Dubbo Mosque serves as an important spiritual hub within the
+                broader framework of The New South Wales Central West Muslims
+                Association. While the mosque plays a vital role in the
+                religious and spiritual lives of our community members, it
+                operates as an ancillary function to the New South Wales Central
+                West Muslims Association’s primary mission of community
+                wellbeing, social support, and charitable services. At Dubbo
+                Mosque, we are dedicated to providing a welcoming space for
+                worship, reflection, and spiritual growth. Our services include
+                daily prayers, religious guidance, and community gatherings, all
+                designed to nurture the faith and connection of our members.
+                Aligned with the overarching goals of the New South Wales
+                Central West Muslims Association, Dubbo Mosque also supports
+                initiatives that contribute to the social and educational
+                development of our community. Whether through collaborative
+                events, educational programs, or outreach activities, Dubbo
+                Mosque remains a cornerstone of faith and service within the
+                Central West New South Wales region.
+              </p>
+            </motion.div>
+            <motion.div
               ref={ref2}
               variants={{
                 hidden: { opacity: 0, y: 75 },
@@ -211,38 +238,7 @@ function Mosque() {
               initial="hidden"
               animate={slide2}
               transition={{ duration: 0.9, delay: 0 }}
-              className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pl-10 md:mx-0 ml-5 mr-10 mb-10"
-              data-translate
-            >
-              Dubbo Mosque serves as an important spiritual hub within the
-              broader framework of The New South Wales Central West Muslims
-              Association. While the mosque plays a vital role in the religious
-              and spiritual lives of our community members, it operates as an
-              ancillary function to the New South Wales Central West Muslims
-              Association’s primary mission of community wellbeing, social
-              support, and charitable services. At Dubbo Mosque, we are
-              dedicated to providing a welcoming space for worship, reflection,
-              and spiritual growth. Our services include daily prayers,
-              religious guidance, and community gatherings, all designed to
-              nurture the faith and connection of our members. Aligned with the
-              overarching goals of the New South Wales Central West Muslims
-              Association, Dubbo Mosque also supports initiatives that
-              contribute to the social and educational development of our
-              community. Whether through collaborative events, educational
-              programs, or outreach activities, Dubbo Mosque remains a
-              cornerstone of faith and service within the Central West New South
-              Wales region.
-            </motion.p>
-            <motion.div
-              ref={ref3}
-              variants={{
-                hidden: { opacity: 0, y: 75 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              initial="hidden"
-              animate={slide3}
-              transition={{ duration: 0.9, delay: 0 }}
-              className="grid md:grid-cols-2 grid-cols-1 gap-5 md:mx-0 mx-5"
+              className="md:grid md:grid-cols-2 flex flex-col md:gap-y-10 gap-y-5 px-5"
             >
               {items.map((item) => (
                 <div
@@ -268,20 +264,20 @@ function Mosque() {
             </motion.div>
           </div>
 
-          <div className="col-span-2 flex flex-col gap-5">
+          <div className="md:col-span-2 gap-5 flex flex-col md:py-0 pt-5 mx-5">
             <motion.div
-              ref={ref4}
+              ref={ref3}
               variants={{
                 hidden: { opacity: 0, y: 75 },
                 visible: { opacity: 1, y: 0 },
               }}
               initial="hidden"
-              animate={slide4}
+              animate={slide3}
               transition={{ duration: 0.9, delay: 0 }}
-              className="bg-gray-800"
+              className="card bg-gray-300 shadow-xl text-gray-800 h-fit md:w-auto w-auto p-5"
             >
               {prayerData ? (
-                <div className="card bg-gray-300 shadow-xl text-gray-800 h-fit w-[335px] p-5 mx-5">
+                <div className="">
                   <div className="flex flex-col justify-center pb-5 gap-3">
                     <h1
                       data-translate
@@ -304,8 +300,8 @@ function Mosque() {
                   </div>
 
                   <div className="flex flex-col gap-5 justify-center items-center">
-                    <div className="flex gap-5 w-full">
-                      <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                    <div className="flex gap-5">
+                      <div className="rounded-2xl bg-gray-400 md:w-32 w-24 p-3 flex flex-col justify-center items-center px-5">
                         <h1
                           data-translate
                           className="text-base md:font-medium font-semibold md:tracking-wide"
@@ -316,7 +312,7 @@ function Mosque() {
                           {prayerData.data.timings.Fajr}
                         </h2>
                       </div>
-                      <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                      <div className="rounded-2xl bg-gray-400 md:w-32 w-24 p-3 flex flex-col justify-center items-center px-5">
                         <h1
                           data-translate
                           className="text-base md:font-medium font-semibold md:tracking-wide"
@@ -329,8 +325,8 @@ function Mosque() {
                       </div>
                     </div>
 
-                    <div className="flex gap-5 w-full">
-                      <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                    <div className="flex gap-5">
+                      <div className="rounded-2xl bg-gray-400 md:w-32 w-24 p-3 flex flex-col justify-center items-center px-5">
                         <h1
                           data-translate
                           className="text-base md:font-medium font-semibold md:tracking-wide"
@@ -341,7 +337,7 @@ function Mosque() {
                           {prayerData.data.timings.Asr}
                         </h2>
                       </div>
-                      <div className="rounded-2xl bg-gray-400 w-full p-3 flex flex-col justify-center items-center">
+                      <div className="rounded-2xl bg-gray-400 md:w-32 w-24 p-3 flex flex-col justify-center items-center px-5">
                         <h1
                           data-translate
                           className="text-base md:font-medium font-semibold md:tracking-wide"
@@ -354,7 +350,7 @@ function Mosque() {
                       </div>
                     </div>
 
-                    <div className="rounded-2xl bg-gray-400 w-fit p-3 flex flex-col justify-center items-center px-12">
+                    <div className="rounded-2xl bg-gray-400 md:w-32 w-24 p-3 flex flex-col justify-center items-center px-5">
                       <h1
                         data-translate
                         className="text-base md:font-medium font-semibold md:tracking-wide"
@@ -372,15 +368,15 @@ function Mosque() {
               )}
             </motion.div>
             <motion.div
-              ref={ref5}
+              ref={ref4}
               variants={{
                 hidden: { opacity: 0, y: 75 },
                 visible: { opacity: 1, y: 0 },
               }}
               initial="hidden"
-              animate={slide6}
+              animate={slide4}
               transition={{ duration: 0.9, delay: 0 }}
-              className="card bg-gray-300 shadow-xl text-gray-800 h-fit w-[335px] p-5 mx-5"
+              className="card bg-gray-300 shadow-xl text-gray-800 h-fit md:w-auto w-auto p-5"
             >
               {verseData ? (
                 <div className="flex flex-col gap-2">
@@ -403,15 +399,15 @@ function Mosque() {
             </motion.div>
 
             <motion.div
-              ref={ref6}
+              ref={ref5}
               variants={{
                 hidden: { opacity: 0, y: 75 },
                 visible: { opacity: 1, y: 0 },
               }}
               initial="hidden"
-              animate={slide6}
+              animate={slide5}
               transition={{ duration: 0.9, delay: 0 }}
-              className="card bg-gray-300 shadow-xl text-gray-800 h-fit w-[335px] p-5 mx-5"
+              className="card bg-gray-300 shadow-xl text-gray-800 h-fit md:w-auto w-auto p-5"
             >
               {hadithData ? (
                 <div className="flex flex-col gap-2">
