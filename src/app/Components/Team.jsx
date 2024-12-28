@@ -90,7 +90,7 @@ function Team() {
 
           <div className="border border-gray-500 text-gray-800 text-center p-5 flex flex-col md:gap-1 gap-2">
             <h1 className="uppercase md:text-sm text-lg font-bold tracking-wide">
-              mahmoud amin
+              imam mahmoud amin
             </h1>
             <h2
               data-translate
