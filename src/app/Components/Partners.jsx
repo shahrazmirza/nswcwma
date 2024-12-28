@@ -11,18 +11,21 @@ function Partners() {
   const ref3 = useRef(null);
   const ref4 = useRef(null);
   const ref5 = useRef(null);
+  const ref6 = useRef(null);
 
   const slide1 = useAnimation();
   const slide2 = useAnimation();
   const slide3 = useAnimation();
   const slide4 = useAnimation();
   const slide5 = useAnimation();
+  const slide6 = useAnimation();
 
   const isInView1 = useInView(ref1, { once: true });
   const isInView2 = useInView(ref2, { once: true });
   const isInView3 = useInView(ref3, { once: true });
   const isInView4 = useInView(ref4, { once: true });
   const isInView5 = useInView(ref5, { once: true });
+  const isInView6 = useInView(ref6, { once: true });
 
   useEffect(() => {
     if (isInView1) slide1.start("visible");
@@ -43,6 +46,10 @@ function Partners() {
   useEffect(() => {
     if (isInView5) slide5.start("visible");
   }, [isInView5]);
+
+  useEffect(() => {
+    if (isInView6) slide6.start("visible");
+  }, [isInView6]);
 
   return (
     <Container>
@@ -71,7 +78,7 @@ function Partners() {
             initial="hidden"
             animate={slide2}
             transition={{ duration: 0.9, delay: 0 }}
-            className="h-36 w-36 flex items-center justify-center bg-white p-1 rounded-xl"
+            className="md:h-28 md:w-28 h-36 w-36 flex items-center justify-center bg-white p-1 rounded-xl"
           >
             <Link
               href="https://www.reliantbusinesssolutions.com.au/"
@@ -96,7 +103,7 @@ function Partners() {
             initial="hidden"
             animate={slide3}
             transition={{ duration: 0.9, delay: 0 }}
-            className="h-36 w-36 flex items-center justify-center bg-white p-5 rounded-xl"
+            className="md:h-28 md:w-28 h-36 w-36 flex items-center justify-center bg-white p-1 rounded-xl"
           >
             <Link href="https://www.sadaqaaid.org.au/" target="_blank">
               <Image
@@ -118,12 +125,12 @@ function Partners() {
             initial="hidden"
             animate={slide4}
             transition={{ duration: 0.9, delay: 0 }}
-            className="h-36 w-36 flex items-center justify-center bg-white p-5 rounded-xl"
+            className="md:h-28 md:w-28 h-36 w-36 flex items-center justify-center bg-white p-1 rounded-xl"
           >
-            <Link href="https://icanrelief.org.au/" target="_blank">
+            <Link href="https://empower360.org.au/" target="_blank">
               <Image
-                src="/assets/images/logoicanrelief.png"
-                alt="I Can Relief Logo"
+                src="/assets/images/logoempower360.png"
+                alt="Empower360 Logo"
                 width={100}
                 height={100}
                 className="object-contain"
@@ -140,7 +147,29 @@ function Partners() {
             initial="hidden"
             animate={slide5}
             transition={{ duration: 0.9, delay: 0 }}
-            className="h-36 w-36 flex items-center justify-center bg-white p-1 rounded-xl"
+            className="md:h-28 md:w-28 h-36 w-36 flex items-center justify-center bg-white p-1 rounded-xl"
+          >
+            <Link href="https://icanrelief.org.au/" target="_blank">
+              <Image
+                src="/assets/images/logoicanrelief.png"
+                alt="I Can Relief Logo"
+                width={100}
+                height={100}
+                className="object-contain"
+              />
+            </Link>
+          </motion.div>
+
+          <motion.div
+            ref={ref6}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide6}
+            transition={{ duration: 0.9, delay: 0 }}
+            className="md:h-28 md:w-28 h-36 w-36 flex items-center justify-center bg-white p-1 rounded-xl"
           >
             <Link
               href="https://www.facebook.com/abcsupport2020/?checkpoint_src=any"
