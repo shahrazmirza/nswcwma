@@ -25,7 +25,7 @@ function DubboMultiCulturalGala2024() {
     }
   }, []);
 
-  const filterInclude = "Dubbo Multi Cultural Gala - 2024";
+  const filterInclude = "Dubbo Multi Cultural Gala - I - 2024";
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);
