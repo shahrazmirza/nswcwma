@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Theme>
           <NextUIProvider>
             {children}
+            <Analytics />
             <ToastContainer />
           </NextUIProvider>
         </Theme>
