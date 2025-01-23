@@ -52,7 +52,7 @@ function Funders() {
         className="flex items-center uppercase text-3xl font-semibold tracking-widest text-gray-800 border-l border-gray-500 pl-5 h-16 md:mb-5 md:ml-0 ml-5 md:mb-10 my-10"
         data-translate
       >
-        our funders
+        our government funders
       </motion.div>
 
       <div className="mb-20">

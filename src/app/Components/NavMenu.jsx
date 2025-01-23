@@ -67,7 +67,7 @@ const NavMenu = () => {
   };
 
   return (
-    <div className="bg-gray-800 z-10 w-screen h-[86px] shadow-d">
+    <div className="bg-gray-800 w-screen h-[86px] shadow-d">
       {/* Loading Indicator */}
       {loading && (
         <div className="flex justify-center items-center h-screen">
@@ -78,13 +78,12 @@ const NavMenu = () => {
 
       {!loading && (
         <Container
-          className={`fixed top-2 left-0 right-0 transition-transform transform ${
+          className={`fixed top-0 left-0 right-0 transition-transform transform z-50 ${
             isScrolled ? "-translate-y-full" : "translate-y-0"
           }`}
         >
-          <div className="text-white flex justify-between items-center">
-            {/* Logo and Title */}
-            <div className="flex items-center gap-5">
+          <div className="navbar text-white">
+            <div className="flex-1 px-2 lg:flex-none gap-5">
               <Link href="/">
                 <Image
                   src="/assets/images/logo.png"
@@ -100,133 +99,154 @@ const NavMenu = () => {
                 </h1>
               </Link>
             </div>
+            <div className="flex flex-1 justify-end px-2 uppercase">
+              <div className="flex items-stretch text-sm font-normal gap-1">
+                <div className="justify-center items-center flex gap-1">
+                  <Link
+                    href="/"
+                    className={`outline outline-1 px-3 hover:outline-gray-300 ${
+                      activeLink === "/"
+                        ? "outline-gray-300"
+                        : "outline-gray-800"
+                    }`}
+                    onClick={() => setActiveLink("/")}
+                    data-translate
+                    data-original-text="home"
+                  >
+                    home
+                  </Link>
+                </div>
+                <div className="dropdown dropdown-hover">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className={`outline outline-1 px-3 hover:outline-gray-300 ${
+                      activeLink === "/About" || activeLink === "/Mosque"
+                        ? "outline-gray-300"
+                        : "outline-gray-800"
+                    }`}
+                    onClick={() => setActiveLink("/About")}
+                    data-translate
+                    data-original-text="about"
+                  >
+                    about
+                  </div>
 
-            {/* Navigation Links */}
-            <ul className="flex text-white text-sm font-normal gap-1">
-              <li className="uppercase">
-                <Link
-                  href="/"
-                  className={`outline outline-1 px-3 hover:outline-gray-300 ${
-                    activeLink === "/" ? "outline-gray-300" : "outline-gray-800"
-                  }`}
-                  onClick={() => setActiveLink("/")}
-                  data-translate
-                  data-original-text="home"
-                >
-                  home
-                </Link>
-              </li>
-              <li className="uppercase">
-                <Link
-                  href="/About"
-                  className={`outline outline-1 px-3 hover:outline-gray-300 ${
-                    activeLink === "/About"
-                      ? "outline-gray-300"
-                      : "outline-gray-800"
-                  }`}
-                  onClick={() => setActiveLink("/About")}
-                  data-translate
-                  data-original-text="about"
-                >
-                  about
-                </Link>
-              </li>
-              <li className="uppercase">
-                <Link
-                  href="/Services"
-                  className={`outline outline-1 px-3 hover:outline-gray-300 ${
-                    activeLink === "/Services"
-                      ? "outline-gray-300"
-                      : "outline-gray-800"
-                  }`}
-                  onClick={() => setActiveLink("/Services")}
-                  data-translate
-                  data-original-text="services"
-                >
-                  services
-                </Link>
-              </li>
-              <li className="uppercase">
-                <Link
-                  href="/Events"
-                  className={`outline outline-1 px-3 hover:outline-gray-300 ${
-                    activeLink === "/Events"
-                      ? "outline-gray-300"
-                      : "outline-gray-800"
-                  }`}
-                  onClick={() => setActiveLink("/Events")}
-                  data-translate
-                  data-original-text="events"
-                >
-                  events
-                </Link>
-              </li>
-              <li className="uppercase">
-                <Link
-                  href="/Mosque"
-                  className={`outline outline-1 px-3 hover:outline-gray-300 ${
-                    activeLink === "/Mosque"
-                      ? "outline-gray-300"
-                      : "outline-gray-800"
-                  }`}
-                  onClick={() => setActiveLink("/Mosque")}
-                  data-translate
-                  data-original-text="mosque"
-                >
-                  mosque
-                </Link>
-              </li>
-              <li className="uppercase">
-                <Link
-                  href="/Downloads"
-                  className={`outline outline-1 px-3 hover:outline-gray-300 ${
-                    activeLink === "/Downloads"
-                      ? "outline-gray-300"
-                      : "outline-gray-800"
-                  }`}
-                  onClick={() => setActiveLink("/Downloads")}
-                  data-translate
-                  data-original-text="downloads"
-                >
-                  downloads
-                </Link>
-              </li>
-              <li className="uppercase">
-                <Link
-                  href="/Careers"
-                  className={`outline outline-1 px-3 hover:outline-gray-300 ${
-                    activeLink === "/Careers"
-                      ? "outline-gray-300"
-                      : "outline-gray-800"
-                  }`}
-                  onClick={() => setActiveLink("/Careers")}
-                  data-translate
-                  data-original-text="careers"
-                >
-                  careers
-                </Link>
-              </li>
-              <li className="uppercase">
-                <Link
-                  href="/Contacts"
-                  className={`outline outline-1 px-3 hover:outline-gray-300 ${
-                    activeLink === "/Contacts"
-                      ? "outline-gray-300"
-                      : "outline-gray-800"
-                  }`}
-                  onClick={() => setActiveLink("/Contacts")}
-                  data-translate
-                  data-original-text="contacts"
-                >
-                  contacts
-                </Link>
-              </li>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content menu bg-gray-800 rounded-md z-[1] mt-1 w-36 shadow p-0 -ml-1"
+                  >
+                    <li>
+                      <Link
+                        href="/About"
+                        data-translate
+                        data-original-text="about"
+                      >
+                        Who We Are
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/Mosque"
+                        data-translate
+                        data-original-text="mosque"
+                      >
+                        mosque
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="justify-center items-center flex gap-1">
+                  <Link
+                    href="/Services"
+                    className={`outline outline-1 px-3 hover:outline-gray-300 ${
+                      activeLink === "/Services"
+                        ? "outline-gray-300"
+                        : "outline-gray-800"
+                    }`}
+                    onClick={() => setActiveLink("/Services")}
+                    data-translate
+                    data-original-text="services"
+                  >
+                    services
+                  </Link>
+                </div>
+                <div className="justify-center items-center flex gap-1">
+                  <Link
+                    href="/Events"
+                    className={`outline outline-1 px-3 hover:outline-gray-300 ${
+                      activeLink === "/Events"
+                        ? "outline-gray-300"
+                        : "outline-gray-800"
+                    }`}
+                    onClick={() => setActiveLink("/Events")}
+                    data-translate
+                    data-original-text="events"
+                  >
+                    events
+                  </Link>
+                </div>
 
-              {/* Language Selector */}
-              <li>
-                <Languages />
-              </li>
-            </ul>
+                <div className="dropdown dropdown-hover">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className={`outline outline-1 px-3 hover:outline-gray-300 ${
+                      activeLink === "/Careers" || activeLink === "/Downloads"
+                        ? "outline-gray-300"
+                        : "outline-gray-800"
+                    }`}
+                    onClick={() => setActiveLink("/Resources")}
+                    data-translate
+                    data-original-text="about"
+                  >
+                    resources
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content menu bg-gray-800 rounded-md z-[1] mt-1 w-36 shadow p-0 -ml-1"
+                  >
+                    <li>
+                      <Link
+                        href="/Careers"
+                        data-translate
+                        data-original-text="careers"
+                      >
+                        careers
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/Downloads"
+                        data-translate
+                        data-original-text="downloads"
+                      >
+                        downloads
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="justify-center items-center flex gap-1">
+                  <Link
+                    href="/Contacts"
+                    className={`outline outline-1 px-3 hover:outline-gray-300 ${
+                      activeLink === "/Contacts"
+                        ? "outline-gray-300"
+                        : "outline-gray-800"
+                    }`}
+                    onClick={() => setActiveLink("/Contacts")}
+                    data-translate
+                    data-original-text="contacts"
+                  >
+                    contacts
+                  </Link>
+                </div>
+                <div className="justify-center items-center flex gap-1">
+                  <Languages />
+                </div>
+              </div>
+            </div>
           </div>
         </Container>
       )}
