@@ -9,7 +9,7 @@ import ServicesBanner from "./Components/ServicesBanner";
 import Team from "./Components/Team";
 import ScrollToTop from "./Components/ScrollToTop";
 import Partners from "./Components/Partners";
-import SponsorsBar from "./Components/SponsorsBar";
+import Funders from "./Components/Funders";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
       <ServicesBanner />
       <Partners />
       <Team />
-      <SponsorsBar />
+      <Funders />
       <Footer />
     </div>
   );
