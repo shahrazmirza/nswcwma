@@ -69,13 +69,11 @@ function About() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5"
             >
-              The New South Wales Central West Muslims Association is dedicated
-              to community wellbeing and benevolent services. While
-              religion/faith is ancillary in value, our primary purpose is to
-              work collaboratively with the community to develop a safe, healthy
-              environment for everyone. We are also committed to alleviating
-              poverty, assisting the sick within our community, responding to
-              natural calamities, and offering help when required.
+              We are dedicated to promoting community wellbeing through
+              inclusive and benevolent services. While rooted in Islamic values,
+              our primary focus is on collaborating with the community to create
+              a safe and healthy environment for all, alleviate poverty, assist
+              the sick, and respond to natural disasters.
             </h2>
           </div>
           <Image
@@ -116,13 +114,11 @@ function About() {
               data-translate
               className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pt-5"
             >
-              At the New South Wales Central West Muslims Association, we aim to
-              foster a compassionate, supportive community in Dubbo and Central
-              West New South Wales. We focus on alleviating poverty, assisting
-              the sick, and responding to calamities. Our commitment includes
-              providing social and educational facilities and supporting needy
-              families, emphasizing universal benevolence and community
-              wellbeing.
+              We aim To foster a compassionate and supportive community in Dubbo
+              and Central West New South Wales, we are dedicated to alleviating
+              poverty, providing social and educational facilities, and
+              supporting those in need, all while promoting universal
+              benevolence and wellbeing.
             </h2>
           </div>
         </motion.div>
