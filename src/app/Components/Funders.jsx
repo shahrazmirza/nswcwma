@@ -83,7 +83,17 @@ function Funders() {
       </motion.div>
 
       <div className="mb-20">
-        <div className="md:grid md:grid-cols-3 md:gap-10 flex flex-col gap-5 m-5 md:m-0">
+        <motion.div
+          ref={ref2}
+          variants={{
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={slide2}
+          transition={{ duration: 0.9, delay: 0 }}
+          className="md:grid md:grid-cols-3 md:gap-10 flex flex-col gap-5 m-5 md:m-0"
+        >
           {items.map((item, index) => (
             <div
               key={index}
@@ -100,7 +110,7 @@ function Funders() {
               </Link>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </Container>
   );
