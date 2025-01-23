@@ -70,7 +70,7 @@ function Funders() {
           {items.map((item, index) => (
             <div
               key={index}
-              className="card w-full h-60 shadow-xl flex items-center justify-center py-20"
+              className="card w-full h-60 shadow-xl flex items-center justify-center py-20 bg-gray-200"
             >
               <Link href={item.href}>
                 <Image
