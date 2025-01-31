@@ -209,7 +209,7 @@ function Footer() {
               </button>
               <button className="btn btn-active btn-link pr-6">
                 <a
-                  href="https://abr.business.gov.au/ABN/View?abn=76977073780"
+                  href="https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/gifts-and-donations"
                   target="_blank"
                 >
                   <Image
