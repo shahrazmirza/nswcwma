@@ -117,80 +117,90 @@ function DonationForm() {
           </motion.select>
 
           {isDonationTypeSelected && (
-            <div className="flex md:gap-5 gap-3">
-              {["One-Time", "Recurring"].map((type) => (
-                <label
-                  key={type}
-                  className={`btn btn-sm font-medium cursor-pointer transition-all duration-300
+            <>
+              <h1 className="md:text-base font-medium text-sm">
+                Choose Donation Frequency
+              </h1>
+              <div className="flex md:gap-5 gap-3">
+                {["One-Time", "Recurring"].map((type) => (
+                  <label
+                    key={type}
+                    className={`btn btn-sm font-medium cursor-pointer transition-all duration-300
                   ${
                     donationFrequency === type
                       ? "border-red-500 bg-red-500 text-white hover:border-red-500 hover:bg-red-500 hover:text-white"
                       : "bg-white border-gray-300 text-gray-500 hover:bg-white hover:border-red-500 hover:text-red-500"
                   }`}
-                >
-                  <input
-                    type="radio"
-                    name="options"
-                    value={type}
-                    checked={donationFrequency === type}
-                    onChange={(e) => setDonationFrequency(e.target.value)}
-                    className="hidden"
-                  />
-                  {type}
-                </label>
-              ))}
-            </div>
+                  >
+                    <input
+                      type="radio"
+                      name="options"
+                      value={type}
+                      checked={donationFrequency === type}
+                      onChange={(e) => setDonationFrequency(e.target.value)}
+                      className="hidden"
+                    />
+                    {type}
+                  </label>
+                ))}
+              </div>
+            </>
           )}
 
           {donationFrequency && (
-            <div className="flex flex-col">
-              {filteredItems.length > 0 && (
-                <div className="flex md:flex-row flex-col items-start md:gap-5 gap-3">
-                  {filteredItems.map((item, index) => (
-                    <label
-                      key={index}
-                      className={`btn btn-sm font-medium cursor-pointer transition-all duration-300
+            <>
+              <h1 className="md:text-base font-medium text-sm">
+                Select Amount
+              </h1>
+              <div className="flex flex-col">
+                {filteredItems.length > 0 && (
+                  <div className="flex md:flex-row flex-col items-start md:gap-5 gap-3">
+                    {filteredItems.map((item, index) => (
+                      <label
+                        key={index}
+                        className={`btn btn-sm font-medium cursor-pointer transition-all duration-300
       ${
         selectedAmount === parseFloat(item.value)
           ? "border-red-500 bg-red-500 text-white hover:border-red-500 hover:bg-red-500 hover:text-white"
           : "bg-white border-gray-300 text-gray-500 hover:bg-white hover:border-red-500 hover:text-red-500"
       }`}
-                    >
-                      <input
-                        type="radio"
-                        name="amountOptions"
-                        value={item.value}
-                        checked={selectedAmount === parseFloat(item.value)}
-                        onChange={() =>
-                          setSelectedAmount(parseFloat(item.value))
-                        }
-                        className="hidden"
-                      />
-                      ${item.value.toLocaleString()}
-                    </label>
-                  ))}
-                  <label
-                    className={`input input-sm input-bordered flex items-center gap-2 transition-all duration-300
+                      >
+                        <input
+                          type="radio"
+                          name="amountOptions"
+                          value={item.value}
+                          checked={selectedAmount === parseFloat(item.value)}
+                          onChange={() =>
+                            setSelectedAmount(parseFloat(item.value))
+                          }
+                          className="hidden"
+                        />
+                        ${item.value.toLocaleString()}
+                      </label>
+                    ))}
+                    <label
+                      className={`input input-sm input-bordered flex items-center gap-2 transition-all duration-300
               ${
                 customAmountInputValue
                   ? "bg-red-500 border-red-500 text-white"
                   : "bg-white border-red-500 text-gray-500 hover:border-red-500 hover:text-red-500"
               }`}
-                  >
-                    <FaDollarSign />
-                    <input
-                      type="text"
-                      className="w-28 bg-transparent outline-none"
-                      placeholder="Custom Amount"
-                      value={customAmountInputValue}
-                      onChange={(e) =>
-                        setCustomAmountInputValue(e.target.value)
-                      }
-                    />
-                  </label>
-                </div>
-              )}
-            </div>
+                    >
+                      <FaDollarSign />
+                      <input
+                        type="text"
+                        className="w-28 bg-transparent outline-none"
+                        placeholder="Custom Amount"
+                        value={customAmountInputValue}
+                        onChange={(e) =>
+                          setCustomAmountInputValue(e.target.value)
+                        }
+                      />
+                    </label>
+                  </div>
+                )}
+              </div>
+            </>
           )}
 
           <motion.a
