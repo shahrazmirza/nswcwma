@@ -5,6 +5,7 @@ import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 import Languages from "../Components/Languages";
+import { BiSolidDonateHeart } from "react-icons/bi";
 
 function Togglemenu() {
   const [activeLink, setActiveLink] = useState("");
@@ -64,78 +65,94 @@ function Togglemenu() {
   };
 
   return (
-    <div className="z-10">
-      <div className="flex justify-between items-center bg-gray-800 text-white h-[70px] pl-3 gap-2">
-        <Link href="/">
-          <Image
-            src="/assets/images/logo.png"
-            alt="Logo"
-            width={54}
-            height={54}
-            className=""
-          />
-        </Link>
-        <Link href="/">
-          <div className="flex flex-col justify-center text-[12px] font-semibold">
-            <h1>NSW Central West</h1> <h1>Muslims Association</h1>
-          </div>
-        </Link>
-        {/* Language Selector */}
-        <Languages />
-        {/* Toggle Button */}
-        <button
-          className="flex text-gray-800 bg-gray-100 justify-center items-center w-12 h-[70px]"
-          onClick={toggleDiv}
+    <>
+      {" "}
+      <div className="flex justify-center items-center bg-black w-screen text-base text-center p-1 text-yellow-500 font-bold tracking-[.25em]">
+        <Link
+          href="/ZakatCalculator"
+          className="flex justify-center items-center gap-3 animate__animated animate__pulse animate__infinite animate__slow"
         >
-          {showDiv ? (
-            <RxCross1 className="text-red-500 w-5 h-5" />
-          ) : (
-            <IoMenu className="text-red-500 w-6 h-6" />
-          )}
-        </button>
+          <div className="text-2xl text-green-600">
+            <BiSolidDonateHeart />
+          </div>
+          <p>Pay</p>
+          <p className="text-red-500 ">ZAKAT</p>
+          <p>Now!</p>
+        </Link>
       </div>
-
-      {/* Loading Spinner */}
-      {loading && (
-        <div className="flex justify-center items-center h-screen">
-          <div className="loader" />{" "}
-          {/* Replace with a spinner or loading indicator */}
+      <div className="z-10">
+        <div className="flex justify-between items-center bg-gray-800 text-white h-[70px] pl-3 gap-2">
+          <Link href="/">
+            <Image
+              src="/assets/images/logo.png"
+              alt="Logo"
+              width={54}
+              height={54}
+              className=""
+            />
+          </Link>
+          <Link href="/">
+            <div className="flex flex-col justify-center text-[12px] font-semibold">
+              <h1>NSW Central West</h1> <h1>Muslims Association</h1>
+            </div>
+          </Link>
+          {/* Language Selector */}
+          <Languages />
+          {/* Toggle Button */}
+          <button
+            className="flex text-gray-800 bg-gray-100 justify-center items-center w-12 h-[70px]"
+            onClick={toggleDiv}
+          >
+            {showDiv ? (
+              <RxCross1 className="text-red-500 w-5 h-5" />
+            ) : (
+              <IoMenu className="text-red-500 w-6 h-6" />
+            )}
+          </button>
         </div>
-      )}
 
-      {/* Toggle Menu */}
-      {!loading && showDiv && (
-        <div className="border border-red-500">
-          <ul className="flex flex-col">
-            {[
-              { href: "/", label: "Home" },
-              { href: "/About", label: "About" },
-              { href: "/Services", label: "Services" },
-              { href: "/Events", label: "Events" },
-              { href: "/Mosque", label: "Mosque" },
-              { href: "/Downloads", label: "Downloads" },
-              { href: "/Careers", label: "Careers" },
-              { href: "/Contacts", label: "Contacts" },
-            ].map((link) => (
-              <Link
-                key={link.href}
-                className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
-                  activeLink === link.href
-                    ? "bg-neutral-800 text-red-500 font-medium"
-                    : "bg-gray-100"
-                }`}
-                onClick={() => handleLinkClick(link.href)}
-                href={link.href}
-                data-translate
-                data-original-text={link.label}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
+        {/* Loading Spinner */}
+        {loading && (
+          <div className="flex justify-center items-center h-screen">
+            <div className="loader" />{" "}
+            {/* Replace with a spinner or loading indicator */}
+          </div>
+        )}
+
+        {/* Toggle Menu */}
+        {!loading && showDiv && (
+          <div className="border border-red-500">
+            <ul className="flex flex-col">
+              {[
+                { href: "/", label: "Home" },
+                { href: "/About", label: "About" },
+                { href: "/Services", label: "Services" },
+                { href: "/Events", label: "Events" },
+                { href: "/Mosque", label: "Mosque" },
+                { href: "/Downloads", label: "Downloads" },
+                { href: "/Careers", label: "Careers" },
+                { href: "/Contacts", label: "Contacts" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  className={`w-full uppercase text-black border-b-1 px-5 py-2 border-black ${
+                    activeLink === link.href
+                      ? "bg-neutral-800 text-red-500 font-medium"
+                      : "bg-gray-100"
+                  }`}
+                  onClick={() => handleLinkClick(link.href)}
+                  href={link.href}
+                  data-translate
+                  data-original-text={link.label}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </>
   );
 }
 
