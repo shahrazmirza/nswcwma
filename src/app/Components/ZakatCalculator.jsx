@@ -1,9 +1,10 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaDollarSign } from "react-icons/fa";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Button } from "@nextui-org/react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 function ZakatCalculator() {
   const [selectedNisab, setSelectedNisab] = useState("");
@@ -54,8 +55,28 @@ function ZakatCalculator() {
     }
   };
 
+  const ref1 = useRef(null);
+  const slide1 = useAnimation();
+  const isInView1 = useInView(ref1, { once: true });
+
+  useEffect(() => {
+    if (isInView1) {
+      slide1.start("visible");
+    }
+  }, [isInView1]);
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-7 md:text-start text-center border-solid border-b rounded-xl shadow-md p-10">
+    <motion.div
+      ref={ref1}
+      variants={{
+        hidden: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate={slide1}
+      transition={{ duration: 0.9, delay: 0 }}
+      className="grid grid-cols-1 md:grid-cols-2 gap-10 md:px-10 px-5 md:text-start text-center border-solid border-b rounded-xl shadow-md pb-10"
+    >
       <div>
         <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide pb-4 md:py-4">
           Select Nisab Type
@@ -157,7 +178,7 @@ function ZakatCalculator() {
           </Button>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }
 
