@@ -5,6 +5,7 @@ import data from "../Data/DonationType.json";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { FaDollarSign } from "react-icons/fa";
 
 function DonationForm() {
   const ref1 = useRef(null);
@@ -117,22 +118,27 @@ function DonationForm() {
 
           {isDonationTypeSelected && (
             <div className="flex md:gap-5 gap-3">
-              <input
-                className="btn btn-sm bg-white hover:bg-white border-gray-300 hover:border-red-500 font-medium text-gray-500 hover:text-red-500"
-                type="radio"
-                name="options"
-                aria-label="One-Time"
-                value="One-Time"
-                onChange={(e) => setDonationFrequency(e.target.value)}
-              />
-              <input
-                className="btn btn-sm bg-white hover:bg-white border-gray-300 hover:border-red-500 font-medium text-gray-500 hover:text-red-500"
-                type="radio"
-                name="options"
-                aria-label="Monthly"
-                value="Recurring"
-                onChange={(e) => setDonationFrequency(e.target.value)}
-              />
+              {["One-Time", "Recurring"].map((type) => (
+                <label
+                  key={type}
+                  className={`btn btn-sm font-medium cursor-pointer transition-all duration-300
+                  ${
+                    donationFrequency === type
+                      ? "border-red-500 bg-red-500 text-white hover:border-red-500 hover:bg-red-500 hover:text-white"
+                      : "bg-white border-gray-300 text-gray-500 hover:bg-white hover:border-red-500 hover:text-red-500"
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    name="options"
+                    value={type}
+                    checked={donationFrequency === type}
+                    onChange={(e) => setDonationFrequency(e.target.value)}
+                    className="hidden"
+                  />
+                  {type}
+                </label>
+              ))}
             </div>
           )}
 
@@ -141,21 +147,42 @@ function DonationForm() {
               {filteredItems.length > 0 && (
                 <div className="flex md:flex-row flex-col items-start md:gap-5 gap-3">
                   {filteredItems.map((item, index) => (
-                    <input
+                    <label
                       key={index}
-                      className="btn btn-sm bg-white hover:bg-white border-gray-300 hover:border-red-500 font-medium text-gray-500 hover:text-red-500"
-                      type="radio"
-                      name="amountOptions"
-                      aria-label={`$${item.value.toLocaleString()}`}
-                      value={item.value}
-                      onChange={() => setSelectedAmount(parseFloat(item.value))}
-                    />
+                      className={`btn btn-sm font-medium cursor-pointer transition-all duration-300
+      ${
+        selectedAmount === parseFloat(item.value)
+          ? "border-red-500 bg-red-500 text-white hover:border-red-500 hover:bg-red-500 hover:text-white"
+          : "bg-white border-gray-300 text-gray-500 hover:bg-white hover:border-red-500 hover:text-red-500"
+      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="amountOptions"
+                        value={item.value}
+                        checked={selectedAmount === parseFloat(item.value)}
+                        onChange={() =>
+                          setSelectedAmount(parseFloat(item.value))
+                        }
+                        className="hidden"
+                      />
+                      ${item.value.toLocaleString()}
+                    </label>
                   ))}
-                  <label className="input input-sm flex items-center bg-white text-gray-800 border-none outline outline-1 outline-gray-300 hover:outline-red-500 text-sm font-medium text-gray-500">
+                  <label
+                    className={`input input-sm input-bordered flex items-center gap-2 transition-all duration-300
+              ${
+                customAmountInputValue
+                  ? "bg-red-500 border-red-500 text-white"
+                  : "bg-white border-red-500 text-gray-500 hover:border-red-500 hover:text-red-500"
+              }`}
+                  >
+                    <FaDollarSign />
                     <input
                       type="text"
-                      placeholder="$ Custom Amount"
-                      className="w-44"
+                      className="w-28 bg-transparent outline-none"
+                      placeholder="Custom Amount"
+                      value={customAmountInputValue}
                       onChange={(e) =>
                         setCustomAmountInputValue(e.target.value)
                       }
