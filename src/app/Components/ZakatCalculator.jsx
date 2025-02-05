@@ -57,7 +57,7 @@ function ZakatCalculator() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-7 md:text-start text-center border-solid border-b rounded-xl shadow-md p-10">
       <div>
-        <h1 className="md:text-2xl font-bold text-xl py-4">
+        <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide pb-4 md:py-4">
           Select Nisab Type
         </h1>
         <div className="flex flex-col md:gap-5 gap-3">
@@ -90,7 +90,9 @@ function ZakatCalculator() {
 
         {showAssetsLiabilities && (
           <div>
-            <h1 className="md:text-2xl font-bold text-xl py-4">Assets</h1>
+            <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide py-4">
+              Assets
+            </h1>
             <h1 className="md:text-base font-bold text-sm text-gray-600 pl-3">
               Include gold, silver, cash, savings, business assets etc.
             </h1>
@@ -112,7 +114,9 @@ function ZakatCalculator() {
               />
             </label>
 
-            <h1 className="md:text-2xl font-bold text-xl py-4">Liabilities</h1>
+            <h1 className="uppercase md:text-2xl text-xl md:font-medium font-semibold md:tracking-wide py-4">
+              Liabilities
+            </h1>
             <h1 className="md:text-base font-bold text-sm text-gray-600 pl-3">
               Include money you owe, other outgoings due.
             </h1>
@@ -147,7 +151,7 @@ function ZakatCalculator() {
           </div>
           <Button
             onClick={handlePayNow}
-            className="px-5 text-lg font-medium leading-none border-red-500 border-solid border rounded-t text-white h-16 bg-red-500 flex items-center justify-center w-full"
+            className="uppercase px-5 text-lg font-medium leading-none border-red-500 border-solid border rounded-t text-white h-16 bg-red-500 flex items-center justify-center w-full"
           >
             Pay Now
           </Button>
