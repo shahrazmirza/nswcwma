@@ -85,7 +85,7 @@ function ZakatCalculator() {
           {["Silver", "Gold"].map((type) => (
             <label
               key={type}
-              className={`btn md:btn-lg btn-md font-medium transition-all duration-300 cursor-pointer
+              className={`btn md:btn-lg btn-md md:text-base text-xs font-medium transition-all duration-300 cursor-pointer
                 ${
                   selectedNisab === type
                     ? "border-red-500 bg-red-500 text-white hover:border-red-500 hover:bg-red-500 hover:text-white"
@@ -118,7 +118,7 @@ function ZakatCalculator() {
               Include gold, silver, cash, savings, business assets etc.
             </h1>
             <label
-              className={`input input-bordered flex items-center mt-3 gap-2 transition-all duration-300
+              className={`input md:input-md input-sm input-bordered flex items-center mt-3 gap-2 transition-all duration-300
                 ${
                   assetsValue
                     ? "bg-red-500 border-red-500 text-white"
@@ -142,7 +142,7 @@ function ZakatCalculator() {
               Include money you owe, other outgoings due.
             </h1>
             <label
-              className={`input input-bordered flex items-center mt-3 gap-2 transition-all duration-300
+              className={`input md:input-md input-sm input-bordered flex items-center mt-3 gap-2 transition-all duration-300
                 ${
                   liabilitiesValue
                     ? "bg-red-500 border-red-500 text-white"
@@ -172,7 +172,7 @@ function ZakatCalculator() {
           </div>
           <Button
             onClick={handlePayNow}
-            className="uppercase px-5 text-lg font-medium leading-none border-red-500 border-solid border rounded-t text-white h-16 bg-red-500 flex items-center justify-center w-full"
+            className="uppercase px-5 text-lg font-medium leading-none border-red-500 border-solid border rounded-t text-white md:h-16 h-10 bg-red-500 flex items-center justify-center w-full"
           >
             Pay Now
           </Button>
