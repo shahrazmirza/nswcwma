@@ -75,8 +75,9 @@ function Togglemenu() {
           <div className="text-2xl text-green-600">
             <BiSolidDonateHeart />
           </div>
+          <p className="text-white">Tap Here To</p>
           <p>Pay</p>
-          <p className="text-red-500 ">ZAKAT</p>
+          <p className="text-red-500">ZAKAT</p>
           <p>Now!</p>
         </Link>
       </div>
