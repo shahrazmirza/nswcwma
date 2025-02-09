@@ -67,12 +67,12 @@ function Togglemenu() {
   return (
     <>
       {" "}
-      <div className="flex justify-center items-center bg-black w-screen text-xs text-center p-1 text-yellow-500 font-bold tracking-widest">
+      <div className="flex justify-center items-center bg-black w-screen text-md text-center p-1 text-yellow-500 font-bold tracking-widest">
         <Link
           href="/ZakatCalculator"
           className="flex justify-center items-center gap-2 animate__animated animate__pulse animate__infinite animate__slow"
         >
-          <div className="text-xl text-green-600">
+          <div className="text-2xl text-green-600">
             <BiSolidDonateHeart />
           </div>
           <p>Pay</p>

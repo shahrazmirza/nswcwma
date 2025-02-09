@@ -70,12 +70,12 @@ const NavMenu = () => {
 
   return (
     <>
-      <div className="flex justify-center items-center bg-black w-screen text-base text-center p-1 text-yellow-500 font-bold tracking-[.25em]">
+      <div className="flex justify-center items-center bg-black w-screen text-xl text-center p-3 text-yellow-500 font-bold tracking-[.25em]">
         <Link
           href="/ZakatCalculator"
           className="flex justify-center items-center gap-3 animate__animated animate__pulse animate__infinite animate__slow"
         >
-          <div className="text-2xl text-green-600">
+          <div className="text-3xl text-green-600">
             <BiSolidDonateHeart />
           </div>
           <p>Pay</p>
@@ -94,7 +94,7 @@ const NavMenu = () => {
 
         {!loading && (
           <Container
-            className={`fixed top-8 left-0 right-0 transition-transform transform z-50 ${
+            className={`fixed top-14 left-0 right-0 transition-transform transform z-50 ${
               isScrolled ? "-translate-y-full" : "translate-y-0"
             }`}
           >
