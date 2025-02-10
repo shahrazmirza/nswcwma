@@ -69,7 +69,22 @@ const NavMenu = () => {
   };
 
   return (
-   <div className="bg-gray-800 w-screen h-[86px] shadow-d">
+    <>
+      <div className="flex justify-center items-center bg-black w-screen text-xl text-center p-3 text-yellow-500 font-bold tracking-[.25em]">
+        <Link
+          href="/ZakatCalculator"
+          className="flex justify-center items-center gap-3 animate__animated animate__pulse animate__infinite animate__slow"
+        >
+          <div className="text-3xl text-green-600">
+            <BiSolidDonateHeart />
+          </div>
+          <p className="text-white">Click Here To</p>
+          <p>Pay</p>
+          <p className="text-red-500">ZAKAT</p>
+          <p>Now!</p>
+        </Link>
+      </div>
+      <div className="bg-gray-800 w-screen h-[86px] shadow-d">
         {/* Loading Indicator */}
         {loading && (
           <div className="flex justify-center items-center h-screen">
@@ -84,20 +99,6 @@ const NavMenu = () => {
               isScrolled ? "-translate-y-full" : "translate-y-0"
             }`}
           >
-            <div className="flex justify-center items-center bg-black w-screen text-xl text-center p-3 text-yellow-500 font-bold tracking-[.25em]">
-        <Link
-          href="/ZakatCalculator"
-          className="flex justify-center items-center gap-3 animate__animated animate__pulse animate__infinite animate__slow"
-        >
-          <div className="text-3xl text-green-600">
-            <BiSolidDonateHeart />
-          </div>
-          <p className="text-white">Click Here To</p>
-          <p>Pay</p>
-          <p className="text-red-500">ZAKAT</p>
-          <p>Now!</p>
-        </Link>
-      </div>
             <div className="navbar text-white">
               <div className="flex-1 px-2 lg:flex-none gap-5">
                 <Link href="/">
@@ -267,6 +268,7 @@ const NavMenu = () => {
           </Container>
         )}
       </div>
+    </>
   );
 };
 
