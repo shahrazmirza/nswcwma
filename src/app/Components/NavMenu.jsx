@@ -28,7 +28,7 @@ const NavMenu = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 0);
+      setIsScrolled(scrollPosition > 30);
     };
 
     window.addEventListener("scroll", handleScroll);
