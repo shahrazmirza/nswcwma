@@ -71,6 +71,15 @@ function CyberSafeCommunitiesInitiative() {
     }
   }, [isInView5]);
 
+  const ref6 = useRef(null);
+  const slide6 = useAnimation();
+  const isInView6 = useInView(ref6, { once: true });
+  useEffect(() => {
+    if (isInView6) {
+      slide6.start("visible");
+    }
+  }, [isInView6]);
+
   return (
     <div className="bg-gray-800 text-gray-400">
       <Navbar />
@@ -582,6 +591,372 @@ function CyberSafeCommunitiesInitiative() {
             </div>
           </motion.div>
         </div>
+        <div className="py-0 grid md:grid-cols-4 grid-cols-3 gap-10 md:px-0">
+          <motion.div
+            ref={ref6}
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={slide6}
+            transition={{ duration: 0.9, delay: 0 }}
+            className="col-span-4 md:px-0 px-5"
+          >
+            <h1
+              data-translate
+              className="capitalize md:text-2xl text-lg md:font-medium font-semibold md:tracking-wide text-white pt-10"
+            >
+              Project Activities Timeline
+            </h1>{" "}
+            <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical py-10">
+              <li>
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">1/02/2025</time>
+                  <div className="text-lg font-black">Project Launch</div>
+                  Official project kick-off event introducing the initiative and
+                  its goals to the community.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-end md:mb-10">
+                  <time className="font-mono italic">15/02/2025</time>
+                  <div className="text-lg font-black">Workshop 1</div>
+                  Tailored in-person workshop for migrants on cyber threats,
+                  with materials translated into their native languages.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">01/03/2025</time>
+                  <div className="text-lg font-black">Workshop 2</div>
+                  Cyber security training for elderly individuals featuring
+                  simplified, step-by-step instructions and hands-on activities.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-end md:mb-10">
+                  <time className="font-mono italic">15/03/2025</time>
+                  <div className="text-lg font-black">Community Event</div>
+                  Community engagement event featuring Q&A sessions, cultural
+                  presentations, and cyber security demonstrations.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">01/04/2025</time>
+                  <div className="text-lg font-black">Workshop 3</div>
+                  Customised training session for farmers focusing on protecting
+                  business operations from cyber threats.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-end md:mb-10">
+                  <time className="font-mono italic">15/04/2025</time>
+                  <div className="text-lg font-black">
+                    Translation Service Rollout
+                  </div>
+                  Distribution of translated brochures and online resources to
+                  migrant communities.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">01/05/2025</time>
+                  <div className="text-lg font-black">
+                    One-on-One Support Launch
+                  </div>
+                  Launch of helpline service providing personalised assistance
+                  with cyber security issues.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-end md:mb-10">
+                  <time className="font-mono italic">15/06/2025 </time>
+                  <div className="text-lg font-black">Workshop 4</div>
+                  Workshop for individuals with disabilities, featuring
+                  accessible formats (audio, large print, and easy-read
+                  versions).
+                </div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">01/07/2025</time>
+                  <div className="text-lg font-black">Mid-Year Review</div>
+                  Progress review and participant feedback collection to
+                  evaluate the effectiveness of activities to date.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-end md:mb-10">
+                  <time className="font-mono italic">15/08/2025</time>
+                  <div className="text-lg font-black">Workshop 5</div>
+                  Joint workshop for farmers and elderly individuals to promote
+                  collaboration and enhance cyber security awareness.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">01/09/2025</time>
+                  <div className="text-lg font-black">
+                    Outreach Campaign Launch
+                  </div>
+                  Launch of a social media campaign targeting all vulnerable
+                  groups with Act Now, Stay Secure materials.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-end md:mb-10">
+                  <time className="font-mono italic">15/10/2025</time>
+                  <div className="text-lg font-black">
+                    Community Leader Consultation
+                  </div>
+                  Meeting with local leaders to gather insights and feedback for
+                  improving outreach strategies.
+                </div>
+                <hr />
+              </li>
+              <li>
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">01/11/2025</time>
+                  <div className="text-lg font-black">Workshop 6</div>
+                  Advanced training session for migrants and individuals with
+                  disabilities focusing on fraud prevention and identity
+                  protection.
+                </div>
+                <hr />
+              </li>
+
+              <li>
+                <hr />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div className="timeline-end mb-10 md:text-start">
+                  <time className="font-mono italic">01/12/2025</time>
+                  <div className="text-lg font-black">End-of-Year Event</div>
+                  Community celebration highlighting project achievements,
+                  featuring testimonials and success stories.
+                </div>
+              </li>
+            </ul>
+          </motion.div>
+        </div>
+
         <div className="divider"></div>
       </Container>
       <Footer />
