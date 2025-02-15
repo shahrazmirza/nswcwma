@@ -1,20 +1,19 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import Whatsapp from "../../Components/Whatsapp";
-import Footer from "../../Components/Footer";
-import Navbar from "../../Components/Navbar";
-import data from "../../Data/Events.json";
+import Whatsapp from "../../../Components/Whatsapp";
+import Footer from "../../../Components/Footer";
+import Navbar from "../../../Components/Navbar";
+import data from "../../../Data/PastEvents.json";
 import { FaCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@radix-ui/themes";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import ScrollToTop from "../../Components/ScrollToTop";
+import ScrollToTop from "../../../Components/ScrollToTop";
 import { motion, useAnimation, useInView } from "framer-motion";
-import GoneFishingDayPhotos from "../../Components/GoneFishingDayPhotos";
 
-function GoneFishingDay() {
+function RaiseMeRight() {
   const [items, setItems] = useState([]);
   useEffect(() => {
     console.log("", data);
@@ -25,7 +24,7 @@ function GoneFishingDay() {
     }
   }, []);
 
-  const filterInclude = "Fishing Day at Burrendong Dam";
+  const filterInclude = "Webinar on Parenting";
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -156,9 +155,6 @@ function GoneFishingDay() {
                       {item.paragraph5}
                     </p>
                   </div>
-                  <div className="md:-mb-32 -mb-80">
-                    <GoneFishingDayPhotos />
-                  </div>
                   <div className="divider"></div>
                 </div>
               ))}
@@ -219,4 +215,4 @@ function GoneFishingDay() {
   );
 }
 
-export default GoneFishingDay;
+export default RaiseMeRight;

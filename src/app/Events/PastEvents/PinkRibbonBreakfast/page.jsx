@@ -1,20 +1,20 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import Whatsapp from "../../Components/Whatsapp";
-import Footer from "../../Components/Footer";
-import Navbar from "../../Components/Navbar";
-import data from "../../Data/Events.json";
+import Whatsapp from "../../../Components/Whatsapp";
+import Footer from "../../../Components/Footer";
+import Navbar from "../../../Components/Navbar";
+import data from "../../../Data/PastEvents.json";
 import { FaCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@radix-ui/themes";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import ScrollToTop from "../../Components/ScrollToTop";
+import ScrollToTop from "../../../Components/ScrollToTop";
 import { motion, useAnimation, useInView } from "framer-motion";
-import SummerHolidayYouthProgramPhotos from "../../Components/SummerHolidayYouthProgramPhotos";
+import PinkRibbonBreakfastPhotos from "../../../Components/PinkRibbonBreakfastPhotos";
 
-function SummerHolidayYouthProgram() {
+function PinkRibbonBreakfast() {
   const [items, setItems] = useState([]);
   useEffect(() => {
     console.log("", data);
@@ -25,7 +25,7 @@ function SummerHolidayYouthProgram() {
     }
   }, []);
 
-  const filterInclude = "Summer Holiday Youth Program";
+  const filterInclude = "Pink Ribbon Breakfast at Buninyong Pre-School";
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -155,9 +155,27 @@ function SummerHolidayYouthProgram() {
                     >
                       {item.paragraph5}
                     </p>
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
+                    >
+                      {item.paragraph6}
+                    </p>
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
+                    >
+                      {item.paragraph7}
+                    </p>
+                    <p
+                      data-translate
+                      className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
+                    >
+                      {item.paragraph8}
+                    </p>
                   </div>
                   <div className="md:-mb-32 -mb-80">
-                    <SummerHolidayYouthProgramPhotos />
+                    <PinkRibbonBreakfastPhotos />
                   </div>
                   <div className="divider"></div>
                 </div>
@@ -219,4 +237,4 @@ function SummerHolidayYouthProgram() {
   );
 }
 
-export default SummerHolidayYouthProgram;
+export default PinkRibbonBreakfast;

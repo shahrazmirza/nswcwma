@@ -1,20 +1,20 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import Whatsapp from "../../Components/Whatsapp";
-import Footer from "../../Components/Footer";
-import Navbar from "../../Components/Navbar";
-import data from "../../Data/Events.json";
+import Whatsapp from "../../../Components/Whatsapp";
+import Footer from "../../../Components/Footer";
+import Navbar from "../../../Components/Navbar";
+import data from "../../../Data/PastEvents.json";
 import { FaCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@radix-ui/themes";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import ScrollToTop from "../../Components/ScrollToTop";
+import ScrollToTop from "../../../Components/ScrollToTop";
 import { motion, useAnimation, useInView } from "framer-motion";
-import CentralWestMuslimAssociationOpenDayPhotos from "../../Components/CentralWestMuslimAssociationOpenDayPhotos";
+import DubboMultiCulturalGala2024Photos from "../../../Components/DubboMultiCulturalGala2024Photos";
 
-function CentralWestMuslimAssociationOpenDay() {
+function DubboMultiCulturalGala2024() {
   const [items, setItems] = useState([]);
   useEffect(() => {
     console.log("", data);
@@ -25,7 +25,7 @@ function CentralWestMuslimAssociationOpenDay() {
     }
   }, []);
 
-  const filterInclude = "Central West Muslim Association Open Day";
+  const filterInclude = "Dubbo Multi Cultural Gala - I - 2024";
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -155,15 +155,9 @@ function CentralWestMuslimAssociationOpenDay() {
                     >
                       {item.paragraph5}
                     </p>
-                    <p
-                      data-translate
-                      className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
-                    >
-                      {item.paragraph6}
-                    </p>
                   </div>
                   <div className="md:-mb-32 -mb-80">
-                    <CentralWestMuslimAssociationOpenDayPhotos />
+                    <DubboMultiCulturalGala2024Photos />
                   </div>
                   <div className="divider"></div>
                 </div>
@@ -225,4 +219,4 @@ function CentralWestMuslimAssociationOpenDay() {
   );
 }
 
-export default CentralWestMuslimAssociationOpenDay;
+export default DubboMultiCulturalGala2024;

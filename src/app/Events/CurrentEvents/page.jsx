@@ -1,15 +1,15 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Whatsapp from "../Components/Whatsapp";
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
-import data from "../Data/Events.json";
+import Whatsapp from "../../Components/Whatsapp";
+import Footer from "../../Components/Footer";
+import Navbar from "../../Components/Navbar";
+import data from "../../Data/CurrentEvents.json";
 
 import { Container } from "@radix-ui/themes";
-import ScrollToTop from "../Components/ScrollToTop";
+import ScrollToTop from "../../Components/ScrollToTop";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-function Events() {
+function CurrentEvents() {
   const [items, setItems] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchKeyword, setSearchKeyword] = useState("");
@@ -18,7 +18,7 @@ function Events() {
     if (data && data.length > 0) {
       setItems(data);
     } else {
-      console.error("No events data available.");
+      console.error("No current events data available.");
     }
   }, []);
 
@@ -57,7 +57,7 @@ function Events() {
             className="my-10 uppercase md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white border-l-[1px] border-gray-300 mb-10 pl-10 md:mx-0 ml-5"
             data-translate
           >
-            Our Events
+            Our Current Events
           </motion.h1>
 
           <motion.div
@@ -151,13 +151,13 @@ function Events() {
                   key={item.id} // Correct placement of the key prop
                   className="card w-auto bg-gray-900 shadow-xl md:font-thin md:text-base text-xs text-gray-400 md:ml-10"
                 >
-                  <figure>
+                  {/* <figure>
                     <img
                       src={item.imgSrc || "/placeholder.jpg"} // Fallback image if imgSrc is undefined
                       alt={item.imgAlt || "Event image"} // Fallback alt text if imgAlt is undefined
                       className="w-full h-auto"
                     />
-                  </figure>
+                  </figure> */}
                   <div className="card-body">
                     <h2
                       data-translate
@@ -193,4 +193,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default CurrentEvents;

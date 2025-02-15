@@ -28,7 +28,7 @@ const NavMenu = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 150);
+      setIsScrolled(scrollPosition > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -152,7 +152,7 @@ const NavMenu = () => {
 
                       <ul
                         tabIndex={0}
-                        className="dropdown-content menu bg-gray-800 rounded-md z-[1] mt-1 w-36 shadow p-0 -ml-1"
+                        className="dropdown-content menu bg-gray-800 rounded-md z-[1] mt-1 w-40 shadow p-0 -ml-1"
                       >
                         <li>
                           <Link
@@ -189,20 +189,64 @@ const NavMenu = () => {
                         services
                       </Link>
                     </div>
-                    <div className="justify-center items-center flex gap-1">
-                      <Link
-                        href="/Events"
+
+                    <div className="dropdown dropdown-hover">
+                      <div
+                        tabIndex={0}
+                        role="button"
                         className={`outline outline-1 px-3 hover:outline-gray-300 ${
-                          activeLink === "/Events"
+                          activeLink === "/Events/CurrentEvents" ||
+                          activeLink === "/Events/PastEvents" ||
+                          activeLink ===
+                            "/Events/PastEvents/AutumnHolidayYouthProgram" ||
+                          activeLink ===
+                            "/Events/PastEvents/CentralWestMuslimAssociationOpenDay" ||
+                          activeLink ===
+                            "/Events/PastEvents/DubboMultiCulturalGala2024" ||
+                          activeLink ===
+                            "/Events/PastEvents/DubboMultiCulturalGala22024" ||
+                          activeLink === "/Events/PastEvents/GoneFishingDay" ||
+                          activeLink ===
+                            "/Events/PastEvents/PinkRibbonBreakfast" ||
+                          activeLink === "/Events/PastEvents/RaiseMeRight" ||
+                          activeLink ===
+                            "/Events/PastEvents/StoryNightsDubbo" ||
+                          activeLink ===
+                            "/Events/PastEvents/SummerHolidayYouthProgram" ||
+                          activeLink ===
+                            "/Events/CurrentEvents/CyberSafeCommunitiesInitiative"
                             ? "outline-gray-300"
                             : "outline-gray-800"
                         }`}
                         onClick={() => setActiveLink("/Events")}
                         data-translate
-                        data-original-text="events"
+                        data-original-text="about"
                       >
                         events
-                      </Link>
+                      </div>
+                      <ul
+                        tabIndex={0}
+                        className="dropdown-content menu bg-gray-800 rounded-md z-[1] mt-1 w-40 shadow p-0 -ml-1"
+                      >
+                        <li>
+                          <Link
+                            href="/Events/CurrentEvents/"
+                            data-translate
+                            data-original-text="current events"
+                          >
+                            current events
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/Events/PastEvents/"
+                            data-translate
+                            data-original-text="past events"
+                          >
+                            past events
+                          </Link>
+                        </li>
+                      </ul>
                     </div>
 
                     <div className="dropdown dropdown-hover">
@@ -223,7 +267,7 @@ const NavMenu = () => {
                       </div>
                       <ul
                         tabIndex={0}
-                        className="dropdown-content menu bg-gray-800 rounded-md z-[1] mt-1 w-36 shadow p-0 -ml-1"
+                        className="dropdown-content menu bg-gray-800 rounded-md z-[1] mt-1 w-40 shadow p-0 -ml-1"
                       >
                         <li>
                           <Link

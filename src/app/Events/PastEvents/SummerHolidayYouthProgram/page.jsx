@@ -1,20 +1,20 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import Whatsapp from "../../Components/Whatsapp";
-import Footer from "../../Components/Footer";
-import Navbar from "../../Components/Navbar";
-import data from "../../Data/Events.json";
+import Whatsapp from "../../../Components/Whatsapp";
+import Footer from "../../../Components/Footer";
+import Navbar from "../../../Components/Navbar";
+import data from "../../../Data/PastEvents.json";
 import { FaCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@radix-ui/themes";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import ScrollToTop from "../../Components/ScrollToTop";
+import ScrollToTop from "../../../Components/ScrollToTop";
 import { motion, useAnimation, useInView } from "framer-motion";
-import DubboMultiCulturalGala2024Photos from "../../Components/DubboMultiCulturalGala2024Photos";
+import SummerHolidayYouthProgramPhotos from "../../../Components/SummerHolidayYouthProgramPhotos";
 
-function DubboMultiCulturalGala2024() {
+function SummerHolidayYouthProgram() {
   const [items, setItems] = useState([]);
   useEffect(() => {
     console.log("", data);
@@ -25,7 +25,7 @@ function DubboMultiCulturalGala2024() {
     }
   }, []);
 
-  const filterInclude = "Dubbo Multi Cultural Gala - I - 2024";
+  const filterInclude = "Summer Holiday Youth Program";
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -157,7 +157,7 @@ function DubboMultiCulturalGala2024() {
                     </p>
                   </div>
                   <div className="md:-mb-32 -mb-80">
-                    <DubboMultiCulturalGala2024Photos />
+                    <SummerHolidayYouthProgramPhotos />
                   </div>
                   <div className="divider"></div>
                 </div>
@@ -219,4 +219,4 @@ function DubboMultiCulturalGala2024() {
   );
 }
 
-export default DubboMultiCulturalGala2024;
+export default SummerHolidayYouthProgram;
