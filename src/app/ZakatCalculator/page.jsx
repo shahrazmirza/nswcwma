@@ -8,6 +8,7 @@ import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
 import Link from "next/link";
 import ZakatCalculator from "../Components/ZakatCalculator";
+import ZakatPaymentForm from "../Components/ZakatPaymentForm";
 import { Container } from "@radix-ui/themes";
 
 const Zakat = () => {
@@ -98,6 +99,8 @@ const Zakat = () => {
       <Whatsapp />
       <Container>
         <div className="py-10 md:pl-0">
+          <ZakatPaymentForm />
+
           <motion.div
             ref={ref1}
             variants={{
