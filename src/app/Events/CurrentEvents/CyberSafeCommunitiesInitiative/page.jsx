@@ -14,6 +14,29 @@ import ScrollToTop from "../../../Components/ScrollToTop";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 function CyberSafeCommunitiesInitiative() {
+  const [openSections, setOpenSections] = useState({
+    phishing: false,
+    identity: false,
+    scams: false,
+    malware: false,
+    strongPasswords: false,
+    twoFactor: false,
+    deviceUpdated: false,
+    suspiciousLinks: false,
+    personalInfo: false,
+    elderlyIndividuals: false,
+    migrantsAndCALD: false,
+    smallBusinesses: false,
+    individualsWithDisabilities: false,
+  });
+
+  const toggleSection = (section) => {
+    setOpenSections((prev) => ({
+      ...prev,
+      [section]: !prev[section],
+    }));
+  };
+
   const [items, setItems] = useState([]);
   useEffect(() => {
     console.log("", data);
@@ -265,12 +288,35 @@ function CyberSafeCommunitiesInitiative() {
                 Common Cyber Security Threats
               </h1>{" "}
               <div className="md:text-base text-sm pt-5 flex flex-col gap-2">
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    Phishing Attacks
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("phishing")}
+                  >
+                    <span data-translate>Phishing Attacks</span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.phishing ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.phishing ? "block" : "hidden"
+                    }`}
+                  >
                     <p>
                       Phishing is a method used by cybercriminals to trick you
                       into giving away personal information such as passwords or
@@ -294,12 +340,36 @@ function CyberSafeCommunitiesInitiative() {
                     </div>
                   </div>
                 </div>
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    Identity Theft
+
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("identity")}
+                  >
+                    <span data-translate>Identity Theft</span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.identity ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.identity ? "block" : "hidden"
+                    }`}
+                  >
                     <p>
                       Identity theft involves criminals using your personal
                       information, such as your name, address, or bank details,
@@ -325,12 +395,38 @@ function CyberSafeCommunitiesInitiative() {
                     </div>
                   </div>
                 </div>
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    Scams Targeting the Elderly and Migrants
+
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("scams")}
+                  >
+                    <span data-translate>
+                      Scams Targeting the Elderly and Migrants
+                    </span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.scams ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.scams ? "block" : "hidden"
+                    }`}
+                  >
                     <p>
                       Scammers often target elderly individuals and those from
                       non-English speaking backgrounds due to their limited
@@ -353,12 +449,36 @@ function CyberSafeCommunitiesInitiative() {
                     </div>
                   </div>
                 </div>
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    Malware and Viruses
+
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("malware")}
+                  >
+                    <span data-translate>Malware and Viruses</span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.malware ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.malware ? "block" : "hidden"
+                    }`}
+                  >
                     <p>
                       Malware is harmful software designed to damage your device
                       or steal data. Viruses can spread through email
@@ -405,12 +525,35 @@ function CyberSafeCommunitiesInitiative() {
                 Ways to Protect Yourself Online
               </h1>{" "}
               <div className="md:text-base text-sm pt-5 flex flex-col gap-2">
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    Use Strong Passwords
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("strongPasswords")}
+                  >
+                    <span data-translate>Use Strong Passwords</span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.strongPasswords ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.strongPasswords ? "block" : "hidden"
+                    }`}
+                  >
                     <p>
                       Create passwords that are difficult to guess by combining
                       upper and lowercase letters, numbers, and symbols. Avoid
@@ -428,12 +571,38 @@ function CyberSafeCommunitiesInitiative() {
                     </div>
                   </div>
                 </div>
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    Enable Two-Factor Authentication (2FA)
+
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("twoFactor")}
+                  >
+                    <span data-translate>
+                      Enable Two-Factor Authentication (2FA)
+                    </span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.twoFactor ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.twoFactor ? "block" : "hidden"
+                    }`}
+                  >
                     <p>
                       2FA adds an extra layer of security by requiring a second
                       step, such as a code sent to your phone, in addition to
@@ -441,12 +610,38 @@ function CyberSafeCommunitiesInitiative() {
                     </p>
                   </div>
                 </div>
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    Keep Software and Devices Updated
+
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("deviceUpdated")}
+                  >
+                    <span data-translate>
+                      Keep Software and Devices Updated
+                    </span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.deviceUpdated ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.deviceUpdated ? "block" : "hidden"
+                    }`}
+                  >
                     <p>
                       Regularly update your operating system, apps, and
                       antivirus software to protect against the latest threats.
@@ -454,12 +649,38 @@ function CyberSafeCommunitiesInitiative() {
                     </p>
                   </div>
                 </div>
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    Avoid Suspicious Links and Attachments
+
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("suspiciousLinks")}
+                  >
+                    <span data-translate>
+                      Avoid Suspicious Links and Attachments
+                    </span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.suspiciousLinks ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.suspiciousLinks ? "block" : "hidden"
+                    }`}
+                  >
                     <p>
                       Do not click on links or open attachments from unknown
                       sources. Always verify the sender before taking any
@@ -467,12 +688,36 @@ function CyberSafeCommunitiesInitiative() {
                     </p>
                   </div>
                 </div>
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    Secure Personal Information
+
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("personalInfo")}
+                  >
+                    <span data-translate>Secure Personal Information</span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.personalInfo ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.personalInfo ? "block" : "hidden"
+                    }`}
+                  >
                     <p>
                       Be cautious about sharing your personal details online.
                       Ensure websites are secure (look for {`"https://"`} in the
@@ -504,12 +749,37 @@ function CyberSafeCommunitiesInitiative() {
                 Helpful Tips for Staying Safe Online
               </h1>{" "}
               <div className="md:text-base text-sm pt-5 flex flex-col gap-2">
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    For Elderly Individuals
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("elderlyIndividuals")}
+                  >
+                    <span data-translate>For Elderly Individuals</span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.elderlyIndividuals
+                          ? "rotate-90"
+                          : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.elderlyIndividuals ? "block" : "hidden"
+                    }`}
+                  >
                     <div className="flex gap-2 pl-2">
                       <p>●</p>
                       <p>
@@ -526,12 +796,38 @@ function CyberSafeCommunitiesInitiative() {
                     </div>
                   </div>
                 </div>
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    For Migrants and CALD Communities
+
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("migrantsAndCALD")}
+                  >
+                    <span data-translate>
+                      For Migrants and CALD Communities
+                    </span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.migrantsAndCALD ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.migrantsAndCALD ? "block" : "hidden"
+                    }`}
+                  >
                     <div className="flex gap-2 pl-2">
                       <p>●</p>
                       <p>
@@ -549,12 +845,36 @@ function CyberSafeCommunitiesInitiative() {
                     </div>
                   </div>
                 </div>
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    For Small Businesses
+
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("smallBusinesses")}
+                  >
+                    <span data-translate>For Small Businesses</span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.smallBusinesses ? "rotate-90" : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.smallBusinesses ? "block" : "hidden"
+                    }`}
+                  >
                     <div className="flex gap-2 pl-2">
                       <p>●</p>
                       <p>Back up your data regularly.</p>
@@ -568,12 +888,42 @@ function CyberSafeCommunitiesInitiative() {
                     </div>
                   </div>
                 </div>
-                <div className="collapse collapse-arrow bg-gray-900 text-gray-400">
-                  <input type="radio" name="my-accordion-2" />
-                  <div className="collapse-title font-medium">
-                    For Individuals with Disabilities
+
+                <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <div
+                    className="flex justify-between items-center cursor-pointer p-4 font-medium"
+                    onClick={() => toggleSection("individualsWithDisabilities")}
+                  >
+                    <span data-translate>
+                      For Individuals with Disabilities
+                    </span>
+                    <svg
+                      className={`w-5 h-5 transition-transform transform ${
+                        openSections.individualsWithDisabilities
+                          ? "rotate-90"
+                          : "rotate-0"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
-                  <div className="collapse-content flex flex-col gap-2">
+                  <div
+                    data-translate
+                    className={`flex flex-col gap-2 p-4 pt-0 transition-all duration-300 ${
+                      openSections.individualsWithDisabilities
+                        ? "block"
+                        : "hidden"
+                    }`}
+                  >
                     <div className="flex gap-2 pl-2">
                       <p>●</p>
                       <p>Use accessibility tools for safe browsing.</p>
@@ -626,12 +976,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-start mb-10 md:text-end">
-                  <time className="font-mono italic">1/02/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Project Launch
                   </div>
-                  Official project kick-off event introducing the initiative and
-                  its goals to the community.
+                  <div data-translate>
+                    Official project kick-off event introducing the initiative
+                    and its goals to the community.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -652,12 +1004,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-end md:mb-10">
-                  <time className="font-mono italic">15/02/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Workshop 1
                   </div>
-                  Tailored in-person workshop for migrants on cyber threats,
-                  with materials translated into their native languages.
+                  <div data-translate>
+                    Tailored in-person workshop for migrants on cyber threats,
+                    with materials translated into their native languages.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -678,12 +1032,15 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-start mb-10 md:text-end">
-                  <time className="font-mono italic">01/03/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Workshop 2
                   </div>
-                  Cyber security training for elderly individuals featuring
-                  simplified, step-by-step instructions and hands-on activities.
+                  <div data-translate>
+                    Cyber security training for elderly individuals featuring
+                    simplified, step-by-step instructions and hands-on
+                    activities.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -704,12 +1061,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-end md:mb-10">
-                  <time className="font-mono italic">15/03/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Community Event
                   </div>
-                  Community engagement event featuring Q&A sessions, cultural
-                  presentations, and cyber security demonstrations.
+                  <div data-translate>
+                    Community engagement event featuring Q&A sessions, cultural
+                    presentations, and cyber security demonstrations.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -730,12 +1089,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-start mb-10 md:text-end">
-                  <time className="font-mono italic">01/04/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Workshop 3
                   </div>
-                  Customised training session for farmers focusing on protecting
-                  business operations from cyber threats.
+                  <div data-translate>
+                    Customised training session for farmers focusing on
+                    protecting business operations from cyber threats.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -756,12 +1117,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-end md:mb-10">
-                  <time className="font-mono italic">15/04/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Translation Service Rollout
                   </div>
-                  Distribution of translated brochures and online resources to
-                  migrant communities.
+                  <div data-translate>
+                    Distribution of translated brochures and online resources to
+                    migrant communities.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -782,12 +1145,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-start mb-10 md:text-end">
-                  <time className="font-mono italic">01/05/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     One-on-One Support Launch
                   </div>
-                  Launch of helpline service providing personalised assistance
-                  with cyber security issues.
+                  <div data-translate>
+                    Launch of helpline service providing personalised assistance
+                    with cyber security issues.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -808,13 +1173,15 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-end md:mb-10">
-                  <time className="font-mono italic">15/06/2025 </time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Workshop 4
                   </div>
-                  Workshop for individuals with disabilities, featuring
-                  accessible formats (audio, large print, and easy-read
-                  versions).
+                  <div data-translate>
+                    Workshop for individuals with disabilities, featuring
+                    accessible formats (audio, large print, and easy-read
+                    versions).
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -835,12 +1202,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-start mb-10 md:text-end">
-                  <time className="font-mono italic">01/07/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Mid-Year Review
                   </div>
-                  Progress review and participant feedback collection to
-                  evaluate the effectiveness of activities to date.
+                  <div data-translate>
+                    Progress review and participant feedback collection to
+                    evaluate the effectiveness of activities to date.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -861,12 +1230,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-end md:mb-10">
-                  <time className="font-mono italic">15/08/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Workshop 5
                   </div>
-                  Joint workshop for farmers and elderly individuals to promote
-                  collaboration and enhance cyber security awareness.
+                  <div data-translate>
+                    Joint workshop for farmers and elderly individuals to
+                    promote collaboration and enhance cyber security awareness.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -887,12 +1258,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-start mb-10 md:text-end">
-                  <time className="font-mono italic">01/09/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Outreach Campaign Launch
                   </div>
-                  Launch of a social media campaign targeting all vulnerable
-                  groups with Act Now, Stay Secure materials.
+                  <div data-translate>
+                    Launch of a social media campaign targeting all vulnerable
+                    groups with Act Now, Stay Secure materials.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -913,12 +1286,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-end md:mb-10">
-                  <time className="font-mono italic">15/10/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Community Leader Consultation
                   </div>
-                  Meeting with local leaders to gather insights and feedback for
-                  improving outreach strategies.
+                  <div data-translate>
+                    Meeting with local leaders to gather insights and feedback
+                    for improving outreach strategies.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -939,13 +1314,15 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-start mb-10 md:text-end">
-                  <time className="font-mono italic">01/11/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     Workshop 6
                   </div>
-                  Advanced training session for migrants and individuals with
-                  disabilities focusing on fraud prevention and identity
-                  protection.
+                  <div data-translate>
+                    Advanced training session for migrants and individuals with
+                    disabilities focusing on fraud prevention and identity
+                    protection.
+                  </div>
                 </div>
                 <hr />
               </li>
@@ -966,12 +1343,14 @@ function CyberSafeCommunitiesInitiative() {
                   </svg>
                 </div>
                 <div className="timeline-end mb-10 md:text-start">
-                  <time className="font-mono italic">01/12/2025</time>
+                  <time className="font-mono italic">TBA</time>
                   <div className="md:text-lg text-base font-black">
                     End-of-Year Event
                   </div>
-                  Community celebration highlighting project achievements,
-                  featuring testimonials and success stories.
+                  <div data-translate>
+                    Community celebration highlighting project achievements,
+                    featuring testimonials and success stories.
+                  </div>
                 </div>
               </li>
             </ul>
