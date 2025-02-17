@@ -151,13 +151,13 @@ function CurrentEvents() {
                   key={item.id} // Correct placement of the key prop
                   className="card w-auto bg-gray-900 shadow-xl md:font-thin md:text-base text-xs text-gray-400 md:ml-10"
                 >
-                  {/* <figure>
+                  <figure>
                     <img
                       src={item.imgSrc || "/placeholder.jpg"} // Fallback image if imgSrc is undefined
                       alt={item.imgAlt || "Event image"} // Fallback alt text if imgAlt is undefined
                       className="w-full h-auto"
                     />
-                  </figure> */}
+                  </figure>
                   <div className="card-body">
                     <h2
                       data-translate
