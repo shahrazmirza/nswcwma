@@ -77,7 +77,17 @@ function ZakatPaymentForm() {
           Pay Zakat Now
         </motion.h1>
 
-        <div className="flex flex-col pl-10 md:pr-0 pr-5 md:gap-8 gap-5">
+        <motion.div
+          ref={ref2}
+          variants={{
+            hidden: { opacity: 0, y: 25 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={slide2}
+          transition={{ duration: 0.9, delay: 0.5 }}
+          className="flex flex-col pl-10 md:pr-0 pr-5 md:gap-8 gap-5"
+        >
           <h1 className="md:text-base font-medium text-sm">Select Amount</h1>
           <div className="flex flex-col">
             {filteredItems.length > 0 && (
@@ -131,23 +141,15 @@ function ZakatPaymentForm() {
           </div>
 
           {/* Pay Button Animation */}
-          <motion.a
-            ref={ref2}
-            variants={{
-              hidden: { opacity: 0, y: 25 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            animate={slide2}
-            transition={{ duration: 0.9, delay: 0.5 }}
+          <a
             role="button"
             className="uppercase btn bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-none border-none px-7 py-2 w-fit"
             onClick={handlePayNow}
             data-translate
           >
             Pay
-          </motion.a>
-        </div>
+          </a>
+        </motion.div>
       </div>
     </Container>
   );

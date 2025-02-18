@@ -170,15 +170,13 @@ function CyberSafeCommunitiesInitiative() {
                       <FaLinkedin /> Share
                     </a>
                   </div>
-                  {/* <Link href={item.href}>
-                    <Image
-                      src={item.imgSrc}
-                      alt={item.imgAlt}
-                      width={2000}
-                      height={2000}
-                      className=""
-                    />
-                  </Link> */}
+                  <Image
+                    src={item.imgSrc}
+                    alt={item.imgAlt}
+                    width={2000}
+                    height={2000}
+                    className=""
+                  />
                   <div className="pt-5">
                     <p
                       data-translate
@@ -287,8 +285,13 @@ function CyberSafeCommunitiesInitiative() {
               >
                 Common Cyber Security Threats
               </h1>{" "}
-              <div className="md:text-base text-sm pt-5 flex flex-col gap-2">
+              <div className="md:text-base text-sm pt-5 md:grid md:grid-cols-4 md:gap-5 flex flex-col gap-5">
                 <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <img
+                    src="/assets/images/CyberSafeCommunitiesInitiative/phishing.jpg"
+                    alt="Phishing Attacks"
+                    className="rounded-t-2xl"
+                  />
                   <div
                     className="flex justify-between items-center cursor-pointer p-4 font-medium"
                     onClick={() => toggleSection("phishing")}
@@ -342,6 +345,11 @@ function CyberSafeCommunitiesInitiative() {
                 </div>
 
                 <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <img
+                    src="/assets/images/CyberSafeCommunitiesInitiative/idtheft.jpg"
+                    alt="Identity Theft"
+                    className="rounded-t-2xl"
+                  />
                   <div
                     className="flex justify-between items-center cursor-pointer p-4 font-medium"
                     onClick={() => toggleSection("identity")}
@@ -397,6 +405,11 @@ function CyberSafeCommunitiesInitiative() {
                 </div>
 
                 <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <img
+                    src="/assets/images/CyberSafeCommunitiesInitiative/scams.jpg"
+                    alt="Scams Targeting the Elderly and Migrants"
+                    className="rounded-t-2xl"
+                  />
                   <div
                     className="flex justify-between items-center cursor-pointer p-4 font-medium"
                     onClick={() => toggleSection("scams")}
@@ -451,6 +464,11 @@ function CyberSafeCommunitiesInitiative() {
                 </div>
 
                 <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <img
+                    src="/assets/images/CyberSafeCommunitiesInitiative/malware.jpg"
+                    alt="Malware and Viruses"
+                    className="rounded-t-2xl"
+                  />
                   <div
                     className="flex justify-between items-center cursor-pointer p-4 font-medium"
                     onClick={() => toggleSection("malware")}
@@ -524,8 +542,13 @@ function CyberSafeCommunitiesInitiative() {
               >
                 Ways to Protect Yourself Online
               </h1>{" "}
-              <div className="md:text-base text-sm pt-5 flex flex-col gap-2">
+              <div className="md:text-base text-sm pt-5 md:grid md:grid-cols-3 md:gap-5 flex flex-col gap-5">
                 <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <img
+                    src="/assets/images/CyberSafeCommunitiesInitiative/password.jpg"
+                    alt="Use Strong Passwords"
+                    className="rounded-t-2xl"
+                  />
                   <div
                     className="flex justify-between items-center cursor-pointer p-4 font-medium"
                     onClick={() => toggleSection("strongPasswords")}
@@ -573,6 +596,11 @@ function CyberSafeCommunitiesInitiative() {
                 </div>
 
                 <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <img
+                    src="/assets/images/CyberSafeCommunitiesInitiative/2fa.jpg"
+                    alt="Enable Two-Factor Authentication (2FA)"
+                    className="rounded-t-2xl"
+                  />
                   <div
                     className="flex justify-between items-center cursor-pointer p-4 font-medium"
                     onClick={() => toggleSection("twoFactor")}
@@ -612,6 +640,11 @@ function CyberSafeCommunitiesInitiative() {
                 </div>
 
                 <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <img
+                    src="/assets/images/CyberSafeCommunitiesInitiative/update.jpg"
+                    alt="Keep Software and Devices Updated"
+                    className="rounded-t-2xl"
+                  />
                   <div
                     className="flex justify-between items-center cursor-pointer p-4 font-medium"
                     onClick={() => toggleSection("deviceUpdated")}
@@ -651,6 +684,11 @@ function CyberSafeCommunitiesInitiative() {
                 </div>
 
                 <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <img
+                    src="/assets/images/CyberSafeCommunitiesInitiative/links.jpg"
+                    alt="Avoid Suspicious Links and Attachments"
+                    className="rounded-t-2xl"
+                  />
                   <div
                     className="flex justify-between items-center cursor-pointer p-4 font-medium"
                     onClick={() => toggleSection("suspiciousLinks")}
@@ -690,6 +728,11 @@ function CyberSafeCommunitiesInitiative() {
                 </div>
 
                 <div className="bg-gray-900 text-gray-400 rounded-2xl">
+                  <img
+                    src="/assets/images/CyberSafeCommunitiesInitiative/info.jpg"
+                    alt="Secure Personal Information"
+                    className="rounded-t-2xl"
+                  />
                   <div
                     className="flex justify-between items-center cursor-pointer p-4 font-medium"
                     onClick={() => toggleSection("personalInfo")}
