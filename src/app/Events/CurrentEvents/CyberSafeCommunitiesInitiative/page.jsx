@@ -1402,7 +1402,7 @@ function CyberSafeCommunitiesInitiative() {
         {items
           .filter((item) => item.title === filterInclude)
           .map((item) => (
-            <div key={item.id}>
+            <div key={item.id} className="pl-5">
               <h1
                 data-translate
                 className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
