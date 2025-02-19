@@ -155,17 +155,35 @@ function CentralWestMuslimAssociationOpenDay() {
                     >
                       {item.paragraph5}
                     </p>
-                    <p
-                      data-translate
-                      className="md:font-thin md:text-lg text-sm tracking-wide text-gray-400 pb-5"
-                    >
-                      {item.paragraph6}
-                    </p>
                   </div>
                   <div className="md:-mb-32 -mb-80">
                     <CentralWestMuslimAssociationOpenDayPhotos />
                   </div>
-                  <div className="divider"></div>
+                  {items
+                    .filter((item) => item.title === filterInclude)
+                    .map((item) => (
+                      <div key={item.id}>
+                        <h1
+                          data-translate
+                          className="capitalize md:text-3xl text-xl md:font-medium font-semibold md:tracking-wide text-white"
+                        >
+                          Event funder
+                        </h1>
+                        <div className="card md:w-60 md:h-60 w-40 h-40 shadow-xl flex items-center justify-center md:p-10 p-5 bg-gray-200 mt-10">
+                          {" "}
+                          <Link href={item.funderHref} target="_blank">
+                            <Image
+                              src={item.funderImgSrc}
+                              alt={item.FunderImgAlt}
+                              width={200}
+                              height={200}
+                              className="object-contain"
+                            />
+                          </Link>
+                        </div>
+                      </div>
+                    ))}
+                  <div className="divider pt-10"></div>
                 </div>
               ))}
           </motion.div>

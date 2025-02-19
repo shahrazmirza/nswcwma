@@ -72,7 +72,7 @@ function Funders() {
               key={index}
               className="card w-full h-60 shadow-xl flex items-center justify-center py-20 bg-gray-200"
             >
-              <Link href={item.href}>
+              <Link href={item.href} target="_blank">
                 <Image
                   src={item.src}
                   alt={item.alt}

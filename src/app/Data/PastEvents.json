@@ -12,7 +12,10 @@
     "paragraph6": "Acknowledgements were extended to the New South Wales Government Office of Regional Youth and the Department of Primary Industries and Regional Development for their funding and support. Special recognition was given to event coordinators Ali Mumtaz and Nimra, alongside dedicated volunteers whose efforts ensured the tournament’s smooth execution. The event left a lasting impact on the community, strengthening bonds and fostering mutual respect among diverse cultural groups.",
     "href": "/Events/PastEvents/NSWAsiaCricketTournament202425",
     "imgSrc": "/assets/images/asia_cricket_tournament_2024.jpg",
-    "imgAlt": "New South Wales Asia Cricket Tournament 2024/25"
+    "imgAlt": "New South Wales Asia Cricket Tournament 2024/25",
+    "funderHref": "https://www.nsw.gov.au/",
+    "funderImgSrc": "/assets/images/logonswgovernment.png",
+    "FunderImgAlt": "NSW Government Logo"
   },
   {
     "title": "Dubbo Multi Cultural Gala - II - 2024",
@@ -26,7 +29,10 @@
     "paragraph5": "The Dubbo Multi Cultural Gala Event of 2024 was a resounding success, fostering unity amidst diversity and celebrating the rich tapestry of cultures that enrich the Dubbo community. The presence of distinguished guests and the positive feedback from attendees reflected the event's success in promoting cultural understanding and community cohesion.",
     "href": "/Events/PastEvents/DubboMultiCulturalGala22024",
     "imgSrc": "/assets/images/mulitcultural2.jpg",
-    "imgAlt": "Dubbo Multi Cultural Gala - II - 2024"
+    "imgAlt": "Dubbo Multi Cultural Gala - II - 2024",
+    "funderHref": "https://multicultural.nsw.gov.au/",
+    "funderImgSrc": "/assets/images/logomulticlturalnsw.png",
+    "FunderImgAlt": "Multicultural NSW Logo"
   },
   {
     "title": "Story Night in Dubbo",
@@ -40,7 +46,10 @@
     "paragraph5": "The final day addressed resilience and anger management, inspired by the Prophet’s teachings on patience and self-control. Attendees gained practical strategies to manage emotions and cultivate inner strength, contributing to a peaceful community environment.",
     "href": "/Events/PastEvents/StoryNightsDubbo",
     "imgSrc": "/assets/images/storynights.jpg",
-    "imgAlt": "Story Nights in Dubbo"
+    "imgAlt": "Story Nights in Dubbo",
+    "funderHref": "/",
+    "funderImgSrc": "/assets/images/logonswcwma.webp",
+    "FunderImgAlt": "NSWCWMA Logo"
   },
   {
     "title": "Webinar on Parenting",
@@ -54,7 +63,10 @@
     "paragraph5": "The New South Wales Central West Muslims Association expressed gratitude to the participants and shared their aspiration to bring Mr. Ahmad and Mrs. Jamilah to Dubbo for an in-person session in the future. This initiative underscores the commitment of Central West Muslims Association to supporting families and fostering a generation of resilient and adaptable individuals.",
     "href": "/Events/PastEvents/RaiseMeRight",
     "imgSrc": "/assets/images/raisemeright.jpg",
-    "imgAlt": "Raise Me Right Parenting Webinar"
+    "imgAlt": "Raise Me Right Parenting Webinar",
+    "funderHref": "/",
+    "funderImgSrc": "/assets/images/logonswcwma.webp",
+    "FunderImgAlt": "NSWCWMA Logo"
   },
   {
     "title": "Pink Ribbon Breakfast at Buninyong Pre-School",
@@ -71,7 +83,10 @@
     "paragraph8": "The Pink Ribbon Breakfast will be remembered as a day of empowerment, education, and heartfelt solidarity. It stands as a beautiful example of how compassion, collaboration, and awareness can bring a community together, inspiring hope for a healthier and more informed future.",
     "href": "/Events/PastEvents/PinkRibbonBreakfast",
     "imgSrc": "/assets/images/pinkribbonbreakfast.jpg",
-    "imgAlt": "Pink Ribbon Breakfast at Buninyong Pre-School"
+    "imgAlt": "Pink Ribbon Breakfast at Buninyong Pre-School",
+    "funderHref": "/",
+    "funderImgSrc": "/assets/images/logonswcwma.webp",
+    "FunderImgAlt": "NSWCWMA Logo"
   },
   {
     "title": "Fishing Day at Burrendong Dam",
@@ -85,7 +100,10 @@
     "paragraph5": "The Central West Muslims Association extends its heartfelt thanks to the Department of Primary Industries and Regional Development for their support through the Recreational Fishing Trust – Fishing Day Grants Program. Special appreciation is also due to the volunteers whose commitment and enthusiasm were vital to the success of the event, ensuring a memorable day for all participants.",
     "href": "/Events/PastEvents/GoneFishingDay",
     "imgSrc": "/assets/images/fishingday.jpg",
-    "imgAlt": "Gone Fishing Day at Burrendong Dam"
+    "imgAlt": "Gone Fishing Day at Burrendong Dam",
+    "funderHref": "https://www.dpi.nsw.gov.au/fishing/recreational/recreational-fishing-fee/rft-annual-report/recreational-fishing-trusts/recreational-fishing-trusts",
+    "funderImgSrc": "/assets/images/logorecreationalfishingtrusts.png",
+    "FunderImgAlt": "Recreational Fishing Trusts Logo"
   },
   {
     "title": "Autumn Holiday Youth Program",
@@ -99,7 +117,10 @@
     "paragraph5": "Overall, the Autumn Youth Holiday Program contributed significantly to the well-being and cohesion of the Dubbo community. It fostered essential life skills while celebrating diversity and unity.",
     "href": "/Events/PastEvents/AutumnHolidayYouthProgram",
     "imgSrc": "/assets/images/automn.jpg",
-    "imgAlt": "Autumn Holiday Youth Program"
+    "imgAlt": "Autumn Holiday Youth Program",
+    "funderHref": "https://www.nsw.gov.au/",
+    "funderImgSrc": "/assets/images/logonswgovernment.png",
+    "FunderImgAlt": "NSW Government Logo"
   },
   {
     "title": "Dubbo Multi Cultural Gala - I - 2024",
@@ -113,7 +134,10 @@
     "paragraph5": "The Dubbo Multi Cultural Gala Event of 2024 was a resounding success, fostering unity amidst diversity and celebrating the rich tapestry of cultures that enrich the Dubbo community.",
     "href": "/Events/PastEvents/DubboMultiCulturalGala2024",
     "imgSrc": "/assets/images/mulitcultural.jpg",
-    "imgAlt": "Dubbo Multi Cultural Gala - I - 2024"
+    "imgAlt": "Dubbo Multi Cultural Gala - I - 2024",
+    "funderHref": "https://multicultural.nsw.gov.au/",
+    "funderImgSrc": "/assets/images/logomulticlturalnsw.png",
+    "FunderImgAlt": "Multicultural NSW Logo"
   },
   {
     "title": "Central West Muslim Association Open Day",
@@ -128,7 +152,10 @@
     "paragraph6": "We extend our heartfelt gratitude to all participants for their presence, enthusiasm, and open-mindedness. May this small event serve as a catalyst for continued dialogue, cooperation, and mutual respect among diverse communities.",
     "href": "/Events/PastEvents/CentralWestMuslimAssociationOpenDay",
     "imgSrc": "/assets/images/openday.jpg",
-    "imgAlt": "Central West Muslim Association Open Day"
+    "imgAlt": "Central West Muslim Association Open Day",
+    "funderHref": "/",
+    "funderImgSrc": "/assets/images/logonswcwma.webp",
+    "FunderImgAlt": "NSWCWMA Logo"
   },
   {
     "title": "Summer Holiday Youth Program",
@@ -145,6 +172,9 @@
     "paragraph8": "In conclusion, the Summer Youth Connection event exemplified the power of community-driven initiatives in nurturing the holistic development of children and young people. Through a diverse range of activities and a supportive environment, participants not only had fun but also acquired valuable life skills and cultural understanding. The event’s success underscores the importance of fostering inclusivity and providing opportunities for positive social interactions among youth.",
     "href": "/Events/PastEvents/SummerHolidayYouthProgram",
     "imgSrc": "/assets/images/summer.jpg",
-    "imgAlt": "Summer Holiday Youth Program"
+    "imgAlt": "Summer Holiday Youth Program",
+    "funderHref": "https://www.nsw.gov.au/",
+    "funderImgSrc": "/assets/images/logonswgovernment.png",
+    "FunderImgAlt": "NSW Government Logo"
   }
 ]
