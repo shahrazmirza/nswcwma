@@ -11,6 +11,9 @@
     "paragraph5": "This initiative will build long-term cyber resilience within vulnerable communities by collaborating with local leaders, organisations, and volunteers. By empowering individuals with the tools to stay safe online, the New South Wales Central West Cyber Safe Communities Initiative will contribute to a safer, more digitally confident community.",
     "href": "/Events/CurrentEvents/CyberSafeCommunitiesInitiative",
     "imgSrc": "/assets/images/cybersecurity.jpg",
-    "imgAlt": "Cyber Safe Communities Initiative"
+    "imgAlt": "Cyber Safe Communities Initiative",
+    "funderHref": "https://www.homeaffairs.gov.au/",
+    "funderImgSrc": "/assets/images/logodepartmentofhomeaffairs.png",
+    "FunderImgAlt": "Department of Home Affairs Logo"
   }
 ]
