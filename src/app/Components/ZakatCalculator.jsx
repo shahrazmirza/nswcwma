@@ -11,6 +11,7 @@ function ZakatCalculator() {
   const [assetsValue, setAssetsValue] = useState("");
   const [liabilitiesValue, setLiabilitiesValue] = useState("");
   const [zakatOwed, setZakatOwed] = useState(0);
+  const [hasInput, setHasInput] = useState(false);
 
   const nisabThresholds = {
     Silver: 655.47,
@@ -21,6 +22,12 @@ function ZakatCalculator() {
     const assets = parseFloat(assetsValue) || 0;
     const liabilities = parseFloat(liabilitiesValue) || 0;
     const netWealth = assets - liabilities;
+
+    if (assetsValue || liabilitiesValue) {
+      setHasInput(true);
+    } else {
+      setHasInput(false);
+    }
 
     if (selectedNisab && netWealth >= nisabThresholds[selectedNisab]) {
       setZakatOwed((netWealth * 2.5) / 100);
@@ -162,7 +169,7 @@ function ZakatCalculator() {
         )}
       </div>
 
-      {showZakatOwed && (
+      {showZakatOwed ? (
         <div className="flex flex-col gap-5 justify-between items-center border-solid border rounded-b-lg shadow-md pt-5">
           <div className="flex flex-col items-center gap-5 md:gap-10 py-5 md:py-32">
             <h1 className="md:text-2xl font-bold text-xl border border-solid rounded-xl shadow-md w-fit bg-amber-500 py-3 px-10">
@@ -177,6 +184,16 @@ function ZakatCalculator() {
             Pay Now
           </Button>
         </div>
+      ) : (
+        hasInput && (
+          <div className="flex flex-col gap-5 justify-between items-center border-solid border rounded-b-lg shadow-md pt-5">
+            <div className="flex flex-col items-center justify-center gap-5 md:gap-10 py-5 md:py-32">
+              <h2 className="md:text-xl font-medium text-lg text-center p-10">
+                Zakat is not payable due to values falling below the nisab.
+              </h2>
+            </div>
+          </div>
+        )
       )}
     </motion.div>
   );
